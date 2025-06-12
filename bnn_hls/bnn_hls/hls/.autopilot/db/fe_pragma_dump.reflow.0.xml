@@ -1,0 +1,59 @@
+<pragmas>
+<pragma file="K:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDq4_j" off="0" region="0" recursive="0"/>
+<pragma file="K:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="K:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="31" pragmaType="inline" parentfunction="quantize" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="165" pragmaType="pipeline" parentfunction="feedforward" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="bnn.cpp" line="158" pragmaType="pipeline" parentfunction="feedforward" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="bnn.cpp" line="149" pragmaType="pipeline" parentfunction="feedforward" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="bnn.cpp" line="143" pragmaType="unroll" parentfunction="feedforward" factor="4" skip_exit_check="0"/>
+<pragma file="bnn.cpp" line="137" pragmaType="pipeline" parentfunction="feedforward" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="bnn.cpp" line="128" pragmaType="pipeline" parentfunction="feedforward" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="bnn.cpp" line="115" pragmaType="unroll" parentfunction="feedforward" factor="2" skip_exit_check="0"/>
+<pragma file="bnn.cpp" line="105" pragmaType="pipeline" parentfunction="feedforward" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="bnn.cpp" line="80" pragmaType="interface" parentfunction="feedforward" mode="axis" port="input_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="bnn.cpp" line="81" pragmaType="interface" parentfunction="feedforward" mode="axis" port="output_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="bnn.cpp" line="83" pragmaType="interface" parentfunction="feedforward" mode="m_axi" port="W1" bundle="gmem" offset="slave" name="" depth="16384" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="bnn.cpp" line="84" pragmaType="interface" parentfunction="feedforward" mode="m_axi" port="W2" bundle="gmem" offset="slave" name="" depth="16384" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="bnn.cpp" line="85" pragmaType="interface" parentfunction="feedforward" mode="m_axi" port="W3" bundle="gmem" offset="slave" name="" depth="16384" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="bnn.cpp" line="87" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="W1" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="88" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="W2" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="89" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="W3" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="90" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="X_size" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="91" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="rowsW1" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="92" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="colsW1" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="93" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="rowsW2" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="94" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="colsW2" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="95" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="rowsW3" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="96" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="colsW3" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="97" pragmaType="interface" parentfunction="feedforward" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="100" pragmaType="array_partition" parentfunction="feedforward" dim="1" factor="0" mode="complete" dynamic="0" variable="X0_input"/>
+<pragma file="bnn.cpp" line="122" pragmaType="array_partition" parentfunction="feedforward" dim="1" factor="0" mode="complete" dynamic="0" variable="layer1_quant"/>
+<pragma file="bnn.cpp" line="123" pragmaType="array_partition" parentfunction="feedforward" dim="1" factor="0" mode="complete" dynamic="0" variable="layer2_quant"/>
+<pragma file="bnn.cpp" line="124" pragmaType="array_partition" parentfunction="feedforward" dim="1" factor="0" mode="complete" dynamic="0" variable="layer3_quant"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="20" pragmaType="inline" parentfunction="XNOR" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="42" pragmaType="inline" parentfunction="sign" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="53" pragmaType="pipeline" parentfunction="matmul_xnor" off="0" ii="1" rewind="0" style=""/>
+<pragma file="bnn.cpp" line="52" pragmaType="loop_tripcount" parentfunction="matmul_xnor" min="1" max="256" avg="128"/>
+<pragma file="bnn.cpp" line="57" pragmaType="unroll" parentfunction="matmul_xnor" factor="2" skip_exit_check="0"/>
+<pragma file="bnn.cpp" line="56" pragmaType="loop_tripcount" parentfunction="matmul_xnor" min="1" max="256" avg="128"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>

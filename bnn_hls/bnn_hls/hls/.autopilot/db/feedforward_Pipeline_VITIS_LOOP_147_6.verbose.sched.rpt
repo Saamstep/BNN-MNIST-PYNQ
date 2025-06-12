@@ -1,0 +1,809 @@
+
+
+================================================================
+== Vitis HLS Report for 'feedforward_Pipeline_VITIS_LOOP_147_6'
+================================================================
+* Date:           Wed Jun 11 23:52:44 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        bnn_hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.698 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max   | min | max |                      Type                      |
+    +---------+---------+-----------+----------+-----+-----+------------------------------------------------+
+    |        4|        ?|  40.000 ns|         ?|    2|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- VITIS_LOOP_147_6  |        2|        ?|         3|          1|          1|  1 ~ ?|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.69>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [bnn.cpp:147]   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%layer3_quant = alloca i32 1" [bnn.cpp:121]   --->   Operation 7 'alloca' 'layer3_quant' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%layer3_quant_1 = alloca i32 1" [bnn.cpp:121]   --->   Operation 8 'alloca' 'layer3_quant_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%layer3_quant_2 = alloca i32 1" [bnn.cpp:121]   --->   Operation 9 'alloca' 'layer3_quant_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%layer3_quant_3 = alloca i32 1" [bnn.cpp:121]   --->   Operation 10 'alloca' 'layer3_quant_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%layer3_quant_4 = alloca i32 1" [bnn.cpp:121]   --->   Operation 11 'alloca' 'layer3_quant_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%layer3_quant_5 = alloca i32 1" [bnn.cpp:121]   --->   Operation 12 'alloca' 'layer3_quant_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%layer3_quant_6 = alloca i32 1" [bnn.cpp:121]   --->   Operation 13 'alloca' 'layer3_quant_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%layer3_quant_7 = alloca i32 1" [bnn.cpp:121]   --->   Operation 14 'alloca' 'layer3_quant_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%layer3_quant_8 = alloca i32 1" [bnn.cpp:121]   --->   Operation 15 'alloca' 'layer3_quant_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%layer3_quant_9 = alloca i32 1" [bnn.cpp:121]   --->   Operation 16 'alloca' 'layer3_quant_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%layer3_quant_10 = alloca i32 1" [bnn.cpp:121]   --->   Operation 17 'alloca' 'layer3_quant_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%layer3_quant_11 = alloca i32 1" [bnn.cpp:121]   --->   Operation 18 'alloca' 'layer3_quant_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%layer3_quant_12 = alloca i32 1" [bnn.cpp:121]   --->   Operation 19 'alloca' 'layer3_quant_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%layer3_quant_13 = alloca i32 1" [bnn.cpp:121]   --->   Operation 20 'alloca' 'layer3_quant_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%layer3_quant_14 = alloca i32 1" [bnn.cpp:121]   --->   Operation 21 'alloca' 'layer3_quant_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%layer3_quant_15 = alloca i32 1" [bnn.cpp:121]   --->   Operation 22 'alloca' 'layer3_quant_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%layer3_quant_16 = alloca i32 1" [bnn.cpp:121]   --->   Operation 23 'alloca' 'layer3_quant_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%layer3_quant_17 = alloca i32 1" [bnn.cpp:121]   --->   Operation 24 'alloca' 'layer3_quant_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%layer3_quant_18 = alloca i32 1" [bnn.cpp:121]   --->   Operation 25 'alloca' 'layer3_quant_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%layer3_quant_19 = alloca i32 1" [bnn.cpp:121]   --->   Operation 26 'alloca' 'layer3_quant_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%layer3_quant_20 = alloca i32 1" [bnn.cpp:121]   --->   Operation 27 'alloca' 'layer3_quant_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%layer3_quant_21 = alloca i32 1" [bnn.cpp:121]   --->   Operation 28 'alloca' 'layer3_quant_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%layer3_quant_22 = alloca i32 1" [bnn.cpp:121]   --->   Operation 29 'alloca' 'layer3_quant_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%layer3_quant_23 = alloca i32 1" [bnn.cpp:121]   --->   Operation 30 'alloca' 'layer3_quant_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%layer3_quant_24 = alloca i32 1" [bnn.cpp:121]   --->   Operation 31 'alloca' 'layer3_quant_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%layer3_quant_25 = alloca i32 1" [bnn.cpp:121]   --->   Operation 32 'alloca' 'layer3_quant_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%layer3_quant_26 = alloca i32 1" [bnn.cpp:121]   --->   Operation 33 'alloca' 'layer3_quant_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%layer3_quant_27 = alloca i32 1" [bnn.cpp:121]   --->   Operation 34 'alloca' 'layer3_quant_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%layer3_quant_28 = alloca i32 1" [bnn.cpp:121]   --->   Operation 35 'alloca' 'layer3_quant_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%layer3_quant_29 = alloca i32 1" [bnn.cpp:121]   --->   Operation 36 'alloca' 'layer3_quant_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%layer3_quant_30 = alloca i32 1" [bnn.cpp:121]   --->   Operation 37 'alloca' 'layer3_quant_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%layer3_quant_31 = alloca i32 1" [bnn.cpp:121]   --->   Operation 38 'alloca' 'layer3_quant_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%layer3_quant_32 = alloca i32 1" [bnn.cpp:121]   --->   Operation 39 'alloca' 'layer3_quant_32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%layer3_quant_33 = alloca i32 1" [bnn.cpp:121]   --->   Operation 40 'alloca' 'layer3_quant_33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%layer3_quant_34 = alloca i32 1" [bnn.cpp:121]   --->   Operation 41 'alloca' 'layer3_quant_34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%layer3_quant_35 = alloca i32 1" [bnn.cpp:121]   --->   Operation 42 'alloca' 'layer3_quant_35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%layer3_quant_36 = alloca i32 1" [bnn.cpp:121]   --->   Operation 43 'alloca' 'layer3_quant_36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%layer3_quant_37 = alloca i32 1" [bnn.cpp:121]   --->   Operation 44 'alloca' 'layer3_quant_37' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%layer3_quant_38 = alloca i32 1" [bnn.cpp:121]   --->   Operation 45 'alloca' 'layer3_quant_38' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%layer3_quant_39 = alloca i32 1" [bnn.cpp:121]   --->   Operation 46 'alloca' 'layer3_quant_39' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%layer3_quant_40 = alloca i32 1" [bnn.cpp:121]   --->   Operation 47 'alloca' 'layer3_quant_40' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%layer3_quant_41 = alloca i32 1" [bnn.cpp:121]   --->   Operation 48 'alloca' 'layer3_quant_41' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%layer3_quant_42 = alloca i32 1" [bnn.cpp:121]   --->   Operation 49 'alloca' 'layer3_quant_42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%layer3_quant_43 = alloca i32 1" [bnn.cpp:121]   --->   Operation 50 'alloca' 'layer3_quant_43' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%layer3_quant_44 = alloca i32 1" [bnn.cpp:121]   --->   Operation 51 'alloca' 'layer3_quant_44' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%layer3_quant_45 = alloca i32 1" [bnn.cpp:121]   --->   Operation 52 'alloca' 'layer3_quant_45' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%layer3_quant_46 = alloca i32 1" [bnn.cpp:121]   --->   Operation 53 'alloca' 'layer3_quant_46' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%layer3_quant_47 = alloca i32 1" [bnn.cpp:121]   --->   Operation 54 'alloca' 'layer3_quant_47' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%layer3_quant_48 = alloca i32 1" [bnn.cpp:121]   --->   Operation 55 'alloca' 'layer3_quant_48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%layer3_quant_49 = alloca i32 1" [bnn.cpp:121]   --->   Operation 56 'alloca' 'layer3_quant_49' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%layer3_quant_50 = alloca i32 1" [bnn.cpp:121]   --->   Operation 57 'alloca' 'layer3_quant_50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%layer3_quant_51 = alloca i32 1" [bnn.cpp:121]   --->   Operation 58 'alloca' 'layer3_quant_51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%layer3_quant_52 = alloca i32 1" [bnn.cpp:121]   --->   Operation 59 'alloca' 'layer3_quant_52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%layer3_quant_53 = alloca i32 1" [bnn.cpp:121]   --->   Operation 60 'alloca' 'layer3_quant_53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%layer3_quant_54 = alloca i32 1" [bnn.cpp:121]   --->   Operation 61 'alloca' 'layer3_quant_54' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%layer3_quant_55 = alloca i32 1" [bnn.cpp:121]   --->   Operation 62 'alloca' 'layer3_quant_55' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%layer3_quant_56 = alloca i32 1" [bnn.cpp:121]   --->   Operation 63 'alloca' 'layer3_quant_56' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%layer3_quant_57 = alloca i32 1" [bnn.cpp:121]   --->   Operation 64 'alloca' 'layer3_quant_57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%layer3_quant_58 = alloca i32 1" [bnn.cpp:121]   --->   Operation 65 'alloca' 'layer3_quant_58' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%layer3_quant_59 = alloca i32 1" [bnn.cpp:121]   --->   Operation 66 'alloca' 'layer3_quant_59' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%layer3_quant_60 = alloca i32 1" [bnn.cpp:121]   --->   Operation 67 'alloca' 'layer3_quant_60' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%layer3_quant_61 = alloca i32 1" [bnn.cpp:121]   --->   Operation 68 'alloca' 'layer3_quant_61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%layer3_quant_62 = alloca i32 1" [bnn.cpp:121]   --->   Operation 69 'alloca' 'layer3_quant_62' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%layer3_quant_63 = alloca i32 1" [bnn.cpp:121]   --->   Operation 70 'alloca' 'layer3_quant_63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%layer3_quant_64 = alloca i32 1" [bnn.cpp:121]   --->   Operation 71 'alloca' 'layer3_quant_64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%layer3_quant_65 = alloca i32 1" [bnn.cpp:121]   --->   Operation 72 'alloca' 'layer3_quant_65' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%layer3_quant_66 = alloca i32 1" [bnn.cpp:121]   --->   Operation 73 'alloca' 'layer3_quant_66' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%layer3_quant_67 = alloca i32 1" [bnn.cpp:121]   --->   Operation 74 'alloca' 'layer3_quant_67' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%layer3_quant_68 = alloca i32 1" [bnn.cpp:121]   --->   Operation 75 'alloca' 'layer3_quant_68' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%layer3_quant_69 = alloca i32 1" [bnn.cpp:121]   --->   Operation 76 'alloca' 'layer3_quant_69' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%layer3_quant_70 = alloca i32 1" [bnn.cpp:121]   --->   Operation 77 'alloca' 'layer3_quant_70' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%layer3_quant_71 = alloca i32 1" [bnn.cpp:121]   --->   Operation 78 'alloca' 'layer3_quant_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%layer3_quant_72 = alloca i32 1" [bnn.cpp:121]   --->   Operation 79 'alloca' 'layer3_quant_72' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%layer3_quant_73 = alloca i32 1" [bnn.cpp:121]   --->   Operation 80 'alloca' 'layer3_quant_73' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%layer3_quant_74 = alloca i32 1" [bnn.cpp:121]   --->   Operation 81 'alloca' 'layer3_quant_74' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%layer3_quant_75 = alloca i32 1" [bnn.cpp:121]   --->   Operation 82 'alloca' 'layer3_quant_75' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%layer3_quant_76 = alloca i32 1" [bnn.cpp:121]   --->   Operation 83 'alloca' 'layer3_quant_76' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%layer3_quant_77 = alloca i32 1" [bnn.cpp:121]   --->   Operation 84 'alloca' 'layer3_quant_77' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%layer3_quant_78 = alloca i32 1" [bnn.cpp:121]   --->   Operation 85 'alloca' 'layer3_quant_78' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%layer3_quant_79 = alloca i32 1" [bnn.cpp:121]   --->   Operation 86 'alloca' 'layer3_quant_79' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%layer3_quant_80 = alloca i32 1" [bnn.cpp:121]   --->   Operation 87 'alloca' 'layer3_quant_80' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%layer3_quant_81 = alloca i32 1" [bnn.cpp:121]   --->   Operation 88 'alloca' 'layer3_quant_81' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%layer3_quant_82 = alloca i32 1" [bnn.cpp:121]   --->   Operation 89 'alloca' 'layer3_quant_82' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%layer3_quant_83 = alloca i32 1" [bnn.cpp:121]   --->   Operation 90 'alloca' 'layer3_quant_83' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%layer3_quant_84 = alloca i32 1" [bnn.cpp:121]   --->   Operation 91 'alloca' 'layer3_quant_84' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%layer3_quant_85 = alloca i32 1" [bnn.cpp:121]   --->   Operation 92 'alloca' 'layer3_quant_85' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%layer3_quant_86 = alloca i32 1" [bnn.cpp:121]   --->   Operation 93 'alloca' 'layer3_quant_86' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%layer3_quant_87 = alloca i32 1" [bnn.cpp:121]   --->   Operation 94 'alloca' 'layer3_quant_87' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%layer3_quant_88 = alloca i32 1" [bnn.cpp:121]   --->   Operation 95 'alloca' 'layer3_quant_88' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%layer3_quant_89 = alloca i32 1" [bnn.cpp:121]   --->   Operation 96 'alloca' 'layer3_quant_89' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%layer3_quant_90 = alloca i32 1" [bnn.cpp:121]   --->   Operation 97 'alloca' 'layer3_quant_90' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%layer3_quant_91 = alloca i32 1" [bnn.cpp:121]   --->   Operation 98 'alloca' 'layer3_quant_91' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%layer3_quant_92 = alloca i32 1" [bnn.cpp:121]   --->   Operation 99 'alloca' 'layer3_quant_92' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%layer3_quant_93 = alloca i32 1" [bnn.cpp:121]   --->   Operation 100 'alloca' 'layer3_quant_93' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%layer3_quant_94 = alloca i32 1" [bnn.cpp:121]   --->   Operation 101 'alloca' 'layer3_quant_94' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%layer3_quant_95 = alloca i32 1" [bnn.cpp:121]   --->   Operation 102 'alloca' 'layer3_quant_95' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%layer3_quant_96 = alloca i32 1" [bnn.cpp:121]   --->   Operation 103 'alloca' 'layer3_quant_96' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%layer3_quant_97 = alloca i32 1" [bnn.cpp:121]   --->   Operation 104 'alloca' 'layer3_quant_97' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%layer3_quant_98 = alloca i32 1" [bnn.cpp:121]   --->   Operation 105 'alloca' 'layer3_quant_98' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%layer3_quant_99 = alloca i32 1" [bnn.cpp:121]   --->   Operation 106 'alloca' 'layer3_quant_99' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%layer3_quant_100 = alloca i32 1" [bnn.cpp:121]   --->   Operation 107 'alloca' 'layer3_quant_100' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%layer3_quant_101 = alloca i32 1" [bnn.cpp:121]   --->   Operation 108 'alloca' 'layer3_quant_101' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%layer3_quant_102 = alloca i32 1" [bnn.cpp:121]   --->   Operation 109 'alloca' 'layer3_quant_102' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%layer3_quant_103 = alloca i32 1" [bnn.cpp:121]   --->   Operation 110 'alloca' 'layer3_quant_103' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%layer3_quant_104 = alloca i32 1" [bnn.cpp:121]   --->   Operation 111 'alloca' 'layer3_quant_104' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%layer3_quant_105 = alloca i32 1" [bnn.cpp:121]   --->   Operation 112 'alloca' 'layer3_quant_105' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%layer3_quant_106 = alloca i32 1" [bnn.cpp:121]   --->   Operation 113 'alloca' 'layer3_quant_106' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%layer3_quant_107 = alloca i32 1" [bnn.cpp:121]   --->   Operation 114 'alloca' 'layer3_quant_107' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%layer3_quant_108 = alloca i32 1" [bnn.cpp:121]   --->   Operation 115 'alloca' 'layer3_quant_108' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%layer3_quant_109 = alloca i32 1" [bnn.cpp:121]   --->   Operation 116 'alloca' 'layer3_quant_109' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%layer3_quant_110 = alloca i32 1" [bnn.cpp:121]   --->   Operation 117 'alloca' 'layer3_quant_110' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%layer3_quant_111 = alloca i32 1" [bnn.cpp:121]   --->   Operation 118 'alloca' 'layer3_quant_111' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%layer3_quant_112 = alloca i32 1" [bnn.cpp:121]   --->   Operation 119 'alloca' 'layer3_quant_112' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%layer3_quant_113 = alloca i32 1" [bnn.cpp:121]   --->   Operation 120 'alloca' 'layer3_quant_113' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%layer3_quant_114 = alloca i32 1" [bnn.cpp:121]   --->   Operation 121 'alloca' 'layer3_quant_114' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%layer3_quant_115 = alloca i32 1" [bnn.cpp:121]   --->   Operation 122 'alloca' 'layer3_quant_115' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%layer3_quant_116 = alloca i32 1" [bnn.cpp:121]   --->   Operation 123 'alloca' 'layer3_quant_116' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%layer3_quant_117 = alloca i32 1" [bnn.cpp:121]   --->   Operation 124 'alloca' 'layer3_quant_117' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%layer3_quant_118 = alloca i32 1" [bnn.cpp:121]   --->   Operation 125 'alloca' 'layer3_quant_118' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%layer3_quant_119 = alloca i32 1" [bnn.cpp:121]   --->   Operation 126 'alloca' 'layer3_quant_119' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (0.00ns)   --->   "%layer3_quant_120 = alloca i32 1" [bnn.cpp:121]   --->   Operation 127 'alloca' 'layer3_quant_120' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%layer3_quant_121 = alloca i32 1" [bnn.cpp:121]   --->   Operation 128 'alloca' 'layer3_quant_121' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 129 [1/1] (0.00ns)   --->   "%layer3_quant_122 = alloca i32 1" [bnn.cpp:121]   --->   Operation 129 'alloca' 'layer3_quant_122' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 130 [1/1] (0.00ns)   --->   "%layer3_quant_123 = alloca i32 1" [bnn.cpp:121]   --->   Operation 130 'alloca' 'layer3_quant_123' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%layer3_quant_124 = alloca i32 1" [bnn.cpp:121]   --->   Operation 131 'alloca' 'layer3_quant_124' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 132 [1/1] (0.00ns)   --->   "%layer3_quant_125 = alloca i32 1" [bnn.cpp:121]   --->   Operation 132 'alloca' 'layer3_quant_125' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 133 [1/1] (0.00ns)   --->   "%layer3_quant_126 = alloca i32 1" [bnn.cpp:121]   --->   Operation 133 'alloca' 'layer3_quant_126' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 134 [1/1] (0.00ns)   --->   "%layer3_quant_127 = alloca i32 1" [bnn.cpp:121]   --->   Operation 134 'alloca' 'layer3_quant_127' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 135 [1/1] (0.00ns)   --->   "%tmp = read i31 @_ssdm_op_Read.ap_auto.i31, i31 %empty"   --->   Operation 135 'read' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 136 [1/1] (1.58ns)   --->   "%store_ln147 = store i8 0, i8 %i" [bnn.cpp:147]   --->   Operation 136 'store' 'store_ln147' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 137 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc71"   --->   Operation 137 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 138 [1/1] (0.00ns)   --->   "%i_3 = load i8 %i" [bnn.cpp:147]   --->   Operation 138 'load' 'i_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 139 [1/1] (0.00ns)   --->   "%zext_ln147 = zext i8 %i_3" [bnn.cpp:147]   --->   Operation 139 'zext' 'zext_ln147' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 140 [1/1] (2.52ns)   --->   "%icmp_ln147 = icmp_eq  i31 %zext_ln147, i31 %tmp" [bnn.cpp:147]   --->   Operation 140 'icmp' 'icmp_ln147' <Predicate = true> <Delay = 2.52> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 141 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 18446744073709551615, i64 0"   --->   Operation 141 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 142 [1/1] (1.91ns)   --->   "%add_ln147 = add i8 %i_3, i8 1" [bnn.cpp:147]   --->   Operation 142 'add' 'add_ln147' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 143 [1/1] (0.00ns)   --->   "%br_ln147 = br i1 %icmp_ln147, void %for.inc71.split, void %for.end73.loopexit.exitStub" [bnn.cpp:147]   --->   Operation 143 'br' 'br_ln147' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 144 [1/1] (0.00ns)   --->   "%trunc_ln147 = trunc i8 %i_3" [bnn.cpp:147]   --->   Operation 144 'trunc' 'trunc_ln147' <Predicate = (!icmp_ln147)> <Delay = 0.00>
+ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%trunc_ln147_1 = trunc i8 %i_3" [bnn.cpp:147]   --->   Operation 145 'trunc' 'trunc_ln147_1' <Predicate = (!icmp_ln147)> <Delay = 0.00>
+ST_1 : Operation 146 [1/1] (0.00ns)   --->   "%lshr_ln4 = partselect i5 @_ssdm_op_PartSelect.i5.i8.i32.i32, i8 %i_3, i32 2, i32 6" [bnn.cpp:121]   --->   Operation 146 'partselect' 'lshr_ln4' <Predicate = (!icmp_ln147)> <Delay = 0.00>
+ST_1 : Operation 147 [1/1] (0.00ns)   --->   "%zext_ln121 = zext i5 %lshr_ln4" [bnn.cpp:121]   --->   Operation 147 'zext' 'zext_ln121' <Predicate = (!icmp_ln147)> <Delay = 0.00>
+ST_1 : Operation 148 [1/1] (0.00ns)   --->   "%layer2_activations_addr = getelementptr i32 %layer2_activations, i64 0, i64 %zext_ln121" [bnn.cpp:150]   --->   Operation 148 'getelementptr' 'layer2_activations_addr' <Predicate = (!icmp_ln147)> <Delay = 0.00>
+ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%layer2_activations_4_addr = getelementptr i32 %layer2_activations_4, i64 0, i64 %zext_ln121" [bnn.cpp:150]   --->   Operation 149 'getelementptr' 'layer2_activations_4_addr' <Predicate = (!icmp_ln147)> <Delay = 0.00>
+ST_1 : Operation 150 [1/1] (0.00ns)   --->   "%layer2_activations_5_addr = getelementptr i32 %layer2_activations_5, i64 0, i64 %zext_ln121" [bnn.cpp:150]   --->   Operation 150 'getelementptr' 'layer2_activations_5_addr' <Predicate = (!icmp_ln147)> <Delay = 0.00>
+ST_1 : Operation 151 [1/1] (0.00ns)   --->   "%layer2_activations_6_addr = getelementptr i32 %layer2_activations_6, i64 0, i64 %zext_ln121" [bnn.cpp:150]   --->   Operation 151 'getelementptr' 'layer2_activations_6_addr' <Predicate = (!icmp_ln147)> <Delay = 0.00>
+ST_1 : Operation 152 [2/2] (3.25ns)   --->   "%layer2_activations_load = load i5 %layer2_activations_addr" [bnn.cpp:150]   --->   Operation 152 'load' 'layer2_activations_load' <Predicate = (!icmp_ln147)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 153 [2/2] (3.25ns)   --->   "%layer2_activations_4_load = load i5 %layer2_activations_4_addr" [bnn.cpp:150]   --->   Operation 153 'load' 'layer2_activations_4_load' <Predicate = (!icmp_ln147)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 154 [2/2] (3.25ns)   --->   "%layer2_activations_5_load = load i5 %layer2_activations_5_addr" [bnn.cpp:150]   --->   Operation 154 'load' 'layer2_activations_5_load' <Predicate = (!icmp_ln147)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 155 [2/2] (3.25ns)   --->   "%layer2_activations_6_load = load i5 %layer2_activations_6_addr" [bnn.cpp:150]   --->   Operation 155 'load' 'layer2_activations_6_load' <Predicate = (!icmp_ln147)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 156 [1/1] (1.87ns)   --->   "%switch_ln150 = switch i7 %trunc_ln147_1, void %arrayidx70.case.127, i7 0, void %arrayidx70.case.0, i7 1, void %arrayidx70.case.1, i7 2, void %arrayidx70.case.2, i7 3, void %arrayidx70.case.3, i7 4, void %arrayidx70.case.4, i7 5, void %arrayidx70.case.5, i7 6, void %arrayidx70.case.6, i7 7, void %arrayidx70.case.7, i7 8, void %arrayidx70.case.8, i7 9, void %arrayidx70.case.9, i7 10, void %arrayidx70.case.10, i7 11, void %arrayidx70.case.11, i7 12, void %arrayidx70.case.12, i7 13, void %arrayidx70.case.13, i7 14, void %arrayidx70.case.14, i7 15, void %arrayidx70.case.15, i7 16, void %arrayidx70.case.16, i7 17, void %arrayidx70.case.17, i7 18, void %arrayidx70.case.18, i7 19, void %arrayidx70.case.19, i7 20, void %arrayidx70.case.20, i7 21, void %arrayidx70.case.21, i7 22, void %arrayidx70.case.22, i7 23, void %arrayidx70.case.23, i7 24, void %arrayidx70.case.24, i7 25, void %arrayidx70.case.25, i7 26, void %arrayidx70.case.26, i7 27, void %arrayidx70.case.27, i7 28, void %arrayidx70.case.28, i7 29, void %arrayidx70.case.29, i7 30, void %arrayidx70.case.30, i7 31, void %arrayidx70.case.31, i7 32, void %arrayidx70.case.32, i7 33, void %arrayidx70.case.33, i7 34, void %arrayidx70.case.34, i7 35, void %arrayidx70.case.35, i7 36, void %arrayidx70.case.36, i7 37, void %arrayidx70.case.37, i7 38, void %arrayidx70.case.38, i7 39, void %arrayidx70.case.39, i7 40, void %arrayidx70.case.40, i7 41, void %arrayidx70.case.41, i7 42, void %arrayidx70.case.42, i7 43, void %arrayidx70.case.43, i7 44, void %arrayidx70.case.44, i7 45, void %arrayidx70.case.45, i7 46, void %arrayidx70.case.46, i7 47, void %arrayidx70.case.47, i7 48, void %arrayidx70.case.48, i7 49, void %arrayidx70.case.49, i7 50, void %arrayidx70.case.50, i7 51, void %arrayidx70.case.51, i7 52, void %arrayidx70.case.52, i7 53, void %arrayidx70.case.53, i7 54, void %arrayidx70.case.54, i7 55, void %arrayidx70.case.55, i7 56, void %arrayidx70.case.56, i7 57, void %arrayidx70.case.57, i7 58, void %arrayidx70.case.58, i7 59, void %arrayidx70.case.59, i7 60, void %arrayidx70.case.60, i7 61, void %arrayidx70.case.61, i7 62, void %arrayidx70.case.62, i7 63, void %arrayidx70.case.63, i7 64, void %arrayidx70.case.64, i7 65, void %arrayidx70.case.65, i7 66, void %arrayidx70.case.66, i7 67, void %arrayidx70.case.67, i7 68, void %arrayidx70.case.68, i7 69, void %arrayidx70.case.69, i7 70, void %arrayidx70.case.70, i7 71, void %arrayidx70.case.71, i7 72, void %arrayidx70.case.72, i7 73, void %arrayidx70.case.73, i7 74, void %arrayidx70.case.74, i7 75, void %arrayidx70.case.75, i7 76, void %arrayidx70.case.76, i7 77, void %arrayidx70.case.77, i7 78, void %arrayidx70.case.78, i7 79, void %arrayidx70.case.79, i7 80, void %arrayidx70.case.80, i7 81, void %arrayidx70.case.81, i7 82, void %arrayidx70.case.82, i7 83, void %arrayidx70.case.83, i7 84, void %arrayidx70.case.84, i7 85, void %arrayidx70.case.85, i7 86, void %arrayidx70.case.86, i7 87, void %arrayidx70.case.87, i7 88, void %arrayidx70.case.88, i7 89, void %arrayidx70.case.89, i7 90, void %arrayidx70.case.90, i7 91, void %arrayidx70.case.91, i7 92, void %arrayidx70.case.92, i7 93, void %arrayidx70.case.93, i7 94, void %arrayidx70.case.94, i7 95, void %arrayidx70.case.95, i7 96, void %arrayidx70.case.96, i7 97, void %arrayidx70.case.97, i7 98, void %arrayidx70.case.98, i7 99, void %arrayidx70.case.99, i7 100, void %arrayidx70.case.100, i7 101, void %arrayidx70.case.101, i7 102, void %arrayidx70.case.102, i7 103, void %arrayidx70.case.103, i7 104, void %arrayidx70.case.104, i7 105, void %arrayidx70.case.105, i7 106, void %arrayidx70.case.106, i7 107, void %arrayidx70.case.107, i7 108, void %arrayidx70.case.108, i7 109, void %arrayidx70.case.109, i7 110, void %arrayidx70.case.110, i7 111, void %arrayidx70.case.111, i7 112, void %arrayidx70.case.112, i7 113, void %arrayidx70.case.113, i7 114, void %arrayidx70.case.114, i7 115, void %arrayidx70.case.115, i7 116, void %arrayidx70.case.116, i7 117, void %arrayidx70.case.117, i7 118, void %arrayidx70.case.118, i7 119, void %arrayidx70.case.119, i7 120, void %arrayidx70.case.120, i7 121, void %arrayidx70.case.121, i7 122, void %arrayidx70.case.122, i7 123, void %arrayidx70.case.123, i7 124, void %arrayidx70.case.124, i7 125, void %arrayidx70.case.125, i7 126, void %for.inc71.split.arrayidx70.exit_crit_edge" [bnn.cpp:150]   --->   Operation 156 'switch' 'switch_ln150' <Predicate = (!icmp_ln147)> <Delay = 1.87>
+ST_1 : Operation 157 [1/1] (1.58ns)   --->   "%store_ln147 = store i8 %add_ln147, i8 %i" [bnn.cpp:147]   --->   Operation 157 'store' 'store_ln147' <Predicate = (!icmp_ln147)> <Delay = 1.58>
+ST_1 : Operation 158 [1/1] (0.00ns)   --->   "%br_ln147 = br void %for.inc71" [bnn.cpp:147]   --->   Operation 158 'br' 'br_ln147' <Predicate = (!icmp_ln147)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 5.08>
+ST_2 : Operation 159 [1/2] ( I:3.25ns O:3.25ns )   --->   "%layer2_activations_load = load i5 %layer2_activations_addr" [bnn.cpp:150]   --->   Operation 159 'load' 'layer2_activations_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 160 [1/2] ( I:3.25ns O:3.25ns )   --->   "%layer2_activations_4_load = load i5 %layer2_activations_4_addr" [bnn.cpp:150]   --->   Operation 160 'load' 'layer2_activations_4_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 161 [1/2] ( I:3.25ns O:3.25ns )   --->   "%layer2_activations_5_load = load i5 %layer2_activations_5_addr" [bnn.cpp:150]   --->   Operation 161 'load' 'layer2_activations_5_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 162 [1/2] ( I:3.25ns O:3.25ns )   --->   "%layer2_activations_6_load = load i5 %layer2_activations_6_addr" [bnn.cpp:150]   --->   Operation 162 'load' 'layer2_activations_6_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 163 [1/1] (1.82ns)   --->   "%x_assign_2 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4i32.i32.i2, i2 0, i32 %layer2_activations_load, i2 1, i32 %layer2_activations_4_load, i2 2, i32 %layer2_activations_5_load, i2 3, i32 %layer2_activations_6_load, i32 0, i2 %trunc_ln147" [bnn.cpp:150]   --->   Operation 163 'sparsemux' 'x_assign_2' <Predicate = true> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 424 [1/1] (0.00ns)   --->   "%layer3_quant_load = load i32 %layer3_quant"   --->   Operation 424 'load' 'layer3_quant_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 425 [1/1] (0.00ns)   --->   "%layer3_quant_1_load = load i32 %layer3_quant_1"   --->   Operation 425 'load' 'layer3_quant_1_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 426 [1/1] (0.00ns)   --->   "%layer3_quant_2_load = load i32 %layer3_quant_2"   --->   Operation 426 'load' 'layer3_quant_2_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 427 [1/1] (0.00ns)   --->   "%layer3_quant_3_load = load i32 %layer3_quant_3"   --->   Operation 427 'load' 'layer3_quant_3_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 428 [1/1] (0.00ns)   --->   "%layer3_quant_4_load = load i32 %layer3_quant_4"   --->   Operation 428 'load' 'layer3_quant_4_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 429 [1/1] (0.00ns)   --->   "%layer3_quant_5_load = load i32 %layer3_quant_5"   --->   Operation 429 'load' 'layer3_quant_5_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 430 [1/1] (0.00ns)   --->   "%layer3_quant_6_load = load i32 %layer3_quant_6"   --->   Operation 430 'load' 'layer3_quant_6_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 431 [1/1] (0.00ns)   --->   "%layer3_quant_7_load = load i32 %layer3_quant_7"   --->   Operation 431 'load' 'layer3_quant_7_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 432 [1/1] (0.00ns)   --->   "%layer3_quant_8_load = load i32 %layer3_quant_8"   --->   Operation 432 'load' 'layer3_quant_8_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 433 [1/1] (0.00ns)   --->   "%layer3_quant_9_load = load i32 %layer3_quant_9"   --->   Operation 433 'load' 'layer3_quant_9_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 434 [1/1] (0.00ns)   --->   "%layer3_quant_10_load = load i32 %layer3_quant_10"   --->   Operation 434 'load' 'layer3_quant_10_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 435 [1/1] (0.00ns)   --->   "%layer3_quant_11_load = load i32 %layer3_quant_11"   --->   Operation 435 'load' 'layer3_quant_11_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 436 [1/1] (0.00ns)   --->   "%layer3_quant_12_load = load i32 %layer3_quant_12"   --->   Operation 436 'load' 'layer3_quant_12_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 437 [1/1] (0.00ns)   --->   "%layer3_quant_13_load = load i32 %layer3_quant_13"   --->   Operation 437 'load' 'layer3_quant_13_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 438 [1/1] (0.00ns)   --->   "%layer3_quant_14_load = load i32 %layer3_quant_14"   --->   Operation 438 'load' 'layer3_quant_14_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 439 [1/1] (0.00ns)   --->   "%layer3_quant_15_load = load i32 %layer3_quant_15"   --->   Operation 439 'load' 'layer3_quant_15_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 440 [1/1] (0.00ns)   --->   "%layer3_quant_16_load = load i32 %layer3_quant_16"   --->   Operation 440 'load' 'layer3_quant_16_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 441 [1/1] (0.00ns)   --->   "%layer3_quant_17_load = load i32 %layer3_quant_17"   --->   Operation 441 'load' 'layer3_quant_17_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 442 [1/1] (0.00ns)   --->   "%layer3_quant_18_load = load i32 %layer3_quant_18"   --->   Operation 442 'load' 'layer3_quant_18_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 443 [1/1] (0.00ns)   --->   "%layer3_quant_19_load = load i32 %layer3_quant_19"   --->   Operation 443 'load' 'layer3_quant_19_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 444 [1/1] (0.00ns)   --->   "%layer3_quant_20_load = load i32 %layer3_quant_20"   --->   Operation 444 'load' 'layer3_quant_20_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 445 [1/1] (0.00ns)   --->   "%layer3_quant_21_load = load i32 %layer3_quant_21"   --->   Operation 445 'load' 'layer3_quant_21_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 446 [1/1] (0.00ns)   --->   "%layer3_quant_22_load = load i32 %layer3_quant_22"   --->   Operation 446 'load' 'layer3_quant_22_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 447 [1/1] (0.00ns)   --->   "%layer3_quant_23_load = load i32 %layer3_quant_23"   --->   Operation 447 'load' 'layer3_quant_23_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 448 [1/1] (0.00ns)   --->   "%layer3_quant_24_load = load i32 %layer3_quant_24"   --->   Operation 448 'load' 'layer3_quant_24_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 449 [1/1] (0.00ns)   --->   "%layer3_quant_25_load = load i32 %layer3_quant_25"   --->   Operation 449 'load' 'layer3_quant_25_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 450 [1/1] (0.00ns)   --->   "%layer3_quant_26_load = load i32 %layer3_quant_26"   --->   Operation 450 'load' 'layer3_quant_26_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 451 [1/1] (0.00ns)   --->   "%layer3_quant_27_load = load i32 %layer3_quant_27"   --->   Operation 451 'load' 'layer3_quant_27_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 452 [1/1] (0.00ns)   --->   "%layer3_quant_28_load = load i32 %layer3_quant_28"   --->   Operation 452 'load' 'layer3_quant_28_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 453 [1/1] (0.00ns)   --->   "%layer3_quant_29_load = load i32 %layer3_quant_29"   --->   Operation 453 'load' 'layer3_quant_29_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 454 [1/1] (0.00ns)   --->   "%layer3_quant_30_load = load i32 %layer3_quant_30"   --->   Operation 454 'load' 'layer3_quant_30_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 455 [1/1] (0.00ns)   --->   "%layer3_quant_31_load = load i32 %layer3_quant_31"   --->   Operation 455 'load' 'layer3_quant_31_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 456 [1/1] (0.00ns)   --->   "%layer3_quant_32_load = load i32 %layer3_quant_32"   --->   Operation 456 'load' 'layer3_quant_32_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 457 [1/1] (0.00ns)   --->   "%layer3_quant_33_load = load i32 %layer3_quant_33"   --->   Operation 457 'load' 'layer3_quant_33_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 458 [1/1] (0.00ns)   --->   "%layer3_quant_34_load = load i32 %layer3_quant_34"   --->   Operation 458 'load' 'layer3_quant_34_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 459 [1/1] (0.00ns)   --->   "%layer3_quant_35_load = load i32 %layer3_quant_35"   --->   Operation 459 'load' 'layer3_quant_35_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 460 [1/1] (0.00ns)   --->   "%layer3_quant_36_load = load i32 %layer3_quant_36"   --->   Operation 460 'load' 'layer3_quant_36_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 461 [1/1] (0.00ns)   --->   "%layer3_quant_37_load = load i32 %layer3_quant_37"   --->   Operation 461 'load' 'layer3_quant_37_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 462 [1/1] (0.00ns)   --->   "%layer3_quant_38_load = load i32 %layer3_quant_38"   --->   Operation 462 'load' 'layer3_quant_38_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 463 [1/1] (0.00ns)   --->   "%layer3_quant_39_load = load i32 %layer3_quant_39"   --->   Operation 463 'load' 'layer3_quant_39_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 464 [1/1] (0.00ns)   --->   "%layer3_quant_40_load = load i32 %layer3_quant_40"   --->   Operation 464 'load' 'layer3_quant_40_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 465 [1/1] (0.00ns)   --->   "%layer3_quant_41_load = load i32 %layer3_quant_41"   --->   Operation 465 'load' 'layer3_quant_41_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 466 [1/1] (0.00ns)   --->   "%layer3_quant_42_load = load i32 %layer3_quant_42"   --->   Operation 466 'load' 'layer3_quant_42_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 467 [1/1] (0.00ns)   --->   "%layer3_quant_43_load = load i32 %layer3_quant_43"   --->   Operation 467 'load' 'layer3_quant_43_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 468 [1/1] (0.00ns)   --->   "%layer3_quant_44_load = load i32 %layer3_quant_44"   --->   Operation 468 'load' 'layer3_quant_44_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 469 [1/1] (0.00ns)   --->   "%layer3_quant_45_load = load i32 %layer3_quant_45"   --->   Operation 469 'load' 'layer3_quant_45_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 470 [1/1] (0.00ns)   --->   "%layer3_quant_46_load = load i32 %layer3_quant_46"   --->   Operation 470 'load' 'layer3_quant_46_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 471 [1/1] (0.00ns)   --->   "%layer3_quant_47_load = load i32 %layer3_quant_47"   --->   Operation 471 'load' 'layer3_quant_47_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 472 [1/1] (0.00ns)   --->   "%layer3_quant_48_load = load i32 %layer3_quant_48"   --->   Operation 472 'load' 'layer3_quant_48_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 473 [1/1] (0.00ns)   --->   "%layer3_quant_49_load = load i32 %layer3_quant_49"   --->   Operation 473 'load' 'layer3_quant_49_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 474 [1/1] (0.00ns)   --->   "%layer3_quant_50_load = load i32 %layer3_quant_50"   --->   Operation 474 'load' 'layer3_quant_50_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 475 [1/1] (0.00ns)   --->   "%layer3_quant_51_load = load i32 %layer3_quant_51"   --->   Operation 475 'load' 'layer3_quant_51_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 476 [1/1] (0.00ns)   --->   "%layer3_quant_52_load = load i32 %layer3_quant_52"   --->   Operation 476 'load' 'layer3_quant_52_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 477 [1/1] (0.00ns)   --->   "%layer3_quant_53_load = load i32 %layer3_quant_53"   --->   Operation 477 'load' 'layer3_quant_53_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 478 [1/1] (0.00ns)   --->   "%layer3_quant_54_load = load i32 %layer3_quant_54"   --->   Operation 478 'load' 'layer3_quant_54_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 479 [1/1] (0.00ns)   --->   "%layer3_quant_55_load = load i32 %layer3_quant_55"   --->   Operation 479 'load' 'layer3_quant_55_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 480 [1/1] (0.00ns)   --->   "%layer3_quant_56_load = load i32 %layer3_quant_56"   --->   Operation 480 'load' 'layer3_quant_56_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 481 [1/1] (0.00ns)   --->   "%layer3_quant_57_load = load i32 %layer3_quant_57"   --->   Operation 481 'load' 'layer3_quant_57_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 482 [1/1] (0.00ns)   --->   "%layer3_quant_58_load = load i32 %layer3_quant_58"   --->   Operation 482 'load' 'layer3_quant_58_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 483 [1/1] (0.00ns)   --->   "%layer3_quant_59_load = load i32 %layer3_quant_59"   --->   Operation 483 'load' 'layer3_quant_59_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 484 [1/1] (0.00ns)   --->   "%layer3_quant_60_load = load i32 %layer3_quant_60"   --->   Operation 484 'load' 'layer3_quant_60_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 485 [1/1] (0.00ns)   --->   "%layer3_quant_61_load = load i32 %layer3_quant_61"   --->   Operation 485 'load' 'layer3_quant_61_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 486 [1/1] (0.00ns)   --->   "%layer3_quant_62_load = load i32 %layer3_quant_62"   --->   Operation 486 'load' 'layer3_quant_62_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 487 [1/1] (0.00ns)   --->   "%layer3_quant_63_load = load i32 %layer3_quant_63"   --->   Operation 487 'load' 'layer3_quant_63_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 488 [1/1] (0.00ns)   --->   "%layer3_quant_64_load = load i32 %layer3_quant_64"   --->   Operation 488 'load' 'layer3_quant_64_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 489 [1/1] (0.00ns)   --->   "%layer3_quant_65_load = load i32 %layer3_quant_65"   --->   Operation 489 'load' 'layer3_quant_65_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 490 [1/1] (0.00ns)   --->   "%layer3_quant_66_load = load i32 %layer3_quant_66"   --->   Operation 490 'load' 'layer3_quant_66_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 491 [1/1] (0.00ns)   --->   "%layer3_quant_67_load = load i32 %layer3_quant_67"   --->   Operation 491 'load' 'layer3_quant_67_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 492 [1/1] (0.00ns)   --->   "%layer3_quant_68_load = load i32 %layer3_quant_68"   --->   Operation 492 'load' 'layer3_quant_68_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 493 [1/1] (0.00ns)   --->   "%layer3_quant_69_load = load i32 %layer3_quant_69"   --->   Operation 493 'load' 'layer3_quant_69_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 494 [1/1] (0.00ns)   --->   "%layer3_quant_70_load = load i32 %layer3_quant_70"   --->   Operation 494 'load' 'layer3_quant_70_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 495 [1/1] (0.00ns)   --->   "%layer3_quant_71_load = load i32 %layer3_quant_71"   --->   Operation 495 'load' 'layer3_quant_71_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 496 [1/1] (0.00ns)   --->   "%layer3_quant_72_load = load i32 %layer3_quant_72"   --->   Operation 496 'load' 'layer3_quant_72_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 497 [1/1] (0.00ns)   --->   "%layer3_quant_73_load = load i32 %layer3_quant_73"   --->   Operation 497 'load' 'layer3_quant_73_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 498 [1/1] (0.00ns)   --->   "%layer3_quant_74_load = load i32 %layer3_quant_74"   --->   Operation 498 'load' 'layer3_quant_74_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 499 [1/1] (0.00ns)   --->   "%layer3_quant_75_load = load i32 %layer3_quant_75"   --->   Operation 499 'load' 'layer3_quant_75_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 500 [1/1] (0.00ns)   --->   "%layer3_quant_76_load = load i32 %layer3_quant_76"   --->   Operation 500 'load' 'layer3_quant_76_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 501 [1/1] (0.00ns)   --->   "%layer3_quant_77_load = load i32 %layer3_quant_77"   --->   Operation 501 'load' 'layer3_quant_77_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 502 [1/1] (0.00ns)   --->   "%layer3_quant_78_load = load i32 %layer3_quant_78"   --->   Operation 502 'load' 'layer3_quant_78_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 503 [1/1] (0.00ns)   --->   "%layer3_quant_79_load = load i32 %layer3_quant_79"   --->   Operation 503 'load' 'layer3_quant_79_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 504 [1/1] (0.00ns)   --->   "%layer3_quant_80_load = load i32 %layer3_quant_80"   --->   Operation 504 'load' 'layer3_quant_80_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 505 [1/1] (0.00ns)   --->   "%layer3_quant_81_load = load i32 %layer3_quant_81"   --->   Operation 505 'load' 'layer3_quant_81_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 506 [1/1] (0.00ns)   --->   "%layer3_quant_82_load = load i32 %layer3_quant_82"   --->   Operation 506 'load' 'layer3_quant_82_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 507 [1/1] (0.00ns)   --->   "%layer3_quant_83_load = load i32 %layer3_quant_83"   --->   Operation 507 'load' 'layer3_quant_83_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 508 [1/1] (0.00ns)   --->   "%layer3_quant_84_load = load i32 %layer3_quant_84"   --->   Operation 508 'load' 'layer3_quant_84_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 509 [1/1] (0.00ns)   --->   "%layer3_quant_85_load = load i32 %layer3_quant_85"   --->   Operation 509 'load' 'layer3_quant_85_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 510 [1/1] (0.00ns)   --->   "%layer3_quant_86_load = load i32 %layer3_quant_86"   --->   Operation 510 'load' 'layer3_quant_86_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 511 [1/1] (0.00ns)   --->   "%layer3_quant_87_load = load i32 %layer3_quant_87"   --->   Operation 511 'load' 'layer3_quant_87_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 512 [1/1] (0.00ns)   --->   "%layer3_quant_88_load = load i32 %layer3_quant_88"   --->   Operation 512 'load' 'layer3_quant_88_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 513 [1/1] (0.00ns)   --->   "%layer3_quant_89_load = load i32 %layer3_quant_89"   --->   Operation 513 'load' 'layer3_quant_89_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 514 [1/1] (0.00ns)   --->   "%layer3_quant_90_load = load i32 %layer3_quant_90"   --->   Operation 514 'load' 'layer3_quant_90_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 515 [1/1] (0.00ns)   --->   "%layer3_quant_91_load = load i32 %layer3_quant_91"   --->   Operation 515 'load' 'layer3_quant_91_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 516 [1/1] (0.00ns)   --->   "%layer3_quant_92_load = load i32 %layer3_quant_92"   --->   Operation 516 'load' 'layer3_quant_92_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 517 [1/1] (0.00ns)   --->   "%layer3_quant_93_load = load i32 %layer3_quant_93"   --->   Operation 517 'load' 'layer3_quant_93_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 518 [1/1] (0.00ns)   --->   "%layer3_quant_94_load = load i32 %layer3_quant_94"   --->   Operation 518 'load' 'layer3_quant_94_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 519 [1/1] (0.00ns)   --->   "%layer3_quant_95_load = load i32 %layer3_quant_95"   --->   Operation 519 'load' 'layer3_quant_95_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 520 [1/1] (0.00ns)   --->   "%layer3_quant_96_load = load i32 %layer3_quant_96"   --->   Operation 520 'load' 'layer3_quant_96_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 521 [1/1] (0.00ns)   --->   "%layer3_quant_97_load = load i32 %layer3_quant_97"   --->   Operation 521 'load' 'layer3_quant_97_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 522 [1/1] (0.00ns)   --->   "%layer3_quant_98_load = load i32 %layer3_quant_98"   --->   Operation 522 'load' 'layer3_quant_98_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 523 [1/1] (0.00ns)   --->   "%layer3_quant_99_load = load i32 %layer3_quant_99"   --->   Operation 523 'load' 'layer3_quant_99_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 524 [1/1] (0.00ns)   --->   "%layer3_quant_100_load = load i32 %layer3_quant_100"   --->   Operation 524 'load' 'layer3_quant_100_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 525 [1/1] (0.00ns)   --->   "%layer3_quant_101_load = load i32 %layer3_quant_101"   --->   Operation 525 'load' 'layer3_quant_101_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 526 [1/1] (0.00ns)   --->   "%layer3_quant_102_load = load i32 %layer3_quant_102"   --->   Operation 526 'load' 'layer3_quant_102_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 527 [1/1] (0.00ns)   --->   "%layer3_quant_103_load = load i32 %layer3_quant_103"   --->   Operation 527 'load' 'layer3_quant_103_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 528 [1/1] (0.00ns)   --->   "%layer3_quant_104_load = load i32 %layer3_quant_104"   --->   Operation 528 'load' 'layer3_quant_104_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 529 [1/1] (0.00ns)   --->   "%layer3_quant_105_load = load i32 %layer3_quant_105"   --->   Operation 529 'load' 'layer3_quant_105_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 530 [1/1] (0.00ns)   --->   "%layer3_quant_106_load = load i32 %layer3_quant_106"   --->   Operation 530 'load' 'layer3_quant_106_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 531 [1/1] (0.00ns)   --->   "%layer3_quant_107_load = load i32 %layer3_quant_107"   --->   Operation 531 'load' 'layer3_quant_107_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 532 [1/1] (0.00ns)   --->   "%layer3_quant_108_load = load i32 %layer3_quant_108"   --->   Operation 532 'load' 'layer3_quant_108_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 533 [1/1] (0.00ns)   --->   "%layer3_quant_109_load = load i32 %layer3_quant_109"   --->   Operation 533 'load' 'layer3_quant_109_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 534 [1/1] (0.00ns)   --->   "%layer3_quant_110_load = load i32 %layer3_quant_110"   --->   Operation 534 'load' 'layer3_quant_110_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 535 [1/1] (0.00ns)   --->   "%layer3_quant_111_load = load i32 %layer3_quant_111"   --->   Operation 535 'load' 'layer3_quant_111_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 536 [1/1] (0.00ns)   --->   "%layer3_quant_112_load = load i32 %layer3_quant_112"   --->   Operation 536 'load' 'layer3_quant_112_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 537 [1/1] (0.00ns)   --->   "%layer3_quant_113_load = load i32 %layer3_quant_113"   --->   Operation 537 'load' 'layer3_quant_113_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 538 [1/1] (0.00ns)   --->   "%layer3_quant_114_load = load i32 %layer3_quant_114"   --->   Operation 538 'load' 'layer3_quant_114_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 539 [1/1] (0.00ns)   --->   "%layer3_quant_115_load = load i32 %layer3_quant_115"   --->   Operation 539 'load' 'layer3_quant_115_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 540 [1/1] (0.00ns)   --->   "%layer3_quant_116_load = load i32 %layer3_quant_116"   --->   Operation 540 'load' 'layer3_quant_116_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 541 [1/1] (0.00ns)   --->   "%layer3_quant_117_load = load i32 %layer3_quant_117"   --->   Operation 541 'load' 'layer3_quant_117_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 542 [1/1] (0.00ns)   --->   "%layer3_quant_118_load = load i32 %layer3_quant_118"   --->   Operation 542 'load' 'layer3_quant_118_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 543 [1/1] (0.00ns)   --->   "%layer3_quant_119_load = load i32 %layer3_quant_119"   --->   Operation 543 'load' 'layer3_quant_119_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 544 [1/1] (0.00ns)   --->   "%layer3_quant_120_load = load i32 %layer3_quant_120"   --->   Operation 544 'load' 'layer3_quant_120_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 545 [1/1] (0.00ns)   --->   "%layer3_quant_121_load = load i32 %layer3_quant_121"   --->   Operation 545 'load' 'layer3_quant_121_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 546 [1/1] (0.00ns)   --->   "%layer3_quant_122_load = load i32 %layer3_quant_122"   --->   Operation 546 'load' 'layer3_quant_122_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 547 [1/1] (0.00ns)   --->   "%layer3_quant_123_load = load i32 %layer3_quant_123"   --->   Operation 547 'load' 'layer3_quant_123_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 548 [1/1] (0.00ns)   --->   "%layer3_quant_124_load = load i32 %layer3_quant_124"   --->   Operation 548 'load' 'layer3_quant_124_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 549 [1/1] (0.00ns)   --->   "%layer3_quant_125_load = load i32 %layer3_quant_125"   --->   Operation 549 'load' 'layer3_quant_125_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 550 [1/1] (0.00ns)   --->   "%layer3_quant_126_load = load i32 %layer3_quant_126"   --->   Operation 550 'load' 'layer3_quant_126_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 551 [1/1] (0.00ns)   --->   "%layer3_quant_127_load = load i32 %layer3_quant_127"   --->   Operation 551 'load' 'layer3_quant_127_load' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 552 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_127_out, i32 %layer3_quant_127_load"   --->   Operation 552 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 553 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_126_out, i32 %layer3_quant_126_load"   --->   Operation 553 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 554 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_125_out, i32 %layer3_quant_125_load"   --->   Operation 554 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 555 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_124_out, i32 %layer3_quant_124_load"   --->   Operation 555 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 556 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_123_out, i32 %layer3_quant_123_load"   --->   Operation 556 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 557 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_122_out, i32 %layer3_quant_122_load"   --->   Operation 557 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 558 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_121_out, i32 %layer3_quant_121_load"   --->   Operation 558 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 559 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_120_out, i32 %layer3_quant_120_load"   --->   Operation 559 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 560 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_119_out, i32 %layer3_quant_119_load"   --->   Operation 560 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 561 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_118_out, i32 %layer3_quant_118_load"   --->   Operation 561 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 562 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_117_out, i32 %layer3_quant_117_load"   --->   Operation 562 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 563 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_116_out, i32 %layer3_quant_116_load"   --->   Operation 563 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 564 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_115_out, i32 %layer3_quant_115_load"   --->   Operation 564 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 565 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_114_out, i32 %layer3_quant_114_load"   --->   Operation 565 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 566 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_113_out, i32 %layer3_quant_113_load"   --->   Operation 566 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 567 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_112_out, i32 %layer3_quant_112_load"   --->   Operation 567 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 568 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_111_out, i32 %layer3_quant_111_load"   --->   Operation 568 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 569 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_110_out, i32 %layer3_quant_110_load"   --->   Operation 569 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 570 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_109_out, i32 %layer3_quant_109_load"   --->   Operation 570 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 571 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_108_out, i32 %layer3_quant_108_load"   --->   Operation 571 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 572 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_107_out, i32 %layer3_quant_107_load"   --->   Operation 572 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 573 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_106_out, i32 %layer3_quant_106_load"   --->   Operation 573 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 574 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_105_out, i32 %layer3_quant_105_load"   --->   Operation 574 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 575 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_104_out, i32 %layer3_quant_104_load"   --->   Operation 575 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 576 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_103_out, i32 %layer3_quant_103_load"   --->   Operation 576 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 577 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_102_out, i32 %layer3_quant_102_load"   --->   Operation 577 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 578 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_101_out, i32 %layer3_quant_101_load"   --->   Operation 578 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 579 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_100_out, i32 %layer3_quant_100_load"   --->   Operation 579 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 580 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_99_out, i32 %layer3_quant_99_load"   --->   Operation 580 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 581 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_98_out, i32 %layer3_quant_98_load"   --->   Operation 581 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 582 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_97_out, i32 %layer3_quant_97_load"   --->   Operation 582 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 583 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_96_out, i32 %layer3_quant_96_load"   --->   Operation 583 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 584 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_95_out, i32 %layer3_quant_95_load"   --->   Operation 584 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 585 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_94_out, i32 %layer3_quant_94_load"   --->   Operation 585 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 586 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_93_out, i32 %layer3_quant_93_load"   --->   Operation 586 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 587 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_92_out, i32 %layer3_quant_92_load"   --->   Operation 587 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 588 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_91_out, i32 %layer3_quant_91_load"   --->   Operation 588 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 589 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_90_out, i32 %layer3_quant_90_load"   --->   Operation 589 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 590 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_89_out, i32 %layer3_quant_89_load"   --->   Operation 590 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 591 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_88_out, i32 %layer3_quant_88_load"   --->   Operation 591 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 592 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_87_out, i32 %layer3_quant_87_load"   --->   Operation 592 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 593 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_86_out, i32 %layer3_quant_86_load"   --->   Operation 593 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 594 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_85_out, i32 %layer3_quant_85_load"   --->   Operation 594 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 595 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_84_out, i32 %layer3_quant_84_load"   --->   Operation 595 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 596 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_83_out, i32 %layer3_quant_83_load"   --->   Operation 596 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 597 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_82_out, i32 %layer3_quant_82_load"   --->   Operation 597 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 598 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_81_out, i32 %layer3_quant_81_load"   --->   Operation 598 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 599 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_80_out, i32 %layer3_quant_80_load"   --->   Operation 599 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 600 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_79_out, i32 %layer3_quant_79_load"   --->   Operation 600 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 601 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_78_out, i32 %layer3_quant_78_load"   --->   Operation 601 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 602 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_77_out, i32 %layer3_quant_77_load"   --->   Operation 602 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 603 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_76_out, i32 %layer3_quant_76_load"   --->   Operation 603 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 604 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_75_out, i32 %layer3_quant_75_load"   --->   Operation 604 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 605 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_74_out, i32 %layer3_quant_74_load"   --->   Operation 605 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 606 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_73_out, i32 %layer3_quant_73_load"   --->   Operation 606 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 607 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_72_out, i32 %layer3_quant_72_load"   --->   Operation 607 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 608 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_71_out, i32 %layer3_quant_71_load"   --->   Operation 608 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 609 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_70_out, i32 %layer3_quant_70_load"   --->   Operation 609 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 610 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_69_out, i32 %layer3_quant_69_load"   --->   Operation 610 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 611 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_68_out, i32 %layer3_quant_68_load"   --->   Operation 611 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 612 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_67_out, i32 %layer3_quant_67_load"   --->   Operation 612 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 613 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_66_out, i32 %layer3_quant_66_load"   --->   Operation 613 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 614 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_65_out, i32 %layer3_quant_65_load"   --->   Operation 614 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 615 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_64_out, i32 %layer3_quant_64_load"   --->   Operation 615 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 616 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_63_out, i32 %layer3_quant_63_load"   --->   Operation 616 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 617 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_62_out, i32 %layer3_quant_62_load"   --->   Operation 617 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 618 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_61_out, i32 %layer3_quant_61_load"   --->   Operation 618 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 619 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_60_out, i32 %layer3_quant_60_load"   --->   Operation 619 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 620 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_59_out, i32 %layer3_quant_59_load"   --->   Operation 620 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 621 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_58_out, i32 %layer3_quant_58_load"   --->   Operation 621 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 622 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_57_out, i32 %layer3_quant_57_load"   --->   Operation 622 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 623 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_56_out, i32 %layer3_quant_56_load"   --->   Operation 623 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 624 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_55_out, i32 %layer3_quant_55_load"   --->   Operation 624 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 625 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_54_out, i32 %layer3_quant_54_load"   --->   Operation 625 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 626 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_53_out, i32 %layer3_quant_53_load"   --->   Operation 626 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 627 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_52_out, i32 %layer3_quant_52_load"   --->   Operation 627 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 628 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_51_out, i32 %layer3_quant_51_load"   --->   Operation 628 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 629 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_50_out, i32 %layer3_quant_50_load"   --->   Operation 629 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 630 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_49_out, i32 %layer3_quant_49_load"   --->   Operation 630 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 631 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_48_out, i32 %layer3_quant_48_load"   --->   Operation 631 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 632 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_47_out, i32 %layer3_quant_47_load"   --->   Operation 632 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 633 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_46_out, i32 %layer3_quant_46_load"   --->   Operation 633 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 634 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_45_out, i32 %layer3_quant_45_load"   --->   Operation 634 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 635 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_44_out, i32 %layer3_quant_44_load"   --->   Operation 635 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 636 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_43_out, i32 %layer3_quant_43_load"   --->   Operation 636 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 637 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_42_out, i32 %layer3_quant_42_load"   --->   Operation 637 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 638 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_41_out, i32 %layer3_quant_41_load"   --->   Operation 638 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 639 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_40_out, i32 %layer3_quant_40_load"   --->   Operation 639 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 640 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_39_out, i32 %layer3_quant_39_load"   --->   Operation 640 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 641 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_38_out, i32 %layer3_quant_38_load"   --->   Operation 641 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 642 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_37_out, i32 %layer3_quant_37_load"   --->   Operation 642 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 643 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_36_out, i32 %layer3_quant_36_load"   --->   Operation 643 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 644 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_35_out, i32 %layer3_quant_35_load"   --->   Operation 644 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 645 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_34_out, i32 %layer3_quant_34_load"   --->   Operation 645 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 646 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_33_out, i32 %layer3_quant_33_load"   --->   Operation 646 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 647 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_32_out, i32 %layer3_quant_32_load"   --->   Operation 647 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 648 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_31_out, i32 %layer3_quant_31_load"   --->   Operation 648 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 649 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_30_out, i32 %layer3_quant_30_load"   --->   Operation 649 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 650 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_29_out, i32 %layer3_quant_29_load"   --->   Operation 650 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 651 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_28_out, i32 %layer3_quant_28_load"   --->   Operation 651 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 652 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_27_out, i32 %layer3_quant_27_load"   --->   Operation 652 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 653 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_26_out, i32 %layer3_quant_26_load"   --->   Operation 653 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 654 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_25_out, i32 %layer3_quant_25_load"   --->   Operation 654 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 655 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_24_out, i32 %layer3_quant_24_load"   --->   Operation 655 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 656 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_23_out, i32 %layer3_quant_23_load"   --->   Operation 656 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 657 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_22_out, i32 %layer3_quant_22_load"   --->   Operation 657 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 658 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_21_out, i32 %layer3_quant_21_load"   --->   Operation 658 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 659 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_20_out, i32 %layer3_quant_20_load"   --->   Operation 659 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 660 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_19_out, i32 %layer3_quant_19_load"   --->   Operation 660 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 661 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_18_out, i32 %layer3_quant_18_load"   --->   Operation 661 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 662 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_17_out, i32 %layer3_quant_17_load"   --->   Operation 662 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 663 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_16_out, i32 %layer3_quant_16_load"   --->   Operation 663 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 664 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_15_out, i32 %layer3_quant_15_load"   --->   Operation 664 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 665 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_14_out, i32 %layer3_quant_14_load"   --->   Operation 665 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 666 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_13_out, i32 %layer3_quant_13_load"   --->   Operation 666 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 667 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_12_out, i32 %layer3_quant_12_load"   --->   Operation 667 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 668 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_11_out, i32 %layer3_quant_11_load"   --->   Operation 668 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 669 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_10_out, i32 %layer3_quant_10_load"   --->   Operation 669 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 670 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_9_out, i32 %layer3_quant_9_load"   --->   Operation 670 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 671 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_8_out, i32 %layer3_quant_8_load"   --->   Operation 671 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 672 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_7_out, i32 %layer3_quant_7_load"   --->   Operation 672 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 673 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_6_out, i32 %layer3_quant_6_load"   --->   Operation 673 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 674 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_5_out, i32 %layer3_quant_5_load"   --->   Operation 674 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 675 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_4_out, i32 %layer3_quant_4_load"   --->   Operation 675 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 676 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_3_out, i32 %layer3_quant_3_load"   --->   Operation 676 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 677 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_2_out, i32 %layer3_quant_2_load"   --->   Operation 677 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 678 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_1_out, i32 %layer3_quant_1_load"   --->   Operation 678 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 679 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %layer3_quant_out, i32 %layer3_quant_load"   --->   Operation 679 'write' 'write_ln0' <Predicate = (icmp_ln147)> <Delay = 0.00>
+ST_2 : Operation 680 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 680 'ret' 'ret_ln0' <Predicate = (icmp_ln147)> <Delay = 1.58>
+
+State 3 <SV = 2> <Delay = 2.55>
+ST_3 : Operation 164 [1/1] (0.00ns)   --->   "%specpipeline_ln149 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_29" [bnn.cpp:149]   --->   Operation 164 'specpipeline' 'specpipeline_ln149' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 165 [1/1] (0.00ns)   --->   "%specloopname_ln147 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24" [bnn.cpp:147]   --->   Operation 165 'specloopname' 'specloopname_ln147' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 166 [1/1] (2.55ns)   --->   "%layer3_quant_128 = icmp_slt  i32 %x_assign_2, i32 1" [bnn.cpp:32->bnn.cpp:150]   --->   Operation 166 'icmp' 'layer3_quant_128' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 167 [1/1] (0.00ns)   --->   "%zext_ln150 = zext i1 %layer3_quant_128" [bnn.cpp:150]   --->   Operation 167 'zext' 'zext_ln150' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 168 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_126" [bnn.cpp:121]   --->   Operation 168 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 126)> <Delay = 0.00>
+ST_3 : Operation 169 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 169 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 126)> <Delay = 0.00>
+ST_3 : Operation 170 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_125" [bnn.cpp:121]   --->   Operation 170 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 125)> <Delay = 0.00>
+ST_3 : Operation 171 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 171 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 125)> <Delay = 0.00>
+ST_3 : Operation 172 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_124" [bnn.cpp:121]   --->   Operation 172 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 124)> <Delay = 0.00>
+ST_3 : Operation 173 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 173 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 124)> <Delay = 0.00>
+ST_3 : Operation 174 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_123" [bnn.cpp:121]   --->   Operation 174 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 123)> <Delay = 0.00>
+ST_3 : Operation 175 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 175 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 123)> <Delay = 0.00>
+ST_3 : Operation 176 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_122" [bnn.cpp:121]   --->   Operation 176 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 122)> <Delay = 0.00>
+ST_3 : Operation 177 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 177 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 122)> <Delay = 0.00>
+ST_3 : Operation 178 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_121" [bnn.cpp:121]   --->   Operation 178 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 121)> <Delay = 0.00>
+ST_3 : Operation 179 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 179 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 121)> <Delay = 0.00>
+ST_3 : Operation 180 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_120" [bnn.cpp:121]   --->   Operation 180 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 120)> <Delay = 0.00>
+ST_3 : Operation 181 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 181 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 120)> <Delay = 0.00>
+ST_3 : Operation 182 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_119" [bnn.cpp:121]   --->   Operation 182 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 119)> <Delay = 0.00>
+ST_3 : Operation 183 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 183 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 119)> <Delay = 0.00>
+ST_3 : Operation 184 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_118" [bnn.cpp:121]   --->   Operation 184 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 118)> <Delay = 0.00>
+ST_3 : Operation 185 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 185 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 118)> <Delay = 0.00>
+ST_3 : Operation 186 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_117" [bnn.cpp:121]   --->   Operation 186 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 117)> <Delay = 0.00>
+ST_3 : Operation 187 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 187 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 117)> <Delay = 0.00>
+ST_3 : Operation 188 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_116" [bnn.cpp:121]   --->   Operation 188 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 116)> <Delay = 0.00>
+ST_3 : Operation 189 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 189 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 116)> <Delay = 0.00>
+ST_3 : Operation 190 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_115" [bnn.cpp:121]   --->   Operation 190 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 115)> <Delay = 0.00>
+ST_3 : Operation 191 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 191 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 115)> <Delay = 0.00>
+ST_3 : Operation 192 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_114" [bnn.cpp:121]   --->   Operation 192 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 114)> <Delay = 0.00>
+ST_3 : Operation 193 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 193 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 114)> <Delay = 0.00>
+ST_3 : Operation 194 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_113" [bnn.cpp:121]   --->   Operation 194 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 113)> <Delay = 0.00>
+ST_3 : Operation 195 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 195 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 113)> <Delay = 0.00>
+ST_3 : Operation 196 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_112" [bnn.cpp:121]   --->   Operation 196 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 112)> <Delay = 0.00>
+ST_3 : Operation 197 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 197 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 112)> <Delay = 0.00>
+ST_3 : Operation 198 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_111" [bnn.cpp:121]   --->   Operation 198 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 111)> <Delay = 0.00>
+ST_3 : Operation 199 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 199 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 111)> <Delay = 0.00>
+ST_3 : Operation 200 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_110" [bnn.cpp:121]   --->   Operation 200 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 110)> <Delay = 0.00>
+ST_3 : Operation 201 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 201 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 110)> <Delay = 0.00>
+ST_3 : Operation 202 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_109" [bnn.cpp:121]   --->   Operation 202 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 109)> <Delay = 0.00>
+ST_3 : Operation 203 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 203 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 109)> <Delay = 0.00>
+ST_3 : Operation 204 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_108" [bnn.cpp:121]   --->   Operation 204 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 108)> <Delay = 0.00>
+ST_3 : Operation 205 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 205 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 108)> <Delay = 0.00>
+ST_3 : Operation 206 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_107" [bnn.cpp:121]   --->   Operation 206 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 107)> <Delay = 0.00>
+ST_3 : Operation 207 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 207 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 107)> <Delay = 0.00>
+ST_3 : Operation 208 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_106" [bnn.cpp:121]   --->   Operation 208 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 106)> <Delay = 0.00>
+ST_3 : Operation 209 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 209 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 106)> <Delay = 0.00>
+ST_3 : Operation 210 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_105" [bnn.cpp:121]   --->   Operation 210 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 105)> <Delay = 0.00>
+ST_3 : Operation 211 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 211 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 105)> <Delay = 0.00>
+ST_3 : Operation 212 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_104" [bnn.cpp:121]   --->   Operation 212 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 104)> <Delay = 0.00>
+ST_3 : Operation 213 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 213 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 104)> <Delay = 0.00>
+ST_3 : Operation 214 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_103" [bnn.cpp:121]   --->   Operation 214 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 103)> <Delay = 0.00>
+ST_3 : Operation 215 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 215 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 103)> <Delay = 0.00>
+ST_3 : Operation 216 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_102" [bnn.cpp:121]   --->   Operation 216 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 102)> <Delay = 0.00>
+ST_3 : Operation 217 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 217 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 102)> <Delay = 0.00>
+ST_3 : Operation 218 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_101" [bnn.cpp:121]   --->   Operation 218 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 101)> <Delay = 0.00>
+ST_3 : Operation 219 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 219 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 101)> <Delay = 0.00>
+ST_3 : Operation 220 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_100" [bnn.cpp:121]   --->   Operation 220 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 100)> <Delay = 0.00>
+ST_3 : Operation 221 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 221 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 100)> <Delay = 0.00>
+ST_3 : Operation 222 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_99" [bnn.cpp:121]   --->   Operation 222 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 99)> <Delay = 0.00>
+ST_3 : Operation 223 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 223 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 99)> <Delay = 0.00>
+ST_3 : Operation 224 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_98" [bnn.cpp:121]   --->   Operation 224 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 98)> <Delay = 0.00>
+ST_3 : Operation 225 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 225 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 98)> <Delay = 0.00>
+ST_3 : Operation 226 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_97" [bnn.cpp:121]   --->   Operation 226 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 97)> <Delay = 0.00>
+ST_3 : Operation 227 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 227 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 97)> <Delay = 0.00>
+ST_3 : Operation 228 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_96" [bnn.cpp:121]   --->   Operation 228 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 96)> <Delay = 0.00>
+ST_3 : Operation 229 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 229 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 96)> <Delay = 0.00>
+ST_3 : Operation 230 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_95" [bnn.cpp:121]   --->   Operation 230 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 95)> <Delay = 0.00>
+ST_3 : Operation 231 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 231 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 95)> <Delay = 0.00>
+ST_3 : Operation 232 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_94" [bnn.cpp:121]   --->   Operation 232 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 94)> <Delay = 0.00>
+ST_3 : Operation 233 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 233 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 94)> <Delay = 0.00>
+ST_3 : Operation 234 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_93" [bnn.cpp:121]   --->   Operation 234 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 93)> <Delay = 0.00>
+ST_3 : Operation 235 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 235 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 93)> <Delay = 0.00>
+ST_3 : Operation 236 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_92" [bnn.cpp:121]   --->   Operation 236 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 92)> <Delay = 0.00>
+ST_3 : Operation 237 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 237 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 92)> <Delay = 0.00>
+ST_3 : Operation 238 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_91" [bnn.cpp:121]   --->   Operation 238 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 91)> <Delay = 0.00>
+ST_3 : Operation 239 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 239 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 91)> <Delay = 0.00>
+ST_3 : Operation 240 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_90" [bnn.cpp:121]   --->   Operation 240 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 90)> <Delay = 0.00>
+ST_3 : Operation 241 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 241 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 90)> <Delay = 0.00>
+ST_3 : Operation 242 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_89" [bnn.cpp:121]   --->   Operation 242 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 89)> <Delay = 0.00>
+ST_3 : Operation 243 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 243 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 89)> <Delay = 0.00>
+ST_3 : Operation 244 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_88" [bnn.cpp:121]   --->   Operation 244 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 88)> <Delay = 0.00>
+ST_3 : Operation 245 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 245 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 88)> <Delay = 0.00>
+ST_3 : Operation 246 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_87" [bnn.cpp:121]   --->   Operation 246 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 87)> <Delay = 0.00>
+ST_3 : Operation 247 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 247 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 87)> <Delay = 0.00>
+ST_3 : Operation 248 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_86" [bnn.cpp:121]   --->   Operation 248 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 86)> <Delay = 0.00>
+ST_3 : Operation 249 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 249 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 86)> <Delay = 0.00>
+ST_3 : Operation 250 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_85" [bnn.cpp:121]   --->   Operation 250 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 85)> <Delay = 0.00>
+ST_3 : Operation 251 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 251 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 85)> <Delay = 0.00>
+ST_3 : Operation 252 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_84" [bnn.cpp:121]   --->   Operation 252 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 84)> <Delay = 0.00>
+ST_3 : Operation 253 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 253 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 84)> <Delay = 0.00>
+ST_3 : Operation 254 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_83" [bnn.cpp:121]   --->   Operation 254 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 83)> <Delay = 0.00>
+ST_3 : Operation 255 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 255 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 83)> <Delay = 0.00>
+ST_3 : Operation 256 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_82" [bnn.cpp:121]   --->   Operation 256 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 82)> <Delay = 0.00>
+ST_3 : Operation 257 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 257 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 82)> <Delay = 0.00>
+ST_3 : Operation 258 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_81" [bnn.cpp:121]   --->   Operation 258 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 81)> <Delay = 0.00>
+ST_3 : Operation 259 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 259 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 81)> <Delay = 0.00>
+ST_3 : Operation 260 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_80" [bnn.cpp:121]   --->   Operation 260 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 80)> <Delay = 0.00>
+ST_3 : Operation 261 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 261 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 80)> <Delay = 0.00>
+ST_3 : Operation 262 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_79" [bnn.cpp:121]   --->   Operation 262 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 79)> <Delay = 0.00>
+ST_3 : Operation 263 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 263 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 79)> <Delay = 0.00>
+ST_3 : Operation 264 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_78" [bnn.cpp:121]   --->   Operation 264 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 78)> <Delay = 0.00>
+ST_3 : Operation 265 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 265 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 78)> <Delay = 0.00>
+ST_3 : Operation 266 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_77" [bnn.cpp:121]   --->   Operation 266 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 77)> <Delay = 0.00>
+ST_3 : Operation 267 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 267 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 77)> <Delay = 0.00>
+ST_3 : Operation 268 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_76" [bnn.cpp:121]   --->   Operation 268 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 76)> <Delay = 0.00>
+ST_3 : Operation 269 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 269 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 76)> <Delay = 0.00>
+ST_3 : Operation 270 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_75" [bnn.cpp:121]   --->   Operation 270 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 75)> <Delay = 0.00>
+ST_3 : Operation 271 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 271 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 75)> <Delay = 0.00>
+ST_3 : Operation 272 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_74" [bnn.cpp:121]   --->   Operation 272 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 74)> <Delay = 0.00>
+ST_3 : Operation 273 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 273 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 74)> <Delay = 0.00>
+ST_3 : Operation 274 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_73" [bnn.cpp:121]   --->   Operation 274 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 73)> <Delay = 0.00>
+ST_3 : Operation 275 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 275 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 73)> <Delay = 0.00>
+ST_3 : Operation 276 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_72" [bnn.cpp:121]   --->   Operation 276 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 72)> <Delay = 0.00>
+ST_3 : Operation 277 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 277 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 72)> <Delay = 0.00>
+ST_3 : Operation 278 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_71" [bnn.cpp:121]   --->   Operation 278 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 71)> <Delay = 0.00>
+ST_3 : Operation 279 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 279 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 71)> <Delay = 0.00>
+ST_3 : Operation 280 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_70" [bnn.cpp:121]   --->   Operation 280 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 70)> <Delay = 0.00>
+ST_3 : Operation 281 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 281 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 70)> <Delay = 0.00>
+ST_3 : Operation 282 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_69" [bnn.cpp:121]   --->   Operation 282 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 69)> <Delay = 0.00>
+ST_3 : Operation 283 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 283 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 69)> <Delay = 0.00>
+ST_3 : Operation 284 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_68" [bnn.cpp:121]   --->   Operation 284 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 68)> <Delay = 0.00>
+ST_3 : Operation 285 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 285 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 68)> <Delay = 0.00>
+ST_3 : Operation 286 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_67" [bnn.cpp:121]   --->   Operation 286 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 67)> <Delay = 0.00>
+ST_3 : Operation 287 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 287 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 67)> <Delay = 0.00>
+ST_3 : Operation 288 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_66" [bnn.cpp:121]   --->   Operation 288 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 66)> <Delay = 0.00>
+ST_3 : Operation 289 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 289 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 66)> <Delay = 0.00>
+ST_3 : Operation 290 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_65" [bnn.cpp:121]   --->   Operation 290 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 65)> <Delay = 0.00>
+ST_3 : Operation 291 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 291 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 65)> <Delay = 0.00>
+ST_3 : Operation 292 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_64" [bnn.cpp:121]   --->   Operation 292 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 64)> <Delay = 0.00>
+ST_3 : Operation 293 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 293 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 64)> <Delay = 0.00>
+ST_3 : Operation 294 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_63" [bnn.cpp:121]   --->   Operation 294 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 63)> <Delay = 0.00>
+ST_3 : Operation 295 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 295 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 63)> <Delay = 0.00>
+ST_3 : Operation 296 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_62" [bnn.cpp:121]   --->   Operation 296 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 62)> <Delay = 0.00>
+ST_3 : Operation 297 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 297 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 62)> <Delay = 0.00>
+ST_3 : Operation 298 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_61" [bnn.cpp:121]   --->   Operation 298 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 61)> <Delay = 0.00>
+ST_3 : Operation 299 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 299 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 61)> <Delay = 0.00>
+ST_3 : Operation 300 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_60" [bnn.cpp:121]   --->   Operation 300 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 60)> <Delay = 0.00>
+ST_3 : Operation 301 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 301 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 60)> <Delay = 0.00>
+ST_3 : Operation 302 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_59" [bnn.cpp:121]   --->   Operation 302 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 59)> <Delay = 0.00>
+ST_3 : Operation 303 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 303 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 59)> <Delay = 0.00>
+ST_3 : Operation 304 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_58" [bnn.cpp:121]   --->   Operation 304 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 58)> <Delay = 0.00>
+ST_3 : Operation 305 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 305 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 58)> <Delay = 0.00>
+ST_3 : Operation 306 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_57" [bnn.cpp:121]   --->   Operation 306 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 57)> <Delay = 0.00>
+ST_3 : Operation 307 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 307 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 57)> <Delay = 0.00>
+ST_3 : Operation 308 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_56" [bnn.cpp:121]   --->   Operation 308 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 56)> <Delay = 0.00>
+ST_3 : Operation 309 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 309 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 56)> <Delay = 0.00>
+ST_3 : Operation 310 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_55" [bnn.cpp:121]   --->   Operation 310 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 55)> <Delay = 0.00>
+ST_3 : Operation 311 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 311 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 55)> <Delay = 0.00>
+ST_3 : Operation 312 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_54" [bnn.cpp:121]   --->   Operation 312 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 54)> <Delay = 0.00>
+ST_3 : Operation 313 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 313 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 54)> <Delay = 0.00>
+ST_3 : Operation 314 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_53" [bnn.cpp:121]   --->   Operation 314 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 53)> <Delay = 0.00>
+ST_3 : Operation 315 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 315 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 53)> <Delay = 0.00>
+ST_3 : Operation 316 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_52" [bnn.cpp:121]   --->   Operation 316 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 52)> <Delay = 0.00>
+ST_3 : Operation 317 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 317 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 52)> <Delay = 0.00>
+ST_3 : Operation 318 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_51" [bnn.cpp:121]   --->   Operation 318 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 51)> <Delay = 0.00>
+ST_3 : Operation 319 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 319 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 51)> <Delay = 0.00>
+ST_3 : Operation 320 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_50" [bnn.cpp:121]   --->   Operation 320 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 50)> <Delay = 0.00>
+ST_3 : Operation 321 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 321 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 50)> <Delay = 0.00>
+ST_3 : Operation 322 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_49" [bnn.cpp:121]   --->   Operation 322 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 49)> <Delay = 0.00>
+ST_3 : Operation 323 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 323 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 49)> <Delay = 0.00>
+ST_3 : Operation 324 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_48" [bnn.cpp:121]   --->   Operation 324 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 48)> <Delay = 0.00>
+ST_3 : Operation 325 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 325 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 48)> <Delay = 0.00>
+ST_3 : Operation 326 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_47" [bnn.cpp:121]   --->   Operation 326 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 47)> <Delay = 0.00>
+ST_3 : Operation 327 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 327 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 47)> <Delay = 0.00>
+ST_3 : Operation 328 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_46" [bnn.cpp:121]   --->   Operation 328 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 46)> <Delay = 0.00>
+ST_3 : Operation 329 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 329 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 46)> <Delay = 0.00>
+ST_3 : Operation 330 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_45" [bnn.cpp:121]   --->   Operation 330 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 45)> <Delay = 0.00>
+ST_3 : Operation 331 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 331 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 45)> <Delay = 0.00>
+ST_3 : Operation 332 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_44" [bnn.cpp:121]   --->   Operation 332 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 44)> <Delay = 0.00>
+ST_3 : Operation 333 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 333 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 44)> <Delay = 0.00>
+ST_3 : Operation 334 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_43" [bnn.cpp:121]   --->   Operation 334 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 43)> <Delay = 0.00>
+ST_3 : Operation 335 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 335 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 43)> <Delay = 0.00>
+ST_3 : Operation 336 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_42" [bnn.cpp:121]   --->   Operation 336 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 42)> <Delay = 0.00>
+ST_3 : Operation 337 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 337 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 42)> <Delay = 0.00>
+ST_3 : Operation 338 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_41" [bnn.cpp:121]   --->   Operation 338 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 41)> <Delay = 0.00>
+ST_3 : Operation 339 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 339 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 41)> <Delay = 0.00>
+ST_3 : Operation 340 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_40" [bnn.cpp:121]   --->   Operation 340 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 40)> <Delay = 0.00>
+ST_3 : Operation 341 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 341 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 40)> <Delay = 0.00>
+ST_3 : Operation 342 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_39" [bnn.cpp:121]   --->   Operation 342 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 39)> <Delay = 0.00>
+ST_3 : Operation 343 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 343 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 39)> <Delay = 0.00>
+ST_3 : Operation 344 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_38" [bnn.cpp:121]   --->   Operation 344 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 38)> <Delay = 0.00>
+ST_3 : Operation 345 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 345 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 38)> <Delay = 0.00>
+ST_3 : Operation 346 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_37" [bnn.cpp:121]   --->   Operation 346 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 37)> <Delay = 0.00>
+ST_3 : Operation 347 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 347 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 37)> <Delay = 0.00>
+ST_3 : Operation 348 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_36" [bnn.cpp:121]   --->   Operation 348 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 36)> <Delay = 0.00>
+ST_3 : Operation 349 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 349 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 36)> <Delay = 0.00>
+ST_3 : Operation 350 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_35" [bnn.cpp:121]   --->   Operation 350 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 35)> <Delay = 0.00>
+ST_3 : Operation 351 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 351 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 35)> <Delay = 0.00>
+ST_3 : Operation 352 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_34" [bnn.cpp:121]   --->   Operation 352 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 34)> <Delay = 0.00>
+ST_3 : Operation 353 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 353 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 34)> <Delay = 0.00>
+ST_3 : Operation 354 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_33" [bnn.cpp:121]   --->   Operation 354 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 33)> <Delay = 0.00>
+ST_3 : Operation 355 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 355 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 33)> <Delay = 0.00>
+ST_3 : Operation 356 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_32" [bnn.cpp:121]   --->   Operation 356 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 32)> <Delay = 0.00>
+ST_3 : Operation 357 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 357 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 32)> <Delay = 0.00>
+ST_3 : Operation 358 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_31" [bnn.cpp:121]   --->   Operation 358 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 31)> <Delay = 0.00>
+ST_3 : Operation 359 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 359 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 31)> <Delay = 0.00>
+ST_3 : Operation 360 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_30" [bnn.cpp:121]   --->   Operation 360 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 30)> <Delay = 0.00>
+ST_3 : Operation 361 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 361 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 30)> <Delay = 0.00>
+ST_3 : Operation 362 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_29" [bnn.cpp:121]   --->   Operation 362 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 29)> <Delay = 0.00>
+ST_3 : Operation 363 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 363 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 29)> <Delay = 0.00>
+ST_3 : Operation 364 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_28" [bnn.cpp:121]   --->   Operation 364 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 28)> <Delay = 0.00>
+ST_3 : Operation 365 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 365 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 28)> <Delay = 0.00>
+ST_3 : Operation 366 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_27" [bnn.cpp:121]   --->   Operation 366 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 27)> <Delay = 0.00>
+ST_3 : Operation 367 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 367 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 27)> <Delay = 0.00>
+ST_3 : Operation 368 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_26" [bnn.cpp:121]   --->   Operation 368 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 26)> <Delay = 0.00>
+ST_3 : Operation 369 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 369 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 26)> <Delay = 0.00>
+ST_3 : Operation 370 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_25" [bnn.cpp:121]   --->   Operation 370 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 25)> <Delay = 0.00>
+ST_3 : Operation 371 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 371 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 25)> <Delay = 0.00>
+ST_3 : Operation 372 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_24" [bnn.cpp:121]   --->   Operation 372 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 24)> <Delay = 0.00>
+ST_3 : Operation 373 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 373 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 24)> <Delay = 0.00>
+ST_3 : Operation 374 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_23" [bnn.cpp:121]   --->   Operation 374 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 23)> <Delay = 0.00>
+ST_3 : Operation 375 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 375 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 23)> <Delay = 0.00>
+ST_3 : Operation 376 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_22" [bnn.cpp:121]   --->   Operation 376 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 22)> <Delay = 0.00>
+ST_3 : Operation 377 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 377 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 22)> <Delay = 0.00>
+ST_3 : Operation 378 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_21" [bnn.cpp:121]   --->   Operation 378 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 21)> <Delay = 0.00>
+ST_3 : Operation 379 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 379 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 21)> <Delay = 0.00>
+ST_3 : Operation 380 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_20" [bnn.cpp:121]   --->   Operation 380 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 20)> <Delay = 0.00>
+ST_3 : Operation 381 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 381 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 20)> <Delay = 0.00>
+ST_3 : Operation 382 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_19" [bnn.cpp:121]   --->   Operation 382 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 19)> <Delay = 0.00>
+ST_3 : Operation 383 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 383 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 19)> <Delay = 0.00>
+ST_3 : Operation 384 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_18" [bnn.cpp:121]   --->   Operation 384 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 18)> <Delay = 0.00>
+ST_3 : Operation 385 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 385 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 18)> <Delay = 0.00>
+ST_3 : Operation 386 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_17" [bnn.cpp:121]   --->   Operation 386 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 17)> <Delay = 0.00>
+ST_3 : Operation 387 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 387 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 17)> <Delay = 0.00>
+ST_3 : Operation 388 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_16" [bnn.cpp:121]   --->   Operation 388 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 16)> <Delay = 0.00>
+ST_3 : Operation 389 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 389 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 16)> <Delay = 0.00>
+ST_3 : Operation 390 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_15" [bnn.cpp:121]   --->   Operation 390 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 15)> <Delay = 0.00>
+ST_3 : Operation 391 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 391 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 15)> <Delay = 0.00>
+ST_3 : Operation 392 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_14" [bnn.cpp:121]   --->   Operation 392 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 14)> <Delay = 0.00>
+ST_3 : Operation 393 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 393 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 14)> <Delay = 0.00>
+ST_3 : Operation 394 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_13" [bnn.cpp:121]   --->   Operation 394 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 13)> <Delay = 0.00>
+ST_3 : Operation 395 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 395 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 13)> <Delay = 0.00>
+ST_3 : Operation 396 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_12" [bnn.cpp:121]   --->   Operation 396 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 12)> <Delay = 0.00>
+ST_3 : Operation 397 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 397 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 12)> <Delay = 0.00>
+ST_3 : Operation 398 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_11" [bnn.cpp:121]   --->   Operation 398 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 11)> <Delay = 0.00>
+ST_3 : Operation 399 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 399 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 11)> <Delay = 0.00>
+ST_3 : Operation 400 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_10" [bnn.cpp:121]   --->   Operation 400 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 10)> <Delay = 0.00>
+ST_3 : Operation 401 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 401 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 10)> <Delay = 0.00>
+ST_3 : Operation 402 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_9" [bnn.cpp:121]   --->   Operation 402 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 9)> <Delay = 0.00>
+ST_3 : Operation 403 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 403 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 9)> <Delay = 0.00>
+ST_3 : Operation 404 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_8" [bnn.cpp:121]   --->   Operation 404 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 8)> <Delay = 0.00>
+ST_3 : Operation 405 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 405 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 8)> <Delay = 0.00>
+ST_3 : Operation 406 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_7" [bnn.cpp:121]   --->   Operation 406 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 7)> <Delay = 0.00>
+ST_3 : Operation 407 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 407 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 7)> <Delay = 0.00>
+ST_3 : Operation 408 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_6" [bnn.cpp:121]   --->   Operation 408 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 6)> <Delay = 0.00>
+ST_3 : Operation 409 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 409 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 6)> <Delay = 0.00>
+ST_3 : Operation 410 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_5" [bnn.cpp:121]   --->   Operation 410 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 5)> <Delay = 0.00>
+ST_3 : Operation 411 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 411 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 5)> <Delay = 0.00>
+ST_3 : Operation 412 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_4" [bnn.cpp:121]   --->   Operation 412 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 4)> <Delay = 0.00>
+ST_3 : Operation 413 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 413 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 4)> <Delay = 0.00>
+ST_3 : Operation 414 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_3" [bnn.cpp:121]   --->   Operation 414 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 3)> <Delay = 0.00>
+ST_3 : Operation 415 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 415 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 3)> <Delay = 0.00>
+ST_3 : Operation 416 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_2" [bnn.cpp:121]   --->   Operation 416 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 2)> <Delay = 0.00>
+ST_3 : Operation 417 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 417 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 2)> <Delay = 0.00>
+ST_3 : Operation 418 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_1" [bnn.cpp:121]   --->   Operation 418 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 1)> <Delay = 0.00>
+ST_3 : Operation 419 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 419 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 1)> <Delay = 0.00>
+ST_3 : Operation 420 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant" [bnn.cpp:121]   --->   Operation 420 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 0)> <Delay = 0.00>
+ST_3 : Operation 421 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 421 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 0)> <Delay = 0.00>
+ST_3 : Operation 422 [1/1] (0.00ns)   --->   "%store_ln121 = store i32 %zext_ln150, i32 %layer3_quant_127" [bnn.cpp:121]   --->   Operation 422 'store' 'store_ln121' <Predicate = (trunc_ln147_1 == 127)> <Delay = 0.00>
+ST_3 : Operation 423 [1/1] (0.00ns)   --->   "%br_ln150 = br void %arrayidx70.exit" [bnn.cpp:150]   --->   Operation 423 'br' 'br_ln150' <Predicate = (trunc_ln147_1 == 127)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.698ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln147', bnn.cpp:147) of constant 0 on local variable 'i', bnn.cpp:147 [264]  (1.588 ns)
+	'load' operation 8 bit ('i', bnn.cpp:147) on local variable 'i', bnn.cpp:147 [267]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln147', bnn.cpp:147) [269]  (2.522 ns)
+	'store' operation 0 bit ('store_ln147', bnn.cpp:147) of variable 'add_ln147', bnn.cpp:147 on local variable 'i', bnn.cpp:147 [677]  (1.588 ns)
+
+ <State 2>: 5.081ns
+The critical path consists of the following:
+	'load' operation 32 bit ('layer2_activations_load', bnn.cpp:150) on array 'layer2_activations' [284]  (3.254 ns)
+	'sparsemux' operation 32 bit ('x', bnn.cpp:150) [288]  (1.827 ns)
+
+ <State 3>: 2.552ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('layer3_quant', bnn.cpp:32->bnn.cpp:150) [289]  (2.552 ns)
+	'store' operation 0 bit ('store_ln121', bnn.cpp:121) of variable 'zext_ln150', bnn.cpp:150 on local variable 'layer3_quant', bnn.cpp:121 [359]  (0.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,196 @@
+
+
+================================================================
+== Vitis HLS Report for 'feedforward_Pipeline_VITIS_LOOP_141_5'
+================================================================
+* Date:           Wed Jun 11 23:52:48 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        bnn_hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.806 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_141_5  |        ?|        ?|         3|          1|          1|     ?|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    352|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     36|    -|
+|Register         |        -|    -|     214|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     214|    388|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |add_ln141_fu_238_p2     |         +|   0|  0|  39|          32|           3|
+    |sub_ln144_1_fu_266_p2   |         -|   0|  0|  39|          32|          32|
+    |sub_ln144_2_fu_277_p2   |         -|   0|  0|  39|          32|          32|
+    |sub_ln144_3_fu_288_p2   |         -|   0|  0|  39|          32|          32|
+    |sub_ln144_fu_255_p2     |         -|   0|  0|  39|          32|          32|
+    |ap_condition_364        |       and|   0|  0|   2|           1|           1|
+    |icmp_ln141_1_fu_194_p2  |      icmp|   0|  0|  38|          31|          31|
+    |icmp_ln141_2_fu_218_p2  |      icmp|   0|  0|  38|          31|          31|
+    |icmp_ln141_3_fu_232_p2  |      icmp|   0|  0|  38|          31|          31|
+    |icmp_ln141_fu_152_p2    |      icmp|   0|  0|  39|          32|          32|
+    |ap_enable_pp0           |       xor|   0|  0|   2|           1|           2|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0| 352|         287|         259|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                       |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i                |   9|          2|   32|         64|
+    |i_3_fu_56                         |   9|          2|   32|         64|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             |  36|          8|   66|        132|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------+----+----+-----+-----------+
+    |                       Name                      | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                        |   1|   0|    1|          0|
+    |ap_done_reg                                      |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                          |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg                 |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg                 |   1|   0|    1|          0|
+    |i_3_fu_56                                        |  32|   0|   32|          0|
+    |icmp_ln141_1_reg_318                             |   1|   0|    1|          0|
+    |icmp_ln141_1_reg_318_pp0_iter1_reg               |   1|   0|    1|          0|
+    |icmp_ln141_2_reg_328                             |   1|   0|    1|          0|
+    |icmp_ln141_2_reg_328_pp0_iter1_reg               |   1|   0|    1|          0|
+    |icmp_ln141_3_reg_338                             |   1|   0|    1|          0|
+    |icmp_ln141_3_reg_338_pp0_iter1_reg               |   1|   0|    1|          0|
+    |icmp_ln141_reg_308                               |   1|   0|    1|          0|
+    |icmp_ln141_reg_308_pp0_iter1_reg                 |   1|   0|    1|          0|
+    |layer2_activations_4_addr_reg_322                |   5|   0|    5|          0|
+    |layer2_activations_4_addr_reg_322_pp0_iter1_reg  |   5|   0|    5|          0|
+    |layer2_activations_5_addr_reg_332                |   5|   0|    5|          0|
+    |layer2_activations_5_addr_reg_332_pp0_iter1_reg  |   5|   0|    5|          0|
+    |layer2_activations_6_addr_reg_342                |   5|   0|    5|          0|
+    |layer2_activations_6_addr_reg_342_pp0_iter1_reg  |   5|   0|    5|          0|
+    |layer2_activations_addr_reg_312                  |   5|   0|    5|          0|
+    |layer2_activations_addr_reg_312_pp0_iter1_reg    |   5|   0|    5|          0|
+    |sub_ln144_1_reg_353                              |  32|   0|   32|          0|
+    |sub_ln144_2_reg_358                              |  32|   0|   32|          0|
+    |sub_ln144_3_reg_363                              |  32|   0|   32|          0|
+    |sub_ln144_reg_348                                |  32|   0|   32|          0|
+    +-------------------------------------------------+----+----+-----+-----------+
+    |Total                                            | 214|   0|  214|          0|
+    +-------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+---------------------------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++-------------------------------+-----+-----+------------+---------------------------------------+--------------+
+|ap_clk                         |   in|    1|  ap_ctrl_hs|  feedforward_Pipeline_VITIS_LOOP_141_5|  return value|
+|ap_rst                         |   in|    1|  ap_ctrl_hs|  feedforward_Pipeline_VITIS_LOOP_141_5|  return value|
+|ap_start                       |   in|    1|  ap_ctrl_hs|  feedforward_Pipeline_VITIS_LOOP_141_5|  return value|
+|ap_done                        |  out|    1|  ap_ctrl_hs|  feedforward_Pipeline_VITIS_LOOP_141_5|  return value|
+|ap_idle                        |  out|    1|  ap_ctrl_hs|  feedforward_Pipeline_VITIS_LOOP_141_5|  return value|
+|ap_ready                       |  out|    1|  ap_ctrl_hs|  feedforward_Pipeline_VITIS_LOOP_141_5|  return value|
+|colsW2                         |   in|   31|     ap_none|                                 colsW2|        scalar|
+|layer2_activations_6_address0  |  out|    5|   ap_memory|                   layer2_activations_6|         array|
+|layer2_activations_6_ce0       |  out|    1|   ap_memory|                   layer2_activations_6|         array|
+|layer2_activations_6_we0       |  out|    1|   ap_memory|                   layer2_activations_6|         array|
+|layer2_activations_6_d0        |  out|   32|   ap_memory|                   layer2_activations_6|         array|
+|layer2_activations_6_address1  |  out|    5|   ap_memory|                   layer2_activations_6|         array|
+|layer2_activations_6_ce1       |  out|    1|   ap_memory|                   layer2_activations_6|         array|
+|layer2_activations_6_q1        |   in|   32|   ap_memory|                   layer2_activations_6|         array|
+|colsW1                         |   in|   32|     ap_none|                                 colsW1|        scalar|
+|layer2_activations_5_address0  |  out|    5|   ap_memory|                   layer2_activations_5|         array|
+|layer2_activations_5_ce0       |  out|    1|   ap_memory|                   layer2_activations_5|         array|
+|layer2_activations_5_we0       |  out|    1|   ap_memory|                   layer2_activations_5|         array|
+|layer2_activations_5_d0        |  out|   32|   ap_memory|                   layer2_activations_5|         array|
+|layer2_activations_5_address1  |  out|    5|   ap_memory|                   layer2_activations_5|         array|
+|layer2_activations_5_ce1       |  out|    1|   ap_memory|                   layer2_activations_5|         array|
+|layer2_activations_5_q1        |   in|   32|   ap_memory|                   layer2_activations_5|         array|
+|layer2_activations_4_address0  |  out|    5|   ap_memory|                   layer2_activations_4|         array|
+|layer2_activations_4_ce0       |  out|    1|   ap_memory|                   layer2_activations_4|         array|
+|layer2_activations_4_we0       |  out|    1|   ap_memory|                   layer2_activations_4|         array|
+|layer2_activations_4_d0        |  out|   32|   ap_memory|                   layer2_activations_4|         array|
+|layer2_activations_4_address1  |  out|    5|   ap_memory|                   layer2_activations_4|         array|
+|layer2_activations_4_ce1       |  out|    1|   ap_memory|                   layer2_activations_4|         array|
+|layer2_activations_4_q1        |   in|   32|   ap_memory|                   layer2_activations_4|         array|
+|layer2_activations_address0    |  out|    5|   ap_memory|                     layer2_activations|         array|
+|layer2_activations_ce0         |  out|    1|   ap_memory|                     layer2_activations|         array|
+|layer2_activations_we0         |  out|    1|   ap_memory|                     layer2_activations|         array|
+|layer2_activations_d0          |  out|   32|   ap_memory|                     layer2_activations|         array|
+|layer2_activations_address1    |  out|    5|   ap_memory|                     layer2_activations|         array|
+|layer2_activations_ce1         |  out|    1|   ap_memory|                     layer2_activations|         array|
+|layer2_activations_q1          |   in|   32|   ap_memory|                     layer2_activations|         array|
++-------------------------------+-----+-----+------------+---------------------------------------+--------------+
+

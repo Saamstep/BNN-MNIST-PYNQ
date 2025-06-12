@@ -1,0 +1,18 @@
+{
+  "0": {
+    "basicblocks": 59,
+    "calls": "",
+    "file": "bnn.cpp",
+    "fileloc": 69,
+    "instructions": 317,
+    "loads": {
+      "L": 15,
+      "T": 3
+    },
+    "name": "feedforward",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 317
+  }
+}
