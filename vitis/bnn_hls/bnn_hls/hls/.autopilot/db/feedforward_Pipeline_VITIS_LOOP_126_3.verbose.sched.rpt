@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'feedforward_Pipeline_VITIS_LOOP_126_3'
 ================================================================
-* Date:           Wed Jun 11 23:52:43 2025
+* Date:           Thu Jun 12 21:02:03 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        bnn_hls
@@ -775,7 +775,7 @@ The critical path consists of the following:
 	'load' operation 32 bit ('layer1_activations_load', bnn.cpp:129) on array 'layer1_activations' [280]  (3.254 ns)
 	'select' operation 32 bit ('x', bnn.cpp:129) [282]  (0.698 ns)
 	'icmp' operation 1 bit ('layer1_quant', bnn.cpp:32->bnn.cpp:129) [283]  (2.552 ns)
-	'store' operation 0 bit ('store_ln119', bnn.cpp:119) of variable 'zext_ln129', bnn.cpp:129 on local variable 'layer1_quant', bnn.cpp:119 [302]  (0.000 ns)
+	'store' operation 0 bit ('store_ln119', bnn.cpp:119) of variable 'zext_ln129', bnn.cpp:129 on local variable 'layer1_quant', bnn.cpp:119 [287]  (0.000 ns)
 
 
 ============================================================

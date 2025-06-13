@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'feedforward_Pipeline_VITIS_LOOP_156_7'" level="0">
-<item name = "Date">Wed Jun 11 23:52:49 2025
+<item name = "Date">Thu Jun 12 21:02:10 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">bnn_hls</item>

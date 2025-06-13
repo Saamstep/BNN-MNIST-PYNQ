@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'feedforward_Pipeline_VITIS_LOOP_113_2'
 ================================================================
-* Date:           Wed Jun 11 23:52:42 2025
+* Date:           Thu Jun 12 21:02:02 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        bnn_hls
@@ -134,7 +134,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln113', bnn.cpp:113) of constant 0 on local variable 'i', bnn.cpp:113 [9]  (1.588 ns)
 	'load' operation 32 bit ('i', bnn.cpp:113) on local variable 'i', bnn.cpp:113 [12]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln113', bnn.cpp:113) [13]  (2.552 ns)
+	'add' operation 32 bit ('add_ln113', bnn.cpp:113) [35]  (2.552 ns)
 	'store' operation 0 bit ('store_ln113', bnn.cpp:113) of variable 'add_ln113', bnn.cpp:113 on local variable 'i', bnn.cpp:113 [36]  (1.588 ns)
 
  <State 2>: 5.806ns
