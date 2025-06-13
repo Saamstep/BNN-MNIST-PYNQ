@@ -33,10 +33,10 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="feedforward" col1="bnn.cpp:69" col2="562" col3="317" col4="2867" col5="2401" col6="2168">
-                    <row id="1" col0="sign" col1="bnn.cpp:40" col2="16" col2_disp=" 16 (4 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="4" col0="sign" col1="bnn.cpp:40" col2="16" col2_disp=" 16 (4 calls)" col3="" col4="" col5="" col6=""/>
                     <row id="2" col0="quantize" col1="bnn.cpp:29" col2="16" col2_disp=" 16 (4 calls)" col3="" col4="" col5="" col6=""/>
-                    <row id="3" col0="matmul_xnor" col1="bnn.cpp:49" col2="111" col2_disp="111 (3 calls)" col3="" col4="" col5="" col6="">
-                        <row id="4" col0="XNOR" col1="bnn.cpp:18" col2="12" col2_disp=" 12 (3 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="1" col0="matmul_xnor" col1="bnn.cpp:49" col2="111" col2_disp="111 (3 calls)" col3="" col4="" col5="" col6="">
+                        <row id="3" col0="XNOR" col1="bnn.cpp:18" col2="12" col2_disp=" 12 (3 calls)" col3="" col4="" col5="" col6=""/>
                     </row>
                 </row>
             </rows>

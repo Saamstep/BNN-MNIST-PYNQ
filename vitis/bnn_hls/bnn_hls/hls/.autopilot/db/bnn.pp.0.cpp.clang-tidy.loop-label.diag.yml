@@ -1,39 +1,39 @@
 ---
-MainSourceFile:  'C:/ECEN529/bnn_final/bnn_hls/bnn_hls/hls/.autopilot/db/bnn.pp.0.cpp'
+MainSourceFile:  'D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/.autopilot/db/bnn.pp.0.cpp'
 Diagnostics:     
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_676_1:  '
     FileOffset:      676
-    FilePath:        'K:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          279832
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_690_1:  '
     FileOffset:      690
-    FilePath:        'K:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          280298
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_704_1:  '
     FileOffset:      704
-    FilePath:        'K:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          280765
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_1248_1:  '
     FileOffset:      1248
-    FilePath:        'K:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_fixed_base.h'
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          564123
         Length:          0
         ReplacementText: 'VITIS_LOOP_1248_1: '
@@ -42,7 +42,7 @@ Diagnostics:
     FileOffset:      51
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1056229
         Length:          0
         ReplacementText: 'VITIS_LOOP_51_1: '
@@ -51,7 +51,7 @@ Diagnostics:
     FileOffset:      55
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1056349
         Length:          0
         ReplacementText: 'VITIS_LOOP_55_2: '
@@ -60,7 +60,7 @@ Diagnostics:
     FileOffset:      103
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1057954
         Length:          0
         ReplacementText: 'VITIS_LOOP_103_1: '
@@ -69,7 +69,7 @@ Diagnostics:
     FileOffset:      113
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1058222
         Length:          0
         ReplacementText: 'VITIS_LOOP_113_2: '
@@ -78,7 +78,7 @@ Diagnostics:
     FileOffset:      126
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1058637
         Length:          0
         ReplacementText: 'VITIS_LOOP_126_3: '
@@ -87,7 +87,7 @@ Diagnostics:
     FileOffset:      135
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1058882
         Length:          0
         ReplacementText: 'VITIS_LOOP_135_4: '
@@ -96,7 +96,7 @@ Diagnostics:
     FileOffset:      141
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1059011
         Length:          0
         ReplacementText: 'VITIS_LOOP_141_5: '
@@ -105,7 +105,7 @@ Diagnostics:
     FileOffset:      147
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1059152
         Length:          0
         ReplacementText: 'VITIS_LOOP_147_6: '
@@ -114,7 +114,7 @@ Diagnostics:
     FileOffset:      156
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1059397
         Length:          0
         ReplacementText: 'VITIS_LOOP_156_7: '
@@ -123,7 +123,7 @@ Diagnostics:
     FileOffset:      163
     FilePath:        bnn.cpp
     Replacements:    
-      - FilePath:        'C:\ECEN529\bnn_final\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
+      - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
         Offset:          1059532
         Length:          0
         ReplacementText: 'VITIS_LOOP_163_8: '

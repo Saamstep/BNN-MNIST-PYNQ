@@ -1,15 +1,15 @@
 [
   {
-    "directory": "C:\\ECEN529\\bnn_final\\bnn_hls",
+    "directory": "D:\\ecen529\\finalProject\\vitis\\bnn_hls",
     "arguments": [
-      "K:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=K:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
       "-fhls",
-      "-hls-syn-headers-dir=K:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
       "-fhlstoplevel=feedforward",
       "-c",
-      "C:\\ECEN529\\bnn_final\\bnn_hls\\bnn.cpp"
+      "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\bnn.cpp"
     ],
-    "file": "C:\\ECEN529\\bnn_final\\bnn_hls\\bnn.cpp"
+    "file": "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\bnn.cpp"
   }
 ]

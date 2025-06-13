@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'feedforward_Pipeline_VITIS_LOOP_103_1'
 ================================================================
-* Date:           Wed Jun 11 23:52:42 2025
+* Date:           Thu Jun 12 21:02:02 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        bnn_hls
@@ -1407,7 +1407,7 @@ The critical path consists of the following:
 The critical path consists of the following:
 	axis read operation ('empty', bnn.cpp:106) on port 'input_stream_V_data_V' (bnn.cpp:106) [534]  (0.518 ns)
 	'icmp' operation 1 bit ('X0_input', bnn.cpp:32->bnn.cpp:107) [536]  (2.552 ns)
-	'store' operation 0 bit ('store_ln99', bnn.cpp:99) of variable 'zext_ln107', bnn.cpp:107 on local variable 'X0_input', bnn.cpp:99 [747]  (0.000 ns)
+	'store' operation 0 bit ('store_ln99', bnn.cpp:99) of variable 'zext_ln107', bnn.cpp:107 on local variable 'X0_input', bnn.cpp:99 [825]  (0.000 ns)
 
 
 ============================================================

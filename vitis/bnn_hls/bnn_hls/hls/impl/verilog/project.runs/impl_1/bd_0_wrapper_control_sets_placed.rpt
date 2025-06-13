@@ -1,0 +1,174 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Jun 12 21:09:22 2025
+| Host         : rogDesktop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    96 |
+|    Minimum number of control sets                        |    96 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   181 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    96 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |    16 |
+| >= 8 to < 10       |    10 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    56 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             848 |          258 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             282 |           83 |
+| Yes          | No                    | No                     |            1733 |          438 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1436 |          377 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                                                     Enable Signal                                                    |                                                       Set/Reset Signal                                                       | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/load_p1                                                  |                                                                                                                              |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_stream_V_data_V_U/load_p2                                                  | bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p2[3]_i_1_n_4                                               |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_stream_V_strb_V_U/load_p1                                                  |                                                                                                                              |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/push                                                      |                                                                                                                              |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rs_rdata/pop                                                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_stream_V_data_V_U/load_p2_0                                                | bd_0_i/hls_inst/inst/regslice_both_output_stream_V_strb_V_U/data_p2[3]_i_1__0_n_4                                            |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/fifo_rreq/mOutPtr[3]_i_1_n_4                                           | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                2 |              4 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/fifo_burst/raddr[3]_i_1_n_4                                               | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                1 |              4 |         4.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_141_5_fu_6789/flow_control_loop_pipe_sequential_init_U/ap_loop_init |                3 |              5 |         1.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/waddr                                                                           |                                                                                                                              |                2 |              5 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/fifo_rctl/mOutPtr[4]_i_1__1_n_4                                           | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                1 |              5 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/fifo_burst/mOutPtr[4]_i_1__0_n_4                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                1 |              5 |         5.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_113_2_fu_6646/flow_control_loop_pipe_sequential_init_U/ap_loop_init |                2 |              6 |         3.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1729_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1747_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1738_state3_i_1_n_4                  |                4 |              7 |         1.75 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1702_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1693_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1720_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1657_state3_i_1_n_4                  |                2 |              7 |         3.50 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1648_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1639_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1711_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1756_state3_i_1_n_4                  |                3 |              7 |         2.33 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1630_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1675_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1684_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1666_state3_i_1_n_4                  |                1 |              7 |         7.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_input_stream_V_data_V_U/E[0]                                                      |                                                                                                                              |                2 |              8 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/layer3_activations_we0_local                                                                    | bd_0_i/hls_inst/inst/ap_NS_fsm12_out                                                                                         |                1 |              8 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_126_3_fu_6654/flow_control_loop_pipe_sequential_init_U/E[0] | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_126_3_fu_6654/flow_control_loop_pipe_sequential_init_U/SR[0]        |                3 |              8 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/flow_control_loop_pipe_sequential_init_U/E[0] | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/flow_control_loop_pipe_sequential_init_U/SR[0]        |                3 |              8 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_156_7_fu_6936/flow_control_loop_pipe_sequential_init_U/E[0] | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_156_7_fu_6936/flow_control_loop_pipe_sequential_init_U/SR[0]        |                3 |              8 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/WEBWE[0]                                         | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                3 |              8 |         2.67 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1909_state3_i_1_n_4                  |                2 |              8 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.last_loop                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                4 |              8 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/buff_rdata/mOutPtr[8]_i_1_n_4                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                3 |              9 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_103_1_fu_6376/flow_control_loop_pipe_sequential_init_U/E[0] | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_103_1_fu_6376/flow_control_loop_pipe_sequential_init_U/SR[0]        |                3 |              9 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/p_15_in                                            | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/sect_addr_buf[11]_i_1_n_4                                         |                3 |             10 |         3.33 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799/ap_predicate_pred1900_state3_i_1_n_4                  |                3 |             15 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state37                                                                               |                                                                                                                              |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_141_5_fu_6789/flow_control_loop_pipe_sequential_init_U/E[0] | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_141_5_fu_6789/flow_control_loop_pipe_sequential_init_U/SR[0]        |                8 |             30 |         3.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_163_8_fu_6943/flow_control_loop_pipe_sequential_init_U/E[0] | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_163_8_fu_6943/flow_control_loop_pipe_sequential_init_U/SR[0]        |                9 |             31 |         3.44 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_113_2_fu_6646/flow_control_loop_pipe_sequential_init_U/E[0] | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_113_2_fu_6646/flow_control_loop_pipe_sequential_init_U/SR[0]        |                8 |             31 |         3.88 |
+|  ap_clk      | bd_0_i/hls_inst/inst/x_1_fu_3032[30]_i_2_n_4                                                                         | bd_0_i/hls_inst/inst/ap_NS_fsm19_out                                                                                         |                7 |             31 |         4.43 |
+|  ap_clk      | bd_0_i/hls_inst/inst/layer1_activations_2_U/E[0]                                                                     | bd_0_i/hls_inst/inst/ap_NS_fsm113_out                                                                                        |                8 |             31 |         3.88 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state47                                                                               |                                                                                                                              |                6 |             32 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_W2[31]_i_1_n_4                                                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |               11 |             32 |         2.91 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_rowsW3[31]_i_1_n_4                                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |               13 |             32 |         2.46 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_rowsW2[31]_i_1_n_4                                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                8 |             32 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_W2[63]_i_1_n_4                                                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                6 |             32 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_W3[31]_i_1_n_4                                                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                9 |             32 |         3.56 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_colsW1[31]_i_1_n_4                                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                6 |             32 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state31                                                                               |                                                                                                                              |               10 |             32 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state50                                                                               |                                                                                                                              |                9 |             32 |         3.56 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_colsW2[31]_i_1_n_4                                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                5 |             32 |         6.40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_colsW3[31]_i_1_n_4                                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                9 |             32 |         3.56 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state15                                                                               |                                                                                                                              |                8 |             32 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_input_stream_V_data_V_U/load_p2                                                   |                                                                                                                              |                7 |             32 |         4.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_stream_V_data_V_U/load_p1                                                  |                                                                                                                              |               10 |             32 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_input_stream_V_data_V_U/load_p1                                                   |                                                                                                                              |                9 |             32 |         3.56 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_163_8_fu_6943/E[0]                                          |                                                                                                                              |               10 |             32 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_X_size[31]_i_1_n_4                                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                5 |             32 |         6.40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_W3[63]_i_1_n_4                                                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                5 |             32 |         6.40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_rowsW1[31]_i_1_n_4                                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |               14 |             32 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_W1[63]_i_1_n_4                                                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                8 |             32 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/int_W1[31]_i_1_n_4                                                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                7 |             32 |         4.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/ar_hs                                                                           | bd_0_i/hls_inst/inst/control_s_axi_U/rdata[31]_i_1_n_4                                                                       |               14 |             32 |         2.29 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rs_rdata/load_p1                                                          |                                                                                                                              |                9 |             33 |         3.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rs_rdata/load_p2                                                          |                                                                                                                              |                6 |             33 |         5.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state20                                                                               |                                                                                                                              |               11 |             33 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state4                                                                                |                                                                                                                              |                8 |             33 |         4.12 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state36                                                                               |                                                                                                                              |               10 |             33 |         3.30 |
+|  ap_clk      | bd_0_i/hls_inst/inst/regslice_both_output_stream_V_data_V_U/output_stream_TDATA_reg1                                 |                                                                                                                              |               11 |             33 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/E[0]                                               | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |               12 |             53 |         4.42 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state16                                                                               | bd_0_i/hls_inst/inst/cnt_reg_3213                                                                                            |               12 |             57 |         4.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state5                                                                                |                                                                                                                              |               16 |             62 |         3.88 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state21                                                                               |                                                                                                                              |               11 |             62 |         5.64 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/fifo_rreq/U_fifo_srl/push                                              |                                                                                                                              |                9 |             63 |         7.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/fifo_rreq/U_fifo_srl/pop                                               | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |                9 |             63 |         7.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/load_p1                                            |                                                                                                                              |               21 |             64 |         3.05 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/fifo_rreq/E[0]                                                         | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |               19 |             64 |         3.37 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/E[0]                                                                   |                                                                                                                              |               20 |             64 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/ost_ctrl_valid                                            | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |               18 |             71 |         3.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/p_15_in                                            | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |               20 |             77 |         3.85 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/next_req                                           | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |               33 |            104 |         3.15 |
+|  ap_clk      | bd_0_i/hls_inst/inst/layer1_activations_2_ce0_local                                                                  |                                                                                                                              |               29 |            111 |         3.83 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state48                                                                               | bd_0_i/hls_inst/inst/cnt_4_reg_6353                                                                                          |               29 |            124 |         4.28 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state32                                                                               | bd_0_i/hls_inst/inst/cnt_2_reg_4783                                                                                          |               31 |            124 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/layer1_quant_128_reg_47600                                                                      |                                                                                                                              |               26 |            128 |         4.92 |
+|  ap_clk      | bd_0_i/hls_inst/inst/layer3_quant_128_reg_63300                                                                      |                                                                                                                              |               30 |            128 |         4.27 |
+|  ap_clk      |                                                                                                                      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/SR[0]                                                      |               52 |            143 |         2.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/layer2_activations_4_ce0_local                                                                  |                                                                                                                              |               41 |            156 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/layer3_activations_ce0_local                                                                    |                                                                                                                              |               42 |            156 |         3.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state2                                                                                |                                                                                                                              |               69 |            317 |         4.59 |
+|  ap_clk      |                                                                                                                      |                                                                                                                              |              258 |            848 |         3.29 |
++--------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+
