@@ -1,0 +1,77 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Jun 12 21:08:14 2025
+| Host         : rogDesktop running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/feedforward_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                            Instance                           |                                 Module                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                  |                                                                 (top) |       3360 |       3296 |       0 |   64 | 4299 |      7 |      1 |          0 |
+|   bd_0_i                                                      |                                                                  bd_0 |       3360 |       3296 |       0 |   64 | 4299 |      7 |      1 |          0 |
+|     hls_inst                                                  |                                                       bd_0_hls_inst_0 |       3360 |       3296 |       0 |   64 | 4299 |      7 |      1 |          0 |
+|       (hls_inst)                                              |                                                       bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       inst                                                    |                                           bd_0_hls_inst_0_feedforward |       3360 |       3296 |       0 |   64 | 4299 |      7 |      1 |          0 |
+|         (inst)                                                |                                           bd_0_hls_inst_0_feedforward |        504 |        503 |       0 |    1 | 1830 |      0 |      0 |          0 |
+|         control_s_axi_U                                       |                             bd_0_hls_inst_0_feedforward_control_s_axi |        458 |        458 |       0 |    0 |  470 |      0 |      0 |          0 |
+|         gmem_m_axi_U                                          |                                bd_0_hls_inst_0_feedforward_gmem_m_axi |        544 |        481 |       0 |   63 |  727 |      0 |      1 |          0 |
+|           bus_read                                            |                           bd_0_hls_inst_0_feedforward_gmem_m_axi_read |        357 |        357 |       0 |    0 |  552 |      0 |      0 |          0 |
+|             fifo_burst                                        |           bd_0_hls_inst_0_feedforward_gmem_m_axi_fifo__parameterized1 |         16 |         16 |       0 |    0 |   13 |      0 |      0 |          0 |
+|             fifo_rctl                                         |        bd_0_hls_inst_0_feedforward_gmem_m_axi_fifo__parameterized1_12 |          9 |          9 |       0 |    0 |    8 |      0 |      0 |          0 |
+|             rreq_burst_conv                                   |                bd_0_hls_inst_0_feedforward_gmem_m_axi_burst_converter |        292 |        292 |       0 |    0 |  460 |      0 |      0 |          0 |
+|             rs_rdata                                          |      bd_0_hls_inst_0_feedforward_gmem_m_axi_reg_slice__parameterized0 |         40 |         40 |       0 |    0 |   71 |      0 |      0 |          0 |
+|           load_unit_0                                         |                           bd_0_hls_inst_0_feedforward_gmem_m_axi_load |        187 |        124 |       0 |   63 |  175 |      0 |      1 |          0 |
+|             (load_unit_0)                                     |                           bd_0_hls_inst_0_feedforward_gmem_m_axi_load |          1 |          1 |       0 |    0 |   66 |      0 |      0 |          0 |
+|             buff_rdata                                        |           bd_0_hls_inst_0_feedforward_gmem_m_axi_fifo__parameterized0 |         43 |         43 |       0 |    0 |   36 |      0 |      1 |          0 |
+|             fifo_rreq                                         |                           bd_0_hls_inst_0_feedforward_gmem_m_axi_fifo |        143 |         80 |       0 |   63 |   73 |      0 |      0 |          0 |
+|         grp_feedforward_Pipeline_VITIS_LOOP_103_1_fu_6376     |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_103_1 |        388 |        388 |       0 |    0 |  276 |      0 |      0 |          0 |
+|           (grp_feedforward_Pipeline_VITIS_LOOP_103_1_fu_6376) |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_103_1 |        351 |        351 |       0 |    0 |  274 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U            | bd_0_hls_inst_0_feedforward_flow_control_loop_pipe_sequential_init_11 |         37 |         37 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_feedforward_Pipeline_VITIS_LOOP_113_2_fu_6646     |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_113_2 |        166 |        166 |       0 |    0 |  116 |      0 |      0 |          0 |
+|           (grp_feedforward_Pipeline_VITIS_LOOP_113_2_fu_6646) |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_113_2 |         67 |         67 |       0 |    0 |  114 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U            | bd_0_hls_inst_0_feedforward_flow_control_loop_pipe_sequential_init_10 |         99 |         99 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_feedforward_Pipeline_VITIS_LOOP_126_3_fu_6654     |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_126_3 |        189 |        189 |       0 |    0 |  146 |      0 |      0 |          0 |
+|           (grp_feedforward_Pipeline_VITIS_LOOP_126_3_fu_6654) |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_126_3 |        140 |        140 |       0 |    0 |  144 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U            |  bd_0_hls_inst_0_feedforward_flow_control_loop_pipe_sequential_init_9 |         49 |         49 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_feedforward_Pipeline_VITIS_LOOP_141_5_fu_6789     |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_141_5 |        262 |        262 |       0 |    0 |  179 |      0 |      0 |          0 |
+|           (grp_feedforward_Pipeline_VITIS_LOOP_141_5_fu_6789) |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_141_5 |        136 |        136 |       0 |    0 |  177 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U            |  bd_0_hls_inst_0_feedforward_flow_control_loop_pipe_sequential_init_8 |        126 |        126 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799     |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_147_6 |        253 |        253 |       0 |    0 |  308 |      0 |      0 |          0 |
+|           (grp_feedforward_Pipeline_VITIS_LOOP_147_6_fu_6799) |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_147_6 |        213 |        213 |       0 |    0 |  306 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U            |  bd_0_hls_inst_0_feedforward_flow_control_loop_pipe_sequential_init_7 |         40 |         40 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_feedforward_Pipeline_VITIS_LOOP_156_7_fu_6936     |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_156_7 |         88 |         88 |       0 |    0 |   59 |      0 |      0 |          0 |
+|           (grp_feedforward_Pipeline_VITIS_LOOP_156_7_fu_6936) |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_156_7 |         34 |         34 |       0 |    0 |   57 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U            |  bd_0_hls_inst_0_feedforward_flow_control_loop_pipe_sequential_init_6 |         54 |         54 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_feedforward_Pipeline_VITIS_LOOP_163_8_fu_6943     |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_163_8 |        106 |        106 |       0 |    0 |   35 |      0 |      0 |          0 |
+|           (grp_feedforward_Pipeline_VITIS_LOOP_163_8_fu_6943) |     bd_0_hls_inst_0_feedforward_feedforward_Pipeline_VITIS_LOOP_163_8 |         12 |         12 |       0 |    0 |   33 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U            |    bd_0_hls_inst_0_feedforward_flow_control_loop_pipe_sequential_init |         94 |         94 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         layer1_activations_2_U                                |          bd_0_hls_inst_0_feedforward_layer1_activations_RAM_AUTO_1R1W |         65 |         65 |       0 |    0 |    0 |      1 |      0 |          0 |
+|         layer1_activations_U                                  |        bd_0_hls_inst_0_feedforward_layer1_activations_RAM_AUTO_1R1W_0 |         32 |         32 |       0 |    0 |    0 |      1 |      0 |          0 |
+|         layer2_activations_4_U                                |          bd_0_hls_inst_0_feedforward_layer2_activations_RAM_AUTO_1R1W |         31 |         31 |       0 |    0 |    0 |      1 |      0 |          0 |
+|         layer2_activations_5_U                                |        bd_0_hls_inst_0_feedforward_layer2_activations_RAM_AUTO_1R1W_1 |         32 |         32 |       0 |    0 |    0 |      1 |      0 |          0 |
+|         layer2_activations_6_U                                |        bd_0_hls_inst_0_feedforward_layer2_activations_RAM_AUTO_1R1W_2 |         48 |         48 |       0 |    0 |    0 |      1 |      0 |          0 |
+|         layer2_activations_U                                  |        bd_0_hls_inst_0_feedforward_layer2_activations_RAM_AUTO_1R1W_3 |         31 |         31 |       0 |    0 |    0 |      1 |      0 |          0 |
+|         layer3_activations_U                                  |          bd_0_hls_inst_0_feedforward_layer3_activations_RAM_AUTO_1R1W |         49 |         49 |       0 |    0 |    0 |      1 |      0 |          0 |
+|         regslice_both_input_stream_V_data_V_U                 |                             bd_0_hls_inst_0_feedforward_regslice_both |         55 |         55 |       0 |    0 |   69 |      0 |      0 |          0 |
+|         regslice_both_output_stream_V_data_V_U                |                           bd_0_hls_inst_0_feedforward_regslice_both_4 |         45 |         45 |       0 |    0 |   69 |      0 |      0 |          0 |
+|         regslice_both_output_stream_V_keep_V_U                |             bd_0_hls_inst_0_feedforward_regslice_both__parameterized0 |          5 |          5 |       0 |    0 |    5 |      0 |      0 |          0 |
+|         regslice_both_output_stream_V_last_V_U                |             bd_0_hls_inst_0_feedforward_regslice_both__parameterized1 |          4 |          4 |       0 |    0 |    5 |      0 |      0 |          0 |
+|         regslice_both_output_stream_V_strb_V_U                |           bd_0_hls_inst_0_feedforward_regslice_both__parameterized0_5 |          5 |          5 |       0 |    0 |    5 |      0 |      0 |          0 |
++---------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

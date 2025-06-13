@@ -166,7 +166,7 @@
 						<id>5</id>
 						<name>i_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -174,7 +174,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -350,7 +350,7 @@
 						<id>9</id>
 						<name>i_1_write_ln113</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -358,7 +358,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -449,7 +449,7 @@
 						<id>12</id>
 						<name>i</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -457,7 +457,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -506,7 +506,7 @@
 						<id>13</id>
 						<name>icmp_ln113</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -514,7 +514,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -563,7 +563,7 @@
 						<id>14</id>
 						<name>br_ln113</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -571,7 +571,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -621,7 +621,7 @@
 						<id>18</id>
 						<name>lshr_ln1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -629,7 +629,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -680,7 +680,7 @@
 						<id>19</id>
 						<name>zext_ln113</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -688,7 +688,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -736,7 +736,7 @@
 						<id>20</id>
 						<name>layer1_activations_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -744,7 +744,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -794,7 +794,7 @@
 						<id>21</id>
 						<name>layer1_activations_load</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -802,7 +802,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -850,7 +850,7 @@
 						<id>22</id>
 						<name>shl_ln116</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -858,7 +858,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -907,7 +907,7 @@
 						<id>23</id>
 						<name>sub_ln116</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -915,7 +915,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -964,7 +964,7 @@
 						<id>24</id>
 						<name>layer1_activations_addr_write_ln116</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -972,7 +972,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1022,7 +1022,7 @@
 						<id>25</id>
 						<name>tmp_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1030,7 +1030,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1081,7 +1081,7 @@
 						<id>26</id>
 						<name>or_ln</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1089,7 +1089,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1139,7 +1139,7 @@
 						<id>27</id>
 						<name>icmp_ln113_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1147,7 +1147,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1196,7 +1196,7 @@
 						<id>28</id>
 						<name>br_ln113</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1204,7 +1204,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1254,7 +1254,7 @@
 						<id>30</id>
 						<name>layer1_activations_2_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1262,7 +1262,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1312,7 +1312,7 @@
 						<id>31</id>
 						<name>layer1_activations_2_load</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1320,7 +1320,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1368,7 +1368,7 @@
 						<id>32</id>
 						<name>shl_ln116_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1376,7 +1376,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1425,7 +1425,7 @@
 						<id>33</id>
 						<name>sub_ln116_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1433,7 +1433,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1482,7 +1482,7 @@
 						<id>34</id>
 						<name>layer1_activations_2_addr_write_ln116</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>116</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1490,7 +1490,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1540,7 +1540,7 @@
 						<id>35</id>
 						<name>add_ln113</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1548,7 +1548,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1597,7 +1597,7 @@
 						<id>36</id>
 						<name>i_1_write_ln113</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1605,7 +1605,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1656,7 +1656,7 @@
 						<id>37</id>
 						<name>br_ln113</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>113</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -1664,7 +1664,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

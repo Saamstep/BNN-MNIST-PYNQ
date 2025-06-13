@@ -22595,7 +22595,7 @@
 						<id>582</id>
 						<name>layer1_activations</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>110</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -22603,7 +22603,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -22651,7 +22651,7 @@
 						<id>583</id>
 						<name>layer1_activations_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>110</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -22659,7 +22659,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -22707,7 +22707,7 @@
 						<id>584</id>
 						<name>layer2_activations</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>132</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -22715,7 +22715,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -22763,7 +22763,7 @@
 						<id>585</id>
 						<name>layer2_activations_4</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>132</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -22771,7 +22771,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -22819,7 +22819,7 @@
 						<id>586</id>
 						<name>layer2_activations_5</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>132</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -22827,7 +22827,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -22875,7 +22875,7 @@
 						<id>587</id>
 						<name>layer2_activations_6</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>132</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -22883,7 +22883,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -22931,7 +22931,7 @@
 						<id>588</id>
 						<name>layer3_activations</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>153</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -22939,7 +22939,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -34298,7 +34298,7 @@
 						<id>848</id>
 						<name>icmp_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34306,7 +34306,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34362,7 +34362,7 @@
 						<id>849</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34370,7 +34370,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34427,7 +34427,7 @@
 						<id>851</id>
 						<name>x</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34435,7 +34435,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34490,7 +34490,7 @@
 						<id>852</id>
 						<name>zext_ln58</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34498,7 +34498,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34553,7 +34553,7 @@
 						<id>853</id>
 						<name>x_write_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34561,7 +34561,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34617,7 +34617,7 @@
 						<id>854</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34625,7 +34625,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34680,7 +34680,7 @@
 						<id>856</id>
 						<name>x_3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34688,7 +34688,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34744,7 +34744,7 @@
 						<id>857</id>
 						<name>icmp_ln51_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34752,7 +34752,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34808,7 +34808,7 @@
 						<id>858</id>
 						<name>add_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34816,7 +34816,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34872,7 +34872,7 @@
 						<id>859</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34880,7 +34880,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -34937,7 +34937,7 @@
 						<id>861</id>
 						<name>zext_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -34945,7 +34945,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35000,7 +35000,7 @@
 						<id>862</id>
 						<name>trunc_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35008,7 +35008,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35063,7 +35063,7 @@
 						<id>866</id>
 						<name>lshr_ln</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35071,7 +35071,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35129,7 +35129,7 @@
 						<id>867</id>
 						<name>zext_ln51_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35137,7 +35137,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35192,7 +35192,7 @@
 						<id>868</id>
 						<name>br_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35200,7 +35200,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35255,7 +35255,7 @@
 						<id>870</id>
 						<name>y</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35263,7 +35263,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35366,7 +35366,7 @@
 						<id>872</id>
 						<name>phi_mul</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35374,7 +35374,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35432,7 +35432,7 @@
 						<id>873</id>
 						<name>zext_ln55_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35440,7 +35440,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35495,7 +35495,7 @@
 						<id>874</id>
 						<name>icmp_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35503,7 +35503,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35559,7 +35559,7 @@
 						<id>875</id>
 						<name>add_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35567,7 +35567,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35623,7 +35623,7 @@
 						<id>876</id>
 						<name>br_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35631,7 +35631,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35688,7 +35688,7 @@
 						<id>878</id>
 						<name>trunc_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35696,7 +35696,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -35751,7 +35751,7 @@
 						<id>881</id>
 						<name>a_assign</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -35759,7 +35759,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36328,7 +36328,7 @@
 						<id>882</id>
 						<name>add_ln58_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36336,7 +36336,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36392,7 +36392,7 @@
 						<id>883</id>
 						<name>add_ln58</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36400,7 +36400,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36456,7 +36456,7 @@
 						<id>884</id>
 						<name>shl_ln1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36464,7 +36464,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36521,7 +36521,7 @@
 						<id>885</id>
 						<name>zext_ln58_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36529,7 +36529,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36584,7 +36584,7 @@
 						<id>886</id>
 						<name>add_ln58_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36592,7 +36592,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36648,7 +36648,7 @@
 						<id>887</id>
 						<name>trunc_ln3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36656,7 +36656,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36714,7 +36714,7 @@
 						<id>888</id>
 						<name>sext_ln58</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36722,7 +36722,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36777,7 +36777,7 @@
 						<id>889</id>
 						<name>gmem_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36785,7 +36785,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36841,7 +36841,7 @@
 						<id>890</id>
 						<name>gmem_load_req</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36849,7 +36849,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36906,7 +36906,7 @@
 						<id>891</id>
 						<name>gmem_addr_read</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -36914,7 +36914,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -36971,7 +36971,7 @@
 						<id>892</id>
 						<name>icmp_ln21</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>XNOR</contextFuncName>
 						<contextNormFuncName>XNOR</contextNormFuncName>
@@ -36979,7 +36979,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
@@ -37042,7 +37042,7 @@
 						<id>893</id>
 						<name>zext_ln58_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37050,7 +37050,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37105,7 +37105,7 @@
 						<id>894</id>
 						<name>cnt_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37113,7 +37113,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37169,7 +37169,7 @@
 						<id>895</id>
 						<name>br_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37177,7 +37177,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37232,7 +37232,7 @@
 						<id>897</id>
 						<name>zext_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37240,7 +37240,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37295,7 +37295,7 @@
 						<id>898</id>
 						<name>res_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37303,7 +37303,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37360,7 +37360,7 @@
 						<id>899</id>
 						<name>res_1_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37368,7 +37368,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37425,7 +37425,7 @@
 						<id>900</id>
 						<name>br_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37433,7 +37433,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37490,7 +37490,7 @@
 						<id>902</id>
 						<name>res_addr_write_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37498,7 +37498,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37554,7 +37554,7 @@
 						<id>903</id>
 						<name>br_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37562,7 +37562,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37617,7 +37617,7 @@
 						<id>905</id>
 						<name>res_1_addr_write_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37625,7 +37625,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37681,7 +37681,7 @@
 						<id>906</id>
 						<name>br_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37689,7 +37689,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37744,7 +37744,7 @@
 						<id>908</id>
 						<name>x_write_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37752,7 +37752,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -37810,7 +37810,7 @@
 						<id>909</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -37818,7 +37818,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49400,7 +49400,7 @@
 						<id>1171</id>
 						<name>icmp_ln51_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49408,7 +49408,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49464,7 +49464,7 @@
 						<id>1172</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49472,7 +49472,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49529,7 +49529,7 @@
 						<id>1174</id>
 						<name>x_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49537,7 +49537,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49592,7 +49592,7 @@
 						<id>1175</id>
 						<name>zext_ln51_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49600,7 +49600,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49655,7 +49655,7 @@
 						<id>1176</id>
 						<name>x_1_write_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49663,7 +49663,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49719,7 +49719,7 @@
 						<id>1177</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49727,7 +49727,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49782,7 +49782,7 @@
 						<id>1179</id>
 						<name>x_4</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49790,7 +49790,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49846,7 +49846,7 @@
 						<id>1180</id>
 						<name>icmp_ln51_3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49854,7 +49854,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49910,7 +49910,7 @@
 						<id>1181</id>
 						<name>add_ln51_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49918,7 +49918,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -49974,7 +49974,7 @@
 						<id>1182</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -49982,7 +49982,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50039,7 +50039,7 @@
 						<id>1184</id>
 						<name>zext_ln51_3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50047,7 +50047,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50102,7 +50102,7 @@
 						<id>1185</id>
 						<name>trunc_ln51_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50110,7 +50110,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50165,7 +50165,7 @@
 						<id>1189</id>
 						<name>lshr_ln51_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50173,7 +50173,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50231,7 +50231,7 @@
 						<id>1190</id>
 						<name>zext_ln51_4</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50239,7 +50239,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50294,7 +50294,7 @@
 						<id>1191</id>
 						<name>br_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50302,7 +50302,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50357,7 +50357,7 @@
 						<id>1193</id>
 						<name>y_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50365,7 +50365,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50468,7 +50468,7 @@
 						<id>1195</id>
 						<name>phi_mul1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50476,7 +50476,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50534,7 +50534,7 @@
 						<id>1196</id>
 						<name>zext_ln55_3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50542,7 +50542,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50597,7 +50597,7 @@
 						<id>1197</id>
 						<name>icmp_ln55_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50605,7 +50605,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50661,7 +50661,7 @@
 						<id>1198</id>
 						<name>add_ln55_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50669,7 +50669,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50725,7 +50725,7 @@
 						<id>1199</id>
 						<name>br_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50733,7 +50733,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50790,7 +50790,7 @@
 						<id>1201</id>
 						<name>trunc_ln55_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50798,7 +50798,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -50853,7 +50853,7 @@
 						<id>1204</id>
 						<name>a_assign_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -50861,7 +50861,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51174,7 +51174,7 @@
 						<id>1205</id>
 						<name>add_ln58_8</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51182,7 +51182,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51238,7 +51238,7 @@
 						<id>1206</id>
 						<name>add_ln58_3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51246,7 +51246,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51302,7 +51302,7 @@
 						<id>1207</id>
 						<name>shl_ln58_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51310,7 +51310,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51367,7 +51367,7 @@
 						<id>1208</id>
 						<name>add_ln58_4</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51375,7 +51375,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51431,7 +51431,7 @@
 						<id>1209</id>
 						<name>trunc_ln58_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51439,7 +51439,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51497,7 +51497,7 @@
 						<id>1210</id>
 						<name>sext_ln58_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51505,7 +51505,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51560,7 +51560,7 @@
 						<id>1211</id>
 						<name>gmem_addr_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51568,7 +51568,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51624,7 +51624,7 @@
 						<id>1212</id>
 						<name>gmem_load_1_req</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51632,7 +51632,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51689,7 +51689,7 @@
 						<id>1213</id>
 						<name>gmem_addr_1_read</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51697,7 +51697,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51754,7 +51754,7 @@
 						<id>1214</id>
 						<name>icmp_ln21_1</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>XNOR</contextFuncName>
 						<contextNormFuncName>XNOR</contextNormFuncName>
@@ -51762,7 +51762,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
@@ -51825,7 +51825,7 @@
 						<id>1215</id>
 						<name>zext_ln58_3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51833,7 +51833,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51888,7 +51888,7 @@
 						<id>1216</id>
 						<name>cnt_3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51896,7 +51896,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -51952,7 +51952,7 @@
 						<id>1217</id>
 						<name>br_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -51960,7 +51960,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52015,7 +52015,7 @@
 						<id>1219</id>
 						<name>zext_ln55_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52023,7 +52023,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52078,7 +52078,7 @@
 						<id>1220</id>
 						<name>res_2_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52086,7 +52086,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52143,7 +52143,7 @@
 						<id>1221</id>
 						<name>res_3_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52151,7 +52151,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52208,7 +52208,7 @@
 						<id>1222</id>
 						<name>res_4_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52216,7 +52216,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52273,7 +52273,7 @@
 						<id>1223</id>
 						<name>res_5_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52281,7 +52281,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52338,7 +52338,7 @@
 						<id>1224</id>
 						<name>_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52346,7 +52346,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52408,7 +52408,7 @@
 						<id>1226</id>
 						<name>res_4_addr_write_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52416,7 +52416,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52472,7 +52472,7 @@
 						<id>1227</id>
 						<name>br_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52480,7 +52480,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52535,7 +52535,7 @@
 						<id>1229</id>
 						<name>res_3_addr_write_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52543,7 +52543,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52599,7 +52599,7 @@
 						<id>1230</id>
 						<name>br_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52607,7 +52607,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52662,7 +52662,7 @@
 						<id>1232</id>
 						<name>res_2_addr_write_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52670,7 +52670,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52726,7 +52726,7 @@
 						<id>1233</id>
 						<name>br_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52734,7 +52734,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52789,7 +52789,7 @@
 						<id>1235</id>
 						<name>res_5_addr_write_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52797,7 +52797,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52853,7 +52853,7 @@
 						<id>1236</id>
 						<name>br_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52861,7 +52861,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52916,7 +52916,7 @@
 						<id>1238</id>
 						<name>x_1_write_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52924,7 +52924,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -52982,7 +52982,7 @@
 						<id>1239</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -52990,7 +52990,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -64576,7 +64576,7 @@
 						<id>1501</id>
 						<name>icmp_ln51_4</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -64584,7 +64584,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -64640,7 +64640,7 @@
 						<id>1502</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -64648,7 +64648,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -64705,7 +64705,7 @@
 						<id>1504</id>
 						<name>x_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -64713,7 +64713,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -64768,7 +64768,7 @@
 						<id>1505</id>
 						<name>zext_ln51_5</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -64776,7 +64776,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -64831,7 +64831,7 @@
 						<id>1506</id>
 						<name>trunc_ln51_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -64839,7 +64839,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -64894,7 +64894,7 @@
 						<id>1507</id>
 						<name>trunc_ln51_3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -64902,7 +64902,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -64957,7 +64957,7 @@
 						<id>1508</id>
 						<name>x_2_write_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -64965,7 +64965,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65021,7 +65021,7 @@
 						<id>1509</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65029,7 +65029,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65084,7 +65084,7 @@
 						<id>1511</id>
 						<name>x_5</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65092,7 +65092,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65148,7 +65148,7 @@
 						<id>1512</id>
 						<name>zext_ln51_8</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65156,7 +65156,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65211,7 +65211,7 @@
 						<id>1513</id>
 						<name>icmp_ln51_5</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65219,7 +65219,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65275,7 +65275,7 @@
 						<id>1514</id>
 						<name>add_ln51_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65283,7 +65283,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65339,7 +65339,7 @@
 						<id>1515</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65347,7 +65347,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65404,7 +65404,7 @@
 						<id>1517</id>
 						<name>zext_ln51_6</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65412,7 +65412,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65467,7 +65467,7 @@
 						<id>1518</id>
 						<name>zext_ln51_7</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65475,7 +65475,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65530,7 +65530,7 @@
 						<id>1522</id>
 						<name>br_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65538,7 +65538,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65593,7 +65593,7 @@
 						<id>1524</id>
 						<name>y_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65601,7 +65601,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65704,7 +65704,7 @@
 						<id>1526</id>
 						<name>phi_mul3</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65712,7 +65712,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65770,7 +65770,7 @@
 						<id>1527</id>
 						<name>zext_ln55_4</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65778,7 +65778,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65833,7 +65833,7 @@
 						<id>1528</id>
 						<name>icmp_ln55_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65841,7 +65841,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65897,7 +65897,7 @@
 						<id>1529</id>
 						<name>add_ln55_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65905,7 +65905,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -65961,7 +65961,7 @@
 						<id>1530</id>
 						<name>br_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -65969,7 +65969,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66026,7 +66026,7 @@
 						<id>1532</id>
 						<name>trunc_ln55_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66034,7 +66034,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66089,7 +66089,7 @@
 						<id>1535</id>
 						<name>a_assign_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66097,7 +66097,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66410,7 +66410,7 @@
 						<id>1536</id>
 						<name>add_ln58_10</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66418,7 +66418,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66474,7 +66474,7 @@
 						<id>1537</id>
 						<name>add_ln58_6</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66482,7 +66482,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66538,7 +66538,7 @@
 						<id>1538</id>
 						<name>shl_ln58_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66546,7 +66546,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66603,7 +66603,7 @@
 						<id>1539</id>
 						<name>add_ln58_7</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66611,7 +66611,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66667,7 +66667,7 @@
 						<id>1540</id>
 						<name>trunc_ln58_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66675,7 +66675,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66733,7 +66733,7 @@
 						<id>1541</id>
 						<name>sext_ln58_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66741,7 +66741,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66796,7 +66796,7 @@
 						<id>1542</id>
 						<name>gmem_addr_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66804,7 +66804,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66860,7 +66860,7 @@
 						<id>1543</id>
 						<name>gmem_load_2_req</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66868,7 +66868,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66925,7 +66925,7 @@
 						<id>1544</id>
 						<name>gmem_addr_2_read</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -66933,7 +66933,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -66990,7 +66990,7 @@
 						<id>1545</id>
 						<name>icmp_ln21_2</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>XNOR</contextFuncName>
 						<contextNormFuncName>XNOR</contextNormFuncName>
@@ -66998,7 +66998,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
@@ -67061,7 +67061,7 @@
 						<id>1546</id>
 						<name>zext_ln58_4</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -67069,7 +67069,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -67124,7 +67124,7 @@
 						<id>1547</id>
 						<name>cnt_5</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>58</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -67132,7 +67132,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -67188,7 +67188,7 @@
 						<id>1548</id>
 						<name>br_ln55</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -67196,7 +67196,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -67251,7 +67251,7 @@
 						<id>1550</id>
 						<name>zext_ln55_5</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -67259,7 +67259,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -67314,7 +67314,7 @@
 						<id>1551</id>
 						<name>layer3_activations_addr</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -67322,7 +67322,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -67379,7 +67379,7 @@
 						<id>1552</id>
 						<name>layer3_activations_addr_write_ln60</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -67387,7 +67387,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -67443,7 +67443,7 @@
 						<id>1553</id>
 						<name>x_2_write_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -67451,7 +67451,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -67509,7 +67509,7 @@
 						<id>1554</id>
 						<name>br_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -67517,7 +67517,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -67572,7 +67572,7 @@
 						<id>1556</id>
 						<name>_ln51</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>51</lineNumber>
 						<contextFuncName>matmul_xnor</contextFuncName>
 						<contextNormFuncName>matmul_xnor</contextNormFuncName>
@@ -67580,7 +67580,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -67774,7 +67774,7 @@
 						<id>1561</id>
 						<name>_ln173</name>
 						<fileName>bnn.cpp</fileName>
-						<fileDirectory>C:\ECEN529\bnn_final\bnn_hls</fileDirectory>
+						<fileDirectory>D:\ecen529\finalProject\vitis\bnn_hls</fileDirectory>
 						<lineNumber>173</lineNumber>
 						<contextFuncName>feedforward</contextFuncName>
 						<contextNormFuncName>feedforward</contextNormFuncName>
@@ -67782,7 +67782,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\ECEN529\bnn_final\bnn_hls</first>
+								<first>D:\ecen529\finalProject\vitis\bnn_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
