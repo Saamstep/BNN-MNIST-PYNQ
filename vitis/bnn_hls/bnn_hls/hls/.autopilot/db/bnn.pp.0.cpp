@@ -153,8 +153,140 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "bnn.cpp" 2
-# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h" 1
-# 10 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h"
+# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\hls_stream.h" 1
+# 12 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\hls_stream.h"
+# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_stream_39.h" 1
+# 23 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_stream_39.h"
+namespace hls {
+# 49 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_stream_39.h"
+template<typename __STREAM_T__, int DEPTH=0>
+class stream;
+
+template<typename __STREAM_T__>
+class stream<__STREAM_T__, 0>
+{
+  public:
+    using value_type = __STREAM_T__;
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+      (void)(name);
+    }
+
+
+  private:
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream& operator= (const stream< __STREAM_T__ >& chn) {
+        V = chn.V;
+        return *this;
+    }
+
+  public:
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator >> (__STREAM_T__& rdata) {
+        read(rdata);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator << (const __STREAM_T__& wdata) {
+        write(wdata);
+    }
+
+
+  public:
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool empty() const {
+        return !__fpga_fifo_not_empty(&V);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool full() const {
+        return !__fpga_fifo_not_full(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void read(__STREAM_T__& dout) {
+        __fpga_fifo_pop(&V, &dout);
+    }
+
+
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
+        __fpga_fifo_pop(&V, &dout);
+        return flag;
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) __STREAM_T__ read() {
+        __STREAM_T__ tmp;
+        read(tmp);
+        return tmp;
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool read_nb(__STREAM_T__& dout) {
+        __STREAM_T__ tmp;
+
+        if (__fpga_fifo_nb_pop(&V, &tmp)) {
+            dout = tmp;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void write(const __STREAM_T__& din) {
+        __fpga_fifo_push(&V, &din);
+    }
+
+
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
+        __fpga_fifo_push(&V, &din);
+        return flag;
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool write_nb(const __STREAM_T__& din) {
+        return __fpga_fifo_nb_push(&V, &din);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned size() const {
+        return __fpga_fifo_size(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned capacity() const {
+        return __fpga_fifo_capacity(&V);
+    }
+
+
+    void set_name(const char* name) { (void)(name); }
+
+  public:
+    __STREAM_T__ V __attribute__((no_ctor));
+};
+
+template<typename __STREAM_T__, int DEPTH>
+class stream : public stream<__STREAM_T__, 0> {
+  public:
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+#pragma HLS stream variable=this depth=DEPTH
+ }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+#pragma HLS stream variable=this depth=DEPTH
+ (void)(name);
+    }
+};
+}
+# 13 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\hls_stream.h" 2
+# 2 "bnn.cpp" 2
+# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_axi_sdata.h" 1
+# 15 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_axi_sdata.h"
+# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 1
+# 10 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h"
 # 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\etc/ap_common.h" 1
 # 41 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\etc/ap_common.h"
 # 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\etc/ap_decl.h" 1
@@ -401,7 +533,7 @@ inline __attribute__((always_inline)) half rawBitsToHalf(unsigned short pi) {
 
 
 }
-# 11 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h" 2
+# 11 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 2
 # 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\etc/ap_int_base.h" 1
 # 56 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\etc/ap_int_base.h"
 template <int _AP_N, bool _AP_S>
@@ -1646,7 +1778,7 @@ template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2, int _AP_W3, 
 template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2, int _AP_W3, bool _AP_S3> inline __attribute__((always_inline)) __attribute__((nodebug)) bool operator >=( const ap_int_base<_AP_W3, _AP_S3>& op1, const ap_concat_ref<_AP_W1, _AP_T1, _AP_W2, _AP_T2>& op2) { return op1 >= op2.get(); } template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2, int _AP_W3, bool _AP_S3> inline __attribute__((always_inline)) __attribute__((nodebug)) bool operator >=( const ap_concat_ref<_AP_W1, _AP_T1, _AP_W2, _AP_T2>& op1, const ap_int_base<_AP_W3, _AP_S3>& op2) { return op1.get() >= op2; }
 template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2, int _AP_W3, bool _AP_S3> inline __attribute__((always_inline)) __attribute__((nodebug)) bool operator <( const ap_int_base<_AP_W3, _AP_S3>& op1, const ap_concat_ref<_AP_W1, _AP_T1, _AP_W2, _AP_T2>& op2) { return op1 < op2.get(); } template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2, int _AP_W3, bool _AP_S3> inline __attribute__((always_inline)) __attribute__((nodebug)) bool operator <( const ap_concat_ref<_AP_W1, _AP_T1, _AP_W2, _AP_T2>& op1, const ap_int_base<_AP_W3, _AP_S3>& op2) { return op1.get() < op2; }
 template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2, int _AP_W3, bool _AP_S3> inline __attribute__((always_inline)) __attribute__((nodebug)) bool operator <=( const ap_int_base<_AP_W3, _AP_S3>& op1, const ap_concat_ref<_AP_W1, _AP_T1, _AP_W2, _AP_T2>& op2) { return op1 <= op2.get(); } template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2, int _AP_W3, bool _AP_S3> inline __attribute__((always_inline)) __attribute__((nodebug)) bool operator <=( const ap_concat_ref<_AP_W1, _AP_T1, _AP_W2, _AP_T2>& op1, const ap_int_base<_AP_W3, _AP_S3>& op2) { return op1.get() <= op2; }
-# 12 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h" 2
+# 12 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 2
 # 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\etc/ap_int_ref.h" 1
 # 27 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\etc/ap_int_ref.h"
 template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2>
@@ -2618,7 +2750,7 @@ template <int _AP_W, typename _AP_T, int _AP_W1, typename _AP_T1> inline __attri
 template <int _AP_W, typename _AP_T, int _AP_W1, typename _AP_T1> inline __attribute__((always_inline)) __attribute__((nodebug)) ap_uint<_AP_W + _AP_W1> operator >>( const ap_concat_ref<_AP_W, _AP_T, _AP_W1, _AP_T1> lhs, unsigned long rhs) { return ap_uint<_AP_W + _AP_W1>(lhs).get() >> int(rhs); }
 template <int _AP_W, typename _AP_T, int _AP_W1, typename _AP_T1> inline __attribute__((always_inline)) __attribute__((nodebug)) ap_uint<_AP_W + _AP_W1> operator >>( const ap_concat_ref<_AP_W, _AP_T, _AP_W1, _AP_T1> lhs, ap_slong rhs) { return ap_uint<_AP_W + _AP_W1>(lhs).get() >> int(rhs); }
 template <int _AP_W, typename _AP_T, int _AP_W1, typename _AP_T1> inline __attribute__((always_inline)) __attribute__((nodebug)) ap_uint<_AP_W + _AP_W1> operator >>( const ap_concat_ref<_AP_W, _AP_T, _AP_W1, _AP_T1> lhs, ap_ulong rhs) { return ap_uint<_AP_W + _AP_W1>(lhs).get() >> int(rhs); }
-# 13 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h" 2
+# 13 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 2
 
 
 
@@ -2761,7 +2893,7 @@ struct ap_int : ap_int_base<_AP_W, true> {
 
 
   ap_int &operator=(const ap_int<_AP_W> &op2) = default;
-# 163 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h"
+# 163 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h"
   inline __attribute__((always_inline)) __attribute__((nodebug)) ap_int& operator=(const volatile ap_int<_AP_W>& op2) {
     Base::V = op2.V;
     return *this;
@@ -2911,7 +3043,7 @@ struct ap_uint : ap_int_base<_AP_W, false> {
 
 
   ap_uint &operator=(const ap_uint<_AP_W> &op2) = default;
-# 321 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h"
+# 321 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h"
   inline __attribute__((always_inline)) __attribute__((nodebug)) ap_uint& operator=(const volatile ap_uint<_AP_W>& op2) {
     Base::V = op2.V;
     return *this;
@@ -2927,7 +3059,7 @@ struct ap_uint : ap_int_base<_AP_W, false> {
   }
 
 };
-# 356 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h"
+# 356 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h"
 # 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\etc/ap_int_special.h" 1
 # 20 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\etc/ap_int_special.h"
 namespace std {
@@ -3095,7 +3227,7 @@ inline __attribute__((nodebug)) bool operator!=(const ap_int<_AP_W> &__x, const 
 }
 
 }
-# 357 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h" 2
+# 357 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 2
 
 
 
@@ -5693,140 +5825,6 @@ inline __attribute__((nodebug)) bool operator!=(
 }
 # 370 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_fixed.h" 2
 # 365 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h" 2
-# 2 "bnn.cpp" 2
-# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\hls_stream.h" 1
-# 12 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\hls_stream.h"
-# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_stream_39.h" 1
-# 23 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_stream_39.h"
-namespace hls {
-# 49 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_stream_39.h"
-template<typename __STREAM_T__, int DEPTH=0>
-class stream;
-
-template<typename __STREAM_T__>
-class stream<__STREAM_T__, 0>
-{
-  public:
-    using value_type = __STREAM_T__;
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
-    }
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
-      (void)(name);
-    }
-
-
-  private:
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
-    }
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream& operator= (const stream< __STREAM_T__ >& chn) {
-        V = chn.V;
-        return *this;
-    }
-
-  public:
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator >> (__STREAM_T__& rdata) {
-        read(rdata);
-    }
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator << (const __STREAM_T__& wdata) {
-        write(wdata);
-    }
-
-
-  public:
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool empty() const {
-        return !__fpga_fifo_not_empty(&V);
-    }
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool full() const {
-        return !__fpga_fifo_not_full(&V);
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void read(__STREAM_T__& dout) {
-        __fpga_fifo_pop(&V, &dout);
-    }
-
-
-    inline __attribute__((noinline)) __attribute__((nodebug)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
-        __fpga_fifo_pop(&V, &dout);
-        return flag;
-    }
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) __STREAM_T__ read() {
-        __STREAM_T__ tmp;
-        read(tmp);
-        return tmp;
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool read_nb(__STREAM_T__& dout) {
-        __STREAM_T__ tmp;
-
-        if (__fpga_fifo_nb_pop(&V, &tmp)) {
-            dout = tmp;
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void write(const __STREAM_T__& din) {
-        __fpga_fifo_push(&V, &din);
-    }
-
-
-    inline __attribute__((noinline)) __attribute__((nodebug)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
-        __fpga_fifo_push(&V, &din);
-        return flag;
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool write_nb(const __STREAM_T__& din) {
-        return __fpga_fifo_nb_push(&V, &din);
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned size() const {
-        return __fpga_fifo_size(&V);
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned capacity() const {
-        return __fpga_fifo_capacity(&V);
-    }
-
-
-    void set_name(const char* name) { (void)(name); }
-
-  public:
-    __STREAM_T__ V __attribute__((no_ctor));
-};
-
-template<typename __STREAM_T__, int DEPTH>
-class stream : public stream<__STREAM_T__, 0> {
-  public:
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
-#pragma HLS stream variable=this depth=DEPTH
- }
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
-#pragma HLS stream variable=this depth=DEPTH
- (void)(name);
-    }
-};
-}
-# 13 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\hls_stream.h" 2
-# 3 "bnn.cpp" 2
-# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_axi_sdata.h" 1
-# 15 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_axi_sdata.h"
-# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_int.h" 1
 # 16 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_axi_sdata.h" 2
 
 # 1 "C:/Xilinx/Vitis/2024.2/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cassert" 1 3
@@ -9734,6 +9732,26 @@ private:
 };
 
 }
+# 3 "bnn.cpp" 2
+# 1 "./weights.h" 1
+
+# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h" 1
+# 3 "./weights.h" 2
+
+
+typedef ap_fixed<32, 24, AP_RND> data_t;
+
+const int rowsW1 = 128;
+const int colsW1 = 784;
+extern const data_t W1[rowsW1][colsW1];
+
+const int rowsW2 = 64;
+const int colsW2 = 128;
+extern const data_t W2[rowsW2][colsW2];
+
+const int rowsW3 = 10;
+const int colsW3 = 64;
+extern const data_t W3[rowsW3][colsW3];
 # 4 "bnn.cpp" 2
 
 
@@ -9741,8 +9759,8 @@ private:
 
 
 
-typedef int data_t;
-typedef ap_axis<32, 0, 0, 0> axis_t;
+typedef ap_axis<32, 2, 5, 8> axis_t;
+
 
 
 
@@ -9751,8 +9769,7 @@ typedef ap_axis<32, 0, 0, 0> axis_t;
 
 data_t XNOR(data_t a, data_t b)
 {
-#pragma HLS INLINE
- return (a == b) ? 1 : 0;
+    return (a == b) ? 1 : 0;
 }
 
 
@@ -9762,8 +9779,7 @@ data_t XNOR(data_t a, data_t b)
 
 data_t quantize(data_t x)
 {
-#pragma HLS INLINE
- return (x == 1) ? 0 : 1;
+    return (x == 1) ? 0 : 1;
 }
 
 
@@ -9773,21 +9789,20 @@ data_t quantize(data_t x)
 
 data_t sign(data_t x)
 {
-#pragma HLS INLINE
- return (x > 0) ? 1 : -1;
+    return (x > 0) ? 1 : -1;
 }
 
 
 
 
-void matmul_xnor(const data_t* A, const data_t* B, data_t* res, int rowsA, int rowsB, int colsB)
+void matmul_xnor(const data_t* A, const data_t* B, data_t* res, int rowsA, int colsB)
 {
- VITIS_LOOP_51_1: for (int x = 0; x < colsB; ++x) {
-#pragma HLS LOOP_TRIPCOUNT min=1 max=256
+ VITIS_LOOP_48_1: for (int x = 0; x < colsB; ++x) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=784
 #pragma HLS PIPELINE II=1
- int cnt = 0;
-     VITIS_LOOP_55_2: for (int y = 0; y < rowsA; ++y) {
-#pragma HLS LOOP_TRIPCOUNT min=1 max=256
+ data_t cnt = 0;
+     VITIS_LOOP_52_2: for (int y = 0; y < rowsA; ++y) {
+#pragma HLS LOOP_TRIPCOUNT min=1 max=128
 #pragma HLS UNROLL factor=2
  cnt += XNOR(A[y], B[y * colsB + x]);
      }
@@ -9802,103 +9817,91 @@ void matmul_xnor(const data_t* A, const data_t* B, data_t* res, int rowsA, int r
 
 __attribute__((sdx_kernel("feedforward", 0))) void feedforward(
     hls::stream<axis_t>& input_stream,
-    hls::stream<axis_t>& output_stream,
-    const data_t* W1,
-    const data_t* W2,
-    const data_t* W3,
-    int X_size,
-    int rowsW1, int colsW1,
-    int rowsW2, int colsW2,
-    int rowsW3, int colsW3
+    hls::stream<axis_t>& output_stream
 ) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=feedforward
-# 79 "bnn.cpp"
+# 69 "bnn.cpp"
 
 #pragma HLS INTERFACE axis port=input_stream
 #pragma HLS INTERFACE axis port=output_stream
-
-#pragma HLS INTERFACE m_axi depth=16384 port=W1 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi depth=16384 port=W2 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi depth=16384 port=W3 offset=slave bundle=gmem
-
-#pragma HLS INTERFACE s_axilite port=W1 bundle=control
-#pragma HLS INTERFACE s_axilite port=W2 bundle=control
-#pragma HLS INTERFACE s_axilite port=W3 bundle=control
-#pragma HLS INTERFACE s_axilite port=X_size bundle=control
-#pragma HLS INTERFACE s_axilite port=rowsW1 bundle=control
-#pragma HLS INTERFACE s_axilite port=colsW1 bundle=control
-#pragma HLS INTERFACE s_axilite port=rowsW2 bundle=control
-#pragma HLS INTERFACE s_axilite port=colsW2 bundle=control
-#pragma HLS INTERFACE s_axilite port=rowsW3 bundle=control
-#pragma HLS INTERFACE s_axilite port=colsW3 bundle=control
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 
- data_t X0_input[256];
+#pragma HLS ARRAY_PARTITION variable=W1 complete dim=2
+#pragma HLS ARRAY_PARTITION variable=W2 complete dim=2
+#pragma HLS ARRAY_PARTITION variable=W3 complete dim=2
+
+ data_t X0_input[784];
 #pragma HLS ARRAY_PARTITION variable=X0_input complete dim=1
 
 
- VITIS_LOOP_103_1: for (int i = 0; i < X_size; ++i)
+
+ data_t layer1_activations[colsW1];
+    data_t layer2_activations[colsW2];
+    data_t layer3_activations[colsW3];
+    data_t layer1_quant[colsW1];
+    data_t layer2_quant[colsW2];
+#pragma HLS ARRAY_PARTITION variable=layer1_quant complete dim=1
+#pragma HLS ARRAY_PARTITION variable=layer2_quant complete dim=1
+
+
+ VITIS_LOOP_92_1: for (int i = 0; i < 28*28; ++i)
     {
 #pragma HLS PIPELINE
  axis_t temp = input_stream.read();
         X0_input[i] = quantize(sign(temp.data));
     }
 
-    data_t layer1_activations[128];
-    matmul_xnor(X0_input, W1, layer1_activations, X_size, rowsW1, colsW1);
 
-    VITIS_LOOP_113_2: for (int i = 0; i < colsW1; ++i)
+    matmul_xnor(X0_input, (const data_t*)W1, layer1_activations, 28*28, colsW1);
+
+
+    VITIS_LOOP_103_2: for (int i = 0; i < colsW1; ++i)
     {
 #pragma HLS UNROLL factor=2
- layer1_activations[i] = (2 * layer1_activations[i]) - X_size;
+ layer1_activations[i] = (2 * layer1_activations[i]) - 28*28;
     }
 
-    int layer1_quant[128];
-    int layer2_quant[128];
-    int layer3_quant[128];
-#pragma HLS ARRAY_PARTITION variable=layer1_quant complete dim=1
-#pragma HLS ARRAY_PARTITION variable=layer2_quant complete dim=1
-#pragma HLS ARRAY_PARTITION variable=layer3_quant complete dim=1
 
- VITIS_LOOP_126_3: for (int i = 0; i < colsW1; ++i)
+    VITIS_LOOP_110_3: for (int i = 0; i < colsW1; ++i)
     {
 #pragma HLS PIPELINE
  layer1_quant[i] = quantize(sign(layer1_activations[i]));
     }
 
-    data_t layer2_activations[128];
-    matmul_xnor(layer1_quant, W2, layer2_activations, colsW1, rowsW2, colsW2);
 
-    VITIS_LOOP_135_4: for (int i = 0; i < colsW1; ++i)
-    {
-#pragma HLS PIPELINE
- layer2_quant[i] = quantize(sign(layer2_activations[i]));
-    }
 
-    VITIS_LOOP_141_5: for (int i = 0; i < colsW2; ++i)
+
+    matmul_xnor(layer1_quant, (const data_t*)W2, layer2_activations, rowsW1,colsW2);
+
+
+    VITIS_LOOP_122_4: for (int i = 0; i < colsW2; ++i)
     {
 #pragma HLS UNROLL factor=4
  layer2_activations[i] = (2 * layer2_activations[i]) - colsW1;
     }
 
-    VITIS_LOOP_147_6: for (int i = 0; i < colsW2; ++i)
+
+    VITIS_LOOP_129_5: for (int i = 0; i < colsW2; ++i)
     {
 #pragma HLS PIPELINE
- layer3_quant[i] = quantize(sign(layer2_activations[i]));
+ layer2_quant[i] = quantize(sign(layer2_activations[i]));
     }
 
-    data_t layer3_activations[128];
-    matmul_xnor(layer3_quant, W3, layer3_activations, colsW2, rowsW3, colsW3);
 
-    VITIS_LOOP_156_7: for (int i = 0; i < colsW3; ++i)
+
+    matmul_xnor(layer2_quant, (const data_t*)W3, layer3_activations, rowsW2, colsW3);
+
+    VITIS_LOOP_139_6: for (int i = 0; i < colsW3; ++i)
     {
 #pragma HLS PIPELINE
  layer3_activations[i] = (2 * layer3_activations[i]) - colsW2;
     }
 
 
-    VITIS_LOOP_163_8: for (int i = 0; i < colsW3; ++i)
+
+
+    VITIS_LOOP_148_7: for (int i = 0; i < colsW3; ++i)
     {
 #pragma HLS PIPELINE
  axis_t temp;

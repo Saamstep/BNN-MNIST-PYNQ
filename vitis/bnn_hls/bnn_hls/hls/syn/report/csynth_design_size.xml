@@ -2,41 +2,41 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">,   562, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">,  3911, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll,   433, user unroll pragmas are applied</column>
-            <column name="">(2) simplification,   329, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline,   331, user inline pragmas are applied</column>
-            <column name="">(4) simplification,   317, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll,    768, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,    431, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,    387, user inline pragmas are applied</column>
+            <column name="">(4) simplification,    321, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition, 3090, user array partition pragmas are applied</column>
-            <column name="">(2) simplification, 2318, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate , 2318, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape, 2318, apply array reshape pragmas</column>
-            <column name="">(5) access patterns, 2867, array access pattern optmizations</column>
+            <column name="">(1) array partition,  8289, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  7313, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  7313, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  7313, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 15884, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification, 2869, loop and instruction simplification</column>
-            <column name="">(2) parallelization, 2352, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition, 2486, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification, 2401, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification, 10979, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  9028, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  8957, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  8084, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering, 2411, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations, 2168, high level synthesis optimizations</column>
+            <column name="">(1) lowering,  8072, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  8109, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="feedforward" col1="bnn.cpp:69" col2="562" col3="317" col4="2867" col5="2401" col6="2168">
-                    <row id="4" col0="sign" col1="bnn.cpp:40" col2="16" col2_disp=" 16 (4 calls)" col3="" col4="" col5="" col6=""/>
-                    <row id="2" col0="quantize" col1="bnn.cpp:29" col2="16" col2_disp=" 16 (4 calls)" col3="" col4="" col5="" col6=""/>
-                    <row id="1" col0="matmul_xnor" col1="bnn.cpp:49" col2="111" col2_disp="111 (3 calls)" col3="" col4="" col5="" col6="">
-                        <row id="3" col0="XNOR" col1="bnn.cpp:18" col2="12" col2_disp=" 12 (3 calls)" col3="" col4="" col5="" col6=""/>
+                <row id="0" col0="feedforward" col1="bnn.cpp:66" col2="3911" col3="321" col4="15884" col5="8084" col6="8109">
+                    <row id="4" col0="sign" col1="bnn.cpp:38" col2="432" col2_disp=" 432 (3 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="5" col0="quantize" col1="bnn.cpp:28" col2="432" col2_disp=" 432 (3 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="6" col0="matmul_xnor" col1="bnn.cpp:46" col2="1107" col2_disp="1,107 (3 calls)" col3="102" col3_disp="102 (3 calls)" col4="7829" col4_disp="7,829 (3 calls)" col5="4932" col5_disp="4,932 (3 calls)" col6="4944" col6_disp="4,944 (3 calls)">
+                        <row id="2" col0="XNOR" col1="bnn.cpp:18" col2="192" col2_disp=" 192 (3 calls)" col3="" col4="" col5="" col6=""/>
                     </row>
                 </row>
             </rows>

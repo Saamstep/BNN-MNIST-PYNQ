@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Thu Jun 12 21:05:49 2025
+//Date        : Fri Jun 13 14:40:20 2025
 //Host        : rogDesktop running 64-bit major release  (build 9200)
 //Command     : generate_target bd_0_wrapper.bd
 //Design      : bd_0_wrapper
@@ -14,57 +14,23 @@ module bd_0_wrapper
    (ap_clk,
     ap_rst_n,
     input_stream_tdata,
+    input_stream_tdest,
+    input_stream_tid,
     input_stream_tkeep,
     input_stream_tlast,
     input_stream_tready,
     input_stream_tstrb,
+    input_stream_tuser,
     input_stream_tvalid,
     interrupt,
-    m_axi_gmem_araddr,
-    m_axi_gmem_arburst,
-    m_axi_gmem_arcache,
-    m_axi_gmem_arid,
-    m_axi_gmem_arlen,
-    m_axi_gmem_arlock,
-    m_axi_gmem_arprot,
-    m_axi_gmem_arqos,
-    m_axi_gmem_arready,
-    m_axi_gmem_arregion,
-    m_axi_gmem_arsize,
-    m_axi_gmem_arvalid,
-    m_axi_gmem_awaddr,
-    m_axi_gmem_awburst,
-    m_axi_gmem_awcache,
-    m_axi_gmem_awid,
-    m_axi_gmem_awlen,
-    m_axi_gmem_awlock,
-    m_axi_gmem_awprot,
-    m_axi_gmem_awqos,
-    m_axi_gmem_awready,
-    m_axi_gmem_awregion,
-    m_axi_gmem_awsize,
-    m_axi_gmem_awvalid,
-    m_axi_gmem_bid,
-    m_axi_gmem_bready,
-    m_axi_gmem_bresp,
-    m_axi_gmem_bvalid,
-    m_axi_gmem_rdata,
-    m_axi_gmem_rid,
-    m_axi_gmem_rlast,
-    m_axi_gmem_rready,
-    m_axi_gmem_rresp,
-    m_axi_gmem_rvalid,
-    m_axi_gmem_wdata,
-    m_axi_gmem_wid,
-    m_axi_gmem_wlast,
-    m_axi_gmem_wready,
-    m_axi_gmem_wstrb,
-    m_axi_gmem_wvalid,
     output_stream_tdata,
+    output_stream_tdest,
+    output_stream_tid,
     output_stream_tkeep,
     output_stream_tlast,
     output_stream_tready,
     output_stream_tstrb,
+    output_stream_tuser,
     output_stream_tvalid,
     s_axi_control_araddr,
     s_axi_control_arready,
@@ -86,62 +52,28 @@ module bd_0_wrapper
   input ap_clk;
   input ap_rst_n;
   input [31:0]input_stream_tdata;
+  input [7:0]input_stream_tdest;
+  input [4:0]input_stream_tid;
   input [3:0]input_stream_tkeep;
   input [0:0]input_stream_tlast;
   output input_stream_tready;
   input [3:0]input_stream_tstrb;
+  input [1:0]input_stream_tuser;
   input input_stream_tvalid;
   output interrupt;
-  output [63:0]m_axi_gmem_araddr;
-  output [1:0]m_axi_gmem_arburst;
-  output [3:0]m_axi_gmem_arcache;
-  output [0:0]m_axi_gmem_arid;
-  output [7:0]m_axi_gmem_arlen;
-  output [1:0]m_axi_gmem_arlock;
-  output [2:0]m_axi_gmem_arprot;
-  output [3:0]m_axi_gmem_arqos;
-  input m_axi_gmem_arready;
-  output [3:0]m_axi_gmem_arregion;
-  output [2:0]m_axi_gmem_arsize;
-  output m_axi_gmem_arvalid;
-  output [63:0]m_axi_gmem_awaddr;
-  output [1:0]m_axi_gmem_awburst;
-  output [3:0]m_axi_gmem_awcache;
-  output [0:0]m_axi_gmem_awid;
-  output [7:0]m_axi_gmem_awlen;
-  output [1:0]m_axi_gmem_awlock;
-  output [2:0]m_axi_gmem_awprot;
-  output [3:0]m_axi_gmem_awqos;
-  input m_axi_gmem_awready;
-  output [3:0]m_axi_gmem_awregion;
-  output [2:0]m_axi_gmem_awsize;
-  output m_axi_gmem_awvalid;
-  input [0:0]m_axi_gmem_bid;
-  output m_axi_gmem_bready;
-  input [1:0]m_axi_gmem_bresp;
-  input m_axi_gmem_bvalid;
-  input [31:0]m_axi_gmem_rdata;
-  input [0:0]m_axi_gmem_rid;
-  input m_axi_gmem_rlast;
-  output m_axi_gmem_rready;
-  input [1:0]m_axi_gmem_rresp;
-  input m_axi_gmem_rvalid;
-  output [31:0]m_axi_gmem_wdata;
-  output [0:0]m_axi_gmem_wid;
-  output m_axi_gmem_wlast;
-  input m_axi_gmem_wready;
-  output [3:0]m_axi_gmem_wstrb;
-  output m_axi_gmem_wvalid;
   output [31:0]output_stream_tdata;
+  output [7:0]output_stream_tdest;
+  output [4:0]output_stream_tid;
   output [3:0]output_stream_tkeep;
   output [0:0]output_stream_tlast;
   input output_stream_tready;
   output [3:0]output_stream_tstrb;
+  output [1:0]output_stream_tuser;
   output output_stream_tvalid;
-  input [6:0]s_axi_control_araddr;
+  input [3:0]s_axi_control_araddr;
   output s_axi_control_arready;
   input s_axi_control_arvalid;
-  input [6:0]s_axi_control_awaddr;
+  input [3:0]s_axi_control_awaddr;
   output s_axi_control_awready;
   input s_axi_control_awvalid;
   input s_axi_control_bready;
@@ -159,62 +91,28 @@ module bd_0_wrapper
   wire ap_clk;
   wire ap_rst_n;
   wire [31:0]input_stream_tdata;
+  wire [7:0]input_stream_tdest;
+  wire [4:0]input_stream_tid;
   wire [3:0]input_stream_tkeep;
   wire [0:0]input_stream_tlast;
   wire input_stream_tready;
   wire [3:0]input_stream_tstrb;
+  wire [1:0]input_stream_tuser;
   wire input_stream_tvalid;
   wire interrupt;
-  wire [63:0]m_axi_gmem_araddr;
-  wire [1:0]m_axi_gmem_arburst;
-  wire [3:0]m_axi_gmem_arcache;
-  wire [0:0]m_axi_gmem_arid;
-  wire [7:0]m_axi_gmem_arlen;
-  wire [1:0]m_axi_gmem_arlock;
-  wire [2:0]m_axi_gmem_arprot;
-  wire [3:0]m_axi_gmem_arqos;
-  wire m_axi_gmem_arready;
-  wire [3:0]m_axi_gmem_arregion;
-  wire [2:0]m_axi_gmem_arsize;
-  wire m_axi_gmem_arvalid;
-  wire [63:0]m_axi_gmem_awaddr;
-  wire [1:0]m_axi_gmem_awburst;
-  wire [3:0]m_axi_gmem_awcache;
-  wire [0:0]m_axi_gmem_awid;
-  wire [7:0]m_axi_gmem_awlen;
-  wire [1:0]m_axi_gmem_awlock;
-  wire [2:0]m_axi_gmem_awprot;
-  wire [3:0]m_axi_gmem_awqos;
-  wire m_axi_gmem_awready;
-  wire [3:0]m_axi_gmem_awregion;
-  wire [2:0]m_axi_gmem_awsize;
-  wire m_axi_gmem_awvalid;
-  wire [0:0]m_axi_gmem_bid;
-  wire m_axi_gmem_bready;
-  wire [1:0]m_axi_gmem_bresp;
-  wire m_axi_gmem_bvalid;
-  wire [31:0]m_axi_gmem_rdata;
-  wire [0:0]m_axi_gmem_rid;
-  wire m_axi_gmem_rlast;
-  wire m_axi_gmem_rready;
-  wire [1:0]m_axi_gmem_rresp;
-  wire m_axi_gmem_rvalid;
-  wire [31:0]m_axi_gmem_wdata;
-  wire [0:0]m_axi_gmem_wid;
-  wire m_axi_gmem_wlast;
-  wire m_axi_gmem_wready;
-  wire [3:0]m_axi_gmem_wstrb;
-  wire m_axi_gmem_wvalid;
   wire [31:0]output_stream_tdata;
+  wire [7:0]output_stream_tdest;
+  wire [4:0]output_stream_tid;
   wire [3:0]output_stream_tkeep;
   wire [0:0]output_stream_tlast;
   wire output_stream_tready;
   wire [3:0]output_stream_tstrb;
+  wire [1:0]output_stream_tuser;
   wire output_stream_tvalid;
-  wire [6:0]s_axi_control_araddr;
+  wire [3:0]s_axi_control_araddr;
   wire s_axi_control_arready;
   wire s_axi_control_arvalid;
-  wire [6:0]s_axi_control_awaddr;
+  wire [3:0]s_axi_control_awaddr;
   wire s_axi_control_awready;
   wire s_axi_control_awvalid;
   wire s_axi_control_bready;
@@ -233,57 +131,23 @@ module bd_0_wrapper
        (.ap_clk(ap_clk),
         .ap_rst_n(ap_rst_n),
         .input_stream_tdata(input_stream_tdata),
+        .input_stream_tdest(input_stream_tdest),
+        .input_stream_tid(input_stream_tid),
         .input_stream_tkeep(input_stream_tkeep),
         .input_stream_tlast(input_stream_tlast),
         .input_stream_tready(input_stream_tready),
         .input_stream_tstrb(input_stream_tstrb),
+        .input_stream_tuser(input_stream_tuser),
         .input_stream_tvalid(input_stream_tvalid),
         .interrupt(interrupt),
-        .m_axi_gmem_araddr(m_axi_gmem_araddr),
-        .m_axi_gmem_arburst(m_axi_gmem_arburst),
-        .m_axi_gmem_arcache(m_axi_gmem_arcache),
-        .m_axi_gmem_arid(m_axi_gmem_arid),
-        .m_axi_gmem_arlen(m_axi_gmem_arlen),
-        .m_axi_gmem_arlock(m_axi_gmem_arlock),
-        .m_axi_gmem_arprot(m_axi_gmem_arprot),
-        .m_axi_gmem_arqos(m_axi_gmem_arqos),
-        .m_axi_gmem_arready(m_axi_gmem_arready),
-        .m_axi_gmem_arregion(m_axi_gmem_arregion),
-        .m_axi_gmem_arsize(m_axi_gmem_arsize),
-        .m_axi_gmem_arvalid(m_axi_gmem_arvalid),
-        .m_axi_gmem_awaddr(m_axi_gmem_awaddr),
-        .m_axi_gmem_awburst(m_axi_gmem_awburst),
-        .m_axi_gmem_awcache(m_axi_gmem_awcache),
-        .m_axi_gmem_awid(m_axi_gmem_awid),
-        .m_axi_gmem_awlen(m_axi_gmem_awlen),
-        .m_axi_gmem_awlock(m_axi_gmem_awlock),
-        .m_axi_gmem_awprot(m_axi_gmem_awprot),
-        .m_axi_gmem_awqos(m_axi_gmem_awqos),
-        .m_axi_gmem_awready(m_axi_gmem_awready),
-        .m_axi_gmem_awregion(m_axi_gmem_awregion),
-        .m_axi_gmem_awsize(m_axi_gmem_awsize),
-        .m_axi_gmem_awvalid(m_axi_gmem_awvalid),
-        .m_axi_gmem_bid(m_axi_gmem_bid),
-        .m_axi_gmem_bready(m_axi_gmem_bready),
-        .m_axi_gmem_bresp(m_axi_gmem_bresp),
-        .m_axi_gmem_bvalid(m_axi_gmem_bvalid),
-        .m_axi_gmem_rdata(m_axi_gmem_rdata),
-        .m_axi_gmem_rid(m_axi_gmem_rid),
-        .m_axi_gmem_rlast(m_axi_gmem_rlast),
-        .m_axi_gmem_rready(m_axi_gmem_rready),
-        .m_axi_gmem_rresp(m_axi_gmem_rresp),
-        .m_axi_gmem_rvalid(m_axi_gmem_rvalid),
-        .m_axi_gmem_wdata(m_axi_gmem_wdata),
-        .m_axi_gmem_wid(m_axi_gmem_wid),
-        .m_axi_gmem_wlast(m_axi_gmem_wlast),
-        .m_axi_gmem_wready(m_axi_gmem_wready),
-        .m_axi_gmem_wstrb(m_axi_gmem_wstrb),
-        .m_axi_gmem_wvalid(m_axi_gmem_wvalid),
         .output_stream_tdata(output_stream_tdata),
+        .output_stream_tdest(output_stream_tdest),
+        .output_stream_tid(output_stream_tid),
         .output_stream_tkeep(output_stream_tkeep),
         .output_stream_tlast(output_stream_tlast),
         .output_stream_tready(output_stream_tready),
         .output_stream_tstrb(output_stream_tstrb),
+        .output_stream_tuser(output_stream_tuser),
         .output_stream_tvalid(output_stream_tvalid),
         .s_axi_control_araddr(s_axi_control_araddr),
         .s_axi_control_arready(s_axi_control_arready),

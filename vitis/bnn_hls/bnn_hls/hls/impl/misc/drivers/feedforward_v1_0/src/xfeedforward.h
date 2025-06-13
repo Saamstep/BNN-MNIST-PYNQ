@@ -99,26 +99,6 @@ u32 XFeedforward_IsReady(XFeedforward *InstancePtr);
 void XFeedforward_EnableAutoRestart(XFeedforward *InstancePtr);
 void XFeedforward_DisableAutoRestart(XFeedforward *InstancePtr);
 
-void XFeedforward_Set_W1(XFeedforward *InstancePtr, u64 Data);
-u64 XFeedforward_Get_W1(XFeedforward *InstancePtr);
-void XFeedforward_Set_W2(XFeedforward *InstancePtr, u64 Data);
-u64 XFeedforward_Get_W2(XFeedforward *InstancePtr);
-void XFeedforward_Set_W3(XFeedforward *InstancePtr, u64 Data);
-u64 XFeedforward_Get_W3(XFeedforward *InstancePtr);
-void XFeedforward_Set_X_size(XFeedforward *InstancePtr, u32 Data);
-u32 XFeedforward_Get_X_size(XFeedforward *InstancePtr);
-void XFeedforward_Set_rowsW1(XFeedforward *InstancePtr, u32 Data);
-u32 XFeedforward_Get_rowsW1(XFeedforward *InstancePtr);
-void XFeedforward_Set_colsW1(XFeedforward *InstancePtr, u32 Data);
-u32 XFeedforward_Get_colsW1(XFeedforward *InstancePtr);
-void XFeedforward_Set_rowsW2(XFeedforward *InstancePtr, u32 Data);
-u32 XFeedforward_Get_rowsW2(XFeedforward *InstancePtr);
-void XFeedforward_Set_colsW2(XFeedforward *InstancePtr, u32 Data);
-u32 XFeedforward_Get_colsW2(XFeedforward *InstancePtr);
-void XFeedforward_Set_rowsW3(XFeedforward *InstancePtr, u32 Data);
-u32 XFeedforward_Get_rowsW3(XFeedforward *InstancePtr);
-void XFeedforward_Set_colsW3(XFeedforward *InstancePtr, u32 Data);
-u32 XFeedforward_Get_colsW3(XFeedforward *InstancePtr);
 
 void XFeedforward_InterruptGlobalEnable(XFeedforward *InstancePtr);
 void XFeedforward_InterruptGlobalDisable(XFeedforward *InstancePtr);

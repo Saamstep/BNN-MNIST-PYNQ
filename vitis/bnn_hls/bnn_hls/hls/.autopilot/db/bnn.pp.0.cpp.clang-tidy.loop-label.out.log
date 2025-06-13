@@ -1,70 +1,65 @@
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2256:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2388:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high+1; ++i) {
     ^~~
     VITIS_LOOP_676_1: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2256:5: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2270:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2388:5: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2402:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high+1; ++i) {
     ^~~
     VITIS_LOOP_690_1: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2270:5: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2284:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2402:5: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2416:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high+1; ++i) {
     ^~~
     VITIS_LOOP_704_1: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2284:5: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:3918:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:2416:5: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:4050:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
       for (i = 0; i < __N - 1; ++i) {
       ^~~
       VITIS_LOOP_1248_1: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:3918:7: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9785:2: warning: Added loop label VITIS_LOOP_51_1:   [xilinx-label-all-loops]
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:4050:7: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9800:2: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
  for (int x = 0; x < colsB; ++x) {
  ^~~
- VITIS_LOOP_51_1: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9785:2: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9789:6: warning: Added loop label VITIS_LOOP_55_2:   [xilinx-label-all-loops]
+ VITIS_LOOP_48_1: 
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9800:2: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9804:6: warning: Added loop label VITIS_LOOP_52_2:   [xilinx-label-all-loops]
      for (int y = 0; y < rowsA; ++y) {
      ^~~
-     VITIS_LOOP_55_2: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9789:6: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9841:2: warning: Added loop label VITIS_LOOP_103_1:   [xilinx-label-all-loops]
- for (int i = 0; i < X_size; ++i)
+     VITIS_LOOP_52_2: 
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9804:6: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9848:2: warning: Added loop label VITIS_LOOP_92_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 28*28; ++i)
  ^~~
- VITIS_LOOP_103_1: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9841:2: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9851:5: warning: Added loop label VITIS_LOOP_113_2:   [xilinx-label-all-loops]
+ VITIS_LOOP_92_1: 
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9848:2: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9859:5: warning: Added loop label VITIS_LOOP_103_2:   [xilinx-label-all-loops]
     for (int i = 0; i < colsW1; ++i)
     ^~~
-    VITIS_LOOP_113_2: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9851:5: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9864:2: warning: Added loop label VITIS_LOOP_126_3:   [xilinx-label-all-loops]
- for (int i = 0; i < colsW1; ++i)
- ^~~
- VITIS_LOOP_126_3: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9864:2: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9873:5: warning: Added loop label VITIS_LOOP_135_4:   [xilinx-label-all-loops]
+    VITIS_LOOP_103_2: 
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9859:5: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9866:5: warning: Added loop label VITIS_LOOP_110_3:   [xilinx-label-all-loops]
     for (int i = 0; i < colsW1; ++i)
     ^~~
-    VITIS_LOOP_135_4: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9873:5: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9879:5: warning: Added loop label VITIS_LOOP_141_5:   [xilinx-label-all-loops]
+    VITIS_LOOP_110_3: 
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9866:5: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9878:5: warning: Added loop label VITIS_LOOP_122_4:   [xilinx-label-all-loops]
     for (int i = 0; i < colsW2; ++i)
     ^~~
-    VITIS_LOOP_141_5: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9879:5: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9885:5: warning: Added loop label VITIS_LOOP_147_6:   [xilinx-label-all-loops]
+    VITIS_LOOP_122_4: 
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9878:5: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9885:5: warning: Added loop label VITIS_LOOP_129_5:   [xilinx-label-all-loops]
     for (int i = 0; i < colsW2; ++i)
     ^~~
-    VITIS_LOOP_147_6: 
+    VITIS_LOOP_129_5: 
 D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9885:5: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9894:5: warning: Added loop label VITIS_LOOP_156_7:   [xilinx-label-all-loops]
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9895:5: warning: Added loop label VITIS_LOOP_139_6:   [xilinx-label-all-loops]
     for (int i = 0; i < colsW3; ++i)
     ^~~
-    VITIS_LOOP_156_7: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9894:5: note: FIX-IT applied suggested code changes
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9901:5: warning: Added loop label VITIS_LOOP_163_8:   [xilinx-label-all-loops]
+    VITIS_LOOP_139_6: 
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9895:5: note: FIX-IT applied suggested code changes
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9904:5: warning: Added loop label VITIS_LOOP_148_7:   [xilinx-label-all-loops]
     for (int i = 0; i < colsW3; ++i)
     ^~~
-    VITIS_LOOP_163_8: 
-D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9901:5: note: FIX-IT applied suggested code changes
+    VITIS_LOOP_148_7: 
+D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp:9904:5: note: FIX-IT applied suggested code changes

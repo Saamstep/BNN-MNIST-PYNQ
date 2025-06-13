@@ -2,259 +2,906 @@
 INFO: [HLS 200-2005] Using work_dir D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
-INFO: [HLS 200-1465] Applying ini 'syn.file=bnn.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'syn.file=bnn.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(8)
 INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.top=feedforward' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.h' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=feedforward' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(7)
 INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(4)
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
 INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(1)
 INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(5)
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 4 seconds. CPU system time: 3 seconds. Elapsed time: 7.385 seconds; current allocated memory: 620.367 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 4 seconds. CPU system time: 3 seconds. Elapsed time: 6.475 seconds; current allocated memory: 619.062 MB.
+INFO: [HLS 200-10] Analyzing design file 'weights.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'bnn.cpp' ... 
-WARNING: [HLS 207-5292] unused parameter 'rowsB' (bnn.cpp:49:80)
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.089 seconds; current allocated memory: 623.352 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 46.842 seconds; current allocated memory: 622.352 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 200-1995] There were 562 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 433 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 329 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 331 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 317 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 3,090 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,318 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,318 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,318 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,867 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,869 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,352 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,486 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,401 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,411 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2,168 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 214-131] Inlining function 'XNOR(int, int)' into 'matmul_xnor(int const*, int const*, int*, int, int, int)' (bnn.cpp:58:9)
-INFO: [HLS 214-131] Inlining function 'quantize(int)' into 'feedforward(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, int const*, int const*, int const*, int, int, int, int, int, int, int)' (bnn.cpp:150:20)
-INFO: [HLS 214-131] Inlining function 'sign(int)' into 'feedforward(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, int const*, int const*, int const*, int, int, int, int, int, int, int)' (bnn.cpp:150:29)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_55_2' is marked as complete unroll implied by the pipeline pragma (bnn.cpp:55:23)
-INFO: [HLS 214-188] Unrolling loop 'VITIS_LOOP_141_5' (bnn.cpp:141:23) in function 'feedforward' partially with a factor of 4 (bnn.cpp:79:0)
-INFO: [HLS 214-188] Unrolling loop 'VITIS_LOOP_113_2' (bnn.cpp:113:23) in function 'feedforward' partially with a factor of 2 (bnn.cpp:79:0)
-INFO: [HLS 214-178] Inlining function 'matmul_xnor(int const*, int const*, int*, int, int, int)' into 'feedforward(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, int const*, int const*, int const*, int, int, int, int, int, int, int)' (bnn.cpp:79:0)
-INFO: [HLS 214-248] Applying array_partition to 'X0_input': Complete partitioning on dimension 1. (bnn.cpp:99:9)
-INFO: [HLS 214-248] Applying array_partition to 'layer1_quant': Complete partitioning on dimension 1. (bnn.cpp:119:9)
-INFO: [HLS 214-248] Applying array_partition to 'layer3_quant': Complete partitioning on dimension 1. (bnn.cpp:121:9)
-INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_113_2> at bnn.cpp:113:23 
-INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_141_5> at bnn.cpp:141:23 
-INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'layer1_activations' due to pipeline pragma (bnn.cpp:110:12)
-INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 'layer2_activations' due to pipeline pragma (bnn.cpp:132:12)
-INFO: [HLS 214-248] Applying array_partition to 'layer1_activations': Cyclic partitioning with factor 2 on dimension 1. (bnn.cpp:110:12)
-INFO: [HLS 214-248] Applying array_partition to 'layer2_activations': Cyclic partitioning with factor 4 on dimension 1. (bnn.cpp:132:12)
-WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_55_2' (bnn.cpp:55:23) in function 'feedforward' as it has a variable trip count (bnn.cpp:55:23)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 18.265 seconds; current allocated memory: 625.422 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 625.422 MB.
+INFO: [HLS 200-1995] There were 3,911 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 768 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 431 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 387 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 321 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,289 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7,313 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7,313 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7,313 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 15,884 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10,979 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 9,028 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,957 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,084 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,072 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,109 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_52_2' is marked as complete unroll implied by the pipeline pragma (bnn.cpp:52:23)
+INFO: [HLS 214-188] Unrolling loop 'VITIS_LOOP_122_4' (bnn.cpp:122:23) in function 'feedforward' partially with a factor of 4 (bnn.cpp:69:0)
+INFO: [HLS 214-188] Unrolling loop 'VITIS_LOOP_103_2' (bnn.cpp:103:23) in function 'feedforward' partially with a factor of 2 (bnn.cpp:69:0)
+INFO: [HLS 214-178] Inlining function 'XNOR(ap_fixed<32, 24, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<32, 24, (ap_q_mode)0, (ap_o_mode)3, 0>)' into 'matmul_xnor(ap_fixed<32, 24, (ap_q_mode)0, (ap_o_mode)3, 0> const*, ap_fixed<32, 24, (ap_q_mode)0, (ap_o_mode)3, 0> const*, ap_fixed<32, 24, (ap_q_mode)0, (ap_o_mode)3, 0>*, int, int)' (bnn.cpp:47:0)
+INFO: [HLS 214-178] Inlining function 'sign(ap_fixed<32, 24, (ap_q_mode)0, (ap_o_mode)3, 0>)' into 'feedforward(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 8ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 8ul, (unsigned char)56, false>, 0>&)' (bnn.cpp:69:0)
+INFO: [HLS 214-178] Inlining function 'quantize(ap_fixed<32, 24, (ap_q_mode)0, (ap_o_mode)3, 0>)' into 'feedforward(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 8ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 8ul, (unsigned char)56, false>, 0>&)' (bnn.cpp:69:0)
+INFO: [HLS 214-248] Applying array_partition to 'W1': Complete partitioning on dimension 2. (weights.cpp:3:0)
+INFO: [HLS 214-248] Applying array_partition to 'W2': Complete partitioning on dimension 2. (weights.cpp:134:0)
+INFO: [HLS 214-248] Applying array_partition to 'W3': Complete partitioning on dimension 2. (weights.cpp:201:0)
+INFO: [HLS 214-248] Applying array_partition to 'X0_input': Complete partitioning on dimension 1. (bnn.cpp:78:9)
+INFO: [HLS 214-248] Applying array_partition to 'layer1_quant': Complete partitioning on dimension 1. (bnn.cpp:86:12)
+INFO: [HLS 214-248] Applying array_partition to 'layer2_quant': Complete partitioning on dimension 1. (bnn.cpp:87:12)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_52_2' (bnn.cpp:52:23) in function 'matmul_xnor' completely with a factor of 64 (bnn.cpp:47:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_52_2' (bnn.cpp:52:23) in function 'matmul_xnor' completely with a factor of 128 (bnn.cpp:47:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_52_2' (bnn.cpp:52:23) in function 'matmul_xnor' completely with a factor of 784 (bnn.cpp:47:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_103_2> at bnn.cpp:103:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_122_4> at bnn.cpp:122:23 
+INFO: [HLS 214-449] Automatically partitioning array 'W2_0' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_1' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_2' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_3' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_4' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_5' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_6' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_7' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_8' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_9' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_10' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_11' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_12' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_13' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_14' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_15' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_16' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_17' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_18' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_19' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_20' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_21' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_22' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_23' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_24' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_25' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_26' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_27' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_28' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_29' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_30' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_31' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_32' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_33' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_34' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_35' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_36' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_37' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_38' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_39' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_40' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_41' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_42' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_43' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_44' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_45' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_46' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_47' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_48' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_49' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_50' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_51' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_52' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_53' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_54' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_55' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_56' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_57' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_58' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_59' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_60' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_61' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_62' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_63' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_64' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_65' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_66' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_67' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_68' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_69' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_70' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_71' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_72' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_73' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_74' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_75' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_76' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_77' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_78' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_79' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_80' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_81' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_82' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_83' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_84' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_85' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_86' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_87' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_88' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_89' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_90' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_91' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_92' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_93' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_94' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_95' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_96' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_97' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_98' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_99' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_100' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_101' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_102' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_103' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_104' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_105' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_106' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_107' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_108' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_109' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_110' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_111' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_112' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_113' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_114' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_115' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_116' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_117' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_118' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_119' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_120' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_121' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_122' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_123' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_124' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_125' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_126' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W2_127' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_0' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_1' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_2' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_3' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_4' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_5' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_6' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_7' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_8' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_9' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_10' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_11' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_12' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_13' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_14' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_15' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_16' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_17' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_18' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_19' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_20' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_21' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_22' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_23' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_24' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_25' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_26' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_27' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_28' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_29' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_30' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_31' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_32' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_33' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_34' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_35' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_36' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_37' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_38' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_39' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_40' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_41' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_42' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_43' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_44' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_45' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_46' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_47' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_48' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_49' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_50' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_51' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_52' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_53' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_54' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_55' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_56' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_57' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_58' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_59' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_60' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_61' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_62' dimension 1 completely based on constant index.
+INFO: [HLS 214-449] Automatically partitioning array 'W3_63' dimension 1 completely based on constant index.
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_0' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_1' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_10' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_100' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_101' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_102' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_103' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_104' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_105' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_106' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_107' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_108' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_109' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_11' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_110' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_111' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_112' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_113' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_114' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_115' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_116' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_117' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_118' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_119' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_12' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_120' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_121' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_122' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_123' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_124' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_125' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_126' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_127' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_13' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_14' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_15' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_16' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_17' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_18' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_19' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_2' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_20' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_21' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_22' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_23' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_24' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_25' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_26' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_27' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_28' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_29' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_3' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_30' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_31' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_32' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_33' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_34' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_35' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_36' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_37' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_38' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_39' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_4' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_40' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_41' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_42' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_43' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_44' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_45' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_46' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_47' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_48' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_49' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_5' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_50' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_51' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_52' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_53' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_54' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_55' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_56' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_57' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_58' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_59' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_6' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_60' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_61' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_62' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_63' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_64' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_65' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_66' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_67' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_68' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_69' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_7' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_70' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_71' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_72' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_73' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_74' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_75' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_76' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_77' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_78' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_79' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_8' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_80' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_81' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_82' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_83' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_84' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_85' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_86' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_87' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_88' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_89' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_9' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_90' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_91' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_92' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_93' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_94' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_95' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_96' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_97' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_98' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W2_99' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_0' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_1' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_10' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_11' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_12' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_13' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_14' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_15' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_16' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_17' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_18' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_19' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_2' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_20' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_21' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_22' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_23' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_24' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_25' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_26' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_27' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_28' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_29' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_3' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_30' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_31' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_32' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_33' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_34' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_35' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_36' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_37' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_38' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_39' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_4' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_40' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_41' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_42' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_43' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_44' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_45' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_46' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_47' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_48' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_49' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_5' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_50' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_51' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_52' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_53' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_54' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_55' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_56' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_57' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_58' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_59' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_6' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_60' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_61' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_62' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_63' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_7' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_8' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'W3_9' due to pipeline pragma
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'layer1_activations' due to pipeline pragma (bnn.cpp:83:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 'layer2_activations' due to pipeline pragma (bnn.cpp:84:12)
+INFO: [HLS 214-248] Applying array_partition to 'W3_9': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_8': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_7': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_63': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_62': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_61': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_60': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_6': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_59': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_58': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_57': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_56': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_55': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_54': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_53': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_52': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_51': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_50': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_5': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_49': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_48': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_47': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_46': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_45': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_44': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_43': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_42': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_41': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_40': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_4': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_39': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_38': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_37': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_36': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_35': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_34': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_33': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_32': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_31': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_30': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_3': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_29': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_28': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_27': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_26': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_25': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_24': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_23': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_22': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_21': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_20': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_2': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_19': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_18': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_17': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_16': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_15': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_14': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_13': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_12': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_11': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_10': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_1': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W3_0': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_99': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_98': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_97': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_96': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_95': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_94': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_93': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_92': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_91': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_90': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_9': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_89': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_88': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_87': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_86': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_85': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_84': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_83': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_82': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_81': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_80': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_8': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_79': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_78': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_77': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_76': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_75': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_74': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_73': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_72': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_71': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_70': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_7': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_69': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_68': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_67': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_66': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_65': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_64': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_63': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_62': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_61': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_60': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_6': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_59': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_58': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_57': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_56': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_55': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_54': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_53': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_52': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_51': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_50': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_5': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_49': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_48': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_47': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_46': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_45': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_44': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_43': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_42': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_41': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_40': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_4': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_39': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_38': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_37': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_36': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_35': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_34': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_33': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_32': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_31': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_30': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_3': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_29': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_28': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_27': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_26': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_25': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_24': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_23': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_22': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_21': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_20': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_2': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_19': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_18': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_17': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_16': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_15': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_14': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_13': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_127': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_126': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_125': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_124': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_123': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_122': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_121': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_120': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_12': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_119': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_118': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_117': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_116': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_115': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_114': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_113': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_112': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_111': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_110': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_11': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_109': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_108': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_107': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_106': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_105': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_104': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_103': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_102': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_101': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_100': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_10': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_1': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'W2_0': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'layer1_activations': Cyclic partitioning with factor 2 on dimension 1. (bnn.cpp:83:9)
+INFO: [HLS 214-248] Applying array_partition to 'layer2_activations': Cyclic partitioning with factor 4 on dimension 1. (bnn.cpp:84:12)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 685.388 seconds; current allocated memory: 634.977 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 634.977 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.352 seconds; current allocated memory: 641.164 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 13 seconds. CPU system time: 0 seconds. Elapsed time: 15.044 seconds; current allocated memory: 849.930 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.292 seconds; current allocated memory: 650.680 MB.
-WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 128 for loop 'VITIS_LOOP_156_7' in function 'feedforward'.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.728 seconds; current allocated memory: 692.395 MB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.501 seconds; current allocated memory: 800.395 MB.
+INFO: [XFORM 203-602] Inlining function 'matmul_xnor.1' into 'feedforward' (bnn.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'matmul_xnor.2' into 'feedforward' (bnn.cpp:119) automatically.
+INFO: [XFORM 203-602] Inlining function 'matmul_xnor' into 'feedforward' (bnn.cpp:137) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 20 seconds. CPU system time: 1 seconds. Elapsed time: 22.984 seconds; current allocated memory: 886.992 MB.
+WARNING: [XFORM 203-561] Updating loop upper bound from 784 to 128 for loop 'VITIS_LOOP_48_1' (bnn.cpp:49:9) in function 'matmul_xnor.2'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 128 for loop 'VITIS_LOOP_48_1' (bnn.cpp:49:9) in function 'matmul_xnor.2'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 784 for loop 'VITIS_LOOP_48_1' (bnn.cpp:49:9) in function 'matmul_xnor.1'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 784 to 64 for loop 'VITIS_LOOP_48_1' (bnn.cpp:49:9) in function 'matmul_xnor'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 64 for loop 'VITIS_LOOP_48_1' (bnn.cpp:49:9) in function 'matmul_xnor'.
+INFO: [XFORM 203-602] Inlining function 'matmul_xnor.1' into 'feedforward' (bnn.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'matmul_xnor.2' into 'feedforward' (bnn.cpp:119) automatically.
+INFO: [XFORM 203-602] Inlining function 'matmul_xnor' into 'feedforward' (bnn.cpp:137) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (bnn.cpp:150:9) to (bnn.cpp:148:23) in function 'feedforward'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 27 seconds. CPU system time: 2 seconds. Elapsed time: 31.723 seconds; current allocated memory: 947.785 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 48 seconds. CPU system time: 2 seconds. Elapsed time: 55.108 seconds; current allocated memory: 1013.695 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'feedforward' ...
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_103_1' 
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_92_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_103_1'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_103_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_92_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_92_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.623 seconds; current allocated memory: 816.199 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.307 seconds; current allocated memory: 1019.473 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.279 seconds; current allocated memory: 817.250 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.227 seconds; current allocated memory: 1.013 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_113_2' 
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_48_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_113_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_113_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_48_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.323 seconds; current allocated memory: 817.473 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.204 seconds; current allocated memory: 1.013 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 817.508 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.013 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_126_3' 
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_103_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_126_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_126_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_103_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_103_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.271 seconds; current allocated memory: 821.121 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.266 seconds; current allocated memory: 1.013 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 837.160 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 1.013 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_141_5' 
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_110_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_141_5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_141_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_110_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_110_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.192 seconds; current allocated memory: 837.160 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 1.013 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 837.160 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 1.030 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_147_6' 
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_48_11' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_147_6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_147_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_48_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.431 seconds; current allocated memory: 837.160 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.266 seconds; current allocated memory: 1.030 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 850.441 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.030 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_156_7' 
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_122_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_156_7'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_156_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_122_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_122_4'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.191 seconds; current allocated memory: 850.441 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 1.030 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 850.441 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 1.030 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_163_8' 
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_129_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_163_8'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_163_8'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_129_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_129_5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 850.441 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 1.030 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 850.441 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_48_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_48_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.172 seconds; current allocated memory: 1.030 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.113 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_139_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_139_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_139_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 1.030 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 1.030 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feedforward_Pipeline_VITIS_LOOP_148_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_148_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_148_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.128 seconds; current allocated memory: 1.030 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 1.030 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'feedforward' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_51_1': contains subloop(s) that are not unrolled or flattened.
-WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_51_1': contains subloop(s) that are not unrolled or flattened.
-WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_51_1': contains subloop(s) that are not unrolled or flattened.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.785 seconds; current allocated memory: 855.633 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 1.030 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.574 seconds; current allocated memory: 858.098 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 1.030 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_103_1' 
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_92_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_103_1' pipeline 'VITIS_LOOP_103_1' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-104] Estimated max fanout for 'feedforward_Pipeline_VITIS_LOOP_103_1' is 8192 from HDL expression: ((ap_loop_exit_ready == 1'b1) & (icmp_ln103_fu_3918_p2 == 1'd0) & (1'b0 == ap_block_pp0_stage0_01001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))
-INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_103_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.677 seconds; current allocated memory: 868.117 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_92_1' pipeline 'VITIS_LOOP_92_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_92_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 1.030 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_113_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_48_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_113_2' pipeline 'VITIS_LOOP_113_2' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_113_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.493 seconds; current allocated memory: 889.691 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_48_1' pipeline 'VITIS_LOOP_48_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_1569_10_6_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_48_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.634 seconds; current allocated memory: 1.043 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_126_3' 
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_103_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_126_3' pipeline 'VITIS_LOOP_126_3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_126_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.284 seconds; current allocated memory: 889.691 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_103_2' pipeline 'VITIS_LOOP_103_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_103_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.399 seconds; current allocated memory: 1.048 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_141_5' 
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_110_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_141_5' pipeline 'VITIS_LOOP_141_5' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_141_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.777 seconds; current allocated memory: 900.848 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_110_3' pipeline 'VITIS_LOOP_110_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_110_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 1.048 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_147_6' 
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_48_11' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_147_6' pipeline 'VITIS_LOOP_147_6' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_48_11' pipeline 'VITIS_LOOP_48_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_257_7_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_48_11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.428 seconds; current allocated memory: 1.054 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_122_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_122_4' pipeline 'VITIS_LOOP_122_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_122_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.257 seconds; current allocated memory: 1.056 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_129_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_129_5' pipeline 'VITIS_LOOP_129_5' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_32_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_147_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 904.422 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_129_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.235 seconds; current allocated memory: 1.057 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_156_7' 
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_48_12' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_156_7' pipeline 'VITIS_LOOP_156_7' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_156_7'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.8 seconds; current allocated memory: 915.629 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_48_12' pipeline 'VITIS_LOOP_48_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_129_6_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_48_12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.321 seconds; current allocated memory: 1.059 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_163_8' 
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_139_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_163_8' pipeline 'VITIS_LOOP_163_8' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_163_8'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 915.629 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_139_6' pipeline 'VITIS_LOOP_139_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_139_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 1.060 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feedforward_Pipeline_VITIS_LOOP_148_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feedforward_Pipeline_VITIS_LOOP_148_7' pipeline 'VITIS_LOOP_148_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward_Pipeline_VITIS_LOOP_148_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 1.061 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'feedforward' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/gmem' to 'm_axi'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/input_stream_V_data_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/input_stream_V_keep_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/input_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/input_stream_V_user_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/input_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/input_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/input_stream_V_dest_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/output_stream_V_data_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/output_stream_V_keep_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/output_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/output_stream_V_user_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/output_stream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/W1' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/W2' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/W3' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/X_size' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/rowsW1' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/colsW1' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/rowsW2' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/colsW2' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/rowsW3' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/colsW3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/output_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'feedforward/output_stream_V_dest_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on function 'feedforward' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'W1', 'W2', 'W3', 'X_size', 'rowsW1', 'colsW1', 'rowsW2', 'colsW2', 'rowsW3', 'colsW3' and 'return' to AXI-Lite port control.
-INFO: [RTGEN 206-100] Generating core module 'sparsemux_257_7_32_1_1': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'sparsemux_513_8_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'feedforward'.
 INFO: [RTMG 210-278] Implementing memory 'feedforward_layer1_activations_RAM_AUTO_1R1W' using auto RAMs.
 INFO: [RTMG 210-278] Implementing memory 'feedforward_layer2_activations_RAM_AUTO_1R1W' using auto RAMs.
 INFO: [RTMG 210-278] Implementing memory 'feedforward_layer3_activations_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.431 seconds; current allocated memory: 932.508 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.656 seconds; current allocated memory: 957.352 MB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.759 seconds; current allocated memory: 963.793 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.192 seconds; current allocated memory: 1.063 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.813 seconds; current allocated memory: 1.066 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.247 seconds; current allocated memory: 1.068 GB.
 INFO: [VHDL 208-304] Generating VHDL RTL for feedforward.
 INFO: [VLOG 209-307] Generating Verilog RTL for feedforward.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
-INFO: [HLS 200-112] Total CPU user time: 17 seconds. Total CPU system time: 7 seconds. Total elapsed time: 50.559 seconds; peak allocated memory: 963.828 MB.
-INFO: [v++ 60-791] Total elapsed time: 0h 0m 55s
+INFO: [HLS 200-789] **** Estimated Fmax: 139.06 MHz
+INFO: [HLS 200-112] Total CPU user time: 122 seconds. Total CPU system time: 11 seconds. Total elapsed time: 875.72 seconds; peak allocated memory: 1.070 GB.
+INFO: [v++ 60-791] Total elapsed time: 0h 14m 41s

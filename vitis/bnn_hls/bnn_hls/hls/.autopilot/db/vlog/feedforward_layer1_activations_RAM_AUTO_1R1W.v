@@ -17,8 +17,8 @@ module feedforward_layer1_activations_RAM_AUTO_1R1W (
     reset, clk);
 
 parameter DataWidth = 32;
-parameter AddressWidth = 6;
-parameter AddressRange = 64;
+parameter AddressWidth = 9;
+parameter AddressRange = 392;
  
 input[AddressWidth-1:0] address0;
 input ce0;

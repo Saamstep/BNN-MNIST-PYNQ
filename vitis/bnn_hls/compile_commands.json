@@ -8,6 +8,19 @@
       "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
       "-fhlstoplevel=feedforward",
       "-c",
+      "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\weights.cpp"
+    ],
+    "file": "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\weights.cpp"
+  },
+  {
+    "directory": "D:\\ecen529\\finalProject\\vitis\\bnn_hls",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=feedforward",
+      "-c",
       "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\bnn.cpp"
     ],
     "file": "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\bnn.cpp"

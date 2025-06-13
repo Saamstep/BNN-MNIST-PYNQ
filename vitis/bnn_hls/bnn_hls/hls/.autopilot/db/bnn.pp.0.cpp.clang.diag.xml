@@ -169,11 +169,11 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>20</integer>
+      <integer>49</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=XNOR_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmul_xnor_XLX_SEP_ PragmaOptions=min=1 max=784_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -185,55 +185,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>31</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=quantize_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>42</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sign_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>52</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmul_xnor_XLX_SEP_ PragmaOptions=min=1 max=256_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>53</integer>
+      <integer>50</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -249,11 +201,11 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>56</integer>
+      <integer>53</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmul_xnor_XLX_SEP_ PragmaOptions=min=1 max=256_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matmul_xnor_XLX_SEP_ PragmaOptions=min=1 max=128_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -265,7 +217,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>57</integer>
+      <integer>54</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -274,22 +226,6 @@
       <integer>5471</integer>
       <key>WarningOption</key>
       <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>49</integer>
-      <key>column</key>
-      <integer>80</integer>
-      <key>message</key>
-      <string>unused parameter &apos;rowsB&apos;</string>
-      <key>ID</key>
-      <integer>5292</integer>
-      <key>WarningOption</key>
-      <string>unused-parameter</string>
     </dict>
     <dict>
       <key>level</key>
@@ -313,7 +249,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>80</integer>
+      <integer>70</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -329,7 +265,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>81</integer>
+      <integer>71</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -345,215 +281,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>83</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=m_axi depth=16384 port=W1 offset=slave bundle=gmem_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>84</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=m_axi depth=16384 port=W2 offset=slave bundle=gmem_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>85</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=m_axi depth=16384 port=W3 offset=slave bundle=gmem_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>87</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=W1 bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>88</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=W2 bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>89</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=W3 bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>90</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=X_size bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>91</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=rowsW1 bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>92</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=colsW1 bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>93</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=rowsW2 bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>94</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=colsW2 bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>95</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=rowsW3 bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>96</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=s_axilite port=colsW3 bundle=control_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>97</integer>
+      <integer>72</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -569,7 +297,55 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>100</integer>
+      <integer>74</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=variable=W1 complete dim=2_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>bnn.cpp</string>
+      <key>line</key>
+      <integer>75</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=variable=W2 complete dim=2_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>bnn.cpp</string>
+      <key>line</key>
+      <integer>76</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=variable=W3 complete dim=2_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>bnn.cpp</string>
+      <key>line</key>
+      <integer>79</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -585,39 +361,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>105</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>115</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=factor=2_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>122</integer>
+      <integer>88</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -633,7 +377,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>123</integer>
+      <integer>89</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -649,55 +393,55 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
+      <integer>94</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>bnn.cpp</string>
+      <key>line</key>
+      <integer>105</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=factor=2_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>bnn.cpp</string>
+      <key>line</key>
+      <integer>112</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>bnn.cpp</string>
+      <key>line</key>
       <integer>124</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=variable=layer3_quant complete dim=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>128</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>137</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=feedforward_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>bnn.cpp</string>
-      <key>line</key>
-      <integer>143</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -713,7 +457,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>149</integer>
+      <integer>131</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -729,7 +473,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>158</integer>
+      <integer>141</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -745,7 +489,7 @@
       <key>filename</key>
       <string>bnn.cpp</string>
       <key>line</key>
-      <integer>165</integer>
+      <integer>150</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>

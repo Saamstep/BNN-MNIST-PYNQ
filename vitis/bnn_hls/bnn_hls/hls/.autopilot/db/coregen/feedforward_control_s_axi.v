@@ -8,7 +8,7 @@
 `timescale 1ns/1ps
 module feedforward_control_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 7,
+    C_S_AXI_ADDR_WIDTH = 4,
     C_S_AXI_DATA_WIDTH = 32
 )(
     input  wire                          ACLK,
@@ -32,16 +32,6 @@ module feedforward_control_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
-    output wire [63:0]                   W1,
-    output wire [63:0]                   W2,
-    output wire [63:0]                   W3,
-    output wire [31:0]                   X_size,
-    output wire [31:0]                   rowsW1,
-    output wire [31:0]                   colsW1,
-    output wire [31:0]                   rowsW2,
-    output wire [31:0]                   colsW2,
-    output wire [31:0]                   rowsW3,
-    output wire [31:0]                   colsW3,
     output wire                          ap_start,
     input  wire                          ap_done,
     input  wire                          ap_ready,
@@ -50,100 +40,41 @@ module feedforward_control_s_axi
 //------------------------Address Info-------------------
 // Protocol Used: ap_ctrl_hs
 //
-// 0x00 : Control signals
-//        bit 0  - ap_start (Read/Write/COH)
-//        bit 1  - ap_done (Read/COR)
-//        bit 2  - ap_idle (Read)
-//        bit 3  - ap_ready (Read/COR)
-//        bit 7  - auto_restart (Read/Write)
-//        bit 9  - interrupt (Read)
-//        others - reserved
-// 0x04 : Global Interrupt Enable Register
-//        bit 0  - Global Interrupt Enable (Read/Write)
-//        others - reserved
-// 0x08 : IP Interrupt Enable Register (Read/Write)
-//        bit 0 - enable ap_done interrupt (Read/Write)
-//        bit 1 - enable ap_ready interrupt (Read/Write)
-//        others - reserved
-// 0x0c : IP Interrupt Status Register (Read/TOW)
-//        bit 0 - ap_done (Read/TOW)
-//        bit 1 - ap_ready (Read/TOW)
-//        others - reserved
-// 0x10 : Data signal of W1
-//        bit 31~0 - W1[31:0] (Read/Write)
-// 0x14 : Data signal of W1
-//        bit 31~0 - W1[63:32] (Read/Write)
-// 0x18 : reserved
-// 0x1c : Data signal of W2
-//        bit 31~0 - W2[31:0] (Read/Write)
-// 0x20 : Data signal of W2
-//        bit 31~0 - W2[63:32] (Read/Write)
-// 0x24 : reserved
-// 0x28 : Data signal of W3
-//        bit 31~0 - W3[31:0] (Read/Write)
-// 0x2c : Data signal of W3
-//        bit 31~0 - W3[63:32] (Read/Write)
-// 0x30 : reserved
-// 0x34 : Data signal of X_size
-//        bit 31~0 - X_size[31:0] (Read/Write)
-// 0x38 : reserved
-// 0x3c : Data signal of rowsW1
-//        bit 31~0 - rowsW1[31:0] (Read/Write)
-// 0x40 : reserved
-// 0x44 : Data signal of colsW1
-//        bit 31~0 - colsW1[31:0] (Read/Write)
-// 0x48 : reserved
-// 0x4c : Data signal of rowsW2
-//        bit 31~0 - rowsW2[31:0] (Read/Write)
-// 0x50 : reserved
-// 0x54 : Data signal of colsW2
-//        bit 31~0 - colsW2[31:0] (Read/Write)
-// 0x58 : reserved
-// 0x5c : Data signal of rowsW3
-//        bit 31~0 - rowsW3[31:0] (Read/Write)
-// 0x60 : reserved
-// 0x64 : Data signal of colsW3
-//        bit 31~0 - colsW3[31:0] (Read/Write)
-// 0x68 : reserved
+// 0x0 : Control signals
+//       bit 0  - ap_start (Read/Write/COH)
+//       bit 1  - ap_done (Read/COR)
+//       bit 2  - ap_idle (Read)
+//       bit 3  - ap_ready (Read/COR)
+//       bit 7  - auto_restart (Read/Write)
+//       bit 9  - interrupt (Read)
+//       others - reserved
+// 0x4 : Global Interrupt Enable Register
+//       bit 0  - Global Interrupt Enable (Read/Write)
+//       others - reserved
+// 0x8 : IP Interrupt Enable Register (Read/Write)
+//       bit 0 - enable ap_done interrupt (Read/Write)
+//       bit 1 - enable ap_ready interrupt (Read/Write)
+//       others - reserved
+// 0xc : IP Interrupt Status Register (Read/TOW)
+//       bit 0 - ap_done (Read/TOW)
+//       bit 1 - ap_ready (Read/TOW)
+//       others - reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL       = 7'h00,
-    ADDR_GIE           = 7'h04,
-    ADDR_IER           = 7'h08,
-    ADDR_ISR           = 7'h0c,
-    ADDR_W1_DATA_0     = 7'h10,
-    ADDR_W1_DATA_1     = 7'h14,
-    ADDR_W1_CTRL       = 7'h18,
-    ADDR_W2_DATA_0     = 7'h1c,
-    ADDR_W2_DATA_1     = 7'h20,
-    ADDR_W2_CTRL       = 7'h24,
-    ADDR_W3_DATA_0     = 7'h28,
-    ADDR_W3_DATA_1     = 7'h2c,
-    ADDR_W3_CTRL       = 7'h30,
-    ADDR_X_SIZE_DATA_0 = 7'h34,
-    ADDR_X_SIZE_CTRL   = 7'h38,
-    ADDR_ROWSW1_DATA_0 = 7'h3c,
-    ADDR_ROWSW1_CTRL   = 7'h40,
-    ADDR_COLSW1_DATA_0 = 7'h44,
-    ADDR_COLSW1_CTRL   = 7'h48,
-    ADDR_ROWSW2_DATA_0 = 7'h4c,
-    ADDR_ROWSW2_CTRL   = 7'h50,
-    ADDR_COLSW2_DATA_0 = 7'h54,
-    ADDR_COLSW2_CTRL   = 7'h58,
-    ADDR_ROWSW3_DATA_0 = 7'h5c,
-    ADDR_ROWSW3_CTRL   = 7'h60,
-    ADDR_COLSW3_DATA_0 = 7'h64,
-    ADDR_COLSW3_CTRL   = 7'h68,
-    WRIDLE             = 2'd0,
-    WRDATA             = 2'd1,
-    WRRESP             = 2'd2,
-    WRRESET            = 2'd3,
-    RDIDLE             = 2'd0,
-    RDDATA             = 2'd1,
-    RDRESET            = 2'd2,
-    ADDR_BITS                = 7;
+    ADDR_AP_CTRL = 4'h0,
+    ADDR_GIE     = 4'h4,
+    ADDR_IER     = 4'h8,
+    ADDR_ISR     = 4'hc,
+    WRIDLE       = 2'd0,
+    WRDATA       = 2'd1,
+    WRRESP       = 2'd2,
+    WRRESET      = 2'd3,
+    RDIDLE       = 2'd0,
+    RDDATA       = 2'd1,
+    RDRESET      = 2'd2,
+    ADDR_BITS                = 4;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -172,16 +103,6 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
-    reg  [63:0]                   int_W1 = 'b0;
-    reg  [63:0]                   int_W2 = 'b0;
-    reg  [63:0]                   int_W3 = 'b0;
-    reg  [31:0]                   int_X_size = 'b0;
-    reg  [31:0]                   int_rowsW1 = 'b0;
-    reg  [31:0]                   int_colsW1 = 'b0;
-    reg  [31:0]                   int_rowsW2 = 'b0;
-    reg  [31:0]                   int_colsW2 = 'b0;
-    reg  [31:0]                   int_rowsW3 = 'b0;
-    reg  [31:0]                   int_colsW3 = 'b0;
 
 //------------------------Instantiation------------------
 
@@ -291,45 +212,6 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
-                ADDR_W1_DATA_0: begin
-                    rdata <= int_W1[31:0];
-                end
-                ADDR_W1_DATA_1: begin
-                    rdata <= int_W1[63:32];
-                end
-                ADDR_W2_DATA_0: begin
-                    rdata <= int_W2[31:0];
-                end
-                ADDR_W2_DATA_1: begin
-                    rdata <= int_W2[63:32];
-                end
-                ADDR_W3_DATA_0: begin
-                    rdata <= int_W3[31:0];
-                end
-                ADDR_W3_DATA_1: begin
-                    rdata <= int_W3[63:32];
-                end
-                ADDR_X_SIZE_DATA_0: begin
-                    rdata <= int_X_size[31:0];
-                end
-                ADDR_ROWSW1_DATA_0: begin
-                    rdata <= int_rowsW1[31:0];
-                end
-                ADDR_COLSW1_DATA_0: begin
-                    rdata <= int_colsW1[31:0];
-                end
-                ADDR_ROWSW2_DATA_0: begin
-                    rdata <= int_rowsW2[31:0];
-                end
-                ADDR_COLSW2_DATA_0: begin
-                    rdata <= int_colsW2[31:0];
-                end
-                ADDR_ROWSW3_DATA_0: begin
-                    rdata <= int_rowsW3[31:0];
-                end
-                ADDR_COLSW3_DATA_0: begin
-                    rdata <= int_colsW3[31:0];
-                end
             endcase
         end
     end
@@ -342,16 +224,6 @@ assign ap_start          = int_ap_start;
 assign task_ap_done      = (ap_done && !auto_restart_status) || auto_restart_done;
 assign task_ap_ready     = ap_ready && !int_auto_restart;
 assign auto_restart_done = auto_restart_status && (ap_idle && !int_ap_idle);
-assign W1                = int_W1;
-assign W2                = int_W2;
-assign W3                = int_W3;
-assign X_size            = int_X_size;
-assign rowsW1            = int_rowsW1;
-assign colsW1            = int_colsW1;
-assign rowsW2            = int_rowsW2;
-assign colsW2            = int_colsW2;
-assign rowsW3            = int_rowsW3;
-assign colsW3            = int_colsW3;
 // int_interrupt
 always @(posedge ACLK) begin
     if (ARESET)
@@ -481,136 +353,6 @@ always @(posedge ACLK) begin
             int_isr[1] <= 1'b1;
         else if (w_hs && waddr == ADDR_ISR && WSTRB[0])
             int_isr[1] <= int_isr[1] ^ WDATA[1]; // toggle on write
-    end
-end
-
-// int_W1[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_W1[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_W1_DATA_0)
-            int_W1[31:0] <= (WDATA[31:0] & wmask) | (int_W1[31:0] & ~wmask);
-    end
-end
-
-// int_W1[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_W1[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_W1_DATA_1)
-            int_W1[63:32] <= (WDATA[31:0] & wmask) | (int_W1[63:32] & ~wmask);
-    end
-end
-
-// int_W2[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_W2[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_W2_DATA_0)
-            int_W2[31:0] <= (WDATA[31:0] & wmask) | (int_W2[31:0] & ~wmask);
-    end
-end
-
-// int_W2[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_W2[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_W2_DATA_1)
-            int_W2[63:32] <= (WDATA[31:0] & wmask) | (int_W2[63:32] & ~wmask);
-    end
-end
-
-// int_W3[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_W3[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_W3_DATA_0)
-            int_W3[31:0] <= (WDATA[31:0] & wmask) | (int_W3[31:0] & ~wmask);
-    end
-end
-
-// int_W3[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_W3[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_W3_DATA_1)
-            int_W3[63:32] <= (WDATA[31:0] & wmask) | (int_W3[63:32] & ~wmask);
-    end
-end
-
-// int_X_size[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_X_size[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_X_SIZE_DATA_0)
-            int_X_size[31:0] <= (WDATA[31:0] & wmask) | (int_X_size[31:0] & ~wmask);
-    end
-end
-
-// int_rowsW1[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_rowsW1[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_ROWSW1_DATA_0)
-            int_rowsW1[31:0] <= (WDATA[31:0] & wmask) | (int_rowsW1[31:0] & ~wmask);
-    end
-end
-
-// int_colsW1[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_colsW1[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_COLSW1_DATA_0)
-            int_colsW1[31:0] <= (WDATA[31:0] & wmask) | (int_colsW1[31:0] & ~wmask);
-    end
-end
-
-// int_rowsW2[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_rowsW2[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_ROWSW2_DATA_0)
-            int_rowsW2[31:0] <= (WDATA[31:0] & wmask) | (int_rowsW2[31:0] & ~wmask);
-    end
-end
-
-// int_colsW2[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_colsW2[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_COLSW2_DATA_0)
-            int_colsW2[31:0] <= (WDATA[31:0] & wmask) | (int_colsW2[31:0] & ~wmask);
-    end
-end
-
-// int_rowsW3[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_rowsW3[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_ROWSW3_DATA_0)
-            int_rowsW3[31:0] <= (WDATA[31:0] & wmask) | (int_rowsW3[31:0] & ~wmask);
-    end
-end
-
-// int_colsW3[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_colsW3[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_COLSW3_DATA_0)
-            int_colsW3[31:0] <= (WDATA[31:0] & wmask) | (int_colsW3[31:0] & ~wmask);
     end
 end
 
