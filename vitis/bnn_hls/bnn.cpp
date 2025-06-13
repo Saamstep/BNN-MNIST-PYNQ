@@ -2,13 +2,13 @@
 #include <hls_stream.h>
 #include <ap_axi_sdata.h>
 
-#define MAX_INPUT_SIZE 256
+#define MAX_INPUT_SIZE 784
 #define MAX_LAYER1_SIZE 128
 #define MAX_LAYER2_SIZE 128
 #define MAX_LAYER3_SIZE 128
 
 typedef int data_t;
-typedef ap_axis<32, 0, 0, 0> axis_t;
+typedef ap_axis<32, 2, 5, 8> axis_t;
 
 /* 
 * XNOR Function
