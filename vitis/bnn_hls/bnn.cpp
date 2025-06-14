@@ -69,21 +69,28 @@ void feedforward_stream(
     #pragma HLS INTERFACE axis port=input_stream
     #pragma HLS INTERFACE axis port=output_stream
     #pragma HLS INTERFACE s_axilite port=return bundle=control
+    
+    #pragma HLS ARRAY_PARTITION variable=W1 complete dim=2
+    #pragma HLS ARRAY_PARTITION variable=W2 complete dim=2
+    #pragma HLS ARRAY_PARTITION variable=W3 complete dim=2
 
+    axit_t temp;
     int X0_input[MAX_INPUT_SIZE];
+    #pragma HLS ARRAY_PARTITION variable=X0_input complete dim=1
 
-    axis_t temp;
     int layer1_activations[rowsW1];
     int layer2_activations[rowsW2];
     int layer3_activations[rowsW3];
     int layer1_quant[rowsW1];
     int layer2_quant[rowsW2];
+    #pragma HLS ARRAY_PARTITION variable=layer1_quant complete dim=1
+    #pragma HLS ARRAY_PARTITION variable=layer2_quant complete dim=1
 
     // INPUT: Stream in input data, sign and quantize
     for (int i = 0; i < IMG_SIZE; ++i)
     {
-        #pragma HLS PIPELINE II=1
-        axis_t temp = input_stream.read();
+        #pragma HLS PIPELINE
+        temp = input_stream.read();
         X0_input[i] = quantize(sign(2 * temp.data - 255));
     }
 
@@ -100,9 +107,10 @@ void feedforward_stream(
     // quantize
     for (int i = 0; i < rowsW1; ++i)
     {
-        #pragma HLS PIPELINE II=1
+        #pragma HLS PIPELINE
         layer1_quant[i] = quantize(sign(layer1_activations[i]));
     }
+
 
     // LAYER 2: activations2 = quant1 x W2
     matmul_xnor(layer1_quant, (const int*)W2, layer2_activations, rowsW2,colsW2);
@@ -117,7 +125,7 @@ void feedforward_stream(
     // quantize
     for (int i = 0; i < rowsW2; ++i)
     {
-        #pragma HLS PIPELINE II=1
+        #pragma HLS PIPELINE
         layer2_quant[i] = quantize(sign(layer2_activations[i]));
     }
 
@@ -127,14 +135,16 @@ void feedforward_stream(
 
     for (int i = 0; i < rowsW3; ++i)
     {
-        #pragma HLS PIPELINE II=1
+        #pragma HLS PIPELINE
         layer3_activations[i] = (2 * layer3_activations[i]) - colsW3;
     }
+
+
 
     // OUTPUT: stream out the layer 3 activations
     for (int i = 0; i < rowsW3; ++i)
     {
-        #pragma HLS PIPELINE II=1
+        #pragma HLS PIPELINE
         temp.data = layer3_activations[i];
         temp.last = (i == rowsW3 - 1) ? 1 : 0;
         output_stream.write(temp);
