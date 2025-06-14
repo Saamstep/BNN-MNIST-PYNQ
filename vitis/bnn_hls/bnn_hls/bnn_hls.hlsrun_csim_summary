@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "D:/ecen529\\finalProject\\vitis\\bnn_hls\\bnn_hls\\bnn_hls.hlsrun_csim_summary",
+ "thisFile": "C:/ECEN529\\bnn_final\\vitis\\bnn_hls\\bnn_hls\\bnn_hls.hlsrun_csim_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,34 +9,34 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "06/14/25 08:32:24",
- "timestampMillis": "1749915144684",
+ "dateTimestamp": "06/14/25 19:02:28",
+ "timestampMillis": "1749920548998",
  "buildStep": {
-  "cmdId": "f93f730f-eba6-4cf0-a73b-010c00d351bf",
+  "cmdId": "40f6f4d7-0dff-4f5d-93e0-ed2e1027c59b",
   "name": "vitis-run",
-  "logFile": "D:/ecen529\\finalProject\\vitis\\bnn_hls\\bnn_hls\\logs\\bnn_hls.steps.log",
-  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config D:\\ecen529\\finalProject\\vitis\\bnn_hls\\hls_config.cfg --work_dir bnn_hls ",
+  "logFile": "C:/ECEN529\\bnn_final\\vitis\\bnn_hls\\bnn_hls\\logs\\bnn_hls.steps.log",
+  "commandLine": "K:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\ECEN529\\bnn_final\\vitis\\bnn_hls\\hls_config.cfg --work_dir bnn_hls ",
   "args": [
    "--mode",
    "hls",
    "--csim",
    "--config",
-   "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\hls_config.cfg",
+   "C:\\ECEN529\\bnn_final\\vitis\\bnn_hls\\hls_config.cfg",
    "--work_dir",
    "bnn_hls"
   ],
   "iniFiles": [],
-  "cwd": "D:\\ecen529\\finalProject\\vitis\\bnn_hls"
+  "cwd": "C:\\ECEN529\\bnn_final\\vitis\\bnn_hls"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "06/14/25 08:32:24",
- "timestampMillis": "1749915144684",
+ "dateTimestamp": "06/14/25 19:02:28",
+ "timestampMillis": "1749920548998",
  "status": {
-  "cmdId": "f93f730f-eba6-4cf0-a73b-010c00d351bf",
+  "cmdId": "40f6f4d7-0dff-4f5d-93e0-ed2e1027c59b",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "06/14/25 08:32:33",
- "timestampMillis": "1749915153947",
+ "dateTimestamp": "06/14/25 19:02:37",
+ "timestampMillis": "1749920557076",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -64,9 +64,9 @@
      "uuid": ""
     },
     "sources": [
-     "D:/ecen529\\finalProject\\vitis\\bnn_hls\\bnn.cpp",
-     "D:/ecen529\\finalProject\\vitis\\bnn_hls\\weights.h",
-     "D:/ecen529\\finalProject\\vitis\\bnn_hls\\weights.cpp"
+     "C:/ECEN529\\bnn_final\\vitis\\bnn_hls\\bnn.cpp",
+     "C:/ECEN529\\bnn_final\\vitis\\bnn_hls\\weights.h",
+     "C:/ECEN529\\bnn_final\\vitis\\bnn_hls\\weights.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -82,26 +82,26 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "06/14/25 08:32:33",
- "timestampMillis": "1749915153949",
+ "dateTimestamp": "06/14/25 19:02:37",
+ "timestampMillis": "1749920557078",
  "buildStep": {
-  "cmdId": "c4456f2b-6ad9-4360-b084-816cfcb703bd",
+  "cmdId": "5eef302b-b78a-4594-a8aa-9d8442ab4a34",
   "name": "",
-  "logFile": "D:/ecen529\\finalProject\\vitis\\bnn_hls\\bnn_hls\\hls\\hls.log",
+  "logFile": "C:/ECEN529\\bnn_final\\vitis\\bnn_hls\\bnn_hls\\hls\\hls.log",
   "commandLine": "",
   "args": [],
   "iniFiles": [],
-  "cwd": "D:\\ecen529\\finalProject\\vitis\\bnn_hls"
+  "cwd": "C:\\ECEN529\\bnn_final\\vitis\\bnn_hls"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "06/14/25 08:32:33",
- "timestampMillis": "1749915153949",
+ "dateTimestamp": "06/14/25 19:02:37",
+ "timestampMillis": "1749920557079",
  "status": {
-  "cmdId": "c4456f2b-6ad9-4360-b084-816cfcb703bd",
+  "cmdId": "5eef302b-b78a-4594-a8aa-9d8442ab4a34",
   "state": "CS_RUNNING"
  }
 }
@@ -109,10 +109,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "06/14/25 08:32:38",
- "timestampMillis": "1749915158402",
+ "dateTimestamp": "06/14/25 19:02:42",
+ "timestampMillis": "1749920562505",
  "status": {
-  "cmdId": "c4456f2b-6ad9-4360-b084-816cfcb703bd",
+  "cmdId": "5eef302b-b78a-4594-a8aa-9d8442ab4a34",
   "state": "CS_PASSED"
  }
 }
@@ -120,10 +120,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "06/14/25 08:32:38",
- "timestampMillis": "1749915158614",
+ "dateTimestamp": "06/14/25 19:02:42",
+ "timestampMillis": "1749920562652",
  "status": {
-  "cmdId": "f93f730f-eba6-4cf0-a73b-010c00d351bf",
+  "cmdId": "40f6f4d7-0dff-4f5d-93e0-ed2e1027c59b",
   "state": "CS_PASSED"
  }
 }
@@ -131,8 +131,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/14/25 08:32:38",
- "timestampMillis": "1749915158614",
+ "dateTimestamp": "06/14/25 19:02:42",
+ "timestampMillis": "1749920562652",
  "report": {
   "path": "",
   "name": "",
@@ -145,8 +145,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "06/14/25 08:32:38",
- "timestampMillis": "1749915158614",
+ "dateTimestamp": "06/14/25 19:02:42",
+ "timestampMillis": "1749920562652",
  "report": {
   "path": "",
   "name": "",

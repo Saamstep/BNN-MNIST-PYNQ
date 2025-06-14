@@ -6,14 +6,24 @@
 #include <cassert>
 #include <ap_axi_sdata.h>
 
+#define SAM 1
+
+#ifdef SAM
+#define IMAGE_FILE "C:/ECEN529/bnn_final/mnistdataset/train-images.idx3-ubyte"
+#define LABEL_FILE "C:/ECEN529/bnn_final/mnistdataset/train-labels.idx1-ubyte"
+#endif
+
+#ifdef CLAY
 #define IMAGE_FILE "D:/ecen529/finalProject/mnistdataset/train-images.idx3-ubyte"
 #define LABEL_FILE "D:/ecen529/finalProject/mnistdataset/train-labels.idx1-ubyte"
+#endif
+
 #define IMG_SIZE 784 // 28x28
 
 typedef ap_axis<32, 2, 5, 8> axis_t;
 
 // DUT declaration
-void feedforward(hls::stream<axis_t>& input_stream, hls::stream<axis_t>& output_stream);
+void feedforward_stream(hls::stream<axis_t>& input_stream, hls::stream<axis_t>& output_stream);
 
 // Read 4-byte big-endian int
 uint32_t read_uint32(std::ifstream &f) {
@@ -80,7 +90,7 @@ int main() {
         std::cout << "\n";
 
         // Call HLS function
-        feedforward(input_stream, output_stream);
+        feedforward_stream(input_stream, output_stream);
 
         // Read output vector (rowsW3 elements)
         std::vector<int> output;

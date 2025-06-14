@@ -27,14 +27,14 @@ HLS_SOURCES = ../../../../bnn_tb.cpp ../../../../weights.cpp ../../../../bnn.cpp
 
 override TARGET := csim.exe
 
-AUTOPILOT_ROOT := C:/Xilinx/Vitis/2024.2
+AUTOPILOT_ROOT := K:/Xilinx/Vitis/2024.2
 AUTOPILOT_MACH := win64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
   IFLAG += -m32
 endif
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := C:/Xilinx/Vitis/2024.2/tps/win64/msys64/mingw64/bin
+  AP_GCC_PATH := K:/Xilinx/Vitis/2024.2/tps/win64/msys64/mingw64/bin
 endif
 AUTOPILOT_TOOL := ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AP_CLANG_PATH := ${XILINX_VCXX}/libexec
@@ -70,11 +70,11 @@ DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += -Werror=return-type
 CCFLAG += -Wno-abi
 CCFLAG += -fdebug-default-version=4
-CCFLAG += --sysroot=C:/Xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt
+CCFLAG += --sysroot=K:/Xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt
 CCFLAG += -Werror=uninitialized
 CCFLAG += -Wno-c++11-narrowing
 CCFLAG += -Wno-error=sometimes-uninitialized
-LFLAG += --sysroot=C:/Xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt
+LFLAG += --sysroot=K:/Xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt
 
 
 
