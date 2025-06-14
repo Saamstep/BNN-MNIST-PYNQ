@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri Jun 13 23:29:54 2025
+| Date         : Sat Jun 14 08:56:12 2025
 | Host         : rogDesktop running 64-bit major release  (build 9200)
 | Command      : report_design_analysis -file ./report/feedforward_design_analysis_synth.rpt
 | Design       : bd_0_wrapper
@@ -49,8 +49,8 @@ Table of Contents
 | Mark Debug                | 0                                                                       |
 | Start Point Pin Primitive | FDRE/C                                                                  |
 | End Point Pin Primitive   | FDRE/D                                                                  |
-| Start Point Pin           | add_ln64_29_reg_1907_reg[1]/C                                           |
-| End Point Pin             | add_ln64_reg_1952_reg[5]/D                                              |
+| Start Point Pin           | add_ln51_89_reg_3749_reg[1]/C                                           |
+| End Point Pin             | add_ln51_124_reg_3874_reg[5]/D                                          |
 +---------------------------+-------------------------------------------------------------------------+
 * Bounding box calculated as % of dimensions for the target device (308, 299)
 
@@ -58,11 +58,11 @@ Table of Contents
 2. Logic Level Distribution
 ---------------------------
 
-+-----------------+-------------+----+---+----+-----+---+
-| End Point Clock | Requirement |  4 | 5 |  6 |  7  | 8 |
-+-----------------+-------------+----+---+----+-----+---+
-| ap_clk          | 10.000ns    | 57 | 9 | 11 | 921 | 2 |
-+-----------------+-------------+----+---+----+-----+---+
++-----------------+-------------+----+-----+----+----+-----+-----+-----+---+----+
+| End Point Clock | Requirement |  2 |  3  |  4 |  5 |  6  |  7  |  8  | 9 | 10 |
++-----------------+-------------+----+-----+----+----+-----+-----+-----+---+----+
+| ap_clk          | 10.000ns    | 10 | 208 | 60 | 75 | 193 | 116 | 328 | 8 |  2 |
++-----------------+-------------+----+-----+----+----+-----+-----+-----+---+----+
 * Columns represent the logic levels per end point clock
 ** Distribution is for top worst 1000 paths
 

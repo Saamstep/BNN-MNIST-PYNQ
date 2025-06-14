@@ -31736,26 +31736,18 @@ namespace std
 # 4 "bnn.cpp" 2
 # 1 "./weights.h" 1
 
-# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\ap_int.h" 1
-# 3 "./weights.h" 2
-
-
-
-typedef ap_fixed<32, 24, AP_RND> data_t1;
-
-typedef ap_fixed<32, 24, AP_RND> data_t2;
 
 const int rowsW1 = 128;
 const int colsW1 = 784;
-extern const data_t2 W1[rowsW1][colsW1];
+extern const int W1[rowsW1][colsW1];
 
 const int rowsW2 = 64;
 const int colsW2 = 128;
-extern const data_t2 W2[rowsW2][colsW2];
+extern const int W2[rowsW2][colsW2];
 
 const int rowsW3 = 10;
 const int colsW3 = 64;
-extern const data_t2 W3[rowsW3][colsW3];
+extern const int W3[rowsW3][colsW3];
 # 5 "bnn.cpp" 2
 
 
@@ -31771,8 +31763,7 @@ typedef ap_axis<32, 2, 5, 8> axis_t;
 
 
 
-data_t1 XNOR(data_t1 a, data_t1 b)
-{
+int XNOR(int a, int b) {
     return (a == b) ? 1 : 0;
 }
 
@@ -31781,8 +31772,7 @@ data_t1 XNOR(data_t1 a, data_t1 b)
 
 
 
-data_t1 quantize(data_t1 x)
-{
+int quantize(int x) {
     return (x == 1) ? 0 : 1;
 }
 
@@ -31791,21 +31781,21 @@ data_t1 quantize(data_t1 x)
 
 
 
-data_t1 sign(data_t1 x)
-{
+int sign(int x) {
     return (x > 0) ? 1 : -1;
 }
 
 
 
 
-void matmul_xnor(const data_t1* A, const data_t1* B, data_t1* res, int rowsB, int colsB)
-{
-# 61 "bnn.cpp"
-    VITIS_LOOP_61_1: for (int x = 0; x < rowsB; x++) {
-        data_t1 cnt = 0;
-        VITIS_LOOP_63_2: for (int y = 0; y < colsB; y++) {
-            cnt += XNOR(A[y], B[x * colsB + y]);
+void matmul_xnor(const int* A, const int* B, int* res, int rowsB, int colsB) {
+
+    VITIS_LOOP_46_1: for (int x = 0; x < rowsB; x++) {
+#pragma HLS PIPELINE
+ int cnt = 0;
+        VITIS_LOOP_49_2: for (int y = 0; y < colsB; y++) {
+#pragma HLS UNROLL
+ cnt += XNOR(A[y], B[x * colsB + y]);
         }
         res[x] = cnt;
     }
@@ -31822,7 +31812,7 @@ __attribute__((sdx_kernel("feedforward", 0))) void feedforward(
 ) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=feedforward
-# 78 "bnn.cpp"
+# 65 "bnn.cpp"
 
 #pragma HLS INTERFACE axis port=input_stream
 #pragma HLS INTERFACE axis port=output_stream
@@ -31832,21 +31822,21 @@ __attribute__((sdx_kernel("feedforward", 0))) void feedforward(
 #pragma HLS ARRAY_PARTITION variable=W2 complete dim=2
 #pragma HLS ARRAY_PARTITION variable=W3 complete dim=2
 
- data_t1 X0_input[784];
+ int X0_input[784];
 #pragma HLS ARRAY_PARTITION variable=X0_input complete dim=1
 
 
 
- data_t1 layer1_activations[rowsW1];
-    data_t1 layer2_activations[rowsW2];
-    data_t1 layer3_activations[rowsW3];
-    data_t1 layer1_quant[rowsW1];
-    data_t1 layer2_quant[rowsW2];
+ int layer1_activations[rowsW1];
+    int layer2_activations[rowsW2];
+    int layer3_activations[rowsW3];
+    int layer1_quant[rowsW1];
+    int layer2_quant[rowsW2];
 #pragma HLS ARRAY_PARTITION variable=layer1_quant complete dim=1
 #pragma HLS ARRAY_PARTITION variable=layer2_quant complete dim=1
 
 
- VITIS_LOOP_101_1: for (int i = 0; i < 28*28; ++i)
+ VITIS_LOOP_88_1: for (int i = 0; i < 28*28; ++i)
     {
 #pragma HLS PIPELINE
  axis_t temp = input_stream.read();
@@ -31854,25 +31844,17 @@ __attribute__((sdx_kernel("feedforward", 0))) void feedforward(
     }
 
 
+    matmul_xnor(X0_input, (const int*)W1, layer1_activations, rowsW1, colsW1);
 
 
-
-
-    matmul_xnor(X0_input, (const data_t1*)W1, layer1_activations, rowsW1, colsW1);
-
-
-
-
-
-
-    VITIS_LOOP_120_2: for (int i = 0; i < rowsW1; ++i)
+    VITIS_LOOP_99_2: for (int i = 0; i < rowsW1; ++i)
     {
 #pragma HLS UNROLL factor=2
  layer1_activations[i] = (2 * layer1_activations[i]) - colsW1;
     }
 
 
-    VITIS_LOOP_127_3: for (int i = 0; i < rowsW1; ++i)
+    VITIS_LOOP_106_3: for (int i = 0; i < rowsW1; ++i)
     {
 #pragma HLS PIPELINE
  layer1_quant[i] = quantize(sign(layer1_activations[i]));
@@ -31880,25 +31862,17 @@ __attribute__((sdx_kernel("feedforward", 0))) void feedforward(
 
 
 
+    matmul_xnor(layer1_quant, (const int*)W2, layer2_activations, rowsW2,colsW2);
 
 
-
-
-    matmul_xnor(layer1_quant, (const data_t1*)W2, layer2_activations, rowsW2,colsW2);
-
-
-
-
-
-
-    VITIS_LOOP_146_4: for (int i = 0; i < rowsW2; ++i)
+    VITIS_LOOP_117_4: for (int i = 0; i < rowsW2; ++i)
     {
 #pragma HLS UNROLL factor=4
  layer2_activations[i] = (2 * layer2_activations[i]) - colsW2;
     }
 
 
-    VITIS_LOOP_153_5: for (int i = 0; i < rowsW2; ++i)
+    VITIS_LOOP_124_5: for (int i = 0; i < rowsW2; ++i)
     {
 #pragma HLS PIPELINE
  layer2_quant[i] = quantize(sign(layer2_activations[i]));
@@ -31906,17 +31880,9 @@ __attribute__((sdx_kernel("feedforward", 0))) void feedforward(
 
 
 
+    matmul_xnor(layer2_quant, (const int*)W3, layer3_activations, rowsW3, colsW3);
 
-
-
-
-    matmul_xnor(layer2_quant, (const data_t1*)W3, layer3_activations, rowsW3, colsW3);
-
-
-
-
-
-    VITIS_LOOP_171_6: for (int i = 0; i < rowsW3; ++i)
+    VITIS_LOOP_134_6: for (int i = 0; i < rowsW3; ++i)
     {
 #pragma HLS PIPELINE
  layer3_activations[i] = (2 * layer3_activations[i]) - colsW3;
@@ -31925,7 +31891,7 @@ __attribute__((sdx_kernel("feedforward", 0))) void feedforward(
 
 
 
-    VITIS_LOOP_180_7: for (int i = 0; i < rowsW3; ++i)
+    VITIS_LOOP_143_7: for (int i = 0; i < rowsW3; ++i)
     {
 #pragma HLS PIPELINE
  axis_t temp;

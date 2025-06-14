@@ -10,14 +10,14 @@ wire [2:0] inst_idle_sigs;
 wire [0:0] inst_block_sigs;
 wire kernel_block;
 
-assign axis_block_sigs[0] = ~grp_feedforward_Pipeline_VITIS_LOOP_101_1_fu_4012.input_stream_TDATA_blk_n;
-assign axis_block_sigs[1] = ~grp_feedforward_Pipeline_VITIS_LOOP_180_7_fu_6034.output_stream_TDATA_blk_n;
+assign axis_block_sigs[0] = ~grp_feedforward_Pipeline_VITIS_LOOP_88_1_fu_4012.input_stream_TDATA_blk_n;
+assign axis_block_sigs[1] = ~grp_feedforward_Pipeline_VITIS_LOOP_143_7_fu_6034.output_stream_TDATA_blk_n;
 
 assign inst_block_sigs[0] = 1'b0;
 
 assign inst_idle_sigs[0] = 1'b0;
-assign inst_idle_sigs[1] = grp_feedforward_Pipeline_VITIS_LOOP_101_1_fu_4012.ap_idle;
-assign inst_idle_sigs[2] = grp_feedforward_Pipeline_VITIS_LOOP_180_7_fu_6034.ap_idle;
+assign inst_idle_sigs[1] = grp_feedforward_Pipeline_VITIS_LOOP_88_1_fu_4012.ap_idle;
+assign inst_idle_sigs[2] = grp_feedforward_Pipeline_VITIS_LOOP_143_7_fu_6034.ap_idle;
 
 feedforward_hls_deadlock_idx0_monitor feedforward_hls_deadlock_idx0_monitor_U (
     .clock(kernel_monitor_clock),

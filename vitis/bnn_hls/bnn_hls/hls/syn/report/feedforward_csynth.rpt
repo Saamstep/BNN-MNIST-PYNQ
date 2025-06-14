@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'feedforward'
 ================================================================
-* Date:           Fri Jun 13 23:25:31 2025
+* Date:           Sat Jun 14 08:40:44 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        bnn_hls
@@ -25,30 +25,30 @@
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+--------+--------+---------+
-    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
-    |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
-    +---------+---------+----------+----------+--------+--------+---------+
-    |   109680|   109680|  1.097 ms|  1.097 ms|  109681|  109681|       no|
-    +---------+---------+----------+----------+--------+--------+---------+
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1324|     1324|  13.240 us|  13.240 us|  1325|  1325|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
         * Instance: 
-        +---------------------------------------------------+---------------------------------------+---------+---------+-----------+-----------+--------+--------+------------------------------------------------+
-        |                                                   |                                       |  Latency (cycles) |   Latency (absolute)  |     Interval    |                    Pipeline                    |
-        |                      Instance                     |                 Module                |   min   |   max   |    min    |    max    |   min  |   max  |                      Type                      |
-        +---------------------------------------------------+---------------------------------------+---------+---------+-----------+-----------+--------+--------+------------------------------------------------+
-        |grp_feedforward_Pipeline_VITIS_LOOP_101_1_fu_4012  |feedforward_Pipeline_VITIS_LOOP_101_1  |      786|      786|   7.860 us|   7.860 us|     785|     785|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_matmul_xnor_1_fu_4814                          |matmul_xnor_1                          |   100357|   100357|   1.004 ms|   1.004 ms|  100353|  100353|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_feedforward_Pipeline_VITIS_LOOP_120_2_fu_5604  |feedforward_Pipeline_VITIS_LOOP_120_2  |       67|       67|   0.670 us|   0.670 us|      65|      65|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_feedforward_Pipeline_VITIS_LOOP_127_3_fu_5610  |feedforward_Pipeline_VITIS_LOOP_127_3  |      130|      130|   1.300 us|   1.300 us|     129|     129|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_matmul_xnor_2_fu_5744                          |matmul_xnor_2                          |     8197|     8197|  81.970 us|  81.970 us|    8193|    8193|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_feedforward_Pipeline_VITIS_LOOP_146_4_fu_5880  |feedforward_Pipeline_VITIS_LOOP_146_4  |       18|       18|   0.180 us|   0.180 us|      17|      17|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_feedforward_Pipeline_VITIS_LOOP_153_5_fu_5888  |feedforward_Pipeline_VITIS_LOOP_153_5  |       67|       67|   0.670 us|   0.670 us|      65|      65|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_matmul_xnor_fu_5960                            |matmul_xnor                            |       13|       13|   0.130 us|   0.130 us|      11|      11|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_feedforward_Pipeline_VITIS_LOOP_171_6_fu_6029  |feedforward_Pipeline_VITIS_LOOP_171_6  |       12|       12|   0.120 us|   0.120 us|      11|      11|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_feedforward_Pipeline_VITIS_LOOP_180_7_fu_6034  |feedforward_Pipeline_VITIS_LOOP_180_7  |       12|       12|   0.120 us|   0.120 us|      11|      11|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        +---------------------------------------------------+---------------------------------------+---------+---------+-----------+-----------+--------+--------+------------------------------------------------+
+        +---------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |                                                   |                                       |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+        |                      Instance                     |                 Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+        +---------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |grp_feedforward_Pipeline_VITIS_LOOP_88_1_fu_4012   |feedforward_Pipeline_VITIS_LOOP_88_1   |      786|      786|  7.860 us|  7.860 us|  785|  785|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_feedforward_Pipeline_VITIS_LOOP_46_1_fu_4814   |feedforward_Pipeline_VITIS_LOOP_46_1   |      132|      132|  1.320 us|  1.320 us|  129|  129|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_feedforward_Pipeline_VITIS_LOOP_99_2_fu_5604   |feedforward_Pipeline_VITIS_LOOP_99_2   |       67|       67|  0.670 us|  0.670 us|   65|   65|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_feedforward_Pipeline_VITIS_LOOP_106_3_fu_5610  |feedforward_Pipeline_VITIS_LOOP_106_3  |      130|      130|  1.300 us|  1.300 us|  129|  129|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744  |feedforward_Pipeline_VITIS_LOOP_46_11  |       67|       67|  0.670 us|  0.670 us|   65|   65|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_feedforward_Pipeline_VITIS_LOOP_117_4_fu_5880  |feedforward_Pipeline_VITIS_LOOP_117_4  |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_feedforward_Pipeline_VITIS_LOOP_124_5_fu_5888  |feedforward_Pipeline_VITIS_LOOP_124_5  |       66|       66|  0.660 us|  0.660 us|   65|   65|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960  |feedforward_Pipeline_VITIS_LOOP_46_12  |       13|       13|  0.130 us|  0.130 us|   11|   11|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_feedforward_Pipeline_VITIS_LOOP_134_6_fu_6029  |feedforward_Pipeline_VITIS_LOOP_134_6  |       12|       12|  0.120 us|  0.120 us|   11|   11|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_feedforward_Pipeline_VITIS_LOOP_143_7_fu_6034  |feedforward_Pipeline_VITIS_LOOP_143_7  |       12|       12|  0.120 us|  0.120 us|   11|   11|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +---------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
         N/A
@@ -65,37 +65,37 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|      2|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    -|    1848|  11761|    -|
+|Instance         |        0|    -|    2198|  45735|    -|
 |Memory           |        4|    -|     320|     37|    0|
 |Multiplexer      |        -|    -|       0|    724|    -|
 |Register         |        -|    -|      88|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        4|    0|    2256|  12524|    0|
+|Total            |        4|    0|    2606|  46498|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        1|    0|       2|     23|    0|
+|Utilization (%)  |        1|    0|       2|     87|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
     * Instance: 
-    +---------------------------------------------------+---------------------------------------+---------+----+-----+------+-----+
-    |                      Instance                     |                 Module                | BRAM_18K| DSP|  FF |  LUT | URAM|
-    +---------------------------------------------------+---------------------------------------+---------+----+-----+------+-----+
-    |control_s_axi_U                                    |control_s_axi                          |        0|   0|   36|    40|    0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_101_1_fu_4012  |feedforward_Pipeline_VITIS_LOOP_101_1  |        0|   0|  807|   162|    0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_120_2_fu_5604  |feedforward_Pipeline_VITIS_LOOP_120_2  |        0|   0|  101|   131|    0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_127_3_fu_5610  |feedforward_Pipeline_VITIS_LOOP_127_3  |        0|   0|  147|   147|    0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_146_4_fu_5880  |feedforward_Pipeline_VITIS_LOOP_146_4  |        0|   0|   26|   208|    0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_153_5_fu_5888  |feedforward_Pipeline_VITIS_LOOP_153_5  |        0|   0|  150|   135|    0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_171_6_fu_6029  |feedforward_Pipeline_VITIS_LOOP_171_6  |        0|   0|   11|   103|    0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_180_7_fu_6034  |feedforward_Pipeline_VITIS_LOOP_180_7  |        0|   0|    8|   182|    0|
-    |grp_matmul_xnor_fu_5960                            |matmul_xnor                            |        0|   0|   72|  3254|    0|
-    |grp_matmul_xnor_1_fu_4814                          |matmul_xnor_1                          |        0|   0|  259|  5737|    0|
-    |grp_matmul_xnor_2_fu_5744                          |matmul_xnor_2                          |        0|   0|  231|  1662|    0|
-    +---------------------------------------------------+---------------------------------------+---------+----+-----+------+-----+
-    |Total                                              |                                       |        0|   0| 1848| 11761|    0|
-    +---------------------------------------------------+---------------------------------------+---------+----+-----+------+-----+
+    +---------------------------------------------------+---------------------------------------+---------+----+-----+-------+-----+
+    |                      Instance                     |                 Module                | BRAM_18K| DSP|  FF |  LUT  | URAM|
+    +---------------------------------------------------+---------------------------------------+---------+----+-----+-------+-----+
+    |control_s_axi_U                                    |control_s_axi                          |        0|   0|   36|     40|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_106_3_fu_5610  |feedforward_Pipeline_VITIS_LOOP_106_3  |        0|   0|  147|    138|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_117_4_fu_5880  |feedforward_Pipeline_VITIS_LOOP_117_4  |        0|   0|   26|    208|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_124_5_fu_5888  |feedforward_Pipeline_VITIS_LOOP_124_5  |        0|   0|   82|    126|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_134_6_fu_6029  |feedforward_Pipeline_VITIS_LOOP_134_6  |        0|   0|   11|    103|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_143_7_fu_6034  |feedforward_Pipeline_VITIS_LOOP_143_7  |        0|   0|    8|     88|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_46_1_fu_4814   |feedforward_Pipeline_VITIS_LOOP_46_1   |        0|   0|  774|  35032|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744  |feedforward_Pipeline_VITIS_LOOP_46_11  |        0|   0|  134|   6462|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960  |feedforward_Pipeline_VITIS_LOOP_46_12  |        0|   0|   72|   3254|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_88_1_fu_4012   |feedforward_Pipeline_VITIS_LOOP_88_1   |        0|   0|  807|    153|    0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_99_2_fu_5604   |feedforward_Pipeline_VITIS_LOOP_99_2   |        0|   0|  101|    131|    0|
+    +---------------------------------------------------+---------------------------------------+---------+----+-----+-------+-----+
+    |Total                                              |                                       |        0|   0| 2198|  45735|    0|
+    +---------------------------------------------------+---------------------------------------+---------+----+-----+-------+-----+
 
     * DSP: 
     N/A
@@ -122,7 +122,7 @@
     +------------------------------------------------------------------------+----------+----+---+----+------------+------------+
     |                              Variable Name                             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +------------------------------------------------------------------------+----------+----+---+----+------------+------------+
-    |grp_feedforward_Pipeline_VITIS_LOOP_180_7_fu_6034_output_stream_TREADY  |       and|   0|  0|   2|           1|           1|
+    |grp_feedforward_Pipeline_VITIS_LOOP_143_7_fu_6034_output_stream_TREADY  |       and|   0|  0|   2|           1|           1|
     +------------------------------------------------------------------------+----------+----+---+----+------------+------------+
     |Total                                                                   |          |   0|  0|   2|           1|           1|
     +------------------------------------------------------------------------+----------+----+---+----+------------+------------+
@@ -184,16 +184,16 @@
     |                              Name                              | FF | LUT| Bits| Const Bits|
     +----------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                       |  22|   0|   22|          0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_101_1_fu_4012_ap_start_reg  |   1|   0|    1|          0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_120_2_fu_5604_ap_start_reg  |   1|   0|    1|          0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_127_3_fu_5610_ap_start_reg  |   1|   0|    1|          0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_146_4_fu_5880_ap_start_reg  |   1|   0|    1|          0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_153_5_fu_5888_ap_start_reg  |   1|   0|    1|          0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_171_6_fu_6029_ap_start_reg  |   1|   0|    1|          0|
-    |grp_feedforward_Pipeline_VITIS_LOOP_180_7_fu_6034_ap_start_reg  |   1|   0|    1|          0|
-    |grp_matmul_xnor_1_fu_4814_ap_start_reg                          |   1|   0|    1|          0|
-    |grp_matmul_xnor_2_fu_5744_ap_start_reg                          |   1|   0|    1|          0|
-    |grp_matmul_xnor_fu_5960_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_106_3_fu_5610_ap_start_reg  |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_117_4_fu_5880_ap_start_reg  |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_124_5_fu_5888_ap_start_reg  |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_134_6_fu_6029_ap_start_reg  |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_143_7_fu_6034_ap_start_reg  |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744_ap_start_reg  |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960_ap_start_reg  |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_46_1_fu_4814_ap_start_reg   |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_88_1_fu_4012_ap_start_reg   |   1|   0|    1|          0|
+    |grp_feedforward_Pipeline_VITIS_LOOP_99_2_fu_5604_ap_start_reg   |   1|   0|    1|          0|
     |output_stream_TDATA_reg                                         |  32|   0|   32|          0|
     |output_stream_TDEST_reg                                         |   8|   0|    8|          0|
     |output_stream_TID_reg                                           |   5|   0|    5|          0|

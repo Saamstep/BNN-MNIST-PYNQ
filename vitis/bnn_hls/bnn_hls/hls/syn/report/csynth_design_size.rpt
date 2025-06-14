@@ -6,42 +6,42 @@
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                        | Instructions | Description                                                                            |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                             | 4,147        | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                             |    734       | After all functions are compiled and linked into a single design                       |
 |               |                             |              |                                                                                        |
 | Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                  |   775        | user unroll pragmas are applied                                                        |
-|               | (2) simplification          |   436        | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                  |   389        | user inline pragmas are applied                                                        |
-|               | (4) simplification          |   323        | simplification of applied user inline pragmas                                          |
+|               | (1) unroll                  |    393       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |    326       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |    264       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |    255       | simplification of applied user inline pragmas                                          |
 |               |                             |              |                                                                                        |
 | Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition         | 6,131        | user array partition pragmas are applied                                               |
-|               | (2) simplification          | 5,155        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate  | 5,155        | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape           | 5,155        | apply array reshape pragmas                                                            |
-|               | (5) access patterns         | 9,100        | array access pattern optmizations                                                      |
+|               | (1) array partition         | 11,910       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  7,036       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  7,036       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  7,036       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  8,050       | array access pattern optmizations                                                      |
 |               |                             |              |                                                                                        |
 | Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification     | 5,172        | loop and instruction simplification                                                    |
-|               | (2) parallelization         | 4,434        | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition         | 4,363        | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification          | 3,490        | simplification of design after performance transformations                             |
+|               | (1) loop simplification     |  8,029       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  7,051       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  6,980       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  6,107       | simplification of design after performance transformations                             |
 |               |                             |              |                                                                                        |
 | HW Transforms |                             |              | After hardware transfomations                                                          |
-|               | (1) lowering                | 3,478        | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations           | 3,516        | high level synthesis optimizations                                                     |
+|               | (1) lowering                |  6,095       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  6,129       | high level synthesis optimizations                                                     |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
-+----------------+------------+-----------------+---------------+-----------------+----------------+----------------+
-| Function       | Location   | Compile/Link    | Unroll/Inline | Array/Struct    | Performance    | HW Transforms  |
-+----------------+------------+-----------------+---------------+-----------------+----------------+----------------+
-| + feedforward  | bnn.cpp:75 | 4,147           | 323           | 9,100           | 3,490          | 3,516          |
-|    sign        | bnn.cpp:39 |  432 (3 calls)  |               |                 |                |                |
-|    quantize    | bnn.cpp:29 |  432 (3 calls)  |               |                 |                |                |
-|  + matmul_xnor | bnn.cpp:47 | 1,107 (3 calls) | 102 (3 calls) | 1,045 (3 calls) |  340 (3 calls) |  353 (3 calls) |
-|     XNOR       | bnn.cpp:19 |  192 (3 calls)  |               |                 |                |                |
-+----------------+------------+-----------------+---------------+-----------------+----------------+----------------+
++----------------+------------+---------------+---------------+--------------+-------------+---------------+
+| Function       | Location   | Compile/Link  | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++----------------+------------+---------------+---------------+--------------+-------------+---------------+
+| + feedforward  | bnn.cpp:62 | 734           | 255           | 8,050        | 6,107       | 6,129         |
+|    sign        | bnn.cpp:37 |  12 (3 calls) |               |              |             |               |
+|    quantize    | bnn.cpp:28 |  12 (3 calls) |               |              |             |               |
+|  + matmul_xnor | bnn.cpp:44 | 111 (3 calls) |               |              |             |               |
+|     XNOR       | bnn.cpp:19 |  12 (3 calls) |               |              |             |               |
++----------------+------------+---------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings
 +---------------------------------------------+--------+------------------------------------------------------------------+

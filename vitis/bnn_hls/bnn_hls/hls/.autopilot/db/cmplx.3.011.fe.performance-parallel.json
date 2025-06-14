@@ -1,54 +1,18 @@
 {
   "0": {
-    "basicblocks": 993,
-    "calls": "1 2 3",
+    "basicblocks": 997,
+    "calls": "",
     "file": "bnn.cpp",
-    "fileloc": 75,
-    "instructions": 4103,
+    "fileloc": 62,
+    "instructions": 7029,
     "loads": {
       "G": 2,
       "L": 14
     },
     "name": "feedforward",
     "stores": {
-      "L": 17
+      "L": 20
     },
-    "total_instructions": 4434
-  },
-  "1": {
-    "basicblocks": 5,
-    "calls": "",
-    "file": "bnn.cpp",
-    "fileloc": 47,
-    "instructions": 22,
-    "name": "matmul_xnor",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 22
-  },
-  "2": {
-    "basicblocks": 5,
-    "calls": "",
-    "file": "bnn.cpp",
-    "fileloc": 47,
-    "instructions": 22,
-    "name": "matmul_xnor",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 22
-  },
-  "3": {
-    "basicblocks": 3,
-    "calls": "",
-    "file": "bnn.cpp",
-    "fileloc": 47,
-    "instructions": 265,
-    "name": "matmul_xnor",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 265
+    "total_instructions": 7051
   }
 }

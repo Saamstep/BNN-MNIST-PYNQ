@@ -20,9 +20,9 @@ INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/ece
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
 INFO: [HLS 200-2036] Building debug C Simulation binaries
-   Compiling ../../../../bnn_tb.cpp in debug mode
+   Compiling ../../../../bnn.cpp in debug mode
    Generating csim.exe
-In file included from ../../../../bnn_tb.cpp:7:
+In file included from ../../../../bnn.cpp:2:
 In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
 In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
 In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
@@ -38,8 +38,24 @@ C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: 
 #define __GMP_LIBGMP_DLL 1
         ^
 1 warning generated.
-@E Simulation failed: SIGSEGV.
-ERROR: [SIM 211-100] CSim failed with errors.
+
+Sample 0: Predicted = 5, Label = 5
+
+
+Sample 1: Predicted = 0, Label = 0
+
+
+Sample 2: Predicted = 4, Label = 4
+
+
+Sample 3: Predicted = 1, Label = 1
+
+
+Sample 4: Predicted = 9, Label = 9
+
+Accuracy: 5 / 5
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
+INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-ERROR: 4
-INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 3 seconds. Total elapsed time: 8.625 seconds; peak allocated memory: 620.355 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 3 seconds. Total elapsed time: 11.385 seconds; peak allocated memory: 620.043 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 17s

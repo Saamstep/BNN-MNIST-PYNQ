@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="68" Path="D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="ec4d7583c8be46e8b6ea140fed7c3b0b"/>
+    <Option Name="Id" Val="bcccac040f57441aa4eb7152d2cccd7d"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

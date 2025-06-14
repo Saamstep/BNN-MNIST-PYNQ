@@ -16,8 +16,7 @@ typedef ap_axis<32, 2, 5, 8> axis_t;
 * Take in 2 inputs A and B
 * Return 1 if equal, return 0 if not equal
 */
-data_t1 XNOR(data_t1 a, data_t1 b)
-{
+int XNOR(int a, int b) {
     return (a == b) ? 1 : 0;
 }
 
@@ -26,8 +25,7 @@ data_t1 XNOR(data_t1 a, data_t1 b)
 * Take in an input x
 * Return 0 if input is 1, else return 1
 */
-data_t1 quantize(data_t1 x)
-{
+int quantize(int x) {
     return (x == 1) ? 0 : 1;
 }
 
@@ -36,31 +34,20 @@ data_t1 quantize(data_t1 x)
 * Take in an input x
 * Return 1 if number is positive, return -1 if number is less than or equal to 0
 */
-data_t1 sign(data_t1 x)
-{
+int sign(int x) {
     return (x > 0) ? 1 : -1;
 }
 
 /*
 * XNOR Matrix Multiplication
 */
-void matmul_xnor(const data_t1* A, const data_t1* B, data_t1* res, int rowsB, int colsB)
-{
-	// for (int x = 0; x < colsB; ++x) {
-    //     #pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_INPUT_SIZE
-    //     #pragma HLS PIPELINE II=1
-    // 	data_t1 cnt = 0;
-    // 	for (int y = 0; y < rowsB; ++y) {
-    //         #pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_ROW_SIZE
-    //         #pragma HLS UNROLL factor=2
-    //         cnt += XNOR(A[y], B[y * colsB + x]);
-    // 	}
-    // 	res[x] = cnt;
-	// }
+void matmul_xnor(const int* A, const int* B, int* res, int rowsB, int colsB) {
 
     for (int x = 0; x < rowsB; x++) {
-        data_t1 cnt = 0;
+        #pragma HLS PIPELINE
+        int cnt = 0;
         for (int y = 0; y < colsB; y++) {
+            #pragma HLS UNROLL
             cnt += XNOR(A[y], B[x * colsB + y]);
         }
         res[x] = cnt;        
@@ -84,16 +71,16 @@ void feedforward(
     #pragma HLS ARRAY_PARTITION variable=W2 complete dim=2
     #pragma HLS ARRAY_PARTITION variable=W3 complete dim=2
 
-    data_t1 X0_input[MAX_INPUT_SIZE];
+    int X0_input[MAX_INPUT_SIZE];
     #pragma HLS ARRAY_PARTITION variable=X0_input complete dim=1
 
     
 
-    data_t1 layer1_activations[rowsW1];
-    data_t1 layer2_activations[rowsW2];
-    data_t1 layer3_activations[rowsW3];
-    data_t1 layer1_quant[rowsW1];
-    data_t1 layer2_quant[rowsW2];
+    int layer1_activations[rowsW1];
+    int layer2_activations[rowsW2];
+    int layer3_activations[rowsW3];
+    int layer1_quant[rowsW1];
+    int layer2_quant[rowsW2];
     #pragma HLS ARRAY_PARTITION variable=layer1_quant complete dim=1
     #pragma HLS ARRAY_PARTITION variable=layer2_quant complete dim=1
 
@@ -106,7 +93,7 @@ void feedforward(
     }
 
     // LAYER 1: activations1 = input x W1
-    matmul_xnor(X0_input, (const data_t1*)W1, layer1_activations, rowsW1, colsW1);
+    matmul_xnor(X0_input, (const int*)W1, layer1_activations, rowsW1, colsW1);
     
     // scale activations
     for (int i = 0; i < rowsW1; ++i)
@@ -124,7 +111,7 @@ void feedforward(
 
 
     // LAYER 2: activations2 = quant1 x W2
-    matmul_xnor(layer1_quant, (const data_t1*)W2, layer2_activations, rowsW2,colsW2);
+    matmul_xnor(layer1_quant, (const int*)W2, layer2_activations, rowsW2,colsW2);
 
     // scale activations
     for (int i = 0; i < rowsW2; ++i)
@@ -142,7 +129,7 @@ void feedforward(
 
     
     // LAYER 3: activations3 = quant2 x W3
-    matmul_xnor(layer2_quant, (const data_t1*)W3, layer3_activations, rowsW3, colsW3);
+    matmul_xnor(layer2_quant, (const int*)W3, layer3_activations, rowsW3, colsW3);
 
     for (int i = 0; i < rowsW3; ++i)
     {

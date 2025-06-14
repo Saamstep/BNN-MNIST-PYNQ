@@ -1,0 +1,557 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'feedforward_Pipeline_VITIS_LOOP_46_11'" level="0">
+<item name = "Date">Sat Jun 14 08:40:39 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">bnn_hls</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.990 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">67, 67, 0.670 us, 0.670 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_46_1">65, 65, 3, 1, 1, 64, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 6426, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 36, -</column>
+<column name="Register">-, -, 134, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 12, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln46_fu_1142_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln51_100_fu_2702_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_101_fu_2712_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_102_fu_2722_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_103_fu_2728_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_104_fu_2738_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_105_fu_2748_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_106_fu_3395_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_107_fu_3405_p2">+, 0, 0, 13, 5, 5</column>
+<column name="add_ln51_108_fu_2754_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_109_fu_2764_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_110_fu_2774_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_111_fu_2780_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_112_fu_2790_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_113_fu_2800_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_114_fu_3421_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_115_fu_2806_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_116_fu_2816_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_117_fu_2826_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_118_fu_2832_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_119_fu_2842_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_120_fu_2852_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_121_fu_3437_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_122_fu_3447_p2">+, 0, 0, 13, 5, 5</column>
+<column name="add_ln51_123_fu_3457_p2">+, 0, 0, 14, 6, 6</column>
+<column name="add_ln51_124_fu_3467_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln51_125_fu_2858_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_126_fu_2868_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_127_fu_2878_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_128_fu_2884_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_129_fu_2894_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_130_fu_2904_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_131_fu_3479_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_132_fu_2910_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_133_fu_2920_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_134_fu_2930_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_135_fu_2936_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_136_fu_2946_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_137_fu_2956_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_138_fu_3495_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_139_fu_3505_p2">+, 0, 0, 13, 5, 5</column>
+<column name="add_ln51_140_fu_2962_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_141_fu_2972_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_142_fu_2982_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_143_fu_2988_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_144_fu_2998_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_145_fu_3008_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_146_fu_3521_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_147_fu_3014_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_148_fu_3024_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_149_fu_3034_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_150_fu_3040_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_151_fu_3050_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_152_fu_3060_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_153_fu_3537_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_154_fu_3547_p2">+, 0, 0, 13, 5, 5</column>
+<column name="add_ln51_155_fu_3557_p2">+, 0, 0, 14, 6, 6</column>
+<column name="add_ln51_156_fu_3066_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_157_fu_3076_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_158_fu_3086_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_159_fu_3092_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_160_fu_3102_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_161_fu_3112_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_162_fu_3573_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_163_fu_3118_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_164_fu_3128_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_165_fu_3138_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_166_fu_3144_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_167_fu_3154_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_168_fu_3164_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_169_fu_3589_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_170_fu_3599_p2">+, 0, 0, 13, 5, 5</column>
+<column name="add_ln51_171_fu_3170_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_172_fu_3180_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_173_fu_3190_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_174_fu_3196_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_175_fu_3206_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_176_fu_3216_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_177_fu_3615_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_178_fu_3222_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_179_fu_3232_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_180_fu_3242_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_181_fu_3248_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_182_fu_3258_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_183_fu_3268_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_184_fu_3631_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_185_fu_3641_p2">+, 0, 0, 13, 5, 5</column>
+<column name="add_ln51_186_fu_3651_p2">+, 0, 0, 14, 6, 6</column>
+<column name="add_ln51_187_fu_3661_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln51_63_fu_2452_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_64_fu_2462_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_65_fu_2468_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_66_fu_2478_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_67_fu_2488_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_68_fu_3285_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_69_fu_2494_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_70_fu_2504_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_71_fu_2514_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_72_fu_2520_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_73_fu_2530_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_74_fu_2540_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_75_fu_3301_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_76_fu_3311_p2">+, 0, 0, 13, 5, 5</column>
+<column name="add_ln51_77_fu_2546_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_78_fu_2556_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_79_fu_2566_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_80_fu_2572_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_81_fu_2582_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_82_fu_2592_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_83_fu_3327_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_84_fu_2598_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_85_fu_2608_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_86_fu_2618_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_87_fu_2624_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_88_fu_2634_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_89_fu_2644_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_90_fu_3343_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_91_fu_3353_p2">+, 0, 0, 13, 5, 5</column>
+<column name="add_ln51_92_fu_3363_p2">+, 0, 0, 14, 6, 6</column>
+<column name="add_ln51_93_fu_2650_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_94_fu_2660_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_95_fu_2670_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_96_fu_2676_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_97_fu_2686_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln51_98_fu_2696_p2">+, 0, 0, 11, 3, 3</column>
+<column name="add_ln51_99_fu_3379_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln51_fu_2442_p2">+, 0, 0, 10, 2, 2</column>
+<column name="cnt_2_fu_3680_p2">+, 0, 0, 15, 8, 8</column>
+<column name="cnt_fu_1162_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_100_fu_1552_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_101_fu_1562_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_102_fu_1572_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_103_fu_1582_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_104_fu_1592_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_105_fu_1602_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_106_fu_1612_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_107_fu_1622_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_108_fu_1632_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_109_fu_1642_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_110_fu_1652_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_111_fu_1662_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_112_fu_1672_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_113_fu_1682_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_114_fu_1692_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_115_fu_1702_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_116_fu_1712_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_117_fu_1722_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_118_fu_1732_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_119_fu_1742_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_120_fu_1752_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_121_fu_1762_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_122_fu_1772_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_123_fu_1782_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_124_fu_1792_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_125_fu_1802_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_126_fu_1812_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_127_fu_1822_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_128_fu_1832_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_129_fu_1842_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_130_fu_1852_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_131_fu_1862_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_132_fu_1872_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_133_fu_1882_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_134_fu_1892_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_135_fu_1902_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_136_fu_1912_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_137_fu_1922_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_138_fu_1932_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_139_fu_1942_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_140_fu_1952_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_141_fu_1962_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_142_fu_1972_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_143_fu_1982_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_144_fu_1992_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_145_fu_2002_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_146_fu_2012_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_147_fu_2022_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_148_fu_2032_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_149_fu_2042_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_150_fu_2052_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_151_fu_2062_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_152_fu_2072_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_153_fu_2082_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_154_fu_2092_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_155_fu_2102_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_156_fu_2112_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_157_fu_2122_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_158_fu_2132_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_159_fu_2142_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_160_fu_2152_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_161_fu_2162_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_162_fu_2172_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_163_fu_2182_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_164_fu_2192_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_165_fu_2202_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_166_fu_2212_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_167_fu_2222_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_168_fu_2232_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_169_fu_2242_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_170_fu_2252_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_171_fu_2262_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_172_fu_2272_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_173_fu_2282_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_174_fu_2292_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_175_fu_2302_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_176_fu_2312_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_177_fu_2322_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_178_fu_2332_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_179_fu_2342_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_180_fu_2352_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_181_fu_2362_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_182_fu_2372_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_183_fu_2382_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_184_fu_2392_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_185_fu_2402_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_186_fu_2412_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_187_fu_2422_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_188_fu_2432_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_63_fu_1182_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_64_fu_1192_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_65_fu_1202_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_66_fu_1212_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_67_fu_1222_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_68_fu_1232_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_69_fu_1242_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_70_fu_1252_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_71_fu_1262_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_72_fu_1272_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_73_fu_1282_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_74_fu_1292_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_75_fu_1302_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_76_fu_1312_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_77_fu_1322_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_78_fu_1332_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_79_fu_1342_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_80_fu_1352_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_81_fu_1362_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_82_fu_1372_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_83_fu_1382_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_84_fu_1392_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_85_fu_1402_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_86_fu_1412_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_87_fu_1422_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_88_fu_1432_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_89_fu_1442_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_90_fu_1452_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_91_fu_1462_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_92_fu_1472_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_93_fu_1482_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_94_fu_1492_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_95_fu_1502_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_96_fu_1512_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_97_fu_1522_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_98_fu_1532_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_99_fu_1542_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_fu_1172_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln46_fu_1136_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_x">9, 2, 7, 14</column>
+<column name="x_1_fu_304">9, 2, 7, 14</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln51_102_reg_3764">3, 0, 3, 0</column>
+<column name="add_ln51_105_reg_3769">3, 0, 3, 0</column>
+<column name="add_ln51_110_reg_3774">3, 0, 3, 0</column>
+<column name="add_ln51_113_reg_3779">3, 0, 3, 0</column>
+<column name="add_ln51_117_reg_3784">3, 0, 3, 0</column>
+<column name="add_ln51_120_reg_3789">3, 0, 3, 0</column>
+<column name="add_ln51_124_reg_3874">7, 0, 7, 0</column>
+<column name="add_ln51_127_reg_3794">3, 0, 3, 0</column>
+<column name="add_ln51_130_reg_3799">3, 0, 3, 0</column>
+<column name="add_ln51_134_reg_3804">3, 0, 3, 0</column>
+<column name="add_ln51_137_reg_3809">3, 0, 3, 0</column>
+<column name="add_ln51_142_reg_3814">3, 0, 3, 0</column>
+<column name="add_ln51_145_reg_3819">3, 0, 3, 0</column>
+<column name="add_ln51_149_reg_3824">3, 0, 3, 0</column>
+<column name="add_ln51_152_reg_3829">3, 0, 3, 0</column>
+<column name="add_ln51_158_reg_3834">3, 0, 3, 0</column>
+<column name="add_ln51_161_reg_3839">3, 0, 3, 0</column>
+<column name="add_ln51_165_reg_3844">3, 0, 3, 0</column>
+<column name="add_ln51_168_reg_3849">3, 0, 3, 0</column>
+<column name="add_ln51_173_reg_3854">3, 0, 3, 0</column>
+<column name="add_ln51_176_reg_3859">3, 0, 3, 0</column>
+<column name="add_ln51_180_reg_3864">3, 0, 3, 0</column>
+<column name="add_ln51_183_reg_3869">3, 0, 3, 0</column>
+<column name="add_ln51_187_reg_3879">7, 0, 7, 0</column>
+<column name="add_ln51_64_reg_3714">3, 0, 3, 0</column>
+<column name="add_ln51_67_reg_3719">3, 0, 3, 0</column>
+<column name="add_ln51_71_reg_3724">3, 0, 3, 0</column>
+<column name="add_ln51_74_reg_3729">3, 0, 3, 0</column>
+<column name="add_ln51_79_reg_3734">3, 0, 3, 0</column>
+<column name="add_ln51_82_reg_3739">3, 0, 3, 0</column>
+<column name="add_ln51_86_reg_3744">3, 0, 3, 0</column>
+<column name="add_ln51_89_reg_3749">3, 0, 3, 0</column>
+<column name="add_ln51_95_reg_3754">3, 0, 3, 0</column>
+<column name="add_ln51_98_reg_3759">3, 0, 3, 0</column>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="lshr_ln46_1_reg_3709">4, 0, 4, 0</column>
+<column name="lshr_ln46_1_reg_3709_pp0_iter1_reg">4, 0, 4, 0</column>
+<column name="trunc_ln46_reg_3705">2, 0, 2, 0</column>
+<column name="trunc_ln46_reg_3705_pp0_iter1_reg">2, 0, 2, 0</column>
+<column name="x_1_fu_304">7, 0, 7, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, feedforward_Pipeline_VITIS_LOOP_46_11, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, feedforward_Pipeline_VITIS_LOOP_46_11, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, feedforward_Pipeline_VITIS_LOOP_46_11, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, feedforward_Pipeline_VITIS_LOOP_46_11, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, feedforward_Pipeline_VITIS_LOOP_46_11, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, feedforward_Pipeline_VITIS_LOOP_46_11, return value</column>
+<column name="layer2_activations_3_address0">out, 4, ap_memory, layer2_activations_3, array</column>
+<column name="layer2_activations_3_ce0">out, 1, ap_memory, layer2_activations_3, array</column>
+<column name="layer2_activations_3_we0">out, 1, ap_memory, layer2_activations_3, array</column>
+<column name="layer2_activations_3_d0">out, 32, ap_memory, layer2_activations_3, array</column>
+<column name="layer2_activations_2_address0">out, 4, ap_memory, layer2_activations_2, array</column>
+<column name="layer2_activations_2_ce0">out, 1, ap_memory, layer2_activations_2, array</column>
+<column name="layer2_activations_2_we0">out, 1, ap_memory, layer2_activations_2, array</column>
+<column name="layer2_activations_2_d0">out, 32, ap_memory, layer2_activations_2, array</column>
+<column name="layer2_activations_1_address0">out, 4, ap_memory, layer2_activations_1, array</column>
+<column name="layer2_activations_1_ce0">out, 1, ap_memory, layer2_activations_1, array</column>
+<column name="layer2_activations_1_we0">out, 1, ap_memory, layer2_activations_1, array</column>
+<column name="layer2_activations_1_d0">out, 32, ap_memory, layer2_activations_1, array</column>
+<column name="layer2_activations_address0">out, 4, ap_memory, layer2_activations, array</column>
+<column name="layer2_activations_ce0">out, 1, ap_memory, layer2_activations, array</column>
+<column name="layer2_activations_we0">out, 1, ap_memory, layer2_activations, array</column>
+<column name="layer2_activations_d0">out, 32, ap_memory, layer2_activations, array</column>
+<column name="layer1_quant_reload">in, 32, ap_none, layer1_quant_reload, scalar</column>
+<column name="layer1_quant_1_reload">in, 32, ap_none, layer1_quant_1_reload, scalar</column>
+<column name="layer1_quant_2_reload">in, 32, ap_none, layer1_quant_2_reload, scalar</column>
+<column name="layer1_quant_3_reload">in, 32, ap_none, layer1_quant_3_reload, scalar</column>
+<column name="layer1_quant_4_reload">in, 32, ap_none, layer1_quant_4_reload, scalar</column>
+<column name="layer1_quant_5_reload">in, 32, ap_none, layer1_quant_5_reload, scalar</column>
+<column name="layer1_quant_6_reload">in, 32, ap_none, layer1_quant_6_reload, scalar</column>
+<column name="layer1_quant_7_reload">in, 32, ap_none, layer1_quant_7_reload, scalar</column>
+<column name="layer1_quant_8_reload">in, 32, ap_none, layer1_quant_8_reload, scalar</column>
+<column name="layer1_quant_9_reload">in, 32, ap_none, layer1_quant_9_reload, scalar</column>
+<column name="layer1_quant_10_reload">in, 32, ap_none, layer1_quant_10_reload, scalar</column>
+<column name="layer1_quant_11_reload">in, 32, ap_none, layer1_quant_11_reload, scalar</column>
+<column name="layer1_quant_12_reload">in, 32, ap_none, layer1_quant_12_reload, scalar</column>
+<column name="layer1_quant_13_reload">in, 32, ap_none, layer1_quant_13_reload, scalar</column>
+<column name="layer1_quant_14_reload">in, 32, ap_none, layer1_quant_14_reload, scalar</column>
+<column name="layer1_quant_15_reload">in, 32, ap_none, layer1_quant_15_reload, scalar</column>
+<column name="layer1_quant_16_reload">in, 32, ap_none, layer1_quant_16_reload, scalar</column>
+<column name="layer1_quant_17_reload">in, 32, ap_none, layer1_quant_17_reload, scalar</column>
+<column name="layer1_quant_18_reload">in, 32, ap_none, layer1_quant_18_reload, scalar</column>
+<column name="layer1_quant_19_reload">in, 32, ap_none, layer1_quant_19_reload, scalar</column>
+<column name="layer1_quant_20_reload">in, 32, ap_none, layer1_quant_20_reload, scalar</column>
+<column name="layer1_quant_21_reload">in, 32, ap_none, layer1_quant_21_reload, scalar</column>
+<column name="layer1_quant_22_reload">in, 32, ap_none, layer1_quant_22_reload, scalar</column>
+<column name="layer1_quant_23_reload">in, 32, ap_none, layer1_quant_23_reload, scalar</column>
+<column name="layer1_quant_24_reload">in, 32, ap_none, layer1_quant_24_reload, scalar</column>
+<column name="layer1_quant_25_reload">in, 32, ap_none, layer1_quant_25_reload, scalar</column>
+<column name="layer1_quant_26_reload">in, 32, ap_none, layer1_quant_26_reload, scalar</column>
+<column name="layer1_quant_27_reload">in, 32, ap_none, layer1_quant_27_reload, scalar</column>
+<column name="layer1_quant_28_reload">in, 32, ap_none, layer1_quant_28_reload, scalar</column>
+<column name="layer1_quant_29_reload">in, 32, ap_none, layer1_quant_29_reload, scalar</column>
+<column name="layer1_quant_30_reload">in, 32, ap_none, layer1_quant_30_reload, scalar</column>
+<column name="layer1_quant_31_reload">in, 32, ap_none, layer1_quant_31_reload, scalar</column>
+<column name="layer1_quant_32_reload">in, 32, ap_none, layer1_quant_32_reload, scalar</column>
+<column name="layer1_quant_33_reload">in, 32, ap_none, layer1_quant_33_reload, scalar</column>
+<column name="layer1_quant_34_reload">in, 32, ap_none, layer1_quant_34_reload, scalar</column>
+<column name="layer1_quant_35_reload">in, 32, ap_none, layer1_quant_35_reload, scalar</column>
+<column name="layer1_quant_36_reload">in, 32, ap_none, layer1_quant_36_reload, scalar</column>
+<column name="layer1_quant_37_reload">in, 32, ap_none, layer1_quant_37_reload, scalar</column>
+<column name="layer1_quant_38_reload">in, 32, ap_none, layer1_quant_38_reload, scalar</column>
+<column name="layer1_quant_39_reload">in, 32, ap_none, layer1_quant_39_reload, scalar</column>
+<column name="layer1_quant_40_reload">in, 32, ap_none, layer1_quant_40_reload, scalar</column>
+<column name="layer1_quant_41_reload">in, 32, ap_none, layer1_quant_41_reload, scalar</column>
+<column name="layer1_quant_42_reload">in, 32, ap_none, layer1_quant_42_reload, scalar</column>
+<column name="layer1_quant_43_reload">in, 32, ap_none, layer1_quant_43_reload, scalar</column>
+<column name="layer1_quant_44_reload">in, 32, ap_none, layer1_quant_44_reload, scalar</column>
+<column name="layer1_quant_45_reload">in, 32, ap_none, layer1_quant_45_reload, scalar</column>
+<column name="layer1_quant_46_reload">in, 32, ap_none, layer1_quant_46_reload, scalar</column>
+<column name="layer1_quant_47_reload">in, 32, ap_none, layer1_quant_47_reload, scalar</column>
+<column name="layer1_quant_48_reload">in, 32, ap_none, layer1_quant_48_reload, scalar</column>
+<column name="layer1_quant_49_reload">in, 32, ap_none, layer1_quant_49_reload, scalar</column>
+<column name="layer1_quant_50_reload">in, 32, ap_none, layer1_quant_50_reload, scalar</column>
+<column name="layer1_quant_51_reload">in, 32, ap_none, layer1_quant_51_reload, scalar</column>
+<column name="layer1_quant_52_reload">in, 32, ap_none, layer1_quant_52_reload, scalar</column>
+<column name="layer1_quant_53_reload">in, 32, ap_none, layer1_quant_53_reload, scalar</column>
+<column name="layer1_quant_54_reload">in, 32, ap_none, layer1_quant_54_reload, scalar</column>
+<column name="layer1_quant_55_reload">in, 32, ap_none, layer1_quant_55_reload, scalar</column>
+<column name="layer1_quant_56_reload">in, 32, ap_none, layer1_quant_56_reload, scalar</column>
+<column name="layer1_quant_57_reload">in, 32, ap_none, layer1_quant_57_reload, scalar</column>
+<column name="layer1_quant_58_reload">in, 32, ap_none, layer1_quant_58_reload, scalar</column>
+<column name="layer1_quant_59_reload">in, 32, ap_none, layer1_quant_59_reload, scalar</column>
+<column name="layer1_quant_60_reload">in, 32, ap_none, layer1_quant_60_reload, scalar</column>
+<column name="layer1_quant_61_reload">in, 32, ap_none, layer1_quant_61_reload, scalar</column>
+<column name="layer1_quant_62_reload">in, 32, ap_none, layer1_quant_62_reload, scalar</column>
+<column name="layer1_quant_63_reload">in, 32, ap_none, layer1_quant_63_reload, scalar</column>
+<column name="layer1_quant_64_reload">in, 32, ap_none, layer1_quant_64_reload, scalar</column>
+<column name="layer1_quant_65_reload">in, 32, ap_none, layer1_quant_65_reload, scalar</column>
+<column name="layer1_quant_66_reload">in, 32, ap_none, layer1_quant_66_reload, scalar</column>
+<column name="layer1_quant_67_reload">in, 32, ap_none, layer1_quant_67_reload, scalar</column>
+<column name="layer1_quant_68_reload">in, 32, ap_none, layer1_quant_68_reload, scalar</column>
+<column name="layer1_quant_69_reload">in, 32, ap_none, layer1_quant_69_reload, scalar</column>
+<column name="layer1_quant_70_reload">in, 32, ap_none, layer1_quant_70_reload, scalar</column>
+<column name="layer1_quant_71_reload">in, 32, ap_none, layer1_quant_71_reload, scalar</column>
+<column name="layer1_quant_72_reload">in, 32, ap_none, layer1_quant_72_reload, scalar</column>
+<column name="layer1_quant_73_reload">in, 32, ap_none, layer1_quant_73_reload, scalar</column>
+<column name="layer1_quant_74_reload">in, 32, ap_none, layer1_quant_74_reload, scalar</column>
+<column name="layer1_quant_75_reload">in, 32, ap_none, layer1_quant_75_reload, scalar</column>
+<column name="layer1_quant_76_reload">in, 32, ap_none, layer1_quant_76_reload, scalar</column>
+<column name="layer1_quant_77_reload">in, 32, ap_none, layer1_quant_77_reload, scalar</column>
+<column name="layer1_quant_78_reload">in, 32, ap_none, layer1_quant_78_reload, scalar</column>
+<column name="layer1_quant_79_reload">in, 32, ap_none, layer1_quant_79_reload, scalar</column>
+<column name="layer1_quant_80_reload">in, 32, ap_none, layer1_quant_80_reload, scalar</column>
+<column name="layer1_quant_81_reload">in, 32, ap_none, layer1_quant_81_reload, scalar</column>
+<column name="layer1_quant_82_reload">in, 32, ap_none, layer1_quant_82_reload, scalar</column>
+<column name="layer1_quant_83_reload">in, 32, ap_none, layer1_quant_83_reload, scalar</column>
+<column name="layer1_quant_84_reload">in, 32, ap_none, layer1_quant_84_reload, scalar</column>
+<column name="layer1_quant_85_reload">in, 32, ap_none, layer1_quant_85_reload, scalar</column>
+<column name="layer1_quant_86_reload">in, 32, ap_none, layer1_quant_86_reload, scalar</column>
+<column name="layer1_quant_87_reload">in, 32, ap_none, layer1_quant_87_reload, scalar</column>
+<column name="layer1_quant_88_reload">in, 32, ap_none, layer1_quant_88_reload, scalar</column>
+<column name="layer1_quant_89_reload">in, 32, ap_none, layer1_quant_89_reload, scalar</column>
+<column name="layer1_quant_90_reload">in, 32, ap_none, layer1_quant_90_reload, scalar</column>
+<column name="layer1_quant_91_reload">in, 32, ap_none, layer1_quant_91_reload, scalar</column>
+<column name="layer1_quant_92_reload">in, 32, ap_none, layer1_quant_92_reload, scalar</column>
+<column name="layer1_quant_93_reload">in, 32, ap_none, layer1_quant_93_reload, scalar</column>
+<column name="layer1_quant_94_reload">in, 32, ap_none, layer1_quant_94_reload, scalar</column>
+<column name="layer1_quant_95_reload">in, 32, ap_none, layer1_quant_95_reload, scalar</column>
+<column name="layer1_quant_96_reload">in, 32, ap_none, layer1_quant_96_reload, scalar</column>
+<column name="layer1_quant_97_reload">in, 32, ap_none, layer1_quant_97_reload, scalar</column>
+<column name="layer1_quant_98_reload">in, 32, ap_none, layer1_quant_98_reload, scalar</column>
+<column name="layer1_quant_99_reload">in, 32, ap_none, layer1_quant_99_reload, scalar</column>
+<column name="layer1_quant_100_reload">in, 32, ap_none, layer1_quant_100_reload, scalar</column>
+<column name="layer1_quant_101_reload">in, 32, ap_none, layer1_quant_101_reload, scalar</column>
+<column name="layer1_quant_102_reload">in, 32, ap_none, layer1_quant_102_reload, scalar</column>
+<column name="layer1_quant_103_reload">in, 32, ap_none, layer1_quant_103_reload, scalar</column>
+<column name="layer1_quant_104_reload">in, 32, ap_none, layer1_quant_104_reload, scalar</column>
+<column name="layer1_quant_105_reload">in, 32, ap_none, layer1_quant_105_reload, scalar</column>
+<column name="layer1_quant_106_reload">in, 32, ap_none, layer1_quant_106_reload, scalar</column>
+<column name="layer1_quant_107_reload">in, 32, ap_none, layer1_quant_107_reload, scalar</column>
+<column name="layer1_quant_108_reload">in, 32, ap_none, layer1_quant_108_reload, scalar</column>
+<column name="layer1_quant_109_reload">in, 32, ap_none, layer1_quant_109_reload, scalar</column>
+<column name="layer1_quant_110_reload">in, 32, ap_none, layer1_quant_110_reload, scalar</column>
+<column name="layer1_quant_111_reload">in, 32, ap_none, layer1_quant_111_reload, scalar</column>
+<column name="layer1_quant_112_reload">in, 32, ap_none, layer1_quant_112_reload, scalar</column>
+<column name="layer1_quant_113_reload">in, 32, ap_none, layer1_quant_113_reload, scalar</column>
+<column name="layer1_quant_114_reload">in, 32, ap_none, layer1_quant_114_reload, scalar</column>
+<column name="layer1_quant_115_reload">in, 32, ap_none, layer1_quant_115_reload, scalar</column>
+<column name="layer1_quant_116_reload">in, 32, ap_none, layer1_quant_116_reload, scalar</column>
+<column name="layer1_quant_117_reload">in, 32, ap_none, layer1_quant_117_reload, scalar</column>
+<column name="layer1_quant_118_reload">in, 32, ap_none, layer1_quant_118_reload, scalar</column>
+<column name="layer1_quant_119_reload">in, 32, ap_none, layer1_quant_119_reload, scalar</column>
+<column name="layer1_quant_120_reload">in, 32, ap_none, layer1_quant_120_reload, scalar</column>
+<column name="layer1_quant_121_reload">in, 32, ap_none, layer1_quant_121_reload, scalar</column>
+<column name="layer1_quant_122_reload">in, 32, ap_none, layer1_quant_122_reload, scalar</column>
+<column name="layer1_quant_123_reload">in, 32, ap_none, layer1_quant_123_reload, scalar</column>
+<column name="layer1_quant_124_reload">in, 32, ap_none, layer1_quant_124_reload, scalar</column>
+<column name="layer1_quant_125_reload">in, 32, ap_none, layer1_quant_125_reload, scalar</column>
+<column name="layer1_quant_126_reload">in, 32, ap_none, layer1_quant_126_reload, scalar</column>
+<column name="layer1_quant_127_reload">in, 32, ap_none, layer1_quant_127_reload, scalar</column>
+</table>
+</item>
+</section>
+</profile>

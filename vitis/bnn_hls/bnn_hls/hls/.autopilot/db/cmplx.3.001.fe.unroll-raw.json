@@ -1,68 +1,59 @@
 {
   "0": {
-    "basicblocks": 136,
-    "calls": "4 2 1 4 2 1 4 2 1",
+    "basicblocks": 29,
+    "calls": "1 4 2 1 4 2 1 4 2",
     "file": "bnn.cpp",
-    "fileloc": 75,
-    "instructions": 442,
+    "fileloc": 62,
+    "instructions": 249,
     "loads": {
-      "L": 17
+      "L": 11
     },
     "name": "feedforward",
     "stores": {
       "L": 12
     },
-    "total_instructions": 775
+    "total_instructions": 393
   },
   "1": {
-    "basicblocks": 27,
+    "basicblocks": 1,
+    "calls": "",
+    "file": "bnn.cpp",
+    "fileloc": 37,
+    "instructions": 3,
+    "name": "sign",
+    "total_instructions": 3
+  },
+  "2": {
+    "basicblocks": 11,
     "calls": "3",
     "file": "bnn.cpp",
-    "fileloc": 47,
-    "instructions": 73,
+    "fileloc": 44,
+    "instructions": 39,
     "loads": {
-      "L": 5
+      "L": 2
     },
     "name": "matmul_xnor",
     "stores": {
       "L": 1
     },
-    "total_instructions": 85
-  },
-  "2": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "bnn.cpp",
-    "fileloc": 29,
-    "instructions": 13,
-    "name": "quantize",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 13
+    "total_instructions": 42
   },
   "3": {
-    "basicblocks": 5,
+    "basicblocks": 1,
     "calls": "",
     "file": "bnn.cpp",
     "fileloc": 19,
-    "instructions": 12,
+    "instructions": 3,
     "name": "XNOR",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 12
+    "total_instructions": 3
   },
   "4": {
-    "basicblocks": 8,
+    "basicblocks": 1,
     "calls": "",
     "file": "bnn.cpp",
-    "fileloc": 39,
-    "instructions": 13,
-    "name": "sign",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 13
+    "fileloc": 28,
+    "instructions": 3,
+    "name": "quantize",
+    "total_instructions": 3
   }
 }

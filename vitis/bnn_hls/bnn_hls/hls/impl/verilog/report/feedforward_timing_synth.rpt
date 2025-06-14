@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri Jun 13 23:29:53 2025
+| Date         : Sat Jun 14 08:56:11 2025
 | Host         : rogDesktop running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -file ./report/feedforward_timing_synth.rpt
 | Design       : bd_0_wrapper
@@ -53,7 +53,7 @@ Table of Contents
 2. checking constant_clock (0)
 3. checking pulse_width_clock (0)
 4. checking unconstrained_internal_endpoints (0)
-5. checking no_input_delay (40)
+5. checking no_input_delay (43)
 6. checking no_output_delay (65)
 7. checking multiple_clock (0)
 8. checking generated_clocks (0)
@@ -84,9 +84,9 @@ Table of Contents
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
-5. checking no_input_delay (40)
+5. checking no_input_delay (43)
 -------------------------------
- There are 40 input ports with no input delay specified. (HIGH)
+ There are 43 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
@@ -138,7 +138,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      4.333        0.000                      0                 4018        0.246        0.000                      0                 4018        3.750        0.000                       0                  2093  
+      4.333        0.000                      0                 5101        0.252        0.000                      0                 5101        3.750        0.000                       0                  2849  
 
 
 All user specified timing constraints are met.
@@ -161,7 +161,7 @@ ap_clk  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk              4.333        0.000                      0                 4018        0.246        0.000                      0                 4018        3.750        0.000                       0                  2093  
+ap_clk              4.333        0.000                      0                 5101        0.252        0.000                      0                 5101        3.750        0.000                       0                  2849  
 
 
 ------------------------------------------------------------------------------------------------
@@ -193,7 +193,7 @@ From Clock:  ap_clk
   To Clock:  ap_clk
 
 Setup :            0  Failing Endpoints,  Worst Slack        4.333ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.246ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.252ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
@@ -201,9 +201,9 @@ PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Vio
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             4.333ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_29_reg_1907_reg[1]/C
+  Source:                 bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952_reg[5]/D
+  Destination:            bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]/D
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -224,35 +224,35 @@ Slack (MET) :             4.333ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=2092, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/ap_clk
-                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_29_reg_1907_reg[1]/C
+                         net (fo=2848, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]/C
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_29_reg_1907_reg[1]/Q
-                         net (fo=3, unplaced)         0.759     2.250    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_29_reg_1907[1]
-                         LUT3 (Prop_lut3_I0_O)        0.319     2.569 r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952[6]_i_15/O
-                         net (fo=3, unplaced)         1.129     3.698    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952[6]_i_15_n_5
-                         LUT6 (Prop_lut6_I1_O)        0.124     3.822 r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952[6]_i_24/O
-                         net (fo=2, unplaced)         0.460     4.282    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952[6]_i_24_n_5
-                         LUT6 (Prop_lut6_I5_O)        0.124     4.406 r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952[6]_i_11/O
-                         net (fo=3, unplaced)         0.920     5.326    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952[6]_i_11_n_5
-                         LUT3 (Prop_lut3_I0_O)        0.124     5.450 r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952[3]_i_2/O
-                         net (fo=1, unplaced)         0.473     5.923    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952[3]_i_2_n_5
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]/Q
+                         net (fo=3, unplaced)         0.759     2.250    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749[1]
+                         LUT3 (Prop_lut3_I0_O)        0.319     2.569 r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15/O
+                         net (fo=3, unplaced)         1.129     3.698    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15_n_5
+                         LUT6 (Prop_lut6_I1_O)        0.124     3.822 r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24/O
+                         net (fo=2, unplaced)         0.460     4.282    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24_n_5
+                         LUT6 (Prop_lut6_I5_O)        0.124     4.406 r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11/O
+                         net (fo=3, unplaced)         0.920     5.326    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.124     5.450 r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2/O
+                         net (fo=1, unplaced)         0.473     5.923    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2_n_5
                          CARRY4 (Prop_carry4_DI[3]_CO[3])
-                                                      0.396     6.319 r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952_reg[3]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.009     6.328    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952_reg[3]_i_1_n_5
+                                                      0.396     6.319 r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.009     6.328    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1_n_5
                          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.337     6.665 r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952_reg[6]_i_1/O[1]
-                         net (fo=1, unplaced)         0.000     6.665    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_fu_1834_p2[5]
-                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952_reg[5]/D
+                                                      0.337     6.665 r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     6.665    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_fu_3467_p2[5]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=2092, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/ap_clk
-                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952_reg[5]/C
+                         net (fo=2848, unset)         0.924    10.924    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]/C
                          clock pessimism              0.000    10.924    
                          clock uncertainty           -0.035    10.889    
-                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/grp_matmul_xnor_fu_5960/add_ln64_reg_1952_reg[5]
+                         FDRE (Setup_fdre_C_D)        0.109    10.998    bd_0_i/hls_inst/inst/grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]
   -------------------------------------------------------------------
                          required time                         10.998    
                          arrival time                          -6.665    
@@ -265,15 +265,15 @@ Slack (MET) :             4.333ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.246ns  (arrival time - required time)
-  Source:                 bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/ap_loop_exit_ready_pp0_iter3_reg_reg__0/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/D
+Slack (MET) :             0.252ns  (arrival time - required time)
+  Source:                 bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p2_reg[3]/C
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p1_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        0.387ns  (logic 0.246ns (63.532%)  route 0.141ns (36.468%))
+  Data Path Delay:        0.393ns  (logic 0.262ns (66.651%)  route 0.131ns (33.349%))
   Logic Levels:           1  (LUT3=1)
   Clock Path Skew:        0.022ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    0.432ns
@@ -284,27 +284,27 @@ Slack (MET) :             0.246ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=2092, unset)         0.410     0.410    bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/ap_clk
-                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/ap_loop_exit_ready_pp0_iter3_reg_reg__0/C
+                         net (fo=2848, unset)         0.410     0.410    bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p2_reg[3]/C
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_fdre_C_Q)         0.148     0.558 r  bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/ap_loop_exit_ready_pp0_iter3_reg_reg__0/Q
-                         net (fo=4, unplaced)         0.141     0.699    bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/flow_control_loop_pipe_sequential_init_U/ap_loop_exit_ready_pp0_iter3_reg
-                         LUT3 (Prop_lut3_I2_O)        0.098     0.797 r  bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_i_1__0/O
-                         net (fo=1, unplaced)         0.000     0.797    bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_i_1__0_n_5
-                         FDSE                                         r  bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/D
+                         FDSE (Prop_fdse_C_Q)         0.164     0.574 r  bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p2_reg[3]/Q
+                         net (fo=1, unplaced)         0.131     0.705    bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p2[3]
+                         LUT3 (Prop_lut3_I2_O)        0.098     0.803 r  bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p1[3]_i_2__0/O
+                         net (fo=1, unplaced)         0.000     0.803    bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p1[3]_i_2__0_n_5
+                         FDRE                                         r  bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p1_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=2092, unset)         0.432     0.432    bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/flow_control_loop_pipe_sequential_init_U/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+                         net (fo=2848, unset)         0.432     0.432    bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p1_reg[3]/C
                          clock pessimism              0.000     0.432    
-                         FDSE (Hold_fdse_C_D)         0.120     0.552    bd_0_i/hls_inst/inst/grp_matmul_xnor_1_fu_4814/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg
+                         FDRE (Hold_fdre_C_D)         0.120     0.552    bd_0_i/hls_inst/inst/regslice_both_output_stream_V_keep_V_U/data_p1_reg[3]
   -------------------------------------------------------------------
                          required time                         -0.552    
-                         arrival time                           0.797    
+                         arrival time                           0.803    
   -------------------------------------------------------------------
-                         slack                                  0.246    
+                         slack                                  0.252    
 
 
 
@@ -319,8 +319,8 @@ Sources:            { ap_clk }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
 Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         10.000      7.056                bd_0_i/hls_inst/inst/layer1_activations_1_U/ram_reg/CLKARDCLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750                bd_0_i/hls_inst/inst/layer2_activations_1_U/ram_reg_0_15_10_10/DP/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750                bd_0_i/hls_inst/inst/layer2_activations_1_U/ram_reg_0_15_10_10/DP/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750                bd_0_i/hls_inst/inst/layer2_activations_1_U/ram_reg_0_15_0_0/DP/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750                bd_0_i/hls_inst/inst/layer2_activations_1_U/ram_reg_0_15_0_0/DP/CLK
 
 
 

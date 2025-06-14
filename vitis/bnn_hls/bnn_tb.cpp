@@ -5,15 +5,12 @@
 #include <cstdint>
 #include <cassert>
 #include <ap_axi_sdata.h>
-#include <ap_int.h>
 
 #define IMAGE_FILE "D:/ecen529/finalProject/mnistdataset/train-images.idx3-ubyte"
 #define LABEL_FILE "D:/ecen529/finalProject/mnistdataset/train-labels.idx1-ubyte"
 #define IMG_SIZE 784 // 28x28
 
 typedef ap_axis<32, 2, 5, 8> axis_t;
-typedef ap_fixed<32, 24, AP_RND> data_t1;
-// typedef int data_t1;
 
 // DUT declaration
 void feedforward(hls::stream<axis_t>& input_stream, hls::stream<axis_t>& output_stream);
@@ -62,7 +59,7 @@ int main() {
     int correct = 0;
 
     // Test N samples
-    const int N = 500;
+    const int N = 5;
 
     for (int i = 0; i < N; ++i) {
         std::vector<uint8_t> image = load_image(image_file);
@@ -72,11 +69,7 @@ int main() {
         hls::stream<axis_t> output_stream;
 
         // Send image pixels to input stream
-        // std::cout << "Sending input image #" << i << ": ";
-        for (int j = 0; j < IMG_SIZE; ++j) {
-            // if (j % 1 == 0) // print first 10 and then every 100th pixel
-            //     std::cout << (int)image[j] << " ";
-            
+        for (int j = 0; j < IMG_SIZE; ++j) {            
             axis_t tmp;
             tmp.data = image[j];
             tmp.keep = -1;
@@ -90,21 +83,16 @@ int main() {
         feedforward(input_stream, output_stream);
 
         // Read output vector (rowsW3 elements)
-        std::vector<data_t1> output;
+        std::vector<int> output;
         while (true) {
             axis_t out = output_stream.read();
             output.push_back(out.data);
             if (out.last) break;
         }
 
-        // std::cout << "Final output:";
-        // for (int k = 0; k < output.size(); ++k)
-        //     std::cout << " " << output[k];
-        // std::cout << "\n";
-
         // Get predicted class (argmax)
         int pred = 0;
-        data_t1 max_val = output[0];
+        int max_val = output[0];
         for (int k = 1; k < output.size(); ++k) {
             if (output[k] > max_val) {
                 max_val = output[k];
