@@ -487,7 +487,7 @@
     "components": {
       "hls_inst": {
         "vlnv": "xilinx.com:hls:feedforward:1.0",
-        "ip_revision": "2114126139",
+        "ip_revision": "2114126666",
         "xci_name": "bd_0_hls_inst_0",
         "xci_path": "ip\\bd_0_hls_inst_0\\bd_0_hls_inst_0.xci",
         "inst_hier_path": "hls_inst"

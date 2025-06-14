@@ -38,84 +38,84 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_1248_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_48_1:  '
-    FileOffset:      48
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
     FilePath:        bnn.cpp
     Replacements:    
       - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
-        Offset:          1056491
+        Offset:          1691664
         Length:          0
-        ReplacementText: 'VITIS_LOOP_48_1: '
+        ReplacementText: 'VITIS_LOOP_61_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_52_2:  '
-    FileOffset:      52
+    Message:         'Added loop label VITIS_LOOP_63_2:  '
+    FileOffset:      63
     FilePath:        bnn.cpp
     Replacements:    
       - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
-        Offset:          1056614
+        Offset:          1691731
         Length:          0
-        ReplacementText: 'VITIS_LOOP_52_2: '
+        ReplacementText: 'VITIS_LOOP_63_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_92_1:  '
-    FileOffset:      92
+    Message:         'Added loop label VITIS_LOOP_101_1:  '
+    FileOffset:      101
     FilePath:        bnn.cpp
     Replacements:    
       - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
-        Offset:          1057733
+        Offset:          1692807
         Length:          0
-        ReplacementText: 'VITIS_LOOP_92_1: '
+        ReplacementText: 'VITIS_LOOP_101_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_103_2:  '
-    FileOffset:      103
+    Message:         'Added loop label VITIS_LOOP_120_2:  '
+    FileOffset:      120
     FilePath:        bnn.cpp
     Replacements:    
       - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
-        Offset:          1057972
+        Offset:          1693066
         Length:          0
-        ReplacementText: 'VITIS_LOOP_103_2: '
+        ReplacementText: 'VITIS_LOOP_120_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_110_3:  '
-    FileOffset:      110
+    Message:         'Added loop label VITIS_LOOP_127_3:  '
+    FileOffset:      127
     FilePath:        bnn.cpp
     Replacements:    
       - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
-        Offset:          1058113
+        Offset:          1693208
         Length:          0
-        ReplacementText: 'VITIS_LOOP_110_3: '
+        ReplacementText: 'VITIS_LOOP_127_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_122_4:  '
-    FileOffset:      122
+    Message:         'Added loop label VITIS_LOOP_146_4:  '
+    FileOffset:      146
     FilePath:        bnn.cpp
     Replacements:    
       - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
-        Offset:          1058332
+        Offset:          1693435
         Length:          0
-        ReplacementText: 'VITIS_LOOP_122_4: '
+        ReplacementText: 'VITIS_LOOP_146_4: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_129_5:  '
-    FileOffset:      129
+    Message:         'Added loop label VITIS_LOOP_153_5:  '
+    FileOffset:      153
     FilePath:        bnn.cpp
     Replacements:    
       - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
-        Offset:          1058474
+        Offset:          1693577
         Length:          0
-        ReplacementText: 'VITIS_LOOP_129_5: '
+        ReplacementText: 'VITIS_LOOP_153_5: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_139_6:  '
-    FileOffset:      139
+    Message:         'Added loop label VITIS_LOOP_171_6:  '
+    FileOffset:      171
     FilePath:        bnn.cpp
     Replacements:    
       - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
-        Offset:          1058692
+        Offset:          1693804
         Length:          0
-        ReplacementText: 'VITIS_LOOP_139_6: '
+        ReplacementText: 'VITIS_LOOP_171_6: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_148_7:  '
-    FileOffset:      148
+    Message:         'Added loop label VITIS_LOOP_180_7:  '
+    FileOffset:      180
     FilePath:        bnn.cpp
     Replacements:    
       - FilePath:        'D:\ecen529\finalProject\vitis\bnn_hls\bnn_hls\hls\.autopilot\db\bnn.pp.0.cpp'
-        Offset:          1058829
+        Offset:          1693941
         Length:          0
-        ReplacementText: 'VITIS_LOOP_148_7: '
+        ReplacementText: 'VITIS_LOOP_180_7: '
 ...

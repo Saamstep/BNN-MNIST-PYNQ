@@ -21,8 +21,8 @@ target triple = "fpga64-xilinx-none"
 %"struct.ap_int_base<5, false>" = type { %"struct.ssdm_int<5, false>" }
 %"struct.ssdm_int<5, false>" = type { i5 }
 %"struct.ap_uint<8>" = type { %"struct.ap_int_base<8, false>" }
-%"struct.ap_int_base<8, false>" = type { %"struct.ssdm_int<8, false>" }
-%"struct.ssdm_int<8, false>" = type { i8 }
+%"struct.ap_int_base<8, false>" = type { %"class.std::ios_base::Init" }
+%"class.std::ios_base::Init" = type { i8 }
 
 ; Function Attrs: inaccessiblemem_or_argmemonly noinline willreturn
 define void @apatb_feedforward_ir(%"class.hls::stream<hls::axis<ap_int<32>, 2, 5, 8, '8', false>, 0>"* noalias nonnull dereferenceable(12) %input_stream, %"class.hls::stream<hls::axis<ap_int<32>, 2, 5, 8, '8', false>, 0>"* noalias nonnull dereferenceable(12) %output_stream) local_unnamed_addr #0 {

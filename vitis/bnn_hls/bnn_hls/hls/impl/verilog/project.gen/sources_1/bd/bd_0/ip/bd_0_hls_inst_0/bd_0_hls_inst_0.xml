@@ -1212,7 +1212,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9d1cd097</spirit:value>
+            <spirit:value>9:fd4d094e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1226,11 +1226,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 13 21:41:40 UTC 2025</spirit:value>
+            <spirit:value>Sat Jun 14 06:28:50 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9d1cd097</spirit:value>
+            <spirit:value>9:fd4d094e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1244,11 +1244,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 13 21:40:20 UTC 2025</spirit:value>
+            <spirit:value>Sat Jun 14 06:27:03 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9d1cd097</spirit:value>
+            <spirit:value>9:fd4d094e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1259,7 +1259,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9d1cd097</spirit:value>
+            <spirit:value>9:fd4d094e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1275,11 +1275,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 13 21:40:20 UTC 2025</spirit:value>
+            <spirit:value>Sat Jun 14 06:27:03 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fabeec43</spirit:value>
+            <spirit:value>9:5ec32d0c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1295,11 +1295,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 13 21:40:20 UTC 2025</spirit:value>
+            <spirit:value>Sat Jun 14 06:27:03 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fabeec43</spirit:value>
+            <spirit:value>9:5ec32d0c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1315,11 +1315,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 13 21:40:20 UTC 2025</spirit:value>
+            <spirit:value>Sat Jun 14 06:27:03 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9d1cd097</spirit:value>
+            <spirit:value>9:fd4d094e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1335,11 +1335,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 13 21:40:20 UTC 2025</spirit:value>
+            <spirit:value>Sat Jun 14 06:27:03 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9d1cd097</spirit:value>
+            <spirit:value>9:fd4d094e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2036,117 +2036,122 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_control_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_control_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_101_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_11.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_120_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_12.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_127_3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_92_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_146_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_103_2.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_153_5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_110_3.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_171_6.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_122_4.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_180_7.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_129_5.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_139_6.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_hls_deadlock_idx0_monitor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_148_7.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_hls_deadlock_kernel_monitor_top.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_hls_deadlock_idx0_monitor.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_hls_deadlock_kernel_monitor_top.vh</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_regslice_both.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_sparsemux_129_6_8_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_9_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_sparsemux_257_7_7_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_sparsemux_1569_10_6_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_1569_10_9_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_1569_10_32_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2167,95 +2172,99 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_control_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_control_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_101_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_11.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_120_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_12.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_127_3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_92_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_146_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_103_2.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_153_5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_110_3.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_171_6.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_122_4.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_180_7.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_129_5.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_139_6.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_hls_deadlock_idx0_monitor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_148_7.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_hls_deadlock_kernel_monitor_top.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_hls_deadlock_idx0_monitor.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_hls_deadlock_kernel_monitor_top.vh</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_regslice_both.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_sparsemux_129_6_8_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_9_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_sparsemux_257_7_7_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward_sparsemux_1569_10_6_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_1569_10_9_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4af7/hdl/verilog/feedforward.v</spirit:name>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward_sparsemux_1569_10_32_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/f3cb/hdl/verilog/feedforward.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2309,7 +2318,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">3270</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">109680</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -2320,7 +2329,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">3271</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="5">109681</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -2334,7 +2343,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Feedforward</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114126139</xilinx:coreRevision>
+      <xilinx:coreRevision>2114126666</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -2412,10 +2421,10 @@
       <xilinx:xilinxVersion>2024.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7fc4feda"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="a57fbd37"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2ab312aa"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2f7738fb"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="b63054db"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="23754c13"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="ce8c1d7c"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="9858d181"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

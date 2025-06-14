@@ -1,0 +1,1508 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../bnn_tb.cpp in debug mode
+   Generating csim.exe
+
+Sample 0: Predicted = 5, Label = 5
+
+
+Sample 1: Predicted = 0, Label = 0
+
+
+Sample 2: Predicted = 4, Label = 4
+
+
+Sample 3: Predicted = 1, Label = 1
+
+
+Sample 4: Predicted = 9, Label = 9
+
+
+Sample 5: Predicted = 2, Label = 2
+
+
+Sample 6: Predicted = 1, Label = 1
+
+
+Sample 7: Predicted = 3, Label = 3
+
+
+Sample 8: Predicted = 1, Label = 1
+
+
+Sample 9: Predicted = 4, Label = 4
+
+
+Sample 10: Predicted = 3, Label = 3
+
+
+Sample 11: Predicted = 5, Label = 5
+
+
+Sample 12: Predicted = 3, Label = 3
+
+
+Sample 13: Predicted = 6, Label = 6
+
+
+Sample 14: Predicted = 1, Label = 1
+
+
+Sample 15: Predicted = 7, Label = 7
+
+
+Sample 16: Predicted = 2, Label = 2
+
+
+Sample 17: Predicted = 8, Label = 8
+
+
+Sample 18: Predicted = 6, Label = 6
+
+
+Sample 19: Predicted = 9, Label = 9
+
+
+Sample 20: Predicted = 4, Label = 4
+
+
+Sample 21: Predicted = 0, Label = 0
+
+
+Sample 22: Predicted = 9, Label = 9
+
+
+Sample 23: Predicted = 1, Label = 1
+
+
+Sample 24: Predicted = 1, Label = 1
+
+
+Sample 25: Predicted = 2, Label = 2
+
+
+Sample 26: Predicted = 9, Label = 4
+
+
+Sample 27: Predicted = 3, Label = 3
+
+
+Sample 28: Predicted = 2, Label = 2
+
+
+Sample 29: Predicted = 7, Label = 7
+
+
+Sample 30: Predicted = 3, Label = 3
+
+
+Sample 31: Predicted = 8, Label = 8
+
+
+Sample 32: Predicted = 6, Label = 6
+
+
+Sample 33: Predicted = 7, Label = 9
+
+
+Sample 34: Predicted = 0, Label = 0
+
+
+Sample 35: Predicted = 5, Label = 5
+
+
+Sample 36: Predicted = 6, Label = 6
+
+
+Sample 37: Predicted = 0, Label = 0
+
+
+Sample 38: Predicted = 7, Label = 7
+
+
+Sample 39: Predicted = 6, Label = 6
+
+
+Sample 40: Predicted = 1, Label = 1
+
+
+Sample 41: Predicted = 8, Label = 8
+
+
+Sample 42: Predicted = 7, Label = 7
+
+
+Sample 43: Predicted = 9, Label = 9
+
+
+Sample 44: Predicted = 3, Label = 3
+
+
+Sample 45: Predicted = 9, Label = 9
+
+
+Sample 46: Predicted = 8, Label = 8
+
+
+Sample 47: Predicted = 5, Label = 5
+
+
+Sample 48: Predicted = 5, Label = 9
+
+
+Sample 49: Predicted = 3, Label = 3
+
+
+Sample 50: Predicted = 3, Label = 3
+
+
+Sample 51: Predicted = 0, Label = 0
+
+
+Sample 52: Predicted = 7, Label = 7
+
+
+Sample 53: Predicted = 4, Label = 4
+
+
+Sample 54: Predicted = 9, Label = 9
+
+
+Sample 55: Predicted = 8, Label = 8
+
+
+Sample 56: Predicted = 0, Label = 0
+
+
+Sample 57: Predicted = 9, Label = 9
+
+
+Sample 58: Predicted = 4, Label = 4
+
+
+Sample 59: Predicted = 1, Label = 1
+
+
+Sample 60: Predicted = 4, Label = 4
+
+
+Sample 61: Predicted = 4, Label = 4
+
+
+Sample 62: Predicted = 6, Label = 6
+
+
+Sample 63: Predicted = 0, Label = 0
+
+
+Sample 64: Predicted = 4, Label = 4
+
+
+Sample 65: Predicted = 5, Label = 5
+
+
+Sample 66: Predicted = 6, Label = 6
+
+
+Sample 67: Predicted = 1, Label = 1
+
+
+Sample 68: Predicted = 0, Label = 0
+
+
+Sample 69: Predicted = 0, Label = 0
+
+
+Sample 70: Predicted = 3, Label = 1
+
+
+Sample 71: Predicted = 7, Label = 7
+
+
+Sample 72: Predicted = 1, Label = 1
+
+
+Sample 73: Predicted = 6, Label = 6
+
+
+Sample 74: Predicted = 3, Label = 3
+
+
+Sample 75: Predicted = 0, Label = 0
+
+
+Sample 76: Predicted = 2, Label = 2
+
+
+Sample 77: Predicted = 1, Label = 1
+
+
+Sample 78: Predicted = 1, Label = 1
+
+
+Sample 79: Predicted = 7, Label = 7
+
+
+Sample 80: Predicted = 0, Label = 9
+
+
+Sample 81: Predicted = 0, Label = 0
+
+
+Sample 82: Predicted = 2, Label = 2
+
+
+Sample 83: Predicted = 6, Label = 6
+
+
+Sample 84: Predicted = 7, Label = 7
+
+
+Sample 85: Predicted = 8, Label = 8
+
+
+Sample 86: Predicted = 3, Label = 3
+
+
+Sample 87: Predicted = 9, Label = 9
+
+
+Sample 88: Predicted = 0, Label = 0
+
+
+Sample 89: Predicted = 4, Label = 4
+
+
+Sample 90: Predicted = 6, Label = 6
+
+
+Sample 91: Predicted = 7, Label = 7
+
+
+Sample 92: Predicted = 4, Label = 4
+
+
+Sample 93: Predicted = 6, Label = 6
+
+
+Sample 94: Predicted = 8, Label = 8
+
+
+Sample 95: Predicted = 0, Label = 0
+
+
+Sample 96: Predicted = 7, Label = 7
+
+
+Sample 97: Predicted = 8, Label = 8
+
+
+Sample 98: Predicted = 3, Label = 3
+
+
+Sample 99: Predicted = 1, Label = 1
+
+
+Sample 100: Predicted = 5, Label = 5
+
+
+Sample 101: Predicted = 7, Label = 7
+
+
+Sample 102: Predicted = 1, Label = 1
+
+
+Sample 103: Predicted = 7, Label = 7
+
+
+Sample 104: Predicted = 1, Label = 1
+
+
+Sample 105: Predicted = 1, Label = 1
+
+
+Sample 106: Predicted = 6, Label = 6
+
+
+Sample 107: Predicted = 3, Label = 3
+
+
+Sample 108: Predicted = 0, Label = 0
+
+
+Sample 109: Predicted = 2, Label = 2
+
+
+Sample 110: Predicted = 9, Label = 9
+
+
+Sample 111: Predicted = 3, Label = 3
+
+
+Sample 112: Predicted = 1, Label = 1
+
+
+Sample 113: Predicted = 1, Label = 1
+
+
+Sample 114: Predicted = 0, Label = 0
+
+
+Sample 115: Predicted = 4, Label = 4
+
+
+Sample 116: Predicted = 9, Label = 9
+
+
+Sample 117: Predicted = 2, Label = 2
+
+
+Sample 118: Predicted = 0, Label = 0
+
+
+Sample 119: Predicted = 0, Label = 0
+
+
+Sample 120: Predicted = 2, Label = 2
+
+
+Sample 121: Predicted = 0, Label = 0
+
+
+Sample 122: Predicted = 2, Label = 2
+
+
+Sample 123: Predicted = 7, Label = 7
+
+
+Sample 124: Predicted = 1, Label = 1
+
+
+Sample 125: Predicted = 8, Label = 8
+
+
+Sample 126: Predicted = 6, Label = 6
+
+
+Sample 127: Predicted = 4, Label = 4
+
+
+Sample 128: Predicted = 1, Label = 1
+
+
+Sample 129: Predicted = 6, Label = 6
+
+
+Sample 130: Predicted = 3, Label = 3
+
+
+Sample 131: Predicted = 4, Label = 4
+
+
+Sample 132: Predicted = 3, Label = 5
+
+
+Sample 133: Predicted = 9, Label = 9
+
+
+Sample 134: Predicted = 8, Label = 1
+
+
+Sample 135: Predicted = 3, Label = 3
+
+
+Sample 136: Predicted = 3, Label = 3
+
+
+Sample 137: Predicted = 8, Label = 8
+
+
+Sample 138: Predicted = 5, Label = 5
+
+
+Sample 139: Predicted = 4, Label = 4
+
+
+Sample 140: Predicted = 7, Label = 7
+
+
+Sample 141: Predicted = 7, Label = 7
+
+
+Sample 142: Predicted = 4, Label = 4
+
+
+Sample 143: Predicted = 2, Label = 2
+
+
+Sample 144: Predicted = 8, Label = 8
+
+
+Sample 145: Predicted = 5, Label = 5
+
+
+Sample 146: Predicted = 8, Label = 8
+
+
+Sample 147: Predicted = 6, Label = 6
+
+
+Sample 148: Predicted = 9, Label = 7
+
+
+Sample 149: Predicted = 3, Label = 3
+
+
+Sample 150: Predicted = 4, Label = 4
+
+
+Sample 151: Predicted = 6, Label = 6
+
+
+Sample 152: Predicted = 1, Label = 1
+
+
+Sample 153: Predicted = 4, Label = 9
+
+
+Sample 154: Predicted = 9, Label = 9
+
+
+Sample 155: Predicted = 6, Label = 6
+
+
+Sample 156: Predicted = 0, Label = 0
+
+
+Sample 157: Predicted = 3, Label = 3
+
+
+Sample 158: Predicted = 9, Label = 7
+
+
+Sample 159: Predicted = 2, Label = 2
+
+
+Sample 160: Predicted = 8, Label = 8
+
+
+Sample 161: Predicted = 2, Label = 2
+
+
+Sample 162: Predicted = 9, Label = 9
+
+
+Sample 163: Predicted = 4, Label = 4
+
+
+Sample 164: Predicted = 4, Label = 4
+
+
+Sample 165: Predicted = 6, Label = 6
+
+
+Sample 166: Predicted = 4, Label = 4
+
+
+Sample 167: Predicted = 9, Label = 9
+
+
+Sample 168: Predicted = 7, Label = 7
+
+
+Sample 169: Predicted = 0, Label = 0
+
+
+Sample 170: Predicted = 9, Label = 9
+
+
+Sample 171: Predicted = 2, Label = 2
+
+
+Sample 172: Predicted = 4, Label = 9
+
+
+Sample 173: Predicted = 5, Label = 5
+
+
+Sample 174: Predicted = 1, Label = 1
+
+
+Sample 175: Predicted = 5, Label = 5
+
+
+Sample 176: Predicted = 9, Label = 9
+
+
+Sample 177: Predicted = 1, Label = 1
+
+
+Sample 178: Predicted = 6, Label = 2
+
+
+Sample 179: Predicted = 3, Label = 3
+
+
+Sample 180: Predicted = 1, Label = 2
+
+
+Sample 181: Predicted = 3, Label = 3
+
+
+Sample 182: Predicted = 3, Label = 5
+
+
+Sample 183: Predicted = 9, Label = 9
+
+
+Sample 184: Predicted = 1, Label = 1
+
+
+Sample 185: Predicted = 7, Label = 7
+
+
+Sample 186: Predicted = 6, Label = 6
+
+
+Sample 187: Predicted = 2, Label = 2
+
+
+Sample 188: Predicted = 8, Label = 8
+
+
+Sample 189: Predicted = 2, Label = 2
+
+
+Sample 190: Predicted = 2, Label = 2
+
+
+Sample 191: Predicted = 5, Label = 5
+
+
+Sample 192: Predicted = 0, Label = 0
+
+
+Sample 193: Predicted = 7, Label = 7
+
+
+Sample 194: Predicted = 4, Label = 4
+
+
+Sample 195: Predicted = 9, Label = 9
+
+
+Sample 196: Predicted = 7, Label = 7
+
+
+Sample 197: Predicted = 8, Label = 8
+
+
+Sample 198: Predicted = 3, Label = 3
+
+
+Sample 199: Predicted = 2, Label = 2
+
+
+Sample 200: Predicted = 1, Label = 1
+
+
+Sample 201: Predicted = 1, Label = 1
+
+
+Sample 202: Predicted = 8, Label = 8
+
+
+Sample 203: Predicted = 3, Label = 3
+
+
+Sample 204: Predicted = 6, Label = 6
+
+
+Sample 205: Predicted = 1, Label = 1
+
+
+Sample 206: Predicted = 0, Label = 0
+
+
+Sample 207: Predicted = 3, Label = 3
+
+
+Sample 208: Predicted = 1, Label = 1
+
+
+Sample 209: Predicted = 0, Label = 0
+
+
+Sample 210: Predicted = 0, Label = 0
+
+
+Sample 211: Predicted = 1, Label = 1
+
+
+Sample 212: Predicted = 1, Label = 7
+
+
+Sample 213: Predicted = 2, Label = 2
+
+
+Sample 214: Predicted = 7, Label = 7
+
+
+Sample 215: Predicted = 3, Label = 3
+
+
+Sample 216: Predicted = 0, Label = 0
+
+
+Sample 217: Predicted = 4, Label = 4
+
+
+Sample 218: Predicted = 6, Label = 6
+
+
+Sample 219: Predicted = 5, Label = 5
+
+
+Sample 220: Predicted = 2, Label = 2
+
+
+Sample 221: Predicted = 6, Label = 6
+
+
+Sample 222: Predicted = 9, Label = 4
+
+
+Sample 223: Predicted = 7, Label = 7
+
+
+Sample 224: Predicted = 8, Label = 1
+
+
+Sample 225: Predicted = 8, Label = 8
+
+
+Sample 226: Predicted = 9, Label = 9
+
+
+Sample 227: Predicted = 9, Label = 9
+
+
+Sample 228: Predicted = 3, Label = 3
+
+
+Sample 229: Predicted = 0, Label = 0
+
+
+Sample 230: Predicted = 7, Label = 7
+
+
+Sample 231: Predicted = 1, Label = 1
+
+
+Sample 232: Predicted = 0, Label = 0
+
+
+Sample 233: Predicted = 2, Label = 2
+
+
+Sample 234: Predicted = 0, Label = 0
+
+
+Sample 235: Predicted = 3, Label = 3
+
+
+Sample 236: Predicted = 5, Label = 5
+
+
+Sample 237: Predicted = 4, Label = 4
+
+
+Sample 238: Predicted = 6, Label = 6
+
+
+Sample 239: Predicted = 5, Label = 5
+
+
+Sample 240: Predicted = 8, Label = 8
+
+
+Sample 241: Predicted = 6, Label = 6
+
+
+Sample 242: Predicted = 3, Label = 3
+
+
+Sample 243: Predicted = 7, Label = 7
+
+
+Sample 244: Predicted = 5, Label = 5
+
+
+Sample 245: Predicted = 8, Label = 8
+
+
+Sample 246: Predicted = 5, Label = 0
+
+
+Sample 247: Predicted = 9, Label = 9
+
+
+Sample 248: Predicted = 1, Label = 1
+
+
+Sample 249: Predicted = 0, Label = 0
+
+
+Sample 250: Predicted = 3, Label = 3
+
+
+Sample 251: Predicted = 1, Label = 1
+
+
+Sample 252: Predicted = 2, Label = 2
+
+
+Sample 253: Predicted = 2, Label = 2
+
+
+Sample 254: Predicted = 5, Label = 3
+
+
+Sample 255: Predicted = 3, Label = 3
+
+
+Sample 256: Predicted = 6, Label = 6
+
+
+Sample 257: Predicted = 4, Label = 4
+
+
+Sample 258: Predicted = 7, Label = 7
+
+
+Sample 259: Predicted = 5, Label = 5
+
+
+Sample 260: Predicted = 0, Label = 0
+
+
+Sample 261: Predicted = 6, Label = 6
+
+
+Sample 262: Predicted = 0, Label = 2
+
+
+Sample 263: Predicted = 7, Label = 7
+
+
+Sample 264: Predicted = 9, Label = 9
+
+
+Sample 265: Predicted = 8, Label = 8
+
+
+Sample 266: Predicted = 5, Label = 5
+
+
+Sample 267: Predicted = 9, Label = 9
+
+
+Sample 268: Predicted = 7, Label = 2
+
+
+Sample 269: Predicted = 1, Label = 1
+
+
+Sample 270: Predicted = 1, Label = 1
+
+
+Sample 271: Predicted = 4, Label = 4
+
+
+Sample 272: Predicted = 4, Label = 4
+
+
+Sample 273: Predicted = 3, Label = 5
+
+
+Sample 274: Predicted = 6, Label = 6
+
+
+Sample 275: Predicted = 4, Label = 4
+
+
+Sample 276: Predicted = 1, Label = 1
+
+
+Sample 277: Predicted = 2, Label = 2
+
+
+Sample 278: Predicted = 3, Label = 5
+
+
+Sample 279: Predicted = 3, Label = 3
+
+
+Sample 280: Predicted = 9, Label = 9
+
+
+Sample 281: Predicted = 3, Label = 3
+
+
+Sample 282: Predicted = 9, Label = 9
+
+
+Sample 283: Predicted = 0, Label = 0
+
+
+Sample 284: Predicted = 5, Label = 5
+
+
+Sample 285: Predicted = 9, Label = 9
+
+
+Sample 286: Predicted = 6, Label = 6
+
+
+Sample 287: Predicted = 5, Label = 5
+
+
+Sample 288: Predicted = 7, Label = 7
+
+
+Sample 289: Predicted = 4, Label = 4
+
+
+Sample 290: Predicted = 1, Label = 1
+
+
+Sample 291: Predicted = 3, Label = 3
+
+
+Sample 292: Predicted = 4, Label = 4
+
+
+Sample 293: Predicted = 0, Label = 0
+
+
+Sample 294: Predicted = 4, Label = 4
+
+
+Sample 295: Predicted = 8, Label = 8
+
+
+Sample 296: Predicted = 0, Label = 0
+
+
+Sample 297: Predicted = 4, Label = 4
+
+
+Sample 298: Predicted = 3, Label = 3
+
+
+Sample 299: Predicted = 6, Label = 6
+
+
+Sample 300: Predicted = 8, Label = 8
+
+
+Sample 301: Predicted = 7, Label = 7
+
+
+Sample 302: Predicted = 6, Label = 6
+
+
+Sample 303: Predicted = 0, Label = 0
+
+
+Sample 304: Predicted = 7, Label = 9
+
+
+Sample 305: Predicted = 7, Label = 7
+
+
+Sample 306: Predicted = 5, Label = 5
+
+
+Sample 307: Predicted = 7, Label = 7
+
+
+Sample 308: Predicted = 2, Label = 2
+
+
+Sample 309: Predicted = 1, Label = 1
+
+
+Sample 310: Predicted = 1, Label = 1
+
+
+Sample 311: Predicted = 6, Label = 6
+
+
+Sample 312: Predicted = 8, Label = 8
+
+
+Sample 313: Predicted = 9, Label = 9
+
+
+Sample 314: Predicted = 4, Label = 4
+
+
+Sample 315: Predicted = 1, Label = 1
+
+
+Sample 316: Predicted = 5, Label = 5
+
+
+Sample 317: Predicted = 2, Label = 2
+
+
+Sample 318: Predicted = 2, Label = 2
+
+
+Sample 319: Predicted = 9, Label = 9
+
+
+Sample 320: Predicted = 0, Label = 0
+
+
+Sample 321: Predicted = 3, Label = 3
+
+
+Sample 322: Predicted = 9, Label = 9
+
+
+Sample 323: Predicted = 6, Label = 6
+
+
+Sample 324: Predicted = 7, Label = 7
+
+
+Sample 325: Predicted = 2, Label = 2
+
+
+Sample 326: Predicted = 0, Label = 0
+
+
+Sample 327: Predicted = 3, Label = 3
+
+
+Sample 328: Predicted = 6, Label = 5
+
+
+Sample 329: Predicted = 4, Label = 4
+
+
+Sample 330: Predicted = 3, Label = 3
+
+
+Sample 331: Predicted = 6, Label = 6
+
+
+Sample 332: Predicted = 5, Label = 5
+
+
+Sample 333: Predicted = 8, Label = 8
+
+
+Sample 334: Predicted = 9, Label = 9
+
+
+Sample 335: Predicted = 5, Label = 5
+
+
+Sample 336: Predicted = 4, Label = 4
+
+
+Sample 337: Predicted = 7, Label = 7
+
+
+Sample 338: Predicted = 4, Label = 4
+
+
+Sample 339: Predicted = 2, Label = 2
+
+
+Sample 340: Predicted = 4, Label = 7
+
+
+Sample 341: Predicted = 3, Label = 3
+
+
+Sample 342: Predicted = 4, Label = 4
+
+
+Sample 343: Predicted = 8, Label = 8
+
+
+Sample 344: Predicted = 9, Label = 9
+
+
+Sample 345: Predicted = 1, Label = 1
+
+
+Sample 346: Predicted = 3, Label = 9
+
+
+Sample 347: Predicted = 2, Label = 2
+
+
+Sample 348: Predicted = 8, Label = 8
+
+
+Sample 349: Predicted = 7, Label = 7
+
+
+Sample 350: Predicted = 9, Label = 9
+
+
+Sample 351: Predicted = 1, Label = 1
+
+
+Sample 352: Predicted = 8, Label = 8
+
+
+Sample 353: Predicted = 7, Label = 7
+
+
+Sample 354: Predicted = 4, Label = 4
+
+
+Sample 355: Predicted = 1, Label = 1
+
+
+Sample 356: Predicted = 3, Label = 3
+
+
+Sample 357: Predicted = 1, Label = 1
+
+
+Sample 358: Predicted = 1, Label = 1
+
+
+Sample 359: Predicted = 0, Label = 0
+
+
+Sample 360: Predicted = 2, Label = 2
+
+
+Sample 361: Predicted = 3, Label = 3
+
+
+Sample 362: Predicted = 9, Label = 9
+
+
+Sample 363: Predicted = 4, Label = 4
+
+
+Sample 364: Predicted = 9, Label = 9
+
+
+Sample 365: Predicted = 2, Label = 2
+
+
+Sample 366: Predicted = 1, Label = 1
+
+
+Sample 367: Predicted = 6, Label = 6
+
+
+Sample 368: Predicted = 8, Label = 8
+
+
+Sample 369: Predicted = 4, Label = 4
+
+
+Sample 370: Predicted = 9, Label = 7
+
+
+Sample 371: Predicted = 7, Label = 7
+
+
+Sample 372: Predicted = 4, Label = 4
+
+
+Sample 373: Predicted = 4, Label = 4
+
+
+Sample 374: Predicted = 9, Label = 9
+
+
+Sample 375: Predicted = 2, Label = 2
+
+
+Sample 376: Predicted = 5, Label = 5
+
+
+Sample 377: Predicted = 7, Label = 7
+
+
+Sample 378: Predicted = 2, Label = 2
+
+
+Sample 379: Predicted = 4, Label = 4
+
+
+Sample 380: Predicted = 4, Label = 4
+
+
+Sample 381: Predicted = 2, Label = 2
+
+
+Sample 382: Predicted = 1, Label = 1
+
+
+Sample 383: Predicted = 9, Label = 9
+
+
+Sample 384: Predicted = 7, Label = 7
+
+
+Sample 385: Predicted = 2, Label = 2
+
+
+Sample 386: Predicted = 8, Label = 8
+
+
+Sample 387: Predicted = 7, Label = 7
+
+
+Sample 388: Predicted = 2, Label = 6
+
+
+Sample 389: Predicted = 9, Label = 9
+
+
+Sample 390: Predicted = 2, Label = 2
+
+
+Sample 391: Predicted = 2, Label = 2
+
+
+Sample 392: Predicted = 3, Label = 3
+
+
+Sample 393: Predicted = 8, Label = 8
+
+
+Sample 394: Predicted = 1, Label = 1
+
+
+Sample 395: Predicted = 6, Label = 6
+
+
+Sample 396: Predicted = 5, Label = 5
+
+
+Sample 397: Predicted = 1, Label = 1
+
+
+Sample 398: Predicted = 1, Label = 1
+
+
+Sample 399: Predicted = 0, Label = 0
+
+
+Sample 400: Predicted = 2, Label = 2
+
+
+Sample 401: Predicted = 4, Label = 6
+
+
+Sample 402: Predicted = 4, Label = 4
+
+
+Sample 403: Predicted = 5, Label = 5
+
+
+Sample 404: Predicted = 8, Label = 8
+
+
+Sample 405: Predicted = 3, Label = 3
+
+
+Sample 406: Predicted = 1, Label = 1
+
+
+Sample 407: Predicted = 5, Label = 5
+
+
+Sample 408: Predicted = 1, Label = 1
+
+
+Sample 409: Predicted = 9, Label = 9
+
+
+Sample 410: Predicted = 2, Label = 2
+
+
+Sample 411: Predicted = 7, Label = 7
+
+
+Sample 412: Predicted = 4, Label = 4
+
+
+Sample 413: Predicted = 4, Label = 4
+
+
+Sample 414: Predicted = 4, Label = 4
+
+
+Sample 415: Predicted = 8, Label = 8
+
+
+Sample 416: Predicted = 1, Label = 1
+
+
+Sample 417: Predicted = 5, Label = 5
+
+
+Sample 418: Predicted = 3, Label = 8
+
+
+Sample 419: Predicted = 9, Label = 9
+
+
+Sample 420: Predicted = 5, Label = 5
+
+
+Sample 421: Predicted = 6, Label = 6
+
+
+Sample 422: Predicted = 7, Label = 7
+
+
+Sample 423: Predicted = 9, Label = 9
+
+
+Sample 424: Predicted = 9, Label = 9
+
+
+Sample 425: Predicted = 3, Label = 3
+
+
+Sample 426: Predicted = 7, Label = 7
+
+
+Sample 427: Predicted = 0, Label = 0
+
+
+Sample 428: Predicted = 9, Label = 9
+
+
+Sample 429: Predicted = 0, Label = 0
+
+
+Sample 430: Predicted = 6, Label = 6
+
+
+Sample 431: Predicted = 6, Label = 6
+
+
+Sample 432: Predicted = 2, Label = 2
+
+
+Sample 433: Predicted = 3, Label = 3
+
+
+Sample 434: Predicted = 9, Label = 9
+
+
+Sample 435: Predicted = 0, Label = 0
+
+
+Sample 436: Predicted = 7, Label = 7
+
+
+Sample 437: Predicted = 5, Label = 5
+
+
+Sample 438: Predicted = 4, Label = 4
+
+
+Sample 439: Predicted = 8, Label = 8
+
+
+Sample 440: Predicted = 0, Label = 0
+
+
+Sample 441: Predicted = 9, Label = 9
+
+
+Sample 442: Predicted = 4, Label = 4
+
+
+Sample 443: Predicted = 1, Label = 1
+
+
+Sample 444: Predicted = 1, Label = 2
+
+
+Sample 445: Predicted = 8, Label = 8
+
+
+Sample 446: Predicted = 9, Label = 7
+
+
+Sample 447: Predicted = 1, Label = 1
+
+
+Sample 448: Predicted = 2, Label = 2
+
+
+Sample 449: Predicted = 6, Label = 6
+
+
+Sample 450: Predicted = 1, Label = 1
+
+
+Sample 451: Predicted = 0, Label = 0
+
+
+Sample 452: Predicted = 3, Label = 3
+
+
+Sample 453: Predicted = 0, Label = 0
+
+
+Sample 454: Predicted = 1, Label = 1
+
+
+Sample 455: Predicted = 1, Label = 1
+
+
+Sample 456: Predicted = 8, Label = 8
+
+
+Sample 457: Predicted = 2, Label = 2
+
+
+Sample 458: Predicted = 0, Label = 0
+
+
+Sample 459: Predicted = 9, Label = 3
+
+
+Sample 460: Predicted = 9, Label = 9
+
+
+Sample 461: Predicted = 4, Label = 4
+
+
+Sample 462: Predicted = 0, Label = 0
+
+
+Sample 463: Predicted = 5, Label = 5
+
+
+Sample 464: Predicted = 0, Label = 0
+
+
+Sample 465: Predicted = 6, Label = 6
+
+
+Sample 466: Predicted = 1, Label = 1
+
+
+Sample 467: Predicted = 7, Label = 7
+
+
+Sample 468: Predicted = 7, Label = 7
+
+
+Sample 469: Predicted = 8, Label = 8
+
+
+Sample 470: Predicted = 8, Label = 1
+
+
+Sample 471: Predicted = 9, Label = 9
+
+
+Sample 472: Predicted = 2, Label = 2
+
+
+Sample 473: Predicted = 0, Label = 0
+
+
+Sample 474: Predicted = 5, Label = 5
+
+
+Sample 475: Predicted = 1, Label = 1
+
+
+Sample 476: Predicted = 2, Label = 2
+
+
+Sample 477: Predicted = 2, Label = 2
+
+
+Sample 478: Predicted = 7, Label = 7
+
+
+Sample 479: Predicted = 3, Label = 3
+
+
+Sample 480: Predicted = 5, Label = 5
+
+
+Sample 481: Predicted = 4, Label = 4
+
+
+Sample 482: Predicted = 4, Label = 9
+
+
+Sample 483: Predicted = 7, Label = 7
+
+
+Sample 484: Predicted = 1, Label = 1
+
+
+Sample 485: Predicted = 8, Label = 8
+
+
+Sample 486: Predicted = 3, Label = 3
+
+
+Sample 487: Predicted = 9, Label = 9
+
+
+Sample 488: Predicted = 6, Label = 6
+
+
+Sample 489: Predicted = 0, Label = 0
+
+
+Sample 490: Predicted = 3, Label = 3
+
+
+Sample 491: Predicted = 1, Label = 1
+
+
+Sample 492: Predicted = 8, Label = 1
+
+
+Sample 493: Predicted = 2, Label = 2
+
+
+Sample 494: Predicted = 0, Label = 6
+
+
+Sample 495: Predicted = 3, Label = 3
+
+
+Sample 496: Predicted = 5, Label = 5
+
+
+Sample 497: Predicted = 7, Label = 7
+
+
+Sample 498: Predicted = 6, Label = 6
+
+
+Sample 499: Predicted = 8, Label = 8
+
+Accuracy: 462 / 500
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

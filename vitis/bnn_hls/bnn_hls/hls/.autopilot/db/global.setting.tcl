@@ -46,12 +46,12 @@ set TargetInfo xc7z020:-clg400:-1
 set SourceFiles {sc {} c {../../weights.cpp ../../bnn.cpp}}
 set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile {}
-set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
+set TBFiles {verilog D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp bc D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp vhdl D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp sc D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp cas D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {bc "" c "" sc "" cas "" vhdl "" verilog ""}
-set TBInstNames {bc "" c "" sc "" cas "" vhdl "" verilog ""}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

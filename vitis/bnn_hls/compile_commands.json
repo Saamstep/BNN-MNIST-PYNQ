@@ -24,5 +24,17 @@
       "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\bnn.cpp"
     ],
     "file": "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\bnn.cpp"
+  },
+  {
+    "directory": "D:\\ecen529\\finalProject\\vitis\\bnn_hls",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\include",
+      "-c",
+      "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\bnn_tb.cpp"
+    ],
+    "file": "D:\\ecen529\\finalProject\\vitis\\bnn_hls\\bnn_tb.cpp"
   }
 ]

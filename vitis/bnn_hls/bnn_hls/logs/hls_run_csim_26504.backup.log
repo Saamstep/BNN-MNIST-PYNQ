@@ -1,0 +1,146 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=bnn.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.h' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\ecen529\finalProject\vitis\bnn_hls\bnn_tb.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=feedforward' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../bnn_tb.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../bnn_tb.cpp:7:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Sending input image #0: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 166 0 0 0 170 253 195 0 0 253 253 82 0 0 0 253 247 0 0 0 80 205 0 0 0 0 1 0 0 0 0 0 253 0 0 0 0 0 70 0 0 0 0 0 108 0 0 0 0 81 25 0 0 0 0 186 0 0 0 0 0 252 0 0 0 0 0 249 0 0 0 0 183 0 0 0 0 148 250 0 0 0 24 253 0 0 0 0 253 2 0 0 0 253 80 0 0 0 226 244 0 0 0 0 212 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 1 1 1 0 0 0 1 1 0 0 0 1 1 1 0 0 1 1 1 0 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 0 0 1 1 1 0 0 1 1 1 1 0 0 1 1 1 0 0 1 1 1 0 0 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Activations 1: 65 63 61 65 67 64 72 65 63 65 68 66 59 71 55 70 62 75 68 62 60 57 56 61 59 65
+Scale/quant 1: 0 1 1 0 0 1 0 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 38 30 35 28 30 34 31 35 40 30 30 28 40
+Scale/quant 2: 0 1 0 1 1 0 1 0 0 1 1 1 0
+Activations 3: 5 6 3 6 3 7 8 5 3 4
+Final output: 0 2 -4 2 -4 4 6 0 -4 -2
+Sample 0: Predicted = 6, Label = 5
+
+Sending input image #1: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 159 0 0 0 0 238 0 0 0 0 0 239 0 0 0 0 252 252 0 0 0 163 252 167 0 0 0 253 47 0 0 0 238 75 253 0 0 0 208 0 165 0 0 252 0 0 0 0 0 0 0 252 0 0 253 0 0 0 0 0 0 0 253 0 0 252 0 0 12 0 0 0 0 252 0 0 85 0 48 0 0 0 225 0 162 0 0 0 48 253 0 0 0 252 252 0 0 0 0 252 145 0 0 0 0 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 0 1 1 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 1 1 1 0 1 0 1 1 0 1 1 1 1 1 1 1 0 1 1 0 1 1 1 1 1 1 1 0 1 1 0 1 1 0 1 1 1 1 0 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 0 1 1 1 0 0 1 1 1 1 0 0 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Activations 1: 64 62 62 66 66 65 73 64 64 66 69 65 60 72 56 69 63 76 67 61 61 56 55 62 60 66
+Scale/quant 1: 1 1 1 0 0 0 0 1 1 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 36 32 33 28 28 36 35 37 38 28 30 28 38
+Scale/quant 2: 0 1 0 1 1 0 0 0 0 1 1 1 0
+Activations 3: 5 6 3 6 3 7 8 5 3 4
+Final output: 0 2 -4 2 -4 4 6 0 -4 -2
+Sample 1: Predicted = 6, Label = 0
+
+Sending input image #2: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67 0 0 0 0 0 39 0 126 0 0 2 0 0 0 0 0 162 0 0 0 0 0 0 0 163 0 0 254 0 0 0 0 0 0 0 254 0 0 254 0 0 0 0 86 0 0 159 0 150 241 0 0 237 254 91 0 0 0 177 0 102 0 0 0 0 0 137 0 0 0 0 0 0 0 0 0 0 254 0 0 0 0 0 0 0 0 0 0 169 0 0 0 0 0 153 0 0 0 0 0 0 0 0 0 0 254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 0 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 0 1 1 0 1 1 1 1 1 1 1 0 1 1 0 1 1 1 1 0 1 1 0 1 0 0 1 1 0 0 0 1 1 1 0 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Activations 1: 65 63 61 65 67 64 72 65 63 65 68 66 59 71 55 70 62 75 68 62 60 57 56 61 59 65
+Scale/quant 1: 0 1 1 0 0 1 0 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 38 30 35 28 30 34 31 35 40 30 30 28 40
+Scale/quant 2: 0 1 0 1 1 0 1 0 0 1 1 1 0
+Activations 3: 5 6 3 6 3 7 8 5 3 4
+Final output: 0 2 -4 2 -4 4 6 0 -4 -2
+Sample 2: Predicted = 6, Label = 4
+
+Sending input image #3: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0 0 0 0 96 0 0 0 0 0 251 0 0 0 0 68 8 0 0 0 0 251 0 0 0 0 155 0 0 0 0 0 235 0 0 0 0 205 0 0 0 0 0 184 0 0 0 0 240 0 0 0 0 0 159 0 0 0 0 251 0 0 0 0 0 172 0 0 0 0 251 0 0 0 0 0 89 0 0 0 0 255 0 0 0 0 0 140 0 0 0 0 251 0 0 0 0 0 220 0 0 0 0 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 0 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Activations 1: 65 63 61 65 67 64 72 65 63 65 68 66 59 71 55 70 62 75 68 62 60 57 56 61 59 65
+Scale/quant 1: 0 1 1 0 0 1 0 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 38 30 35 28 30 34 31 35 40 30 30 28 40
+Scale/quant 2: 0 1 0 1 1 0 1 0 0 1 1 1 0
+Activations 3: 5 6 3 6 3 7 8 5 3 4
+Final output: 0 2 -4 2 -4 4 6 0 -4 -2
+Sample 3: Predicted = 6, Label = 1
+
+Sending input image #4: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 210 148 0 0 0 87 210 0 0 0 0 190 252 0 0 0 252 0 21 0 0 0 14 252 0 0 0 247 8 0 0 0 16 0 252 0 0 0 252 241 0 0 0 0 252 252 0 0 0 55 42 0 0 0 0 0 255 0 0 0 0 0 21 0 0 0 0 0 0 0 0 0 0 252 0 0 0 0 0 0 0 0 0 0 255 0 0 0 0 0 56 0 0 0 0 0 0 0 0 0 0 184 0 0 0 0 0 252 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 1 1 1 0 0 1 1 1 1 0 0 1 1 1 0 1 0 1 1 1 0 0 1 1 1 0 0 1 1 1 0 1 0 1 1 1 0 0 1 1 1 1 0 0 1 1 1 0 0 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1
+Activations 1: 65 63 61 65 67 64 72 65 63 65 68 66 59 71 55 70 62 75 68 62 60 57 56 61 59 65
+Scale/quant 1: 0 1 1 0 0 1 0 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 38 30 35 28 30 34 31 35 40 30 30 28 40
+Scale/quant 2: 0 1 0 1 1 0 1 0 0 1 1 1 0
+Activations 3: 5 6 3 6 3 7 8 5 3 4
+Final output: 0 2 -4 2 -4 4 6 0 -4 -2
+Sample 4: Predicted = 6, Label = 9
+
+Sending input image #5: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 0 0 0 0 252 0 0 0 0 252 232 0 0 0 239 31 0 0 0 0 252 252 0 0 0 252 0 60 0 0 0 22 100 0 0 0 0 0 252 0 0 0 0 121 0 0 0 0 253 228 0 0 0 227 242 6 0 0 6 59 252 0 0 0 252 203 252 49 0 136 0 65 241 0 0 88 252 0 180 0 231 252 0 0 0 0 252 36 0 0 0 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 0 1 1 1 0 0 1 1 1 1 0 0 1 1 1 0 1 0 1 1 1 0 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 0 0 1 1 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 1 0 0 1 0 1 0 0 1 1 1 1 0 0 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Activations 1: 65 63 61 65 67 64 72 65 63 65 68 66 59 71 55 70 62 75 68 62 60 57 56 61 59 65
+Scale/quant 1: 0 1 1 0 0 1 0 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 38 30 35 28 30 34 31 35 40 30 30 28 40
+Scale/quant 2: 0 1 0 1 1 0 1 0 0 1 1 1 0
+Activations 3: 5 6 3 6 3 7 8 5 3 4
+Final output: 0 2 -4 2 -4 4 6 0 -4 -2
+Sample 5: Predicted = 6, Label = 2
+
+Sending input image #6: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0 0 0 0 0 71 0 0 0 0 175 0 0 0 0 0 252 0 0 0 0 16 0 0 0 0 0 253 0 0 0 0 0 252 0 0 0 0 0 0 0 0 0 0 253 0 0 0 0 0 108 0 0 0 0 253 0 0 0 0 0 252 0 0 0 0 0 0 0 0 0 0 252 0 0 0 0 0 252 0 0 0 0 109 0 0 0 0 0 253 0 0 0 0 0 253 0 0 0 0 73 0 0 0 0 0 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Activations 1: 65 63 63 65 65 64 72 67 65 63 68 64 61 71 57 68 60 73 68 62 62 55 54 63 63 67
+Scale/quant 1: 0 1 1 0 0 1 0 0 0 1 0 1 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 32 32 31 26 32 34 33 39 38 30 30 30 34
+Scale/quant 2: 1 1 1 1 1 0 0 0 0 1 1 1 0
+Activations 3: 6 7 4 5 4 4 5 4 4 5
+Final output: 2 4 -2 0 -2 -2 0 -2 -2 0
+Sample 6: Predicted = 1, Label = 1
+
+Sending input image #7: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 253 174 0 0 0 226 252 14 0 0 178 253 252 0 0 0 252 132 252 0 0 0 0 226 0 0 0 0 0 252 0 0 0 0 189 0 0 0 0 91 252 0 0 0 193 252 0 0 0 45 252 177 0 0 0 253 253 0 0 0 0 44 252 0 0 0 0 0 74 0 0 0 0 86 0 0 0 9 0 252 0 0 61 0 239 0 0 0 252 134 188 0 0 0 252 253 0 0 0 157 252 0 0 0 0 235 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 1 1 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 1 1 1 0 0 1 1 1 1 0 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 0 1 0 1 1 0 1 0 1 1 1 0 0 0 1 1 1 0 0 1 1 1 0 0 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Activations 1: 65 63 61 65 67 64 72 65 63 65 68 66 59 71 55 70 62 75 68 62 60 57 56 61 59 65
+Scale/quant 1: 0 1 1 0 0 1 0 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 38 30 35 28 30 34 31 35 40 30 30 28 40
+Scale/quant 2: 0 1 0 1 1 0 1 0 0 1 1 1 0
+Activations 3: 5 6 3 6 3 7 8 5 3 4
+Final output: 0 2 -4 2 -4 4 6 0 -4 -2
+Sample 7: Predicted = 6, Label = 3
+
+Sending input image #8: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 0 0 0 0 0 254 0 0 0 0 0 0 0 0 0 0 254 0 0 0 0 0 108 0 0 0 0 16 0 0 0 0 0 254 0 0 0 0 0 0 0 0 0 0 178 0 0 0 0 0 240 0 0 0 0 0 0 0 0 0 0 254 0 0 0 0 0 38 0 0 0 0 0 0 0 0 0 0 241 0 0 0 0 0 0 0 0 0 0 144 0 0 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Activations 1: 65 63 61 65 67 64 72 65 63 65 68 66 59 71 55 70 62 75 68 62 60 57 56 61 59 65
+Scale/quant 1: 0 1 1 0 0 1 0 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 38 30 35 28 30 34 31 35 40 30 30 28 40
+Scale/quant 2: 0 1 0 1 1 0 1 0 0 1 1 1 0
+Activations 3: 5 6 3 6 3 7 8 5 3 4
+Final output: 0 2 -4 2 -4 4 6 0 -4 -2
+Sample 8: Predicted = 6, Label = 1
+
+Sending input image #9: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 190 0 0 0 0 0 0 0 0 0 0 242 0 0 0 0 0 0 0 0 0 0 217 0 0 0 253 0 0 0 0 0 0 253 0 0 0 251 11 0 0 0 0 0 226 0 0 0 252 116 0 0 0 96 122 158 0 0 0 253 227 0 0 0 251 189 251 0 0 0 0 252 0 0 0 111 0 42 0 0 0 0 253 0 0 0 0 0 0 0 0 0 0 251 0 0 0 0 0 0 0 0 0 0 252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 1 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 0 1 0 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Activations 1: 65 63 61 65 67 64 72 65 63 65 68 66 59 71 55 70 62 75 68 62 60 57 56 61 59 65
+Scale/quant 1: 0 1 1 0 0 1 0 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0
+Activations 2: 38 30 35 28 30 34 31 35 40 30 30 28 40
+Scale/quant 2: 0 1 0 1 1 0 1 0 0 1 1 1 0
+Activations 3: 5 6 3 6 3 7 8 5 3 4
+Final output: 0 2 -4 2 -4 4 6 0 -4 -2
+Sample 9: Predicted = 6, Label = 4
+
+Accuracy: 1 / 10
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 11.001 seconds; peak allocated memory: 619.926 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 16s

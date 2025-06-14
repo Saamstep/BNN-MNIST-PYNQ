@@ -9,13 +9,13 @@ WARNING: C:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Fri Jun 13 14:40:31 2025
+  **** Start of session at: Fri Jun 13 23:27:11 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source bd_0_hls_inst_0.tcl -notrace
-INFO: Dispatch client connection id - 57037
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 620.305 ; gain = 192.836
+INFO: Dispatch client connection id - 52084
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 619.797 ; gain = 191.355
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
@@ -27,69 +27,71 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23204
+INFO: [Synth 8-7075] Helper process launched with PID 1408
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1328.125 ; gain = 467.227
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1327.223 ; gain = 466.742
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'feedforward' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_layer1_activations_RAM_AUTO_1R1W' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_layer1_activations_RAM_AUTO_1R1W' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_layer2_activations_RAM_AUTO_1R1W' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_layer2_activations_RAM_AUTO_1R1W' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_layer3_activations_RAM_AUTO_1R1W' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_layer3_activations_RAM_AUTO_1R1W' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_92_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_92_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_flow_control_loop_pipe_sequential_init' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_flow_control_loop_pipe_sequential_init' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_92_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_92_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_48_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_sparsemux_1569_10_6_1_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_1569_10_6_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_sparsemux_1569_10_6_1_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_1569_10_6_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_48_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_103_2' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_103_2.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_103_2' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_103_2.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_110_3' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_110_3.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_110_3' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_110_3.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_48_11' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_11.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_sparsemux_257_7_7_1_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_257_7_7_1_1.v:9]
-INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_257_7_7_1_1.v:799]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_sparsemux_257_7_7_1_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_257_7_7_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_48_11' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_11.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_122_4' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_122_4.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_122_4' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_122_4.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_129_5' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_129_5.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_sparsemux_9_2_32_1_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v:9]
-INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v:55]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_sparsemux_9_2_32_1_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_129_5' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_129_5.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_48_12' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_12.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_sparsemux_129_6_8_1_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_129_6_8_1_1.v:9]
-INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_129_6_8_1_1.v:415]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_sparsemux_129_6_8_1_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_sparsemux_129_6_8_1_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_48_12' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_12.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_139_6' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_139_6.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_139_6' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_139_6.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_148_7' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_148_7.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_148_7' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_148_7.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_control_s_axi' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_control_s_axi.v:9]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_control_s_axi.v:197]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_control_s_axi' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_control_s_axi.v:9]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized0' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized0' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized2' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized2' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized3' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized3' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized4' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized4' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'feedforward' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_layer1_activations_RAM_AUTO_1R1W' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_layer1_activations_RAM_AUTO_1R1W' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_layer2_activations_RAM_AUTO_1R1W' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_layer2_activations_RAM_AUTO_1R1W' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_layer3_activations_RAM_AUTO_1R1W' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_layer3_activations_RAM_AUTO_1R1W' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_101_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_101_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_flow_control_loop_pipe_sequential_init' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_flow_control_loop_pipe_sequential_init' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_101_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_101_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_matmul_xnor_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_sparsemux_1569_10_32_1_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_1569_10_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_sparsemux_1569_10_32_1_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_1569_10_32_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_sparsemux_1569_10_9_1_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_1569_10_9_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_sparsemux_1569_10_9_1_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_1569_10_9_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_matmul_xnor_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_120_2' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_120_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_120_2' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_120_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_127_3' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_127_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_127_3' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_127_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_matmul_xnor_2' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_sparsemux_257_7_32_1_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_32_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_32_1_1.v:799]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_sparsemux_257_7_32_1_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_32_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_sparsemux_257_7_9_1_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_9_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_9_1_1.v:799]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_sparsemux_257_7_9_1_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_9_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_matmul_xnor_2' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_146_4' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_146_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_146_4' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_146_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_153_5' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_153_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_sparsemux_9_2_32_1_1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_sparsemux_9_2_32_1_1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_153_5' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_153_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_matmul_xnor' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_matmul_xnor' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_matmul_xnor.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_171_6' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_171_6.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_171_6' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_171_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_180_7' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_180_7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_feedforward_Pipeline_VITIS_LOOP_180_7' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_180_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_control_s_axi' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_control_s_axi.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_control_s_axi' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized0' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized0' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized1' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized1' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized2' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized2' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized3' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized3' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'feedforward_regslice_both__parameterized4' [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward_regslice_both__parameterized4' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'feedforward' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_control_s_axi.v:254]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_control_s_axi.v:254]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 WARNING: [Synth 8-7129] Port AWADDR[1] in module feedforward_control_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port AWADDR[0] in module feedforward_control_s_axi is either unconnected or has no load
@@ -125,46 +127,46 @@ WARNING: [Synth 8-7129] Port WDATA[2] in module feedforward_control_s_axi is eit
 WARNING: [Synth 8-7129] Port WSTRB[3] in module feedforward_control_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port WSTRB[2] in module feedforward_control_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port WSTRB[1] in module feedforward_control_s_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TKEEP[3] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TKEEP[2] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TKEEP[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TKEEP[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TSTRB[3] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TSTRB[2] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TSTRB[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TSTRB[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TUSER[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TUSER[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TLAST[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TID[4] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TID[3] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TID[2] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TID[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TID[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TDEST[7] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TDEST[6] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TDEST[5] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TDEST[4] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TDEST[3] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TDEST[2] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TDEST[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port input_stream_TDEST[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_92_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TKEEP[3] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TKEEP[2] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TKEEP[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TKEEP[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TSTRB[3] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TSTRB[2] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TSTRB[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TSTRB[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TUSER[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TUSER[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TLAST[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TID[4] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TID[3] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TID[2] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TID[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TID[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TDEST[7] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TDEST[6] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TDEST[5] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TDEST[4] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TDEST[3] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TDEST[2] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TDEST[1] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input_stream_TDEST[0] in module feedforward_feedforward_Pipeline_VITIS_LOOP_101_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port reset in module feedforward_layer3_activations_RAM_AUTO_1R1W is either unconnected or has no load
 WARNING: [Synth 8-7129] Port reset in module feedforward_layer2_activations_RAM_AUTO_1R1W is either unconnected or has no load
 WARNING: [Synth 8-7129] Port reset in module feedforward_layer1_activations_RAM_AUTO_1R1W is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1466.770 ; gain = 605.871
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1663.574 ; gain = 803.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1466.770 ; gain = 605.871
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1663.574 ; gain = 803.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1466.770 ; gain = 605.871
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1663.574 ; gain = 803.094
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1466.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1663.574 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -175,30 +177,29 @@ Parsing XDC File [D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog
 Finished Parsing XDC File [D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1563.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2534.324 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1563.738 ; gain = 0.105
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.395 . Memory (MB): peak = 2538.316 ; gain = 3.992
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1563.738 ; gain = 702.840
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1563.738 ; gain = 702.840
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1563.738 ; gain = 702.840
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'x_1_reg_621_reg' and it is trimmed from '7' to '6' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_48_12.v:413]
 INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'feedforward_control_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'feedforward_control_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'feedforward_regslice_both'
@@ -290,59 +291,70 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'feedforward_regslice_both__parameterized4'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1563.738 ; gain = 702.840
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 7     
+	   2 Input   32 Bit       Adders := 8     
 	   2 Input   24 Bit       Adders := 1     
-	   2 Input   10 Bit       Adders := 4     
-	   2 Input    8 Bit       Adders := 3     
-	   2 Input    7 Bit       Adders := 3     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   4 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 4     
+	  16 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   4 Input    3 Bit       Adders := 16    
 +---XORs : 
 	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               32 Bit    Registers := 28    
-	               24 Bit    Registers := 1     
-	               23 Bit    Registers := 3     
+	               32 Bit    Registers := 24    
+	               23 Bit    Registers := 1     
 	               22 Bit    Registers := 1     
-	               10 Bit    Registers := 6     
-	                9 Bit    Registers := 3     
-	                8 Bit    Registers := 11    
-	                7 Bit    Registers := 4     
-	                6 Bit    Registers := 3     
-	                5 Bit    Registers := 8     
-	                4 Bit    Registers := 11    
-	                2 Bit    Registers := 22    
-	                1 Bit    Registers := 111   
+	               17 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 7     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 16    
+	                2 Bit    Registers := 21    
+	                1 Bit    Registers := 1166  
 +---RAMs : 
-	              12K Bit	(392 X 32 bit)          RAMs := 2     
-	               2K Bit	(64 X 32 bit)          RAMs := 1     
-	             1024 Bit	(32 X 32 bit)          RAMs := 4     
+	               2K Bit	(64 X 32 bit)          RAMs := 2     
+	              512 Bit	(16 X 32 bit)          RAMs := 4     
+	              320 Bit	(10 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 12    
 	   4 Input   32 Bit        Muxes := 1     
 	   2 Input   22 Bit        Muxes := 2     
 	   2 Input   20 Bit        Muxes := 1     
-	   2 Input   18 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 2     
 	   2 Input   14 Bit        Muxes := 1     
 	   2 Input   12 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 3     
 	   2 Input    8 Bit        Muxes := 5     
-	   2 Input    6 Bit        Muxes := 3     
-	   2 Input    5 Bit        Muxes := 12    
+	   2 Input    6 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 4     
 	   4 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 12    
+	   2 Input    4 Bit        Muxes := 22    
 	   3 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 145   
 	   4 Input    2 Bit        Muxes := 56    
-	   2 Input    1 Bit        Muxes := 129   
+	   2 Input    1 Bit        Muxes := 133   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -359,13 +371,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_load_reg_162_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_103_2.v:192]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_2_load_reg_167_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_103_2.v:191]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_load_reg_244_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_122_4.v:242]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_4_load_reg_249_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_122_4.v:239]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_5_load_reg_254_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_122_4.v:240]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_6_load_reg_259_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_122_4.v:241]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer3_activations_load_reg_110_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_139_6.v:166]
+WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_load_reg_166_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_120_2.v:192]
+WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_1_load_reg_171_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_120_2.v:191]
 WARNING: [Synth 8-7129] Port AWADDR[1] in module feedforward_control_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port AWADDR[0] in module feedforward_control_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port WDATA[31] in module feedforward_control_s_axi is either unconnected or has no load
@@ -400,63 +407,63 @@ WARNING: [Synth 8-7129] Port WDATA[2] in module feedforward_control_s_axi is eit
 WARNING: [Synth 8-7129] Port WSTRB[3] in module feedforward_control_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port WSTRB[2] in module feedforward_control_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port WSTRB[1] in module feedforward_control_s_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port layer3_activations_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_139_6 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port layer2_activations_6_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_122_4 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port layer2_activations_5_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_122_4 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port layer2_activations_4_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_122_4 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port layer2_activations_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_122_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port layer3_activations_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_171_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port layer2_activations_3_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_146_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port layer2_activations_2_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_146_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port layer2_activations_1_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_146_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port layer2_activations_q1[31] in module feedforward_feedforward_Pipeline_VITIS_LOOP_146_4 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_2_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_4_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_5_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_6_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer3_activations_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/4af7/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_keep_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_keep_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_strb_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_strb_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_user_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_user_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_last_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_last_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_id_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_id_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_dest_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward.
-WARNING: [Synth 8-3332] Sequential element (regslice_both_input_stream_V_dest_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module feedforward_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module feedforward_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized0__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized0__2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized1__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized1__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized4__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized4__1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 1563.738 ; gain = 702.840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 ROM: Preliminary Mapping Report
-+-------------------------------------------------+------------+---------------+----------------+
-|Module Name                                      | RTL Object | Depth x Width | Implemented As | 
-+-------------------------------------------------+------------+---------------+----------------+
-|feedforward_feedforward_Pipeline_VITIS_LOOP_48_1 | dout_tmp   | 1024x6        | LUT            | 
-|feedforward_feedforward_Pipeline_VITIS_LOOP_48_1 | dout_tmp   | 1024x6        | LUT            | 
-+-------------------------------------------------+------------+---------------+----------------+
++--------------------------+------------------------+---------------+----------------+
+|Module Name               | RTL Object             | Depth x Width | Implemented As | 
++--------------------------+------------------------+---------------+----------------+
+|feedforward_matmul_xnor_1 | add_ln64_reg_17621_reg | 1024x9        | Block RAM      | 
++--------------------------+------------------------+---------------+----------------+
 
 
 Block RAM: Preliminary Mapping Report (see note below)
 +------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|inst        | layer1_activations_U/ram_reg   | 392 x 32(READ_FIRST)   | W | R | 392 x 31(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer1_activations_2_U/ram_reg | 392 x 32(READ_FIRST)   | W | R | 392 x 31(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer2_activations_U/ram_reg   | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer2_activations_4_U/ram_reg | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer2_activations_5_U/ram_reg | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer2_activations_6_U/ram_reg | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer3_activations_U/ram_reg   | 64 x 32(READ_FIRST)    | W | R | 64 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|inst        | layer1_activations_U/ram_reg   | 64 x 32(READ_FIRST)    | W | R | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|inst        | layer1_activations_1_U/ram_reg | 64 x 32(READ_FIRST)    | W | R | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
 +------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                     | Inference | Size (Depth x Width) | Primitives     | 
++------------+--------------------------------+-----------+----------------------+----------------+
+|inst        | layer2_activations_U/ram_reg   | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | layer2_activations_1_U/ram_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | layer2_activations_2_U/ram_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | layer2_activations_3_U/ram_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | layer3_activations_U/ram_reg   | Implied   | 16 x 32              | RAM16X1D x 32  | 
++------------+--------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
@@ -464,13 +471,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1654.984 ; gain = 794.086
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1677.949 ; gain = 817.051
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -480,14 +487,21 @@ Block RAM: Final Mapping Report
 +------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|inst        | layer1_activations_U/ram_reg   | 392 x 32(READ_FIRST)   | W | R | 392 x 31(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer1_activations_2_U/ram_reg | 392 x 32(READ_FIRST)   | W | R | 392 x 31(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer2_activations_U/ram_reg   | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer2_activations_4_U/ram_reg | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer2_activations_5_U/ram_reg | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer2_activations_6_U/ram_reg | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|inst        | layer3_activations_U/ram_reg   | 64 x 32(READ_FIRST)    | W | R | 64 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|inst        | layer1_activations_U/ram_reg   | 64 x 32(READ_FIRST)    | W | R | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|inst        | layer1_activations_1_U/ram_reg | 64 x 32(READ_FIRST)    | W | R | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
 +------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+--------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                     | Inference | Size (Depth x Width) | Primitives     | 
++------------+--------------------------------+-----------+----------------------+----------------+
+|inst        | layer2_activations_U/ram_reg   | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | layer2_activations_1_U/ram_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | layer2_activations_2_U/ram_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | layer2_activations_3_U/ram_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | layer3_activations_U/ram_reg   | Implied   | 16 x 32              | RAM16X1D x 32  | 
++------------+--------------------------------+-----------+----------------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -498,14 +512,10 @@ Start Technology Mapping
 WARNING: [Synth 8-3332] Sequential element (regslice_both_output_stream_V_id_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward.
 WARNING: [Synth 8-3332] Sequential element (regslice_both_output_stream_V_id_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward.
 INFO: [Synth 8-7052] The timing for the instance inst/layer1_activations_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance inst/layer1_activations_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance inst/layer2_activations_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance inst/layer2_activations_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance inst/layer2_activations_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance inst/layer2_activations_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance inst/layer3_activations_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/layer1_activations_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_matmul_xnor_1_fu_4814/add_ln64_reg_17621_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1693.395 ; gain = 832.496
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -523,37 +533,55 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1880.973 ; gain = 1020.074
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1880.973 ; gain = 1020.074
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1880.973 ; gain = 1020.074
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1880.973 ; gain = 1020.074
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1882.977 ; gain = 1022.078
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1882.977 ; gain = 1022.078
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 2538.316 ; gain = 1677.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|feedforward | grp_matmul_xnor_1_fu_4814/icmp_ln63_2_reg_17608_pp0_iter3_reg_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|feedforward | grp_matmul_xnor_1_fu_4814/ap_loop_exit_ready_pp0_iter3_reg_reg       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|feedforward | grp_matmul_xnor_2_fu_5744/icmp_ln63_reg_3170_pp0_iter3_reg_reg[0]    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|feedforward | grp_matmul_xnor_2_fu_5744/icmp_ln63_1_reg_3182_pp0_iter3_reg_reg[0]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|feedforward | grp_matmul_xnor_2_fu_5744/ap_loop_exit_ready_pp0_iter3_reg_reg       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -569,45 +597,49 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |CARRY4   |    67|
-|2     |LUT1     |   142|
-|3     |LUT2     |   301|
-|4     |LUT3     |   107|
-|5     |LUT4     |    99|
-|6     |LUT5     |   114|
-|7     |LUT6     |   312|
-|8     |MUXF7    |    34|
-|9     |MUXF8    |     3|
-|10    |RAMB36E1 |     7|
-|11    |FDRE     |   501|
-|12    |FDSE     |    13|
+|1     |CARRY4   |    78|
+|2     |LUT1     |   140|
+|3     |LUT2     |   243|
+|4     |LUT3     |   214|
+|5     |LUT4     |  1106|
+|6     |LUT5     |   235|
+|7     |LUT6     |   482|
+|8     |MUXF7    |   121|
+|9     |MUXF8    |    60|
+|10    |RAM16X1D |   120|
+|11    |RAMB18E1 |     1|
+|12    |RAMB36E1 |     2|
+|13    |SRL16E   |     5|
+|14    |FDRE     |  1829|
+|15    |FDSE     |    14|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1882.977 ; gain = 1022.078
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 105 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1882.977 ; gain = 925.109
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 1882.977 ; gain = 1022.078
+Synthesis finished with 0 errors, 0 critical warnings and 93 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 2538.316 ; gain = 803.094
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 2538.316 ; gain = 1677.836
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1892.070 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2538.316 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 382 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1895.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2538.316 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 120 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 120 instances
 
-Synth Design complete | Checksum: 35d66a53
+Synth Design complete | Checksum: 400c0ae1
 INFO: [Common 17-83] Releasing license: Synthesis
-105 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
+103 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 1895.754 ; gain = 1258.352
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1895.754 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 2538.316 ; gain = 1901.309
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2538.316 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = ec9b6b2a5100277b
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 2dcd615d7e9acf53
 INFO: [Coretcl 2-1174] Renamed 36 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1895.754 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2538.316 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 13 14:41:40 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 13 23:28:50 2025...

@@ -3,8 +3,8 @@
     "basicblocks": 23,
     "calls": "1 1 1",
     "file": "bnn.cpp",
-    "fileloc": 66,
-    "instructions": 255,
+    "fileloc": 75,
+    "instructions": 257,
     "loads": {
       "L": 17
     },
@@ -12,13 +12,13 @@
     "stores": {
       "L": 21
     },
-    "total_instructions": 387
+    "total_instructions": 389
   },
   "1": {
     "basicblocks": 11,
     "calls": "",
     "file": "bnn.cpp",
-    "fileloc": 46,
+    "fileloc": 47,
     "instructions": 44,
     "loads": {
       "L": 3

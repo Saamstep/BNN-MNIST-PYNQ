@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'feedforward'" level="0">
-<item name = "Date">Fri Jun 13 14:38:43 2025
+<item name = "Date">Fri Jun 13 23:25:13 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">bnn_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.191 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.196 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3270, 3270, 32.700 us, 32.700 us, 3271, 3271, no</column>
+<column name="">109680, 109680, 1.097 ms, 1.097 ms, 109681, 109681, no</column>
 </table>
 </item>
 <item name = "Detail">

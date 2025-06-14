@@ -1,0 +1,471 @@
+
+
+================================================================
+== Vitis HLS Report for 'matmul_xnor'
+================================================================
+* Date:           Fri Jun 13 23:25:10 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        bnn_hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.990 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       13|       13|  0.130 us|  0.130 us|   11|   11|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_61_1  |       11|       11|         3|          1|          1|    10|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.68>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%x = alloca i32 1" [bnn.cpp:61]   --->   Operation 6 'alloca' 'x' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%A_63_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_63_val" [bnn.cpp:47]   --->   Operation 7 'read' 'A_63_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%A_62_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_62_val" [bnn.cpp:47]   --->   Operation 8 'read' 'A_62_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%A_61_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_61_val" [bnn.cpp:47]   --->   Operation 9 'read' 'A_61_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%A_60_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_60_val" [bnn.cpp:47]   --->   Operation 10 'read' 'A_60_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%A_59_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_59_val" [bnn.cpp:47]   --->   Operation 11 'read' 'A_59_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%A_58_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_58_val" [bnn.cpp:47]   --->   Operation 12 'read' 'A_58_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%A_57_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_57_val" [bnn.cpp:47]   --->   Operation 13 'read' 'A_57_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%A_56_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_56_val" [bnn.cpp:47]   --->   Operation 14 'read' 'A_56_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%A_55_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_55_val" [bnn.cpp:47]   --->   Operation 15 'read' 'A_55_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%A_54_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_54_val" [bnn.cpp:47]   --->   Operation 16 'read' 'A_54_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%A_53_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_53_val" [bnn.cpp:47]   --->   Operation 17 'read' 'A_53_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%A_52_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_52_val" [bnn.cpp:47]   --->   Operation 18 'read' 'A_52_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%A_51_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_51_val" [bnn.cpp:47]   --->   Operation 19 'read' 'A_51_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%A_50_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_50_val" [bnn.cpp:47]   --->   Operation 20 'read' 'A_50_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%A_49_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_49_val" [bnn.cpp:47]   --->   Operation 21 'read' 'A_49_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%A_48_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_48_val" [bnn.cpp:47]   --->   Operation 22 'read' 'A_48_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%A_47_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_47_val" [bnn.cpp:47]   --->   Operation 23 'read' 'A_47_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%A_46_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_46_val" [bnn.cpp:47]   --->   Operation 24 'read' 'A_46_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%A_45_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_45_val" [bnn.cpp:47]   --->   Operation 25 'read' 'A_45_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%A_44_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_44_val" [bnn.cpp:47]   --->   Operation 26 'read' 'A_44_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%A_43_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_43_val" [bnn.cpp:47]   --->   Operation 27 'read' 'A_43_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%A_42_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_42_val" [bnn.cpp:47]   --->   Operation 28 'read' 'A_42_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%A_41_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_41_val" [bnn.cpp:47]   --->   Operation 29 'read' 'A_41_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%A_40_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_40_val" [bnn.cpp:47]   --->   Operation 30 'read' 'A_40_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%A_39_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_39_val" [bnn.cpp:47]   --->   Operation 31 'read' 'A_39_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%A_38_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_38_val" [bnn.cpp:47]   --->   Operation 32 'read' 'A_38_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%A_37_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_37_val" [bnn.cpp:47]   --->   Operation 33 'read' 'A_37_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%A_36_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_36_val" [bnn.cpp:47]   --->   Operation 34 'read' 'A_36_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%A_35_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_35_val" [bnn.cpp:47]   --->   Operation 35 'read' 'A_35_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%A_34_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_34_val" [bnn.cpp:47]   --->   Operation 36 'read' 'A_34_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%A_33_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_33_val" [bnn.cpp:47]   --->   Operation 37 'read' 'A_33_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%A_32_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_32_val" [bnn.cpp:47]   --->   Operation 38 'read' 'A_32_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%A_31_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_31_val" [bnn.cpp:47]   --->   Operation 39 'read' 'A_31_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%A_30_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_30_val" [bnn.cpp:47]   --->   Operation 40 'read' 'A_30_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%A_29_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_29_val" [bnn.cpp:47]   --->   Operation 41 'read' 'A_29_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%A_28_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_28_val" [bnn.cpp:47]   --->   Operation 42 'read' 'A_28_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%A_27_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_27_val" [bnn.cpp:47]   --->   Operation 43 'read' 'A_27_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%A_26_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_26_val" [bnn.cpp:47]   --->   Operation 44 'read' 'A_26_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%A_25_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_25_val" [bnn.cpp:47]   --->   Operation 45 'read' 'A_25_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%A_24_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_24_val" [bnn.cpp:47]   --->   Operation 46 'read' 'A_24_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%A_23_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_23_val" [bnn.cpp:47]   --->   Operation 47 'read' 'A_23_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%A_22_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_22_val" [bnn.cpp:47]   --->   Operation 48 'read' 'A_22_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%A_21_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_21_val" [bnn.cpp:47]   --->   Operation 49 'read' 'A_21_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%A_20_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_20_val" [bnn.cpp:47]   --->   Operation 50 'read' 'A_20_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%A_19_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_19_val" [bnn.cpp:47]   --->   Operation 51 'read' 'A_19_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%A_18_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_18_val" [bnn.cpp:47]   --->   Operation 52 'read' 'A_18_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%A_17_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_17_val" [bnn.cpp:47]   --->   Operation 53 'read' 'A_17_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%A_16_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_16_val" [bnn.cpp:47]   --->   Operation 54 'read' 'A_16_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%A_15_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_15_val" [bnn.cpp:47]   --->   Operation 55 'read' 'A_15_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%A_14_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_14_val" [bnn.cpp:47]   --->   Operation 56 'read' 'A_14_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%A_13_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_13_val" [bnn.cpp:47]   --->   Operation 57 'read' 'A_13_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%A_12_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_12_val" [bnn.cpp:47]   --->   Operation 58 'read' 'A_12_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%A_11_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_11_val" [bnn.cpp:47]   --->   Operation 59 'read' 'A_11_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%A_10_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_10_val" [bnn.cpp:47]   --->   Operation 60 'read' 'A_10_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%A_9_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_9_val" [bnn.cpp:47]   --->   Operation 61 'read' 'A_9_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%A_8_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_8_val" [bnn.cpp:47]   --->   Operation 62 'read' 'A_8_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%A_7_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_7_val" [bnn.cpp:47]   --->   Operation 63 'read' 'A_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%A_6_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_6_val" [bnn.cpp:47]   --->   Operation 64 'read' 'A_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%A_5_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_5_val" [bnn.cpp:47]   --->   Operation 65 'read' 'A_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%A_4_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_4_val" [bnn.cpp:47]   --->   Operation 66 'read' 'A_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%A_3_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_3_val" [bnn.cpp:47]   --->   Operation 67 'read' 'A_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%A_2_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_2_val" [bnn.cpp:47]   --->   Operation 68 'read' 'A_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%A_1_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_1_val" [bnn.cpp:47]   --->   Operation 69 'read' 'A_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%A_0_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %A_0_val" [bnn.cpp:47]   --->   Operation 70 'read' 'A_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (1.58ns)   --->   "%store_ln61 = store i4 0, i4 %x" [bnn.cpp:61]   --->   Operation 71 'store' 'store_ln61' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln61 = br void %for.body" [bnn.cpp:61]   --->   Operation 72 'br' 'br_ln61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%x_1 = load i4 %x" [bnn.cpp:61]   --->   Operation 73 'load' 'x_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (1.73ns)   --->   "%icmp_ln61 = icmp_eq  i4 %x_1, i4 10" [bnn.cpp:61]   --->   Operation 74 'icmp' 'icmp_ln61' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10"   --->   Operation 75 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (1.73ns)   --->   "%add_ln61 = add i4 %x_1, i4 1" [bnn.cpp:61]   --->   Operation 76 'add' 'add_ln61' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%br_ln61 = br i1 %icmp_ln61, void %for.body.split, void %for.end12" [bnn.cpp:61]   --->   Operation 77 'br' 'br_ln61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (2.55ns)   --->   "%icmp_ln21 = icmp_eq  i32 %A_0_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 78 'icmp' 'icmp_ln21' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 79 [1/1] (2.55ns)   --->   "%icmp_ln21_1 = icmp_eq  i32 %A_1_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 79 'icmp' 'icmp_ln21_1' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 80 [1/1] (2.55ns)   --->   "%icmp_ln21_2 = icmp_eq  i32 %A_2_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 80 'icmp' 'icmp_ln21_2' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 81 [1/1] (2.55ns)   --->   "%icmp_ln21_3 = icmp_eq  i32 %A_3_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 81 'icmp' 'icmp_ln21_3' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 82 [1/1] (2.55ns)   --->   "%icmp_ln21_4 = icmp_eq  i32 %A_4_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 82 'icmp' 'icmp_ln21_4' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 83 [1/1] (2.55ns)   --->   "%icmp_ln21_5 = icmp_eq  i32 %A_5_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 83 'icmp' 'icmp_ln21_5' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 84 [1/1] (2.55ns)   --->   "%icmp_ln21_6 = icmp_eq  i32 %A_6_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 84 'icmp' 'icmp_ln21_6' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 85 [1/1] (2.55ns)   --->   "%icmp_ln21_7 = icmp_eq  i32 %A_7_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 85 'icmp' 'icmp_ln21_7' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 86 [1/1] (2.55ns)   --->   "%icmp_ln21_8 = icmp_eq  i32 %A_8_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 86 'icmp' 'icmp_ln21_8' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 87 [1/1] (2.55ns)   --->   "%icmp_ln21_9 = icmp_eq  i32 %A_9_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 87 'icmp' 'icmp_ln21_9' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 88 [1/1] (2.55ns)   --->   "%icmp_ln21_10 = icmp_eq  i32 %A_10_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 88 'icmp' 'icmp_ln21_10' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 89 [1/1] (2.55ns)   --->   "%icmp_ln21_11 = icmp_eq  i32 %A_11_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 89 'icmp' 'icmp_ln21_11' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 90 [1/1] (2.55ns)   --->   "%icmp_ln21_12 = icmp_eq  i32 %A_12_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 90 'icmp' 'icmp_ln21_12' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 91 [1/1] (2.55ns)   --->   "%icmp_ln21_13 = icmp_eq  i32 %A_13_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 91 'icmp' 'icmp_ln21_13' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 92 [1/1] (2.55ns)   --->   "%icmp_ln21_14 = icmp_eq  i32 %A_14_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 92 'icmp' 'icmp_ln21_14' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 93 [1/1] (2.55ns)   --->   "%icmp_ln21_15 = icmp_eq  i32 %A_15_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 93 'icmp' 'icmp_ln21_15' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 94 [1/1] (2.55ns)   --->   "%icmp_ln21_16 = icmp_eq  i32 %A_16_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 94 'icmp' 'icmp_ln21_16' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 95 [1/1] (2.55ns)   --->   "%icmp_ln21_17 = icmp_eq  i32 %A_17_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 95 'icmp' 'icmp_ln21_17' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 96 [1/1] (2.55ns)   --->   "%icmp_ln21_18 = icmp_eq  i32 %A_18_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 96 'icmp' 'icmp_ln21_18' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 97 [1/1] (2.55ns)   --->   "%icmp_ln21_19 = icmp_eq  i32 %A_19_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 97 'icmp' 'icmp_ln21_19' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 98 [1/1] (2.55ns)   --->   "%icmp_ln21_20 = icmp_eq  i32 %A_20_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 98 'icmp' 'icmp_ln21_20' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 99 [1/1] (2.55ns)   --->   "%icmp_ln21_21 = icmp_eq  i32 %A_21_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 99 'icmp' 'icmp_ln21_21' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 100 [1/1] (2.55ns)   --->   "%icmp_ln21_22 = icmp_eq  i32 %A_22_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 100 'icmp' 'icmp_ln21_22' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 101 [1/1] (2.55ns)   --->   "%icmp_ln21_23 = icmp_eq  i32 %A_23_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 101 'icmp' 'icmp_ln21_23' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 102 [1/1] (2.55ns)   --->   "%icmp_ln21_24 = icmp_eq  i32 %A_24_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 102 'icmp' 'icmp_ln21_24' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 103 [1/1] (2.55ns)   --->   "%icmp_ln21_25 = icmp_eq  i32 %A_25_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 103 'icmp' 'icmp_ln21_25' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 104 [1/1] (2.55ns)   --->   "%icmp_ln21_26 = icmp_eq  i32 %A_26_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 104 'icmp' 'icmp_ln21_26' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 105 [1/1] (2.55ns)   --->   "%icmp_ln21_27 = icmp_eq  i32 %A_27_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 105 'icmp' 'icmp_ln21_27' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 106 [1/1] (2.55ns)   --->   "%icmp_ln21_28 = icmp_eq  i32 %A_28_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 106 'icmp' 'icmp_ln21_28' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 107 [1/1] (2.55ns)   --->   "%icmp_ln21_29 = icmp_eq  i32 %A_29_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 107 'icmp' 'icmp_ln21_29' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 108 [1/1] (2.55ns)   --->   "%icmp_ln21_30 = icmp_eq  i32 %A_30_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 108 'icmp' 'icmp_ln21_30' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 109 [1/1] (2.55ns)   --->   "%icmp_ln21_31 = icmp_eq  i32 %A_31_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 109 'icmp' 'icmp_ln21_31' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 110 [1/1] (2.55ns)   --->   "%icmp_ln21_32 = icmp_eq  i32 %A_32_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 110 'icmp' 'icmp_ln21_32' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 111 [1/1] (2.55ns)   --->   "%icmp_ln21_33 = icmp_eq  i32 %A_33_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 111 'icmp' 'icmp_ln21_33' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 112 [1/1] (2.55ns)   --->   "%icmp_ln21_34 = icmp_eq  i32 %A_34_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 112 'icmp' 'icmp_ln21_34' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 113 [1/1] (2.55ns)   --->   "%icmp_ln21_35 = icmp_eq  i32 %A_35_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 113 'icmp' 'icmp_ln21_35' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 114 [1/1] (2.55ns)   --->   "%icmp_ln21_36 = icmp_eq  i32 %A_36_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 114 'icmp' 'icmp_ln21_36' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 115 [1/1] (2.55ns)   --->   "%icmp_ln21_37 = icmp_eq  i32 %A_37_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 115 'icmp' 'icmp_ln21_37' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 116 [1/1] (2.55ns)   --->   "%icmp_ln21_38 = icmp_eq  i32 %A_38_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 116 'icmp' 'icmp_ln21_38' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 117 [1/1] (2.55ns)   --->   "%icmp_ln21_39 = icmp_eq  i32 %A_39_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 117 'icmp' 'icmp_ln21_39' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 118 [1/1] (2.55ns)   --->   "%icmp_ln21_40 = icmp_eq  i32 %A_40_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 118 'icmp' 'icmp_ln21_40' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 119 [1/1] (2.55ns)   --->   "%icmp_ln21_41 = icmp_eq  i32 %A_41_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 119 'icmp' 'icmp_ln21_41' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 120 [1/1] (2.55ns)   --->   "%icmp_ln21_42 = icmp_eq  i32 %A_42_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 120 'icmp' 'icmp_ln21_42' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 121 [1/1] (2.55ns)   --->   "%icmp_ln21_43 = icmp_eq  i32 %A_43_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 121 'icmp' 'icmp_ln21_43' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 122 [1/1] (2.55ns)   --->   "%icmp_ln21_44 = icmp_eq  i32 %A_44_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 122 'icmp' 'icmp_ln21_44' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 123 [1/1] (2.55ns)   --->   "%icmp_ln21_45 = icmp_eq  i32 %A_45_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 123 'icmp' 'icmp_ln21_45' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 124 [1/1] (2.55ns)   --->   "%icmp_ln21_46 = icmp_eq  i32 %A_46_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 124 'icmp' 'icmp_ln21_46' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 125 [1/1] (2.55ns)   --->   "%icmp_ln21_47 = icmp_eq  i32 %A_47_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 125 'icmp' 'icmp_ln21_47' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 126 [1/1] (2.55ns)   --->   "%icmp_ln21_48 = icmp_eq  i32 %A_48_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 126 'icmp' 'icmp_ln21_48' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 127 [1/1] (2.55ns)   --->   "%icmp_ln21_49 = icmp_eq  i32 %A_49_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 127 'icmp' 'icmp_ln21_49' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 128 [1/1] (2.55ns)   --->   "%icmp_ln21_50 = icmp_eq  i32 %A_50_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 128 'icmp' 'icmp_ln21_50' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 129 [1/1] (2.55ns)   --->   "%icmp_ln21_51 = icmp_eq  i32 %A_51_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 129 'icmp' 'icmp_ln21_51' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 130 [1/1] (2.55ns)   --->   "%icmp_ln21_52 = icmp_eq  i32 %A_52_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 130 'icmp' 'icmp_ln21_52' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 131 [1/1] (2.55ns)   --->   "%icmp_ln21_53 = icmp_eq  i32 %A_53_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 131 'icmp' 'icmp_ln21_53' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 132 [1/1] (2.55ns)   --->   "%icmp_ln21_54 = icmp_eq  i32 %A_54_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 132 'icmp' 'icmp_ln21_54' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 133 [1/1] (2.55ns)   --->   "%icmp_ln21_55 = icmp_eq  i32 %A_55_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 133 'icmp' 'icmp_ln21_55' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 134 [1/1] (2.55ns)   --->   "%icmp_ln21_56 = icmp_eq  i32 %A_56_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 134 'icmp' 'icmp_ln21_56' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 135 [1/1] (2.55ns)   --->   "%icmp_ln21_57 = icmp_eq  i32 %A_57_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 135 'icmp' 'icmp_ln21_57' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 136 [1/1] (2.55ns)   --->   "%icmp_ln21_58 = icmp_eq  i32 %A_58_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 136 'icmp' 'icmp_ln21_58' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 137 [1/1] (2.55ns)   --->   "%icmp_ln21_59 = icmp_eq  i32 %A_59_val_read, i32 256" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 137 'icmp' 'icmp_ln21_59' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 138 [1/1] (2.55ns)   --->   "%icmp_ln21_60 = icmp_eq  i32 %A_60_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 138 'icmp' 'icmp_ln21_60' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 139 [1/1] (2.55ns)   --->   "%icmp_ln21_61 = icmp_eq  i32 %A_61_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 139 'icmp' 'icmp_ln21_61' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 140 [1/1] (2.55ns)   --->   "%icmp_ln21_62 = icmp_eq  i32 %A_62_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 140 'icmp' 'icmp_ln21_62' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 141 [1/1] (2.55ns)   --->   "%icmp_ln21_63 = icmp_eq  i32 %A_63_val_read, i32 0" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 141 'icmp' 'icmp_ln21_63' <Predicate = (!icmp_ln61)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 142 [1/1] (0.00ns)   --->   "%icmp_ln21_cast = zext i1 %icmp_ln21" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 142 'zext' 'icmp_ln21_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 143 [1/1] (0.00ns)   --->   "%icmp_ln21_1_cast = zext i1 %icmp_ln21_1" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 143 'zext' 'icmp_ln21_1_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 144 [1/1] (0.00ns)   --->   "%icmp_ln21_9_cast = zext i1 %icmp_ln21_9" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 144 'zext' 'icmp_ln21_9_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%icmp_ln21_44_cast = zext i1 %icmp_ln21_44" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 145 'zext' 'icmp_ln21_44_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 146 [1/1] (0.00ns)   --->   "%icmp_ln21_53_cast = zext i1 %icmp_ln21_53" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 146 'zext' 'icmp_ln21_53_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 147 [1/1] (0.00ns)   --->   "%icmp_ln21_42_cast = zext i1 %icmp_ln21_42" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 147 'zext' 'icmp_ln21_42_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 148 [1/1] (0.00ns)   --->   "%icmp_ln21_49_cast = zext i1 %icmp_ln21_49" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 148 'zext' 'icmp_ln21_49_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%icmp_ln21_24_cast = zext i1 %icmp_ln21_24" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 149 'zext' 'icmp_ln21_24_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 150 [1/1] (0.00ns)   --->   "%icmp_ln21_59_cast = zext i1 %icmp_ln21_59" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 150 'zext' 'icmp_ln21_59_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 151 [1/1] (0.00ns)   --->   "%icmp_ln21_46_cast = zext i1 %icmp_ln21_46" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 151 'zext' 'icmp_ln21_46_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 152 [1/1] (0.00ns)   --->   "%icmp_ln21_10_cast = zext i1 %icmp_ln21_10" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 152 'zext' 'icmp_ln21_10_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 153 [1/1] (0.00ns)   --->   "%icmp_ln21_40_cast = zext i1 %icmp_ln21_40" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 153 'zext' 'icmp_ln21_40_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 154 [1/1] (0.00ns)   --->   "%icmp_ln21_52_cast = zext i1 %icmp_ln21_52" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 154 'zext' 'icmp_ln21_52_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 155 [1/1] (0.00ns)   --->   "%icmp_ln21_27_cast = zext i1 %icmp_ln21_27" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 155 'zext' 'icmp_ln21_27_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 156 [1/1] (0.00ns)   --->   "%icmp_ln21_37_cast = zext i1 %icmp_ln21_37" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 156 'zext' 'icmp_ln21_37_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 157 [1/1] (0.00ns)   --->   "%icmp_ln21_4_cast = zext i1 %icmp_ln21_4" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 157 'zext' 'icmp_ln21_4_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 158 [1/1] (0.00ns)   --->   "%icmp_ln21_17_cast = zext i1 %icmp_ln21_17" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 158 'zext' 'icmp_ln21_17_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 159 [1/1] (0.00ns)   --->   "%icmp_ln21_21_cast = zext i1 %icmp_ln21_21" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 159 'zext' 'icmp_ln21_21_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 160 [1/1] (0.00ns)   --->   "%icmp_ln21_23_cast = zext i1 %icmp_ln21_23" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 160 'zext' 'icmp_ln21_23_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 161 [1/1] (0.00ns)   --->   "%icmp_ln21_48_cast = zext i1 %icmp_ln21_48" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 161 'zext' 'icmp_ln21_48_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 162 [1/1] (0.00ns)   --->   "%icmp_ln21_16_cast = zext i1 %icmp_ln21_16" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 162 'zext' 'icmp_ln21_16_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 163 [1/1] (0.00ns)   --->   "%icmp_ln21_18_cast = zext i1 %icmp_ln21_18" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 163 'zext' 'icmp_ln21_18_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 164 [1/1] (0.00ns)   --->   "%icmp_ln21_51_cast = zext i1 %icmp_ln21_51" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 164 'zext' 'icmp_ln21_51_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 165 [1/1] (0.00ns)   --->   "%icmp_ln21_43_cast = zext i1 %icmp_ln21_43" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 165 'zext' 'icmp_ln21_43_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 166 [1/1] (0.00ns)   --->   "%icmp_ln21_14_cast = zext i1 %icmp_ln21_14" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 166 'zext' 'icmp_ln21_14_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 167 [1/1] (0.00ns)   --->   "%icmp_ln21_41_cast = zext i1 %icmp_ln21_41" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 167 'zext' 'icmp_ln21_41_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 168 [1/1] (0.00ns)   --->   "%icmp_ln21_55_cast = zext i1 %icmp_ln21_55" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 168 'zext' 'icmp_ln21_55_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 169 [1/1] (0.00ns)   --->   "%icmp_ln21_25_cast = zext i1 %icmp_ln21_25" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 169 'zext' 'icmp_ln21_25_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 170 [1/1] (0.00ns)   --->   "%icmp_ln21_2_cast = zext i1 %icmp_ln21_2" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 170 'zext' 'icmp_ln21_2_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 171 [1/1] (0.00ns)   --->   "%icmp_ln21_33_cast = zext i1 %icmp_ln21_33" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 171 'zext' 'icmp_ln21_33_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 172 [1/1] (0.00ns)   --->   "%icmp_ln21_32_cast = zext i1 %icmp_ln21_32" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 172 'zext' 'icmp_ln21_32_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 173 [1/1] (0.00ns)   --->   "%icmp_ln21_50_cast = zext i1 %icmp_ln21_50" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 173 'zext' 'icmp_ln21_50_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 174 [1/1] (0.00ns)   --->   "%icmp_ln21_34_cast = zext i1 %icmp_ln21_34" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 174 'zext' 'icmp_ln21_34_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 175 [1/1] (0.00ns)   --->   "%icmp_ln21_54_cast = zext i1 %icmp_ln21_54" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 175 'zext' 'icmp_ln21_54_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 176 [1/1] (0.00ns)   --->   "%icmp_ln21_29_cast = zext i1 %icmp_ln21_29" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 176 'zext' 'icmp_ln21_29_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 177 [1/1] (0.00ns)   --->   "%icmp_ln21_62_cast = zext i1 %icmp_ln21_62" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 177 'zext' 'icmp_ln21_62_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 178 [1/1] (0.00ns)   --->   "%icmp_ln21_63_cast = zext i1 %icmp_ln21_63" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 178 'zext' 'icmp_ln21_63_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 179 [1/1] (0.00ns)   --->   "%icmp_ln21_20_cast = zext i1 %icmp_ln21_20" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 179 'zext' 'icmp_ln21_20_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 180 [1/1] (0.00ns)   --->   "%icmp_ln21_61_cast = zext i1 %icmp_ln21_61" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 180 'zext' 'icmp_ln21_61_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 181 [1/1] (0.00ns)   --->   "%icmp_ln21_36_cast = zext i1 %icmp_ln21_36" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 181 'zext' 'icmp_ln21_36_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 182 [1/1] (0.00ns)   --->   "%icmp_ln21_60_cast = zext i1 %icmp_ln21_60" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 182 'zext' 'icmp_ln21_60_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 183 [1/1] (0.00ns)   --->   "%icmp_ln21_28_cast = zext i1 %icmp_ln21_28" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 183 'zext' 'icmp_ln21_28_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 184 [1/1] (0.00ns)   --->   "%icmp_ln21_8_cast = zext i1 %icmp_ln21_8" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 184 'zext' 'icmp_ln21_8_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 185 [1/1] (0.00ns)   --->   "%icmp_ln21_12_cast = zext i1 %icmp_ln21_12" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 185 'zext' 'icmp_ln21_12_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 186 [1/1] (0.00ns)   --->   "%icmp_ln21_7_cast = zext i1 %icmp_ln21_7" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 186 'zext' 'icmp_ln21_7_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 187 [1/1] (0.00ns)   --->   "%icmp_ln21_58_cast = zext i1 %icmp_ln21_58" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 187 'zext' 'icmp_ln21_58_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 188 [1/1] (0.00ns)   --->   "%icmp_ln21_6_cast = zext i1 %icmp_ln21_6" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 188 'zext' 'icmp_ln21_6_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 189 [1/1] (0.00ns)   --->   "%icmp_ln21_57_cast = zext i1 %icmp_ln21_57" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 189 'zext' 'icmp_ln21_57_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 190 [1/1] (0.00ns)   --->   "%icmp_ln21_26_cast = zext i1 %icmp_ln21_26" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 190 'zext' 'icmp_ln21_26_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 191 [1/1] (0.00ns)   --->   "%icmp_ln21_15_cast = zext i1 %icmp_ln21_15" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 191 'zext' 'icmp_ln21_15_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 192 [1/1] (0.00ns)   --->   "%icmp_ln21_56_cast = zext i1 %icmp_ln21_56" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 192 'zext' 'icmp_ln21_56_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 193 [1/1] (0.00ns)   --->   "%icmp_ln21_38_cast = zext i1 %icmp_ln21_38" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 193 'zext' 'icmp_ln21_38_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 194 [1/1] (0.00ns)   --->   "%icmp_ln21_11_cast = zext i1 %icmp_ln21_11" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 194 'zext' 'icmp_ln21_11_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 195 [1/1] (0.00ns)   --->   "%icmp_ln21_45_cast = zext i1 %icmp_ln21_45" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 195 'zext' 'icmp_ln21_45_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 196 [1/1] (0.00ns)   --->   "%icmp_ln21_19_cast = zext i1 %icmp_ln21_19" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 196 'zext' 'icmp_ln21_19_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 197 [1/1] (0.00ns)   --->   "%icmp_ln21_3_cast = zext i1 %icmp_ln21_3" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 197 'zext' 'icmp_ln21_3_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 198 [1/1] (0.00ns)   --->   "%icmp_ln21_47_cast = zext i1 %icmp_ln21_47" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 198 'zext' 'icmp_ln21_47_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 199 [1/1] (0.00ns)   --->   "%icmp_ln21_31_cast = zext i1 %icmp_ln21_31" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 199 'zext' 'icmp_ln21_31_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 200 [1/1] (0.00ns)   --->   "%icmp_ln21_13_cast = zext i1 %icmp_ln21_13" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 200 'zext' 'icmp_ln21_13_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 201 [1/1] (0.00ns)   --->   "%icmp_ln21_39_cast = zext i1 %icmp_ln21_39" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 201 'zext' 'icmp_ln21_39_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 202 [1/1] (0.00ns)   --->   "%icmp_ln21_30_cast = zext i1 %icmp_ln21_30" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 202 'zext' 'icmp_ln21_30_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 203 [1/1] (0.00ns)   --->   "%icmp_ln21_35_cast = zext i1 %icmp_ln21_35" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 203 'zext' 'icmp_ln21_35_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 204 [1/1] (0.00ns)   --->   "%icmp_ln21_22_cast = zext i1 %icmp_ln21_22" [bnn.cpp:21->bnn.cpp:64]   --->   Operation 204 'zext' 'icmp_ln21_22_cast' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 205 [1/1] (0.00ns)   --->   "%zext_ln64 = zext i1 %icmp_ln21_5" [bnn.cpp:64]   --->   Operation 205 'zext' 'zext_ln64' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 206 [1/1] (1.56ns)   --->   "%add_ln64_2 = add i2 %icmp_ln21_1_cast, i2 %icmp_ln21_cast" [bnn.cpp:64]   --->   Operation 206 'add' 'add_ln64_2' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 207 [1/1] (0.00ns)   --->   "%zext_ln64_1 = zext i2 %add_ln64_2" [bnn.cpp:64]   --->   Operation 207 'zext' 'zext_ln64_1' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 208 [1/1] (1.56ns)   --->   "%add_ln64_3 = add i2 %icmp_ln21_9_cast, i2 %icmp_ln21_44_cast" [bnn.cpp:64]   --->   Operation 208 'add' 'add_ln64_3' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 209 [1/1] (0.00ns)   --->   "%zext_ln64_2 = zext i2 %add_ln64_3" [bnn.cpp:64]   --->   Operation 209 'zext' 'zext_ln64_2' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 210 [1/1] (1.56ns)   --->   "%add_ln64_4 = add i3 %zext_ln64_2, i3 %zext_ln64_1" [bnn.cpp:64]   --->   Operation 210 'add' 'add_ln64_4' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 211 [1/1] (1.56ns)   --->   "%add_ln64_5 = add i2 %icmp_ln21_53_cast, i2 %icmp_ln21_42_cast" [bnn.cpp:64]   --->   Operation 211 'add' 'add_ln64_5' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 212 [1/1] (0.00ns)   --->   "%zext_ln64_4 = zext i2 %add_ln64_5" [bnn.cpp:64]   --->   Operation 212 'zext' 'zext_ln64_4' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 213 [1/1] (1.56ns)   --->   "%add_ln64_6 = add i2 %icmp_ln21_49_cast, i2 %icmp_ln21_24_cast" [bnn.cpp:64]   --->   Operation 213 'add' 'add_ln64_6' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 214 [1/1] (0.00ns)   --->   "%zext_ln64_5 = zext i2 %add_ln64_6" [bnn.cpp:64]   --->   Operation 214 'zext' 'zext_ln64_5' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 215 [1/1] (1.56ns)   --->   "%add_ln64_7 = add i3 %zext_ln64_5, i3 %zext_ln64_4" [bnn.cpp:64]   --->   Operation 215 'add' 'add_ln64_7' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 216 [1/1] (1.56ns)   --->   "%add_ln64_9 = add i2 %icmp_ln21_59_cast, i2 %icmp_ln21_46_cast" [bnn.cpp:64]   --->   Operation 216 'add' 'add_ln64_9' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 217 [1/1] (0.00ns)   --->   "%zext_ln64_8 = zext i2 %add_ln64_9" [bnn.cpp:64]   --->   Operation 217 'zext' 'zext_ln64_8' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 218 [1/1] (1.56ns)   --->   "%add_ln64_10 = add i2 %icmp_ln21_10_cast, i2 %icmp_ln21_40_cast" [bnn.cpp:64]   --->   Operation 218 'add' 'add_ln64_10' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 219 [1/1] (0.00ns)   --->   "%zext_ln64_9 = zext i2 %add_ln64_10" [bnn.cpp:64]   --->   Operation 219 'zext' 'zext_ln64_9' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 220 [1/1] (1.56ns)   --->   "%add_ln64_11 = add i3 %zext_ln64_9, i3 %zext_ln64_8" [bnn.cpp:64]   --->   Operation 220 'add' 'add_ln64_11' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 221 [1/1] (1.56ns)   --->   "%add_ln64_12 = add i2 %icmp_ln21_52_cast, i2 %icmp_ln21_27_cast" [bnn.cpp:64]   --->   Operation 221 'add' 'add_ln64_12' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 222 [1/1] (0.00ns)   --->   "%zext_ln64_11 = zext i2 %add_ln64_12" [bnn.cpp:64]   --->   Operation 222 'zext' 'zext_ln64_11' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 223 [1/1] (1.56ns)   --->   "%add_ln64_13 = add i2 %icmp_ln21_37_cast, i2 %icmp_ln21_4_cast" [bnn.cpp:64]   --->   Operation 223 'add' 'add_ln64_13' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 224 [1/1] (0.00ns)   --->   "%zext_ln64_12 = zext i2 %add_ln64_13" [bnn.cpp:64]   --->   Operation 224 'zext' 'zext_ln64_12' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 225 [1/1] (1.56ns)   --->   "%add_ln64_14 = add i3 %zext_ln64_12, i3 %zext_ln64_11" [bnn.cpp:64]   --->   Operation 225 'add' 'add_ln64_14' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 226 [1/1] (1.56ns)   --->   "%add_ln64_17 = add i2 %icmp_ln21_17_cast, i2 %icmp_ln21_21_cast" [bnn.cpp:64]   --->   Operation 226 'add' 'add_ln64_17' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 227 [1/1] (0.00ns)   --->   "%zext_ln64_16 = zext i2 %add_ln64_17" [bnn.cpp:64]   --->   Operation 227 'zext' 'zext_ln64_16' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 228 [1/1] (1.56ns)   --->   "%add_ln64_18 = add i2 %icmp_ln21_23_cast, i2 %icmp_ln21_48_cast" [bnn.cpp:64]   --->   Operation 228 'add' 'add_ln64_18' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 229 [1/1] (0.00ns)   --->   "%zext_ln64_17 = zext i2 %add_ln64_18" [bnn.cpp:64]   --->   Operation 229 'zext' 'zext_ln64_17' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 230 [1/1] (1.56ns)   --->   "%add_ln64_19 = add i3 %zext_ln64_17, i3 %zext_ln64_16" [bnn.cpp:64]   --->   Operation 230 'add' 'add_ln64_19' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 231 [1/1] (1.56ns)   --->   "%add_ln64_20 = add i2 %icmp_ln21_16_cast, i2 %icmp_ln21_18_cast" [bnn.cpp:64]   --->   Operation 231 'add' 'add_ln64_20' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 232 [1/1] (0.00ns)   --->   "%zext_ln64_19 = zext i2 %add_ln64_20" [bnn.cpp:64]   --->   Operation 232 'zext' 'zext_ln64_19' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 233 [1/1] (1.56ns)   --->   "%add_ln64_21 = add i2 %icmp_ln21_51_cast, i2 %icmp_ln21_43_cast" [bnn.cpp:64]   --->   Operation 233 'add' 'add_ln64_21' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 234 [1/1] (0.00ns)   --->   "%zext_ln64_20 = zext i2 %add_ln64_21" [bnn.cpp:64]   --->   Operation 234 'zext' 'zext_ln64_20' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 235 [1/1] (1.56ns)   --->   "%add_ln64_22 = add i3 %zext_ln64_20, i3 %zext_ln64_19" [bnn.cpp:64]   --->   Operation 235 'add' 'add_ln64_22' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 236 [1/1] (1.56ns)   --->   "%add_ln64_24 = add i2 %icmp_ln21_14_cast, i2 %icmp_ln21_41_cast" [bnn.cpp:64]   --->   Operation 236 'add' 'add_ln64_24' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 237 [1/1] (0.00ns)   --->   "%zext_ln64_23 = zext i2 %add_ln64_24" [bnn.cpp:64]   --->   Operation 237 'zext' 'zext_ln64_23' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 238 [1/1] (1.56ns)   --->   "%add_ln64_25 = add i2 %icmp_ln21_55_cast, i2 %icmp_ln21_25_cast" [bnn.cpp:64]   --->   Operation 238 'add' 'add_ln64_25' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 239 [1/1] (0.00ns)   --->   "%zext_ln64_24 = zext i2 %add_ln64_25" [bnn.cpp:64]   --->   Operation 239 'zext' 'zext_ln64_24' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 240 [1/1] (1.56ns)   --->   "%add_ln64_26 = add i3 %zext_ln64_24, i3 %zext_ln64_23" [bnn.cpp:64]   --->   Operation 240 'add' 'add_ln64_26' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 241 [1/1] (1.56ns)   --->   "%add_ln64_27 = add i2 %icmp_ln21_2_cast, i2 %icmp_ln21_33_cast" [bnn.cpp:64]   --->   Operation 241 'add' 'add_ln64_27' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 242 [1/1] (0.00ns)   --->   "%zext_ln64_26 = zext i2 %add_ln64_27" [bnn.cpp:64]   --->   Operation 242 'zext' 'zext_ln64_26' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 243 [1/1] (1.56ns)   --->   "%add_ln64_28 = add i2 %icmp_ln21_32_cast, i2 %icmp_ln21_50_cast" [bnn.cpp:64]   --->   Operation 243 'add' 'add_ln64_28' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 244 [1/1] (0.00ns)   --->   "%zext_ln64_27 = zext i2 %add_ln64_28" [bnn.cpp:64]   --->   Operation 244 'zext' 'zext_ln64_27' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 245 [1/1] (1.56ns)   --->   "%add_ln64_29 = add i3 %zext_ln64_27, i3 %zext_ln64_26" [bnn.cpp:64]   --->   Operation 245 'add' 'add_ln64_29' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 246 [1/1] (1.56ns)   --->   "%add_ln64_33 = add i2 %icmp_ln21_34_cast, i2 %icmp_ln21_54_cast" [bnn.cpp:64]   --->   Operation 246 'add' 'add_ln64_33' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 247 [1/1] (0.00ns)   --->   "%zext_ln64_32 = zext i2 %add_ln64_33" [bnn.cpp:64]   --->   Operation 247 'zext' 'zext_ln64_32' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 248 [1/1] (1.56ns)   --->   "%add_ln64_34 = add i2 %icmp_ln21_29_cast, i2 %icmp_ln21_62_cast" [bnn.cpp:64]   --->   Operation 248 'add' 'add_ln64_34' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 249 [1/1] (0.00ns)   --->   "%zext_ln64_33 = zext i2 %add_ln64_34" [bnn.cpp:64]   --->   Operation 249 'zext' 'zext_ln64_33' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 250 [1/1] (1.56ns)   --->   "%add_ln64_35 = add i3 %zext_ln64_33, i3 %zext_ln64_32" [bnn.cpp:64]   --->   Operation 250 'add' 'add_ln64_35' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 251 [1/1] (1.56ns)   --->   "%add_ln64_36 = add i2 %icmp_ln21_63_cast, i2 %icmp_ln21_20_cast" [bnn.cpp:64]   --->   Operation 251 'add' 'add_ln64_36' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 252 [1/1] (0.00ns)   --->   "%zext_ln64_35 = zext i2 %add_ln64_36" [bnn.cpp:64]   --->   Operation 252 'zext' 'zext_ln64_35' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 253 [1/1] (1.56ns)   --->   "%add_ln64_37 = add i2 %icmp_ln21_61_cast, i2 %icmp_ln21_36_cast" [bnn.cpp:64]   --->   Operation 253 'add' 'add_ln64_37' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 254 [1/1] (0.00ns)   --->   "%zext_ln64_36 = zext i2 %add_ln64_37" [bnn.cpp:64]   --->   Operation 254 'zext' 'zext_ln64_36' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 255 [1/1] (1.56ns)   --->   "%add_ln64_38 = add i3 %zext_ln64_36, i3 %zext_ln64_35" [bnn.cpp:64]   --->   Operation 255 'add' 'add_ln64_38' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 256 [1/1] (1.56ns)   --->   "%add_ln64_40 = add i2 %icmp_ln21_60_cast, i2 %icmp_ln21_28_cast" [bnn.cpp:64]   --->   Operation 256 'add' 'add_ln64_40' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 257 [1/1] (0.00ns)   --->   "%zext_ln64_39 = zext i2 %add_ln64_40" [bnn.cpp:64]   --->   Operation 257 'zext' 'zext_ln64_39' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 258 [1/1] (1.56ns)   --->   "%add_ln64_41 = add i2 %icmp_ln21_8_cast, i2 %icmp_ln21_12_cast" [bnn.cpp:64]   --->   Operation 258 'add' 'add_ln64_41' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 259 [1/1] (0.00ns)   --->   "%zext_ln64_40 = zext i2 %add_ln64_41" [bnn.cpp:64]   --->   Operation 259 'zext' 'zext_ln64_40' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 260 [1/1] (1.56ns)   --->   "%add_ln64_42 = add i3 %zext_ln64_40, i3 %zext_ln64_39" [bnn.cpp:64]   --->   Operation 260 'add' 'add_ln64_42' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 261 [1/1] (1.56ns)   --->   "%add_ln64_43 = add i2 %icmp_ln21_7_cast, i2 %icmp_ln21_58_cast" [bnn.cpp:64]   --->   Operation 261 'add' 'add_ln64_43' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 262 [1/1] (0.00ns)   --->   "%zext_ln64_42 = zext i2 %add_ln64_43" [bnn.cpp:64]   --->   Operation 262 'zext' 'zext_ln64_42' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 263 [1/1] (1.56ns)   --->   "%add_ln64_44 = add i2 %icmp_ln21_6_cast, i2 %icmp_ln21_57_cast" [bnn.cpp:64]   --->   Operation 263 'add' 'add_ln64_44' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 264 [1/1] (0.00ns)   --->   "%zext_ln64_43 = zext i2 %add_ln64_44" [bnn.cpp:64]   --->   Operation 264 'zext' 'zext_ln64_43' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 265 [1/1] (1.56ns)   --->   "%add_ln64_45 = add i3 %zext_ln64_43, i3 %zext_ln64_42" [bnn.cpp:64]   --->   Operation 265 'add' 'add_ln64_45' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 266 [1/1] (1.56ns)   --->   "%add_ln64_48 = add i2 %icmp_ln21_26_cast, i2 %icmp_ln21_15_cast" [bnn.cpp:64]   --->   Operation 266 'add' 'add_ln64_48' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 267 [1/1] (0.00ns)   --->   "%zext_ln64_47 = zext i2 %add_ln64_48" [bnn.cpp:64]   --->   Operation 267 'zext' 'zext_ln64_47' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 268 [1/1] (1.56ns)   --->   "%add_ln64_49 = add i2 %icmp_ln21_56_cast, i2 %icmp_ln21_38_cast" [bnn.cpp:64]   --->   Operation 268 'add' 'add_ln64_49' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 269 [1/1] (0.00ns)   --->   "%zext_ln64_48 = zext i2 %add_ln64_49" [bnn.cpp:64]   --->   Operation 269 'zext' 'zext_ln64_48' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 270 [1/1] (1.56ns)   --->   "%add_ln64_50 = add i3 %zext_ln64_48, i3 %zext_ln64_47" [bnn.cpp:64]   --->   Operation 270 'add' 'add_ln64_50' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 271 [1/1] (1.56ns)   --->   "%add_ln64_51 = add i2 %icmp_ln21_11_cast, i2 %icmp_ln21_45_cast" [bnn.cpp:64]   --->   Operation 271 'add' 'add_ln64_51' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 272 [1/1] (0.00ns)   --->   "%zext_ln64_50 = zext i2 %add_ln64_51" [bnn.cpp:64]   --->   Operation 272 'zext' 'zext_ln64_50' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 273 [1/1] (1.56ns)   --->   "%add_ln64_52 = add i2 %icmp_ln21_19_cast, i2 %icmp_ln21_3_cast" [bnn.cpp:64]   --->   Operation 273 'add' 'add_ln64_52' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 274 [1/1] (0.00ns)   --->   "%zext_ln64_51 = zext i2 %add_ln64_52" [bnn.cpp:64]   --->   Operation 274 'zext' 'zext_ln64_51' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 275 [1/1] (1.56ns)   --->   "%add_ln64_53 = add i3 %zext_ln64_51, i3 %zext_ln64_50" [bnn.cpp:64]   --->   Operation 275 'add' 'add_ln64_53' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 276 [1/1] (1.56ns)   --->   "%add_ln64_55 = add i2 %icmp_ln21_47_cast, i2 %icmp_ln21_31_cast" [bnn.cpp:64]   --->   Operation 276 'add' 'add_ln64_55' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 277 [1/1] (0.00ns)   --->   "%zext_ln64_54 = zext i2 %add_ln64_55" [bnn.cpp:64]   --->   Operation 277 'zext' 'zext_ln64_54' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 278 [1/1] (1.56ns)   --->   "%add_ln64_56 = add i2 %icmp_ln21_13_cast, i2 %icmp_ln21_39_cast" [bnn.cpp:64]   --->   Operation 278 'add' 'add_ln64_56' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 279 [1/1] (0.00ns)   --->   "%zext_ln64_55 = zext i2 %add_ln64_56" [bnn.cpp:64]   --->   Operation 279 'zext' 'zext_ln64_55' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 280 [1/1] (1.56ns)   --->   "%add_ln64_57 = add i3 %zext_ln64_55, i3 %zext_ln64_54" [bnn.cpp:64]   --->   Operation 280 'add' 'add_ln64_57' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 281 [1/1] (1.56ns)   --->   "%add_ln64_58 = add i2 %icmp_ln21_30_cast, i2 %icmp_ln21_35_cast" [bnn.cpp:64]   --->   Operation 281 'add' 'add_ln64_58' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 282 [1/1] (0.00ns)   --->   "%zext_ln64_57 = zext i2 %add_ln64_58" [bnn.cpp:64]   --->   Operation 282 'zext' 'zext_ln64_57' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 283 [1/1] (1.56ns)   --->   "%add_ln64_59 = add i2 %icmp_ln21_22_cast, i2 %zext_ln64" [bnn.cpp:64]   --->   Operation 283 'add' 'add_ln64_59' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 284 [1/1] (0.00ns)   --->   "%zext_ln64_58 = zext i2 %add_ln64_59" [bnn.cpp:64]   --->   Operation 284 'zext' 'zext_ln64_58' <Predicate = (!icmp_ln61)> <Delay = 0.00>
+ST_1 : Operation 285 [1/1] (1.56ns)   --->   "%add_ln64_60 = add i3 %zext_ln64_58, i3 %zext_ln64_57" [bnn.cpp:64]   --->   Operation 285 'add' 'add_ln64_60' <Predicate = (!icmp_ln61)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 286 [1/1] (1.58ns)   --->   "%store_ln61 = store i4 %add_ln61, i4 %x" [bnn.cpp:61]   --->   Operation 286 'store' 'store_ln61' <Predicate = (!icmp_ln61)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 6.99>
+ST_2 : Operation 287 [1/1] (0.00ns)   --->   "%zext_ln64_3 = zext i3 %add_ln64_4" [bnn.cpp:64]   --->   Operation 287 'zext' 'zext_ln64_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 288 [1/1] (0.00ns)   --->   "%zext_ln64_6 = zext i3 %add_ln64_7" [bnn.cpp:64]   --->   Operation 288 'zext' 'zext_ln64_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 289 [1/1] (1.65ns)   --->   "%add_ln64_8 = add i4 %zext_ln64_6, i4 %zext_ln64_3" [bnn.cpp:64]   --->   Operation 289 'add' 'add_ln64_8' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 290 [1/1] (0.00ns)   --->   "%zext_ln64_7 = zext i4 %add_ln64_8" [bnn.cpp:64]   --->   Operation 290 'zext' 'zext_ln64_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 291 [1/1] (0.00ns)   --->   "%zext_ln64_10 = zext i3 %add_ln64_11" [bnn.cpp:64]   --->   Operation 291 'zext' 'zext_ln64_10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 292 [1/1] (0.00ns)   --->   "%zext_ln64_13 = zext i3 %add_ln64_14" [bnn.cpp:64]   --->   Operation 292 'zext' 'zext_ln64_13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 293 [1/1] (1.65ns)   --->   "%add_ln64_15 = add i4 %zext_ln64_13, i4 %zext_ln64_10" [bnn.cpp:64]   --->   Operation 293 'add' 'add_ln64_15' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 294 [1/1] (0.00ns)   --->   "%zext_ln64_14 = zext i4 %add_ln64_15" [bnn.cpp:64]   --->   Operation 294 'zext' 'zext_ln64_14' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 295 [1/1] (1.73ns)   --->   "%add_ln64_16 = add i5 %zext_ln64_14, i5 %zext_ln64_7" [bnn.cpp:64]   --->   Operation 295 'add' 'add_ln64_16' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 296 [1/1] (0.00ns)   --->   "%zext_ln64_15 = zext i5 %add_ln64_16" [bnn.cpp:64]   --->   Operation 296 'zext' 'zext_ln64_15' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 297 [1/1] (0.00ns)   --->   "%zext_ln64_18 = zext i3 %add_ln64_19" [bnn.cpp:64]   --->   Operation 297 'zext' 'zext_ln64_18' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 298 [1/1] (0.00ns)   --->   "%zext_ln64_21 = zext i3 %add_ln64_22" [bnn.cpp:64]   --->   Operation 298 'zext' 'zext_ln64_21' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 299 [1/1] (1.65ns)   --->   "%add_ln64_23 = add i4 %zext_ln64_21, i4 %zext_ln64_18" [bnn.cpp:64]   --->   Operation 299 'add' 'add_ln64_23' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 300 [1/1] (0.00ns)   --->   "%zext_ln64_22 = zext i4 %add_ln64_23" [bnn.cpp:64]   --->   Operation 300 'zext' 'zext_ln64_22' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 301 [1/1] (0.00ns)   --->   "%zext_ln64_25 = zext i3 %add_ln64_26" [bnn.cpp:64]   --->   Operation 301 'zext' 'zext_ln64_25' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 302 [1/1] (0.00ns)   --->   "%zext_ln64_28 = zext i3 %add_ln64_29" [bnn.cpp:64]   --->   Operation 302 'zext' 'zext_ln64_28' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 303 [1/1] (1.65ns)   --->   "%add_ln64_30 = add i4 %zext_ln64_28, i4 %zext_ln64_25" [bnn.cpp:64]   --->   Operation 303 'add' 'add_ln64_30' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 304 [1/1] (0.00ns)   --->   "%zext_ln64_29 = zext i4 %add_ln64_30" [bnn.cpp:64]   --->   Operation 304 'zext' 'zext_ln64_29' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 305 [1/1] (1.73ns)   --->   "%add_ln64_31 = add i5 %zext_ln64_29, i5 %zext_ln64_22" [bnn.cpp:64]   --->   Operation 305 'add' 'add_ln64_31' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 306 [1/1] (0.00ns)   --->   "%zext_ln64_30 = zext i5 %add_ln64_31" [bnn.cpp:64]   --->   Operation 306 'zext' 'zext_ln64_30' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 307 [1/1] (1.78ns)   --->   "%add_ln64_32 = add i6 %zext_ln64_30, i6 %zext_ln64_15" [bnn.cpp:64]   --->   Operation 307 'add' 'add_ln64_32' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 308 [1/1] (0.00ns)   --->   "%zext_ln64_31 = zext i6 %add_ln64_32" [bnn.cpp:64]   --->   Operation 308 'zext' 'zext_ln64_31' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 309 [1/1] (0.00ns)   --->   "%zext_ln64_34 = zext i3 %add_ln64_35" [bnn.cpp:64]   --->   Operation 309 'zext' 'zext_ln64_34' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 310 [1/1] (0.00ns)   --->   "%zext_ln64_37 = zext i3 %add_ln64_38" [bnn.cpp:64]   --->   Operation 310 'zext' 'zext_ln64_37' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 311 [1/1] (1.65ns)   --->   "%add_ln64_39 = add i4 %zext_ln64_37, i4 %zext_ln64_34" [bnn.cpp:64]   --->   Operation 311 'add' 'add_ln64_39' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 312 [1/1] (0.00ns)   --->   "%zext_ln64_38 = zext i4 %add_ln64_39" [bnn.cpp:64]   --->   Operation 312 'zext' 'zext_ln64_38' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 313 [1/1] (0.00ns)   --->   "%zext_ln64_41 = zext i3 %add_ln64_42" [bnn.cpp:64]   --->   Operation 313 'zext' 'zext_ln64_41' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 314 [1/1] (0.00ns)   --->   "%zext_ln64_44 = zext i3 %add_ln64_45" [bnn.cpp:64]   --->   Operation 314 'zext' 'zext_ln64_44' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 315 [1/1] (1.65ns)   --->   "%add_ln64_46 = add i4 %zext_ln64_44, i4 %zext_ln64_41" [bnn.cpp:64]   --->   Operation 315 'add' 'add_ln64_46' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 316 [1/1] (0.00ns)   --->   "%zext_ln64_45 = zext i4 %add_ln64_46" [bnn.cpp:64]   --->   Operation 316 'zext' 'zext_ln64_45' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 317 [1/1] (1.73ns)   --->   "%add_ln64_47 = add i5 %zext_ln64_45, i5 %zext_ln64_38" [bnn.cpp:64]   --->   Operation 317 'add' 'add_ln64_47' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 318 [1/1] (0.00ns)   --->   "%zext_ln64_46 = zext i5 %add_ln64_47" [bnn.cpp:64]   --->   Operation 318 'zext' 'zext_ln64_46' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 319 [1/1] (0.00ns)   --->   "%zext_ln64_49 = zext i3 %add_ln64_50" [bnn.cpp:64]   --->   Operation 319 'zext' 'zext_ln64_49' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 320 [1/1] (0.00ns)   --->   "%zext_ln64_52 = zext i3 %add_ln64_53" [bnn.cpp:64]   --->   Operation 320 'zext' 'zext_ln64_52' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 321 [1/1] (1.65ns)   --->   "%add_ln64_54 = add i4 %zext_ln64_52, i4 %zext_ln64_49" [bnn.cpp:64]   --->   Operation 321 'add' 'add_ln64_54' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 322 [1/1] (0.00ns)   --->   "%zext_ln64_53 = zext i4 %add_ln64_54" [bnn.cpp:64]   --->   Operation 322 'zext' 'zext_ln64_53' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 323 [1/1] (0.00ns)   --->   "%zext_ln64_56 = zext i3 %add_ln64_57" [bnn.cpp:64]   --->   Operation 323 'zext' 'zext_ln64_56' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 324 [1/1] (0.00ns)   --->   "%zext_ln64_59 = zext i3 %add_ln64_60" [bnn.cpp:64]   --->   Operation 324 'zext' 'zext_ln64_59' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 325 [1/1] (1.65ns)   --->   "%add_ln64_61 = add i4 %zext_ln64_59, i4 %zext_ln64_56" [bnn.cpp:64]   --->   Operation 325 'add' 'add_ln64_61' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 326 [1/1] (0.00ns)   --->   "%zext_ln64_60 = zext i4 %add_ln64_61" [bnn.cpp:64]   --->   Operation 326 'zext' 'zext_ln64_60' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 327 [1/1] (1.73ns)   --->   "%add_ln64_62 = add i5 %zext_ln64_60, i5 %zext_ln64_53" [bnn.cpp:64]   --->   Operation 327 'add' 'add_ln64_62' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 328 [1/1] (0.00ns)   --->   "%zext_ln64_61 = zext i5 %add_ln64_62" [bnn.cpp:64]   --->   Operation 328 'zext' 'zext_ln64_61' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 329 [1/1] (1.78ns)   --->   "%add_ln64_63 = add i6 %zext_ln64_61, i6 %zext_ln64_46" [bnn.cpp:64]   --->   Operation 329 'add' 'add_ln64_63' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 330 [1/1] (0.00ns)   --->   "%zext_ln64_62 = zext i6 %add_ln64_63" [bnn.cpp:64]   --->   Operation 330 'zext' 'zext_ln64_62' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 331 [1/1] (1.82ns)   --->   "%add_ln64 = add i7 %zext_ln64_62, i7 %zext_ln64_31" [bnn.cpp:64]   --->   Operation 331 'add' 'add_ln64' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 340 [1/1] (1.58ns)   --->   "%ret_ln68 = ret" [bnn.cpp:68]   --->   Operation 340 'ret' 'ret_ln68' <Predicate = (icmp_ln61)> <Delay = 1.58>
+
+State 3 <SV = 2> <Delay = 2.32>
+ST_3 : Operation 332 [1/1] (0.00ns)   --->   "%zext_ln61 = zext i4 %x_1" [bnn.cpp:61]   --->   Operation 332 'zext' 'zext_ln61' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 333 [1/1] (0.00ns)   --->   "%specpipeline_ln61 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [bnn.cpp:61]   --->   Operation 333 'specpipeline' 'specpipeline_ln61' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 334 [1/1] (0.00ns)   --->   "%specloopname_ln61 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [bnn.cpp:61]   --->   Operation 334 'specloopname' 'specloopname_ln61' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 335 [1/1] (0.00ns)   --->   "%cnt = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i7.i8, i7 %add_ln64, i8 0" [bnn.cpp:64]   --->   Operation 335 'bitconcatenate' 'cnt' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 336 [1/1] (0.00ns)   --->   "%zext_ln62 = zext i15 %cnt" [bnn.cpp:62]   --->   Operation 336 'zext' 'zext_ln62' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 337 [1/1] (0.00ns)   --->   "%res_addr = getelementptr i32 %res, i64 0, i64 %zext_ln61" [bnn.cpp:66]   --->   Operation 337 'getelementptr' 'res_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 338 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln66 = store i32 %zext_ln62, i4 %res_addr" [bnn.cpp:66]   --->   Operation 338 'store' 'store_ln66' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 339 [1/1] (0.00ns)   --->   "%br_ln61 = br void %for.body" [bnn.cpp:61]   --->   Operation 339 'br' 'br_ln61' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.682ns
+The critical path consists of the following:
+	wire read operation ('A_44_val_read', bnn.cpp:47) on port 'A_44_val' (bnn.cpp:47) [86]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln21_44', bnn.cpp:21->bnn.cpp:64) [187]  (2.552 ns)
+	'add' operation 2 bit ('add_ln64_3', bnn.cpp:64) [273]  (1.565 ns)
+	'add' operation 3 bit ('add_ln64_4', bnn.cpp:64) [275]  (1.565 ns)
+
+ <State 2>: 6.990ns
+The critical path consists of the following:
+	'add' operation 4 bit ('add_ln64_8', bnn.cpp:64) [283]  (1.650 ns)
+	'add' operation 5 bit ('add_ln64_16', bnn.cpp:64) [299]  (1.735 ns)
+	'add' operation 6 bit ('add_ln64_32', bnn.cpp:64) [331]  (1.780 ns)
+	'add' operation 7 bit ('add_ln64', bnn.cpp:64) [395]  (1.825 ns)
+
+ <State 3>: 2.322ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('res_addr', bnn.cpp:66) [398]  (0.000 ns)
+	'store' operation 0 bit ('store_ln66', bnn.cpp:66) of variable 'zext_ln62', bnn.cpp:62 on array 'res' [399]  (2.322 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

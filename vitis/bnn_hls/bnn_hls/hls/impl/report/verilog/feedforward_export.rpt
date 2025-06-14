@@ -4,21 +4,21 @@ Implementation tool: Xilinx Vivado v.2024.2
 Project:             bnn_hls
 Solution:            hls
 Device target:       xc7z020-clg400-1
-Report date:         Fri Jun 13 14:44:43 -0700 2025
+Report date:         Fri Jun 13 23:31:35 -0700 2025
 
 #=== Post-Implementation Resource usage ===
-SLICE:          299
-LUT:            793
-FF:             514
+SLICE:          740
+LUT:           2206
+FF:            1843
 DSP:              0
-BRAM:            14
+BRAM:             5
 URAM:             0
 LATCH:            0
-SRL:              0
+SRL:              5
 CLB:              0
 
 #=== Final timing ===
 CP required:                     10.000
-CP achieved post-synthesis:      7.148
-CP achieved post-implementation: 6.677
+CP achieved post-synthesis:      5.667
+CP achieved post-implementation: 7.377
 Timing met
