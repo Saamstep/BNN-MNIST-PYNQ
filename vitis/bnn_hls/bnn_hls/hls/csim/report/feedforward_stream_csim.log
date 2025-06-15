@@ -1,0 +1,158 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../bnn.cpp in debug mode
+   Generating csim.exe
+
+Sample 0: Predicted = 5, Label = 5
+
+
+Sample 1: Predicted = 0, Label = 0
+
+
+Sample 2: Predicted = 4, Label = 4
+
+
+Sample 3: Predicted = 8, Label = 1
+
+
+Sample 4: Predicted = 9, Label = 9
+
+
+Sample 5: Predicted = 2, Label = 2
+
+
+Sample 6: Predicted = 1, Label = 1
+
+
+Sample 7: Predicted = 3, Label = 3
+
+
+Sample 8: Predicted = 1, Label = 1
+
+
+Sample 9: Predicted = 4, Label = 4
+
+
+Sample 10: Predicted = 3, Label = 3
+
+
+Sample 11: Predicted = 5, Label = 5
+
+
+Sample 12: Predicted = 3, Label = 3
+
+
+Sample 13: Predicted = 6, Label = 6
+
+
+Sample 14: Predicted = 1, Label = 1
+
+
+Sample 15: Predicted = 7, Label = 7
+
+
+Sample 16: Predicted = 2, Label = 2
+
+
+Sample 17: Predicted = 8, Label = 8
+
+
+Sample 18: Predicted = 6, Label = 6
+
+
+Sample 19: Predicted = 9, Label = 9
+
+
+Sample 20: Predicted = 4, Label = 4
+
+
+Sample 21: Predicted = 0, Label = 0
+
+
+Sample 22: Predicted = 4, Label = 9
+
+
+Sample 23: Predicted = 1, Label = 1
+
+
+Sample 24: Predicted = 3, Label = 1
+
+
+Sample 25: Predicted = 2, Label = 2
+
+
+Sample 26: Predicted = 4, Label = 4
+
+
+Sample 27: Predicted = 3, Label = 3
+
+
+Sample 28: Predicted = 2, Label = 2
+
+
+Sample 29: Predicted = 7, Label = 7
+
+
+Sample 30: Predicted = 3, Label = 3
+
+
+Sample 31: Predicted = 8, Label = 8
+
+
+Sample 32: Predicted = 6, Label = 6
+
+
+Sample 33: Predicted = 9, Label = 9
+
+
+Sample 34: Predicted = 0, Label = 0
+
+
+Sample 35: Predicted = 5, Label = 5
+
+
+Sample 36: Predicted = 6, Label = 6
+
+
+Sample 37: Predicted = 0, Label = 0
+
+
+Sample 38: Predicted = 7, Label = 7
+
+
+Sample 39: Predicted = 6, Label = 6
+
+
+Sample 40: Predicted = 1, Label = 1
+
+
+Sample 41: Predicted = 8, Label = 8
+
+
+Sample 42: Predicted = 7, Label = 7
+
+
+Sample 43: Predicted = 9, Label = 9
+
+
+Sample 44: Predicted = 3, Label = 3
+
+
+Sample 45: Predicted = 9, Label = 9
+
+
+Sample 46: Predicted = 8, Label = 8
+
+
+Sample 47: Predicted = 5, Label = 5
+
+
+Sample 48: Predicted = 3, Label = 9
+
+
+Sample 49: Predicted = 3, Label = 3
+
+Accuracy: 46 / 50
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

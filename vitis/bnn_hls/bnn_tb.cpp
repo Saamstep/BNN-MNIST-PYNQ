@@ -6,7 +6,8 @@
 #include <cassert>
 #include <ap_axi_sdata.h>
 
-#define SAM 1
+// #define SAM 1
+#define CLAY 1
 
 #ifdef SAM
 #define IMAGE_FILE "C:/ECEN529/bnn_final/mnistdataset/train-images.idx3-ubyte"
@@ -69,7 +70,7 @@ int main() {
     int correct = 0;
 
     // Test N samples
-    const int N = 5;
+    const int N = 50;
 
     for (int i = 0; i < N; ++i) {
         std::vector<uint8_t> image = load_image(image_file);

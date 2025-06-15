@@ -5,13 +5,13 @@
 # Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 # ==============================================================
-set ::env(PATH) "K:/Xilinx/Vitis/2024.2/win64/tools/fpo_v7_1;$::env(Path)"
-set ::env(PATH) "K:/Xilinx/Vitis/2024.2/win64/tools/fft_v9_1;$::env(Path)"
-set ::env(PATH) "K:/Xilinx/Vitis/2024.2/win64/tools/fir_v7_0;$::env(Path)"
-set ::env(PATH) "K:/Xilinx/Vitis/2024.2/win64/tools/dds_v6_0;$::env(Path)"
-set ::env(PATH) "K:/Xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/bin;$::env(Path)"
+set ::env(PATH) "C:/Xilinx/Vitis/2024.2/win64/tools/fpo_v7_1;$::env(Path)"
+set ::env(PATH) "C:/Xilinx/Vitis/2024.2/win64/tools/fft_v9_1;$::env(Path)"
+set ::env(PATH) "C:/Xilinx/Vitis/2024.2/win64/tools/fir_v7_0;$::env(Path)"
+set ::env(PATH) "C:/Xilinx/Vitis/2024.2/win64/tools/dds_v6_0;$::env(Path)"
+set ::env(PATH) "C:/Xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/bin;$::env(Path)"
 set_param hls.enable_hidden_option_error false
-set ::env(PATH) "$::env(PATH);K:/Xilinx/Vitis/2024.2/win64/csim"
+set ::env(PATH) "$::env(PATH);C:/Xilinx/Vitis/2024.2/win64/csim"
 ### C sim ###
 if {![file exists csim.exe]} {
   puts "@E C-simulation is not set up properly. Please re-run csim."

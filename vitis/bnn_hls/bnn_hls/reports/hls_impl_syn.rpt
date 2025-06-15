@@ -2,7 +2,7 @@
 == Vivado RTL Synthesis Results
 ================================================================
 + General Information:
-    * Date:            Sat Jun 14 08:58:24 -0700 2025
+    * Date:            Sat Jun 14 17:46:10 -0700 2025
     * Version:         2024.2 (Build 5238294 on Nov  8 2024)
     * Project:         bnn_hls
     * Solution:        hls (Vivado IP Flow Target)
@@ -29,8 +29,8 @@
 ================================================================
 == RTL Synthesis Resource Summary
 ================================================================
-LUT:              3266
-FF:               2518
+LUT:              3360
+FF:               2656
 DSP:              0
 BRAM:             4
 URAM:             0
@@ -52,47 +52,53 @@ SRL:              7
 ================================================================
 == RTL Synthesis Resources
 ================================================================
-+---------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
-| Name                                                    | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
-+---------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
-| inst                                                    | 3266 | 2518 |     | 4    |      |     |        |      |         |          |        |
-|   (inst)                                                |      | 73   |     |      |      |     |        |      |         |          |        |
-|   control_s_axi_U                                       | 27   | 25   |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_106_3_fu_5610     | 199  | 146  |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_106_3_fu_5610) | 176  | 144  |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_117_4_fu_5880     | 210  | 12   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_117_4_fu_5880) | 197  | 10   |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_124_5_fu_5888     | 150  | 80   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_124_5_fu_5888) | 135  | 78   |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_134_6_fu_6029     | 61   | 11   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_134_6_fu_6029) | 50   | 9    |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_143_7_fu_6034     | 22   | 8    |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_143_7_fu_6034) | 7    | 6    |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744     | 157  | 134  |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744) | 148  | 132  |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960     | 78   | 72   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960) | 69   | 70   |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_46_1_fu_4814      | 518  | 646  |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_46_1_fu_4814)  | 501  | 644  |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_88_1_fu_4012      | 1209 | 807  |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_88_1_fu_4012)  | 1186 | 805  |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_Pipeline_VITIS_LOOP_99_2_fu_5604      | 127  | 24   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_Pipeline_VITIS_LOOP_99_2_fu_5604)  | 112  | 22   |     |      |      |     |        |      |         |          |        |
-|   layer1_activations_1_U                                | 18   |      |     | 2    |      |     |        |      |         |          |        |
-|   layer1_activations_U                                  | 3    |      |     | 2    |      |     |        |      |         |          |        |
-|   layer2_activations_1_U                                | 71   | 63   |     |      |      |     |        |      |         |          |        |
-|   layer2_activations_2_U                                | 71   | 63   |     |      |      |     |        |      |         |          |        |
-|   layer2_activations_3_U                                | 71   | 63   |     |      |      |     |        |      |         |          |        |
-|   layer2_activations_U                                  | 72   | 63   |     |      |      |     |        |      |         |          |        |
-|   layer3_activations_U                                  | 72   | 63   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_input_stream_V_data_V_U                 | 55   | 55   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_data_V_U                | 43   | 69   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_dest_V_U                | 11   | 19   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_keep_V_U                | 5    | 5    |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_last_V_U                | 5    | 5    |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_strb_V_U                | 5    | 5    |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_user_V_U                | 6    | 7    |     |      |      |     |        |      |         |          |        |
-+---------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
++----------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                           | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++----------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                           | 3360 | 2656 |     | 4    |      |     |        |      |         |          |        |
+|   (inst)                                                       |      | 88   |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                              | 27   | 25   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_313_1_fu_4032     | 1228 | 830  |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_313_1_fu_4032) | 1207 | 828  |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_324_2_fu_5629     | 127  | 24   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_324_2_fu_5629) | 112  | 22   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_331_3_fu_5635     | 199  | 146  |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_331_3_fu_5635) | 176  | 144  |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_342_4_fu_5905     | 210  | 12   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_342_4_fu_5905) | 197  | 10   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_349_5_fu_5913     | 150  | 80   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_349_5_fu_5913) | 135  | 78   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_359_6_fu_6054     | 61   | 11   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_359_6_fu_6054) | 50   | 9    |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_368_7_fu_6059     | 20   | 8    |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_368_7_fu_6059) | 5    | 6    |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769     | 157  | 134  |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769) | 148  | 132  |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985     | 78   | 72   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985) | 69   | 70   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_stream_Pipeline_VITIS_LOOP_49_1_fu_4839      | 518  | 646  |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_49_1_fu_4839)  | 501  | 644  |     |      |      |     |        |      |         |          |        |
+|   layer1_activations_1_U                                       | 18   |      |     | 2    |      |     |        |      |         |          |        |
+|   layer1_activations_U                                         | 3    |      |     | 2    |      |     |        |      |         |          |        |
+|   layer2_activations_1_U                                       | 71   | 63   |     |      |      |     |        |      |         |          |        |
+|   layer2_activations_2_U                                       | 71   | 63   |     |      |      |     |        |      |         |          |        |
+|   layer2_activations_3_U                                       | 71   | 63   |     |      |      |     |        |      |         |          |        |
+|   layer2_activations_U                                         | 72   | 63   |     |      |      |     |        |      |         |          |        |
+|   layer3_activations_U                                         | 88   | 63   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_input_stream_V_data_V_U                        | 55   | 69   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_input_stream_V_dest_V_U                        | 13   | 19   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_input_stream_V_id_V_U                          | 10   | 13   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_input_stream_V_keep_V_U                        | 9    | 11   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_input_stream_V_strb_V_U                        | 9    | 11   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_input_stream_V_user_V_U                        | 8    | 7    |     |      |      |     |        |      |         |          |        |
+|   regslice_both_output_stream_V_data_V_U                       | 43   | 69   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_output_stream_V_dest_V_U                       | 11   | 19   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_output_stream_V_id_V_U                         | 8    | 13   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_output_stream_V_keep_V_U                       | 7    | 11   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_output_stream_V_last_V_U                       | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   regslice_both_output_stream_V_strb_V_U                       | 7    | 11   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_output_stream_V_user_V_U                       | 7    | 7    |     |      |      |     |        |      |         |          |        |
++----------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
 
 
 ================================================================
@@ -101,8 +107,8 @@ SRL:              7
 +-----------------------------------------------------------+-----------+--------+--------+
 | Criteria                                                  | Guideline | Actual | Status |
 +-----------------------------------------------------------+-----------+--------+--------+
-| LUT                                                       | 70%       | 6.14%  | OK     |
-| FD                                                        | 50%       | 2.37%  | OK     |
+| LUT                                                       | 70%       | 6.32%  | OK     |
+| FD                                                        | 50%       | 2.50%  | OK     |
 | LUTRAM+SRL                                                | 25%       | 1.88%  | OK     |
 | MUXF7                                                     | 15%       | 0.00%  | OK     |
 | DSP                                                       | 80%       | 0.00%  | OK     |
@@ -111,7 +117,7 @@ SRL:              7
 | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
 | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
 | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
-| Control Sets                                              | 998       | 37     | OK     |
+| Control Sets                                              | 998       | 48     | OK     |
 | Average Fanout for modules > 100k cells                   | 4         | 2.95   | OK     |
 | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
 | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
@@ -131,256 +137,256 @@ SRL:              7
 == RTL Synthesis Timing Paths
 ================================================================
 * Timing was met
-+-------+-------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path  | SLACK | STARTPOINT PIN                                                                   | ENDPOINT PIN                                                                     | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
-|       |       |                                                                                  |                                                                                  |              |            |                |          DELAY |        DELAY |
-+-------+-------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path1 | 4.333 | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]/C  | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]/D |            6 |          3 |          5.692 |          1.942 |        3.750 |
-| Path2 | 4.333 | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]/C | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[5]/D |            6 |          3 |          5.692 |          1.942 |        3.750 |
-| Path3 | 4.333 | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/add_ln51_27_reg_1893_reg[1]/C  | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[5]/D        |            6 |          3 |          5.692 |          1.942 |        3.750 |
-| Path4 | 4.403 | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]/C  | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]/D |            6 |          3 |          5.607 |          1.857 |        3.750 |
-| Path5 | 4.403 | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]/C | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]/D |            6 |          3 |          5.607 |          1.857 |        3.750 |
-+-------+-------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
++-------+-------+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                          | ENDPOINT PIN                                                                            | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                         |                                                                                         |              |            |                |          DELAY |        DELAY |
++-------+-------+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 4.333 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]/C  | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]/D |            6 |          3 |          5.692 |          1.942 |        3.750 |
+| Path2 | 4.333 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]/C | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]/D |            6 |          3 |          5.692 |          1.942 |        3.750 |
+| Path3 | 4.333 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]/C  | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]/D        |            6 |          3 |          5.692 |          1.942 |        3.750 |
+| Path4 | 4.403 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]/C  | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]/D |            6 |          3 |          5.607 |          1.857 |        3.750 |
+| Path5 | 4.403 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]/C | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]/D |            6 |          3 |          5.607 |          1.857 |        3.750 |
++-------+-------+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
 
-    +------------------------------------------------------------------------------------+----------------------+
-    | Path1 Cells                                                                        | Primitive Type       |
-    +------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/add_ln51_27_reg_1893_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +------------------------------------------------------------------------------------+----------------------+
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                               | Primitive Type       |
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------+----------------------+
 
-    +------------------------------------------------------------------------------------+----------------------+
-    | Path2 Cells                                                                        | Primitive Type       |
-    +------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/add_ln51_27_reg_1893_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +------------------------------------------------------------------------------------+----------------------+
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                               | Primitive Type       |
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------+----------------------+
 
-    +------------------------------------------------------------------------------------+----------------------+
-    | Path3 Cells                                                                        | Primitive Type       |
-    +------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/add_ln51_27_reg_1893_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +------------------------------------------------------------------------------------+----------------------+
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                               | Primitive Type       |
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------+----------------------+
 
-    +------------------------------------------------------------------------------------+----------------------+
-    | Path4 Cells                                                                        | Primitive Type       |
-    +------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/add_ln51_27_reg_1893_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +------------------------------------------------------------------------------------+----------------------+
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                               | Primitive Type       |
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------+----------------------+
 
-    +------------------------------------------------------------------------------------+----------------------+
-    | Path5 Cells                                                                        | Primitive Type       |
-    +------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/add_ln51_27_reg_1893_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_12_fu_5960/cnt_1_reg_1938_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_89_reg_3749_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_124_reg_3874_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_152_reg_3829_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_Pipeline_VITIS_LOOP_46_11_fu_5744/add_ln51_187_reg_3879_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +------------------------------------------------------------------------------------+----------------------+
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                               | Primitive Type       |
+    +-------------------------------------------------------------------------------------------+----------------------+
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
+    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
+    +-------------------------------------------------------------------------------------------+----------------------+
 
 
 ================================================================
 == RTL Synthesis Vivado Reports
 ================================================================
-+--------------------------+--------------------------------------------------------------------+
-| Report Type              | Report Location                                                    |
-+--------------------------+--------------------------------------------------------------------+
-| design_analysis          | impl/verilog/report/feedforward_design_analysis_synth.rpt          |
-| failfast                 | impl/verilog/report/feedforward_failfast_synth.rpt                 |
-| power                    | impl/verilog/report/feedforward_power_synth.rpt                    |
-| timing                   | impl/verilog/report/feedforward_timing_synth.rpt                   |
-| timing_paths             | impl/verilog/report/feedforward_timing_paths_synth.rpt             |
-| utilization              | impl/verilog/report/feedforward_utilization_synth.rpt              |
-| utilization_hierarchical | impl/verilog/report/feedforward_utilization_hierarchical_synth.rpt |
-+--------------------------+--------------------------------------------------------------------+
++--------------------------+---------------------------------------------------------------------------+
+| Report Type              | Report Location                                                           |
++--------------------------+---------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/feedforward_stream_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/feedforward_stream_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/feedforward_stream_power_synth.rpt                    |
+| timing                   | impl/verilog/report/feedforward_stream_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/feedforward_stream_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/feedforward_stream_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/feedforward_stream_utilization_hierarchical_synth.rpt |
++--------------------------+---------------------------------------------------------------------------+
 
 
