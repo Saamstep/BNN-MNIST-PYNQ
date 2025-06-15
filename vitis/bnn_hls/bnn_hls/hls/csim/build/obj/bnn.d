@@ -18,4 +18,5 @@ obj/bnn.o: ../../../../bnn.cpp \
   C:/Xilinx/Vitis/2024.2/include/ap_fixed.h \
   C:/Xilinx/Vitis/2024.2/include/etc/ap_fixed_base.h \
   C:/Xilinx/Vitis/2024.2/include/etc/ap_fixed_ref.h \
-  C:/Xilinx/Vitis/2024.2/include/etc/ap_fixed_special.h
+  C:/Xilinx/Vitis/2024.2/include/etc/ap_fixed_special.h \
+  ../../../../weights.h

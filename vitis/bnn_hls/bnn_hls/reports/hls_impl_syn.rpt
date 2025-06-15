@@ -2,7 +2,7 @@
 == Vivado RTL Synthesis Results
 ================================================================
 + General Information:
-    * Date:            Sat Jun 14 17:46:10 -0700 2025
+    * Date:            Sun Jun 15 01:09:27 -0700 2025
     * Version:         2024.2 (Build 5238294 on Nov  8 2024)
     * Project:         bnn_hls
     * Solution:        hls (Vivado IP Flow Target)
@@ -29,12 +29,12 @@
 ================================================================
 == RTL Synthesis Resource Summary
 ================================================================
-LUT:              3360
-FF:               2656
-DSP:              0
-BRAM:             4
+LUT:              2926
+FF:               2973
+DSP:              1
+BRAM:             49
 URAM:             0
-SRL:              7
+SRL:              256
 
 
 ================================================================
@@ -45,60 +45,60 @@ SRL:              7
 | Timing         | Period (ns) |
 +----------------+-------------+
 | Target         | 10.000      |
-| Post-Synthesis | 5.667       |
+| Post-Synthesis | 6.381       |
 +----------------+-------------+
 
 
 ================================================================
 == RTL Synthesis Resources
 ================================================================
-+----------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
-| Name                                                           | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
-+----------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
-| inst                                                           | 3360 | 2656 |     | 4    |      |     |        |      |         |          |        |
-|   (inst)                                                       |      | 88   |     |      |      |     |        |      |         |          |        |
-|   control_s_axi_U                                              | 27   | 25   |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_313_1_fu_4032     | 1228 | 830  |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_313_1_fu_4032) | 1207 | 828  |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_324_2_fu_5629     | 127  | 24   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_324_2_fu_5629) | 112  | 22   |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_331_3_fu_5635     | 199  | 146  |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_331_3_fu_5635) | 176  | 144  |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_342_4_fu_5905     | 210  | 12   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_342_4_fu_5905) | 197  | 10   |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_349_5_fu_5913     | 150  | 80   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_349_5_fu_5913) | 135  | 78   |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_359_6_fu_6054     | 61   | 11   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_359_6_fu_6054) | 50   | 9    |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_368_7_fu_6059     | 20   | 8    |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_368_7_fu_6059) | 5    | 6    |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769     | 157  | 134  |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769) | 148  | 132  |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985     | 78   | 72   |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985) | 69   | 70   |     |      |      |     |        |      |         |          |        |
-|   grp_feedforward_stream_Pipeline_VITIS_LOOP_49_1_fu_4839      | 518  | 646  |     |      |      |     |        |      |         |          |        |
-|     (grp_feedforward_stream_Pipeline_VITIS_LOOP_49_1_fu_4839)  | 501  | 644  |     |      |      |     |        |      |         |          |        |
-|   layer1_activations_1_U                                       | 18   |      |     | 2    |      |     |        |      |         |          |        |
-|   layer1_activations_U                                         | 3    |      |     | 2    |      |     |        |      |         |          |        |
-|   layer2_activations_1_U                                       | 71   | 63   |     |      |      |     |        |      |         |          |        |
-|   layer2_activations_2_U                                       | 71   | 63   |     |      |      |     |        |      |         |          |        |
-|   layer2_activations_3_U                                       | 71   | 63   |     |      |      |     |        |      |         |          |        |
-|   layer2_activations_U                                         | 72   | 63   |     |      |      |     |        |      |         |          |        |
-|   layer3_activations_U                                         | 88   | 63   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_input_stream_V_data_V_U                        | 55   | 69   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_input_stream_V_dest_V_U                        | 13   | 19   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_input_stream_V_id_V_U                          | 10   | 13   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_input_stream_V_keep_V_U                        | 9    | 11   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_input_stream_V_strb_V_U                        | 9    | 11   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_input_stream_V_user_V_U                        | 8    | 7    |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_data_V_U                       | 43   | 69   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_dest_V_U                       | 11   | 19   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_id_V_U                         | 8    | 13   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_keep_V_U                       | 7    | 11   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_last_V_U                       | 4    | 5    |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_strb_V_U                       | 7    | 11   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_output_stream_V_user_V_U                       | 7    | 7    |     |      |      |     |        |      |         |          |        |
-+----------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
++------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                         | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                         | 2926 | 2973 | 1   | 49   |      |     |        |      |         |          |        |
+|   (inst)                                                                     |      | 300  |     |      |      |     |        |      |         |          |        |
+|   X0_input_U                                                                 | 27   |      |     | 2    |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                            | 170  | 181  |     |      |      |     |        |      |         |          |        |
+|   gmem_m_axi_U                                                               | 1243 | 1701 |     | 2    |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_11_fu_943                                   | 16   | 41   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_11_fu_943)                               | 1    | 39   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_1_fu_802                                    | 52   | 68   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_1_fu_802)                                | 37   | 66   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_VITIS_LOOP_206_1_fu_810                     | 27   | 36   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_VITIS_LOOP_206_1_fu_810)                 | 5    | 34   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824                     | 121  | 24   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824)                 | 106  | 22   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_VITIS_LOOP_223_3_fu_830                     | 24   | 28   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_VITIS_LOOP_223_3_fu_830)                 | 1    | 26   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_VITIS_LOOP_233_4_fu_848                     | 211  | 12   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_VITIS_LOOP_233_4_fu_848)                 | 198  | 10   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_VITIS_LOOP_240_5_fu_856                     | 24   | 25   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_VITIS_LOOP_240_5_fu_856)                 | 11   | 23   |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_VITIS_LOOP_250_6_fu_938                     | 62   | 11   |     |      |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_VITIS_LOOP_250_6_fu_938)                 | 50   | 9    |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_21_fu_837     | 79   | 78   |     | 1    |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_21_fu_837) | 39   | 76   |     |      |      |     |        |      |         |          |        |
+|     W2_U                                                                     | 20   |      |     | 1    |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                 | 20   | 2    |     |      |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_fu_815      | 95   | 96   | 1   | 8    |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_fu_815)  | 56   | 92   |     |      |      |     |        |      |         |          |        |
+|     W1_U                                                                     |      | 1    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                 | 26   | 2    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_10ns_8ns_10ns_17_4_1_U5                                       | 13   | 1    | 1   | 8    |      |     |        |      |         |          |        |
+|   grp_feedforward_burst_Pipeline_VITIS_LOOP_49_1_fu_865                      | 280  | 54   |     | 32   |      |     |        |      |         |          |        |
+|     (grp_feedforward_burst_Pipeline_VITIS_LOOP_49_1_fu_865)                  | 31   | 52   |     |      |      |     |        |      |         |          |        |
+|     W3_U                                                                     | 80   |      |     | 32   |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                 | 169  | 2    |     |      |      |     |        |      |         |          |        |
+|   layer1_activations_1_U                                                     | 3    |      |     | 2    |      |     |        |      |         |          |        |
+|   layer1_activations_U                                                       | 17   |      |     | 2    |      |     |        |      |         |          |        |
+|   layer1_quant_U                                                             | 2    | 1    |     |      |      |     |        |      |         |          |        |
+|   layer2_activations_1_U                                                     | 84   | 63   |     |      |      |     |        |      |         |          |        |
+|   layer2_activations_2_U                                                     | 68   | 63   |     |      |      |     |        |      |         |          |        |
+|   layer2_activations_3_U                                                     | 101  | 63   |     |      |      |     |        |      |         |          |        |
+|   layer2_activations_U                                                       | 69   | 63   |     |      |      |     |        |      |         |          |        |
+|   layer2_quant_U                                                             | 80   | 2    |     |      |      |     |        |      |         |          |        |
+|   layer3_activations_U                                                       | 72   | 63   |     |      |      |     |        |      |         |          |        |
++------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
 
 
 ================================================================
@@ -107,18 +107,18 @@ SRL:              7
 +-----------------------------------------------------------+-----------+--------+--------+
 | Criteria                                                  | Guideline | Actual | Status |
 +-----------------------------------------------------------+-----------+--------+--------+
-| LUT                                                       | 70%       | 6.32%  | OK     |
-| FD                                                        | 50%       | 2.50%  | OK     |
-| LUTRAM+SRL                                                | 25%       | 1.88%  | OK     |
-| MUXF7                                                     | 15%       | 0.00%  | OK     |
-| DSP                                                       | 80%       | 0.00%  | OK     |
-| RAMB/FIFO                                                 | 80%       | 1.43%  | OK     |
-| DSP+RAMB+URAM (Avg)                                       | 70%       | 1.43%  | OK     |
+| LUT                                                       | 70%       | 5.50%  | OK     |
+| FD                                                        | 50%       | 2.79%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 3.33%  | OK     |
+| MUXF7                                                     | 15%       | 0.01%  | OK     |
+| DSP                                                       | 80%       | 0.45%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 17.50% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 8.97%  | OK     |
 | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
 | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
 | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
-| Control Sets                                              | 998       | 48     | OK     |
-| Average Fanout for modules > 100k cells                   | 4         | 2.95   | OK     |
+| Control Sets                                              | 998       | 102    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.85   | OK     |
 | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
 | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
 +-----------------------------------------------------------+-----------+--------+--------+
@@ -137,256 +137,276 @@ SRL:              7
 == RTL Synthesis Timing Paths
 ================================================================
 * Timing was met
-+-------+-------+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path  | SLACK | STARTPOINT PIN                                                                          | ENDPOINT PIN                                                                            | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
-|       |       |                                                                                         |                                                                                         |              |            |                |          DELAY |        DELAY |
-+-------+-------+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path1 | 4.333 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]/C  | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]/D |            6 |          3 |          5.692 |          1.942 |        3.750 |
-| Path2 | 4.333 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]/C | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]/D |            6 |          3 |          5.692 |          1.942 |        3.750 |
-| Path3 | 4.333 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]/C  | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]/D        |            6 |          3 |          5.692 |          1.942 |        3.750 |
-| Path4 | 4.403 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]/C  | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]/D |            6 |          3 |          5.607 |          1.857 |        3.750 |
-| Path5 | 4.403 | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]/C | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]/D |            6 |          3 |          5.607 |          1.857 |        3.750 |
-+-------+-------+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
++-------+-------+------------------------------------------+------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                           | ENDPOINT PIN                             | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                          |                                          |              |            |                |          DELAY |        DELAY |
++-------+-------+------------------------------------------+------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 3.619 | ap_CS_fsm_reg[29]/C                      | layer2_quant_U/q0_reg[0]/D               |            6 |          9 |          6.374 |          1.724 |        4.650 |
+| Path2 | 4.081 | ap_CS_fsm_reg[50]/C                      | layer2_quant_U/q1_reg[0]/D               |            5 |          9 |          5.912 |          1.333 |        4.579 |
+| Path3 | 4.687 | layer1_activations_1_U/ram_reg/CLKBWRCLK | layer1_activations_1_U/ram_reg/DIADI[30] |            9 |          2 |          4.988 |          2.762 |        2.226 |
+| Path4 | 4.687 | layer1_activations_U/ram_reg/CLKBWRCLK   | layer1_activations_U/ram_reg/DIADI[30]   |            9 |          2 |          4.988 |          2.762 |        2.226 |
+| Path5 | 4.804 | layer1_activations_1_U/ram_reg/CLKBWRCLK | layer1_activations_1_U/ram_reg/DIADI[26] |            8 |          2 |          4.871 |          2.645 |        2.226 |
++-------+-------+------------------------------------------+------------------------------------------+--------------+------------+----------------+----------------+--------------+
 
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | Path1 Cells                                                                               | Primitive Type       |
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +-------------------------------------------------------------------------------------------+----------------------+
+    +-----------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                 | Primitive Type       |
+    +-----------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[29]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_46                                        | LUT.others.LUT5      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_30                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_14                                        | LUT.others.LUT6      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_240_5_fu_856/ram_reg_0_63_0_0_i_3 | MUXFX.others.MUXF7   |
+    | layer2_quant_U/ram_reg_0_63_0_0/SP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q0[0]_i_1__0                                                 | LUT.others.LUT5      |
+    | layer2_quant_U/q0_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[50]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_44                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_23                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_8                                         | LUT.others.LUT4      |
+    | layer2_quant_U/ram_reg_0_63_0_0/DP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q1[0]_i_1                                                    | LUT.others.LUT3      |
+    | layer2_quant_U/q1_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_34__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_2__1       | LUT.others.LUT2      |
+    | layer1_activations_U/ram_reg                                                | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_84         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_57__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_55__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_54__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_53__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_52__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_51__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_50__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_16__0      | LUT.others.LUT2      |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_6__1       | LUT.others.LUT2      |
+    +-----------------------------------------------------------------------------+----------------------+
 
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | Path2 Cells                                                                               | Primitive Type       |
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +-------------------------------------------------------------------------------------------+----------------------+
+    +-----------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                 | Primitive Type       |
+    +-----------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[29]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_46                                        | LUT.others.LUT5      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_30                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_14                                        | LUT.others.LUT6      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_240_5_fu_856/ram_reg_0_63_0_0_i_3 | MUXFX.others.MUXF7   |
+    | layer2_quant_U/ram_reg_0_63_0_0/SP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q0[0]_i_1__0                                                 | LUT.others.LUT5      |
+    | layer2_quant_U/q0_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[50]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_44                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_23                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_8                                         | LUT.others.LUT4      |
+    | layer2_quant_U/ram_reg_0_63_0_0/DP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q1[0]_i_1                                                    | LUT.others.LUT3      |
+    | layer2_quant_U/q1_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_34__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_2__1       | LUT.others.LUT2      |
+    | layer1_activations_U/ram_reg                                                | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_84         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_57__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_55__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_54__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_53__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_52__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_51__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_50__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_16__0      | LUT.others.LUT2      |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_6__1       | LUT.others.LUT2      |
+    +-----------------------------------------------------------------------------+----------------------+
 
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | Path3 Cells                                                                               | Primitive Type       |
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +-------------------------------------------------------------------------------------------+----------------------+
+    +-----------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                 | Primitive Type       |
+    +-----------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[29]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_46                                        | LUT.others.LUT5      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_30                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_14                                        | LUT.others.LUT6      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_240_5_fu_856/ram_reg_0_63_0_0_i_3 | MUXFX.others.MUXF7   |
+    | layer2_quant_U/ram_reg_0_63_0_0/SP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q0[0]_i_1__0                                                 | LUT.others.LUT5      |
+    | layer2_quant_U/q0_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[50]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_44                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_23                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_8                                         | LUT.others.LUT4      |
+    | layer2_quant_U/ram_reg_0_63_0_0/DP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q1[0]_i_1                                                    | LUT.others.LUT3      |
+    | layer2_quant_U/q1_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_34__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_2__1       | LUT.others.LUT2      |
+    | layer1_activations_U/ram_reg                                                | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_84         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_57__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_55__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_54__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_53__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_52__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_51__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_50__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_16__0      | LUT.others.LUT2      |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_6__1       | LUT.others.LUT2      |
+    +-----------------------------------------------------------------------------+----------------------+
 
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | Path4 Cells                                                                               | Primitive Type       |
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +-------------------------------------------------------------------------------------------+----------------------+
+    +-----------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                 | Primitive Type       |
+    +-----------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[29]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_46                                        | LUT.others.LUT5      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_30                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_14                                        | LUT.others.LUT6      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_240_5_fu_856/ram_reg_0_63_0_0_i_3 | MUXFX.others.MUXF7   |
+    | layer2_quant_U/ram_reg_0_63_0_0/SP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q0[0]_i_1__0                                                 | LUT.others.LUT5      |
+    | layer2_quant_U/q0_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[50]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_44                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_23                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_8                                         | LUT.others.LUT4      |
+    | layer2_quant_U/ram_reg_0_63_0_0/DP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q1[0]_i_1                                                    | LUT.others.LUT3      |
+    | layer2_quant_U/q1_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_34__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_2__1       | LUT.others.LUT2      |
+    | layer1_activations_U/ram_reg                                                | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_84         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_57__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_55__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_54__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_53__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_52__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_51__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_50__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_16__0      | LUT.others.LUT2      |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_6__1       | LUT.others.LUT2      |
+    +-----------------------------------------------------------------------------+----------------------+
 
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | Path5 Cells                                                                               | Primitive Type       |
-    +-------------------------------------------------------------------------------------------+----------------------+
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[5]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/add_ln54_27_reg_1891_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_15           | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_24           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[6]_i_11           | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936[3]_i_2            | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[3]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[6]_i_1        | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_12_fu_5985/cnt_1_reg_1936_reg[5]            | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_89_reg_3747_reg[1]      | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_124_reg_3872_reg[6]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_152_reg_3827_reg[1]     | FLOP_LATCH.flop.FDRE |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_15    | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_24    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[6]_i_11    | LUT.others.LUT6      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877[3]_i_2     | LUT.others.LUT3      |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[3]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]_i_1 | CARRY.others.CARRY4  |
-    | grp_feedforward_stream_Pipeline_VITIS_LOOP_49_11_fu_5769/add_ln54_187_reg_3877_reg[6]     | FLOP_LATCH.flop.FDRE |
-    +-------------------------------------------------------------------------------------------+----------------------+
+    +-----------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                 | Primitive Type       |
+    +-----------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[29]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_46                                        | LUT.others.LUT5      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_30                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_14                                        | LUT.others.LUT6      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_240_5_fu_856/ram_reg_0_63_0_0_i_3 | MUXFX.others.MUXF7   |
+    | layer2_quant_U/ram_reg_0_63_0_0/SP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q0[0]_i_1__0                                                 | LUT.others.LUT5      |
+    | layer2_quant_U/q0_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[50]                                                           | FLOP_LATCH.flop.FDRE |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_44                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_23                                        | LUT.others.LUT6      |
+    | layer2_quant_U/ram_reg_0_63_0_0_i_8                                         | LUT.others.LUT4      |
+    | layer2_quant_U/ram_reg_0_63_0_0/DP                                          | DMEM.dram.RAM64X1D   |
+    | layer2_quant_U/q1[0]_i_1                                                    | LUT.others.LUT3      |
+    | layer2_quant_U/q1_reg[0]                                                    | FLOP_LATCH.flop.FDRE |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_34__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_2__1       | LUT.others.LUT2      |
+    | layer1_activations_U/ram_reg                                                | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_84         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_57__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_55__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_54__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_53__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_52__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_51__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_50__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_16__0      | LUT.others.LUT2      |
+    | layer1_activations_1_U/ram_reg                                              | BMEM.bram.RAMB36E1   |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_66         | LUT.others.LUT1      |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_40         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_39__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_38__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_37         | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_36__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_35__0      | CARRY.others.CARRY4  |
+    | grp_feedforward_burst_Pipeline_VITIS_LOOP_216_2_fu_824/ram_reg_i_6__1       | LUT.others.LUT2      |
+    +-----------------------------------------------------------------------------+----------------------+
 
 
 ================================================================
 == RTL Synthesis Vivado Reports
 ================================================================
-+--------------------------+---------------------------------------------------------------------------+
-| Report Type              | Report Location                                                           |
-+--------------------------+---------------------------------------------------------------------------+
-| design_analysis          | impl/verilog/report/feedforward_stream_design_analysis_synth.rpt          |
-| failfast                 | impl/verilog/report/feedforward_stream_failfast_synth.rpt                 |
-| power                    | impl/verilog/report/feedforward_stream_power_synth.rpt                    |
-| timing                   | impl/verilog/report/feedforward_stream_timing_synth.rpt                   |
-| timing_paths             | impl/verilog/report/feedforward_stream_timing_paths_synth.rpt             |
-| utilization              | impl/verilog/report/feedforward_stream_utilization_synth.rpt              |
-| utilization_hierarchical | impl/verilog/report/feedforward_stream_utilization_hierarchical_synth.rpt |
-+--------------------------+---------------------------------------------------------------------------+
++--------------------------+--------------------------------------------------------------------------+
+| Report Type              | Report Location                                                          |
++--------------------------+--------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/feedforward_burst_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/feedforward_burst_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/feedforward_burst_power_synth.rpt                    |
+| timing                   | impl/verilog/report/feedforward_burst_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/feedforward_burst_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/feedforward_burst_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/feedforward_burst_utilization_hierarchical_synth.rpt |
++--------------------------+--------------------------------------------------------------------------+
 
 

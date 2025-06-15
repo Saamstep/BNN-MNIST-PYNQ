@@ -1,158 +1,36 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch CLANG as the compiler.
-   Compiling ../../../../bnn.cpp in debug mode
+   Compiling ../../../../bnn_tb.cpp in debug mode
    Generating csim.exe
-
-Sample 0: Predicted = 5, Label = 5
-
-
-Sample 1: Predicted = 0, Label = 0
-
-
-Sample 2: Predicted = 4, Label = 4
-
-
-Sample 3: Predicted = 8, Label = 1
-
-
-Sample 4: Predicted = 9, Label = 9
-
-
-Sample 5: Predicted = 2, Label = 2
-
-
-Sample 6: Predicted = 1, Label = 1
-
-
-Sample 7: Predicted = 3, Label = 3
-
-
-Sample 8: Predicted = 1, Label = 1
-
-
-Sample 9: Predicted = 4, Label = 4
-
-
-Sample 10: Predicted = 3, Label = 3
-
-
-Sample 11: Predicted = 5, Label = 5
-
-
-Sample 12: Predicted = 3, Label = 3
-
-
-Sample 13: Predicted = 6, Label = 6
-
-
-Sample 14: Predicted = 1, Label = 1
-
-
-Sample 15: Predicted = 7, Label = 7
-
-
-Sample 16: Predicted = 2, Label = 2
-
-
-Sample 17: Predicted = 8, Label = 8
-
-
-Sample 18: Predicted = 6, Label = 6
-
-
-Sample 19: Predicted = 9, Label = 9
-
-
-Sample 20: Predicted = 4, Label = 4
-
-
-Sample 21: Predicted = 0, Label = 0
-
-
-Sample 22: Predicted = 4, Label = 9
-
-
-Sample 23: Predicted = 1, Label = 1
-
-
-Sample 24: Predicted = 3, Label = 1
-
-
-Sample 25: Predicted = 2, Label = 2
-
-
-Sample 26: Predicted = 4, Label = 4
-
-
-Sample 27: Predicted = 3, Label = 3
-
-
-Sample 28: Predicted = 2, Label = 2
-
-
-Sample 29: Predicted = 7, Label = 7
-
-
-Sample 30: Predicted = 3, Label = 3
-
-
-Sample 31: Predicted = 8, Label = 8
-
-
-Sample 32: Predicted = 6, Label = 6
-
-
-Sample 33: Predicted = 9, Label = 9
-
-
-Sample 34: Predicted = 0, Label = 0
-
-
-Sample 35: Predicted = 5, Label = 5
-
-
-Sample 36: Predicted = 6, Label = 6
-
-
-Sample 37: Predicted = 0, Label = 0
-
-
-Sample 38: Predicted = 7, Label = 7
-
-
-Sample 39: Predicted = 6, Label = 6
-
-
-Sample 40: Predicted = 1, Label = 1
-
-
-Sample 41: Predicted = 8, Label = 8
-
-
-Sample 42: Predicted = 7, Label = 7
-
-
-Sample 43: Predicted = 9, Label = 9
-
-
-Sample 44: Predicted = 3, Label = 3
-
-
-Sample 45: Predicted = 9, Label = 9
-
-
-Sample 46: Predicted = 8, Label = 8
-
-
-Sample 47: Predicted = 5, Label = 5
-
-
-Sample 48: Predicted = 3, Label = 9
-
-
-Sample 49: Predicted = 3, Label = 3
-
-Accuracy: 46 / 50
+Image data:
+[403, last=0] [393, last=0] [414, last=0] [419, last=0] [414, last=0] [416, last=0] [385, last=0] [389, last=0] 
+[371, last=0] [344, last=0] [359, last=0] [358, last=0] [401, last=0] [378, last=0] [398, last=0] [399, last=0] 
+[388, last=0] [411, last=0] [378, last=0] [368, last=0] [351, last=0] [396, last=0] [382, last=0] [391, last=0] 
+[360, last=0] [423, last=0] [423, last=0] [402, last=0] [382, last=0] [394, last=0] [427, last=0] [423, last=0] 
+[375, last=0] [407, last=0] [359, last=0] [431, last=0] [386, last=0] [364, last=0] [380, last=0] [405, last=0] 
+[372, last=0] [348, last=0] [394, last=0] [364, last=0] [379, last=0] [374, last=0] [384, last=0] [393, last=0] 
+[370, last=0] [384, last=0] [378, last=0] [397, last=0] [352, last=0] [370, last=0] [408, last=0] [430, last=0] 
+[436, last=0] [398, last=0] [416, last=0] [396, last=0] [387, last=0] [426, last=0] [420, last=0] [367, last=0] 
+[335, last=0] [432, last=0] [380, last=0] [363, last=0] [433, last=0] [384, last=0] [399, last=0] [414, last=0] 
+[404, last=0] [381, last=0] [377, last=0] [403, last=0] [373, last=0] [417, last=0] [412, last=0] [382, last=0] 
+[411, last=0] [385, last=0] [406, last=0] [357, last=0] [381, last=0] [435, last=0] [390, last=0] [363, last=0] 
+[420, last=0] [395, last=0] [402, last=0] [414, last=0] [393, last=0] [361, last=0] [356, last=0] [349, last=0] 
+[389, last=0] [409, last=0] [391, last=0] [386, last=0] [355, last=0] [406, last=0] [384, last=0] [391, last=0] 
+[444, last=0] [421, last=0] [408, last=0] [416, last=0] [390, last=0] [430, last=0] [338, last=0] [410, last=0] 
+[391, last=0] [377, last=0] [395, last=0] [381, last=0] [439, last=0] [419, last=0] [412, last=0] [401, last=0] 
+[369, last=0] [351, last=0] [396, last=0] [365, last=0] [396, last=0] [343, last=0] [394, last=0] [368, last=0] 
+[52, last=0] [55, last=0] [80, last=0] [61, last=0] [50, last=0] [53, last=0] [55, last=0] [80, last=0] 
+[67, last=0] [73, last=0] [58, last=0] [57, last=0] [72, last=0] [76, last=0] [60, last=0] [51, last=0] 
+[64, last=0] [60, last=0] [61, last=0] [61, last=0] [84, last=0] [51, last=0] [63, last=0] [68, last=0] 
+[64, last=0] [74, last=0] [59, last=0] [68, last=0] [53, last=0] [69, last=0] [77, last=0] [56, last=0] 
+[67, last=0] [67, last=0] [69, last=0] [53, last=0] [67, last=0] [55, last=0] [59, last=0] [60, last=0] 
+[69, last=0] [75, last=0] [65, last=0] [60, last=0] [52, last=0] [56, last=0] [67, last=0] [77, last=0] 
+[65, last=0] [54, last=0] [56, last=0] [68, last=0] [53, last=0] [55, last=0] [71, last=0] [61, last=0] 
+[63, last=0] [70, last=0] [66, last=0] [65, last=0] [76, last=0] [47, last=0] [75, last=0] [77, last=0] 
+[-2, last=0] [-4, last=0] [8, last=0] [26, last=0] [-24, last=0] [32, last=0] [-14, last=0] [-8, last=0] 
+[4, last=0] [-2, last=1] 
+Total outputs received: 202
+Accuracy: 0 / 1
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

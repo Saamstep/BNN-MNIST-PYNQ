@@ -23,7 +23,7 @@ __USE_VCXX_CLANG__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../bnn_tb.cpp ../../../../weights.cpp ../../../../bnn.cpp
+HLS_SOURCES = ../../../../bnn_tb.cpp ../../../../bnn.cpp
 
 override TARGET := csim.exe
 
@@ -89,12 +89,6 @@ $(ObjDir)/bnn_tb.o: ../../../../bnn_tb.cpp $(ObjDir)/.dir csim.mk
 	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/bnn_tb.d
-
-$(ObjDir)/weights.o: ../../../../weights.cpp $(ObjDir)/.dir csim.mk
-	$(Echo) "   Compiling ../../../../weights.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/weights.d
 
 $(ObjDir)/bnn.o: ../../../../bnn.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../bnn.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
