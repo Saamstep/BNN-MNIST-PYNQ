@@ -1,0 +1,23 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../bnn.cpp in debug mode
+   Generating csim.exe
+
+Sample 0: Predicted = 5, Label = 5
+
+
+Sample 1: Predicted = 0, Label = 0
+
+
+Sample 2: Predicted = 4, Label = 4
+
+
+Sample 3: Predicted = 1, Label = 1
+
+
+Sample 4: Predicted = 9, Label = 9
+
+Accuracy: 5 / 5
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -7,9 +7,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 ||
 # IP: bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_processing_system7_0_0 || ORIG_REF_NAME==design_1_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_feedforward_0_0/design_1_feedforward_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_feedforward_0_0 || ORIG_REF_NAME==design_1_feedforward_0_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_dma_0_0 || ORIG_REF_NAME==design_1_axi_dma_0_0} -quiet] -quiet
 
@@ -97,64 +94,46 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/bd_afc3_sbn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/bd_afc3_s01mmu_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/bd_afc3_m00s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_27/bd_afc3_s01tr_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_27/bd_afc3_m00arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_28/bd_afc3_s01sic_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_28/bd_afc3_m00rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_29/bd_afc3_s01a2s_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_29/bd_afc3_m00awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_30/bd_afc3_sarn_1.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_30/bd_afc3_m00wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_31/bd_afc3_srn_1.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_31/bd_afc3_m00bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_32/bd_afc3_m00s2a_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_32/bd_afc3_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_33/bd_afc3_m00arn_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_33/bd_afc3_m01s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_34/bd_afc3_m00rn_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_34/bd_afc3_m01arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_35/bd_afc3_m00awn_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_35/bd_afc3_m01rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_36/bd_afc3_m00wn_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_36/bd_afc3_m01awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_37/bd_afc3_m00bn_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_37/bd_afc3_m01wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_38/bd_afc3_m00e_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_38/bd_afc3_m01bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m01s2a_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_40/bd_afc3_m01arn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_41/bd_afc3_m01rn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_42/bd_afc3_m01awn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_43/bd_afc3_m01wn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_44/bd_afc3_m01bn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_45/bd_afc3_m01e_0.xci
+# IP: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m01e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
 # IP: bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xci
@@ -165,6 +144,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_0/design_1_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_feedforward_0_1_1/design_1_feedforward_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_feedforward_0_1 || ORIG_REF_NAME==design_1_feedforward_0_1} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0} -quiet] -quiet
@@ -177,8 +159,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 
 # XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_processing_system7_0_0 || ORIG_REF_NAME==design_1_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_feedforward_0_0/constraints/feedforward_ooc.xdc
 
 # XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_dma_0_0 || ORIG_REF_NAME==design_1_axi_dma_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
@@ -234,35 +214,29 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/bd_afc3_sbn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_29/bd_afc3_s01a2s_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/bd_afc3_m00s2a_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_30/bd_afc3_sarn_1_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_27/bd_afc3_m00arn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_31/bd_afc3_srn_1_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_28/bd_afc3_m00rn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_32/bd_afc3_m00s2a_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_29/bd_afc3_m00awn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_33/bd_afc3_m00arn_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_30/bd_afc3_m00wn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_34/bd_afc3_m00rn_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_31/bd_afc3_m00bn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_35/bd_afc3_m00awn_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_33/bd_afc3_m01s2a_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_36/bd_afc3_m00wn_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_34/bd_afc3_m01arn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_37/bd_afc3_m00bn_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_35/bd_afc3_m01rn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m01s2a_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_36/bd_afc3_m01awn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_40/bd_afc3_m01arn_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_37/bd_afc3_m01wn_0_ooc.xdc
 
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_41/bd_afc3_m01rn_0_ooc.xdc
-
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_42/bd_afc3_m01awn_0_ooc.xdc
-
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_43/bd_afc3_m01wn_0_ooc.xdc
-
-# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_44/bd_afc3_m01bn_0_ooc.xdc
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_38/bd_afc3_m01bn_0_ooc.xdc
 
 # XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc
 
@@ -274,6 +248,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_50M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_feedforward_0_1_1/constraints/feedforward_ooc.xdc
 
 # XDC: d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_clocks.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0} -quiet] {/inst } ]/inst ] -quiet] -quiet

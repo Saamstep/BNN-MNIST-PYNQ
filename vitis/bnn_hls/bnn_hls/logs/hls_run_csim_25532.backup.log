@@ -1,0 +1,54 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'C:\ECEN529\bnn_final\vitis\bnn_hls\bnn_tb.cpp' see [hls] from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.file=bnn.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.h' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\ecen529\finalProject\vitis\bnn_hls\bnn_tb.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\ECEN529\bnn_final\vitis\bnn_hls\bnn_tb.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(11)
+WARNING: [HLS 200-40] Cannot find test bench file 'C:/ECEN529/bnn_final/vitis/bnn_hls/bnn_tb.cpp'
+INFO: [HLS 200-1465] Applying ini 'syn.top=feedforward_stream' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../bnn_tb.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../bnn_tb.cpp:7:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Image data:	439	419	412	401	369	351	396	365	396	343	394	368
+Activations 2:	52	55	80	61	50	53	55	80	67	73	58	57	72	76	60	51	64	60	61	61	84	51	63	68	64	74	59	68	53	69	77	56	67	67	69	53	67	55	59	60	69	75	65	60	52	56	67	77	65	54	56	68	53	55	71	61	63	70	66	65	76	47	75	77
+Activations 3:	-2	-4	8	26	-24	32	-14	-8	4	-2
+Sample 0: Predicted = 5, Label = 5
+
+Accuracy: 1 / 1
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 3 seconds. Total elapsed time: 9.794 seconds; peak allocated memory: 620.430 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 15s
