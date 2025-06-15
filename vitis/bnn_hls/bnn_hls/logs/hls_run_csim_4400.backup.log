@@ -1,0 +1,53 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=bnn.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.h' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\ecen529\finalProject\vitis\bnn_hls\bnn_tb.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=feedforward' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../bnn.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../bnn.cpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Sending input image #0
+
+X0_input: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0 1 0 1 1 0 1 0 1 1 0 1 1 0 1 1 0 1 1 0 1 1 0 1 1 1 1 1 1 1 1 1 1 0 1 1 0 1 0 1 1 0 1 1 0 1 0 1 1 0 1 1 1 1 1 1 1 1 1 1
+Activations 1: 78 70 78 83 75 77 67 65 76 78 70 64 68
+Scale/quant 1: -628 -644 -628 -618 -634 -630 -650 -654 -632 -628 -644 -656 -648
+ERROR [HLS SIM]: an hls::stream is read while empty, which may result in RTL simulation hanging.
+If this is not expected, execute C simulation in debug mode in the GUI and examine the source code location of the blocked hls::stream::read() call to debug.
+If this is expected, add -DALLOW_EMPTY_HLS_STREAM_READS to -cflags to turn this error into a warning and allow empty hls::stream reads to return the default value for the data type.
+@E Simulation failed: Function 'main' returns nonzero value '3'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 10.48 seconds; peak allocated memory: 619.957 MB.

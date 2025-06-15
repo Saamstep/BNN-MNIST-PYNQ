@@ -1,0 +1,28 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/ECEN529/bnn_final/vitis/bnn_hls/bnn_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'D:\ecen529\finalProject\vitis\bnn_hls\bnn_tb.cpp' see [hls] from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.file=bnn.cpp' from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/ECEN529/bnn_final/vitis/bnn_hls/bnn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.h' from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/ECEN529/bnn_final/vitis/bnn_hls/weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.cpp' from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/ECEN529/bnn_final/vitis/bnn_hls/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\ecen529\finalProject\vitis\bnn_hls\bnn_tb.cpp' from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(11)
+WARNING: [HLS 200-40] Cannot find test bench file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp'
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\ECEN529\bnn_final\vitis\bnn_hls\bnn_tb.cpp' from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/ECEN529/bnn_final/vitis/bnn_hls/bnn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=feedforward_burst' from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/ECEN529/bnn_final/vitis/bnn_hls/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.733 seconds; current allocated memory: 262.750 MB.
+INFO: [HLS 200-10] Analyzing design file 'weights.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'bnn.cpp' ... 
+ERROR: [HLS 207-3776] use of undeclared identifier 'temp' (bnn.cpp:182:34)
+ERROR:  
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 5.278 seconds; peak allocated memory: 264.906 MB.

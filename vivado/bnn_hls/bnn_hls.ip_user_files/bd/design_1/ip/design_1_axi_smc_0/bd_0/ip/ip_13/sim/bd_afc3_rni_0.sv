@@ -129,14 +129,14 @@ output wire [56 : 0] m_sc_payld;
     .C_ARBITER_MODE(1),
     .C_SC_ROUTE_WIDTH(4),
     .C_ID_WIDTH(2),
-    .C_ADDR_WIDTH(64),
+    .C_ADDR_WIDTH(32),
     .C_USER_WIDTH(512),
     .C_MAX_PAYLD_BYTES(4),
     .C_S_PIPELINE(0),
     .C_M_PIPELINE(0),
     .C_M_SEND_PIPELINE(0),
     .C_S_LATENCY(0),
-    .C_NUM_OUTSTANDING(16),
+    .C_NUM_OUTSTANDING(8),
     .C_ACLK_RELATIONSHIP(1),
     .C_ACLKEN_CONVERSION(0)
   ) inst (

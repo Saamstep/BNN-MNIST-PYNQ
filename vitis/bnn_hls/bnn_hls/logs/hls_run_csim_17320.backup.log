@@ -1,0 +1,448 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'C:\ECEN529\bnn_final\vitis\bnn_hls\bnn_tb.cpp' see [hls] from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.file=bnn.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.h' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\ecen529\finalProject\vitis\bnn_hls\bnn_tb.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\ECEN529\bnn_final\vitis\bnn_hls\bnn_tb.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(11)
+WARNING: [HLS 200-40] Cannot find test bench file 'C:/ECEN529/bnn_final/vitis/bnn_hls/bnn_tb.cpp'
+INFO: [HLS 200-1465] Applying ini 'syn.top=feedforward_burst' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../bnn_tb.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../bnn_tb.cpp:7:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Output activations:
+12 2 2 28 -26 34 -8 -6 -2 -4 
+Sample 0: Predicted = 5, Label = 5 | Correct
+
+Output activations:
+52 -6 -2 -8 -18 22 -4 -6 -6 -8 
+Sample 1: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+-24 -2 -6 12 34 -14 12 -2 -14 8 
+Sample 2: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+-16 30 6 -4 2 -6 -4 -2 30 -4 
+Sample 3: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+-26 -4 -16 2 28 -12 6 8 0 30 
+Sample 4: Predicted = 9, Label = 9 | Correct
+
+Output activations:
+-4 -10 26 8 -10 -2 -12 -2 14 20 
+Sample 5: Predicted = 2, Label = 2 | Correct
+
+Output activations:
+-26 48 0 10 0 -4 2 4 4 -2 
+Sample 6: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+-2 -4 8 46 -12 4 -30 0 12 -2 
+Sample 7: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+-32 34 -6 8 10 -6 4 -6 10 8 
+Sample 8: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+-6 -12 -12 -14 48 -8 14 -8 -8 10 
+Sample 9: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+4 6 -6 40 -22 2 -16 -2 2 4 
+Sample 10: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+8 10 6 -4 2 42 0 -22 14 -12 
+Sample 11: Predicted = 5, Label = 5 | Correct
+
+Output activations:
+4 -6 -2 52 -14 6 -16 -2 -2 -4 
+Sample 12: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+-6 -4 20 -6 12 -12 46 -20 4 -6 
+Sample 13: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+-14 40 8 2 -4 -4 -6 4 8 -2 
+Sample 14: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+4 -6 -18 0 10 -10 -24 38 -2 20 
+Sample 15: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+6 -16 36 18 -16 0 2 4 -4 -6 
+Sample 16: Predicted = 2, Label = 2 | Correct
+
+Output activations:
+-4 10 2 12 2 2 -4 -18 38 4 
+Sample 17: Predicted = 8, Label = 8 | Correct
+
+Output activations:
+8 -2 6 0 6 10 28 -26 -14 0 
+Sample 18: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+-26 16 -16 6 16 -4 2 -4 12 26 
+Sample 19: Predicted = 9, Label = 9 | Correct
+
+Output activations:
+-18 -24 -8 -6 40 -20 14 -8 -4 18 
+Sample 20: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+54 -8 0 -6 -20 24 -6 -8 -4 -10 
+Sample 21: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+-32 2 -6 4 26 -6 0 -2 10 32 
+Sample 22: Predicted = 9, Label = 9 | Correct
+
+Output activations:
+-26 36 8 -2 -4 -12 -10 8 12 2 
+Sample 23: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+-12 34 26 16 -14 -10 4 -6 -2 -20 
+Sample 24: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+4 2 38 24 -26 6 -8 -14 18 -16 
+Sample 25: Predicted = 2, Label = 2 | Correct
+
+Output activations:
+-26 -4 -16 6 24 -8 -2 4 0 30 
+Sample 26: Predicted = 9, Label = 4 | Incorrect
+
+Output activations:
+2 -4 4 42 -12 4 -26 -4 4 -2 
+Sample 27: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+2 -12 24 18 -16 -8 -22 20 8 2 
+Sample 28: Predicted = 2, Label = 2 | Correct
+
+Output activations:
+-20 14 -6 -8 14 -14 -12 30 2 12 
+Sample 29: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+-24 6 14 32 -2 -14 4 -10 10 8 
+Sample 30: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+-4 6 2 24 -6 -2 -16 -6 38 8 
+Sample 31: Predicted = 8, Label = 8 | Correct
+
+Output activations:
+-4 6 6 -4 6 -2 32 -10 -14 -16 
+Sample 32: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+-10 8 -20 2 8 -20 -26 24 0 22 
+Sample 33: Predicted = 7, Label = 9 | Incorrect
+
+Output activations:
+40 -14 2 -4 -18 6 0 -2 10 4 
+Sample 34: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+4 6 -2 8 -6 38 -4 -26 6 -8 
+Sample 35: Predicted = 5, Label = 5 | Correct
+
+Output activations:
+0 -2 22 4 -2 2 36 -30 6 -12 
+Sample 36: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+44 -14 -6 4 -2 -6 8 -2 -10 -4 
+Sample 37: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+-24 -2 -2 0 10 -18 -16 30 -22 4 
+Sample 38: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+0 -2 10 -16 14 -14 40 -18 14 4 
+Sample 39: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+-22 40 -4 10 8 -8 2 -8 12 6 
+Sample 40: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+4 2 -10 8 -6 10 -8 -10 46 8 
+Sample 41: Predicted = 8, Label = 8 | Correct
+
+Output activations:
+-18 12 -12 2 4 -8 -18 28 -12 18 
+Sample 42: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+-20 2 -14 12 14 -2 0 -6 10 28 
+Sample 43: Predicted = 9, Label = 9 | Correct
+
+Output activations:
+-14 4 8 46 -8 -4 -14 4 -4 2 
+Sample 44: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+-14 -16 -16 -2 20 -16 -10 20 0 38 
+Sample 45: Predicted = 9, Label = 9 | Correct
+
+Output activations:
+0 -2 10 8 -10 2 -24 -2 34 16 
+Sample 46: Predicted = 8, Label = 8 | Correct
+
+Output activations:
+10 -4 0 10 0 36 -2 -28 8 -6 
+Sample 47: Predicted = 5, Label = 5 | Correct
+
+Output activations:
+-2 8 4 18 -16 20 -2 -8 0 -2 
+Sample 48: Predicted = 5, Label = 9 | Incorrect
+
+Output activations:
+10 -8 -4 42 -12 16 -26 -4 4 2 
+Sample 49: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+6 16 16 34 -12 0 -10 -4 -4 -22 
+Sample 50: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+50 -8 -4 -10 -20 24 -6 -4 -4 -6 
+Sample 51: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+2 0 -12 14 -8 4 -42 36 4 14 
+Sample 52: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+-24 14 -18 8 26 -6 4 2 2 16 
+Sample 53: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+-28 -6 -18 4 22 -6 -16 14 6 36 
+Sample 54: Predicted = 9, Label = 9 | Correct
+
+Output activations:
+-18 0 0 18 0 -4 -26 8 24 18 
+Sample 55: Predicted = 8, Label = 8 | Correct
+
+Output activations:
+52 -14 -2 -12 -18 18 -4 -2 -2 -4 
+Sample 56: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+-30 -4 -12 6 24 -16 -6 12 0 26 
+Sample 57: Predicted = 9, Label = 9 | Correct
+
+Output activations:
+-20 -6 -18 8 42 -6 0 -2 10 20 
+Sample 58: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+-8 46 -2 -12 -6 2 4 2 18 -8 
+Sample 59: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+6 -24 4 -18 28 -8 14 0 4 10 
+Sample 60: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+-18 4 -28 -6 36 0 -2 4 -8 6 
+Sample 61: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+8 2 22 -8 2 -2 40 -34 2 -20 
+Sample 62: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+48 -10 -6 -8 -2 6 8 -10 2 -8 
+Sample 63: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+-2 -16 -8 -26 36 -4 14 -4 -8 14 
+Sample 64: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+4 2 10 4 -2 34 4 -30 14 -16 
+Sample 65: Predicted = 5, Label = 5 | Correct
+
+Output activations:
+8 -2 14 0 6 -2 48 -26 -6 -8 
+Sample 66: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+-20 42 6 8 -2 -10 8 -10 14 -8 
+Sample 67: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+30 -16 20 -6 -24 20 -2 -20 12 -2 
+Sample 68: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+52 -18 -6 -12 -10 10 0 -6 2 -4 
+Sample 69: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+-6 16 24 26 -8 8 6 -4 12 -18 
+Sample 70: Predicted = 3, Label = 1 | Incorrect
+
+Output activations:
+-2 8 -12 2 4 -16 -18 40 -16 6 
+Sample 71: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+-22 40 12 14 -16 4 -2 12 4 -10 
+Sample 72: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+-6 4 20 -2 8 -16 42 -16 4 -10 
+Sample 73: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+8 -10 -2 40 -18 14 -20 2 -2 4 
+Sample 74: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+50 -4 -12 -2 0 12 -6 -4 -4 -6 
+Sample 75: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+6 -4 48 14 -28 -12 2 -4 4 -14 
+Sample 76: Predicted = 2, Label = 2 | Correct
+
+Output activations:
+-20 46 2 0 -2 -10 4 2 10 4 
+Sample 77: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+-28 18 10 16 -2 -22 -4 14 6 4 
+Sample 78: Predicted = 1, Label = 1 | Correct
+
+Output activations:
+-4 14 -26 -4 2 -18 -16 30 -6 20 
+Sample 79: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+30 -4 -4 10 -16 16 -6 -8 0 -6 
+Sample 80: Predicted = 0, Label = 9 | Incorrect
+
+Output activations:
+54 -12 -8 -6 -8 16 2 -8 0 -2 
+Sample 81: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+2 -8 52 10 -12 -12 6 -16 8 -18 
+Sample 82: Predicted = 2, Label = 2 | Correct
+
+Output activations:
+-2 0 12 -14 8 -16 50 -16 4 -2 
+Sample 83: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+10 -4 0 10 -16 -4 -22 32 -8 6 
+Sample 84: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+-2 4 0 18 0 0 -14 -8 36 14 
+Sample 85: Predicted = 8, Label = 8 | Correct
+
+Output activations:
+-12 -2 -6 20 -6 14 -16 14 -6 16 
+Sample 86: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+-18 -12 -16 -2 24 -12 -6 16 -4 38 
+Sample 87: Predicted = 9, Label = 9 | Correct
+
+Output activations:
+46 -12 8 2 -20 16 2 -12 8 2 
+Sample 88: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+-10 -4 -16 -18 48 -4 6 0 -4 14 
+Sample 89: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+2 0 16 -14 4 0 50 -24 0 -10 
+Sample 90: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+-4 -2 -14 4 6 -14 -24 42 -10 20 
+Sample 91: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+-20 -2 -18 -4 34 6 8 -18 2 16 
+Sample 92: Predicted = 4, Label = 4 | Correct
+
+Output activations:
+6 8 8 -6 8 -8 38 -12 4 -6 
+Sample 93: Predicted = 6, Label = 6 | Correct
+
+Output activations:
+0 6 2 0 2 10 0 -18 46 4 
+Sample 94: Predicted = 8, Label = 8 | Correct
+
+Output activations:
+56 -10 -2 -8 -14 18 0 -6 -2 -8 
+Sample 95: Predicted = 0, Label = 0 | Correct
+
+Output activations:
+-10 0 -8 10 -4 -8 -22 36 -8 14 
+Sample 96: Predicted = 7, Label = 7 | Correct
+
+Output activations:
+-6 4 -4 6 4 0 -6 -12 40 14 
+Sample 97: Predicted = 8, Label = 8 | Correct
+
+Output activations:
+-2 12 -4 38 -8 0 -14 0 -8 6 
+Sample 98: Predicted = 3, Label = 3 | Correct
+
+Output activations:
+-12 22 -22 4 14 -14 -4 14 -2 8 
+Sample 99: Predicted = 1, Label = 1 | Correct
+
+Accuracy: 95 / 100
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 3 seconds. Total elapsed time: 10.63 seconds; peak allocated memory: 620.078 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 16s

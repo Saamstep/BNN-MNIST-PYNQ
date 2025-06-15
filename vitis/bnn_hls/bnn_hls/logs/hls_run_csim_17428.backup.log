@@ -1,0 +1,196 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=bnn.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.h' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\ecen529\finalProject\vitis\bnn_hls\bnn_tb.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=feedforward' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../bnn.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../bnn.cpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Sending input image #0
+
+Sample 0: Predicted = 6, Label = 5
+Sending input image #1
+
+Sample 1: Predicted = 6, Label = 0
+Sending input image #2
+
+Sample 2: Predicted = 6, Label = 4
+Sending input image #3
+
+Sample 3: Predicted = 6, Label = 1
+Sending input image #4
+
+Sample 4: Predicted = 6, Label = 9
+Sending input image #5
+
+Sample 5: Predicted = 6, Label = 2
+Sending input image #6
+
+Sample 6: Predicted = 6, Label = 1
+Sending input image #7
+
+Sample 7: Predicted = 6, Label = 3
+Sending input image #8
+
+Sample 8: Predicted = 6, Label = 1
+Sending input image #9
+
+Sample 9: Predicted = 6, Label = 4
+Sending input image #10
+
+Sample 10: Predicted = 6, Label = 3
+Sending input image #11
+
+Sample 11: Predicted = 6, Label = 5
+Sending input image #12
+
+Sample 12: Predicted = 6, Label = 3
+Sending input image #13
+
+Sample 13: Predicted = 6, Label = 6
+Sending input image #14
+
+Sample 14: Predicted = 6, Label = 1
+Sending input image #15
+
+Sample 15: Predicted = 6, Label = 7
+Sending input image #16
+
+Sample 16: Predicted = 6, Label = 2
+Sending input image #17
+
+Sample 17: Predicted = 6, Label = 8
+Sending input image #18
+
+Sample 18: Predicted = 6, Label = 6
+Sending input image #19
+
+Sample 19: Predicted = 6, Label = 9
+Sending input image #20
+
+Sample 20: Predicted = 6, Label = 4
+Sending input image #21
+
+Sample 21: Predicted = 6, Label = 0
+Sending input image #22
+
+Sample 22: Predicted = 6, Label = 9
+Sending input image #23
+
+Sample 23: Predicted = 6, Label = 1
+Sending input image #24
+
+Sample 24: Predicted = 6, Label = 1
+Sending input image #25
+
+Sample 25: Predicted = 6, Label = 2
+Sending input image #26
+
+Sample 26: Predicted = 6, Label = 4
+Sending input image #27
+
+Sample 27: Predicted = 6, Label = 3
+Sending input image #28
+
+Sample 28: Predicted = 6, Label = 2
+Sending input image #29
+
+Sample 29: Predicted = 6, Label = 7
+Sending input image #30
+
+Sample 30: Predicted = 6, Label = 3
+Sending input image #31
+
+Sample 31: Predicted = 6, Label = 8
+Sending input image #32
+
+Sample 32: Predicted = 6, Label = 6
+Sending input image #33
+
+Sample 33: Predicted = 6, Label = 9
+Sending input image #34
+
+Sample 34: Predicted = 6, Label = 0
+Sending input image #35
+
+Sample 35: Predicted = 6, Label = 5
+Sending input image #36
+
+Sample 36: Predicted = 6, Label = 6
+Sending input image #37
+
+Sample 37: Predicted = 6, Label = 0
+Sending input image #38
+
+Sample 38: Predicted = 6, Label = 7
+Sending input image #39
+
+Sample 39: Predicted = 6, Label = 6
+Sending input image #40
+
+Sample 40: Predicted = 6, Label = 1
+Sending input image #41
+
+Sample 41: Predicted = 6, Label = 8
+Sending input image #42
+
+Sample 42: Predicted = 6, Label = 7
+Sending input image #43
+
+Sample 43: Predicted = 6, Label = 9
+Sending input image #44
+
+Sample 44: Predicted = 6, Label = 3
+Sending input image #45
+
+Sample 45: Predicted = 6, Label = 9
+Sending input image #46
+
+Sample 46: Predicted = 6, Label = 8
+Sending input image #47
+
+Sample 47: Predicted = 6, Label = 5
+Sending input image #48
+
+Sample 48: Predicted = 6, Label = 9
+Sending input image #49
+
+Sample 49: Predicted = 6, Label = 3
+Accuracy: 5 / 50
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 17.985 seconds; peak allocated memory: 619.906 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 23s

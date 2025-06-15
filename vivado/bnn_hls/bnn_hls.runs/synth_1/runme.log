@@ -8,25 +8,30 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Thu Jun 12 21:21:55 2025
+  **** Start of session at: Fri Jun 13 23:34:22 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 619.625 ; gain = 190.551
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 618.707 ; gain = 190.324
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ecen529/finalProject/vitis/v1_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ecen529/finalProject/vitis/v3_ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8068
+INFO: [Synth 8-7075] Helper process launched with PID 2316
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1382.195 ; gain = 468.527
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1379.594 ; gain = 470.660
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/synth/bd_afc3_arinsw_0.sv:83]
 WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/synth/bd_afc3_arinsw_0.sv:84]
@@ -371,14 +376,14 @@ INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (0#1
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/4277/hdl/axi_datamover_v5_1_vh_rfs.vhd:55204]
 INFO: [Synth 8-256] done synthesizing module 'axi_dma' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/70ff/hdl/axi_dma_v7_1_vh_rfs.vhd:22151]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_dma_0_0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/synth/design_1_axi_dma_0_0.vhd:128]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:248]
-WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:248]
-WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:248]
-WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:248]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:248]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 64 connections declared, but only 59 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:248]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:641]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1172]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:231]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:231]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:231]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:231]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:231]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 64 connections declared, but only 59 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:231]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:599]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1130]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/synth/design_1_axi_mem_intercon_imp_auto_pc_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_33_axi_protocol_converter' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/27ae/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_33_axi3_conv' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/27ae/hdl/axi_protocol_converter_v2_1_vl_rfs.v:951]
@@ -405,8 +410,8 @@ INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_33_r_
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_33_axi3_conv' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/27ae/hdl/axi_protocol_converter_v2_1_vl_rfs.v:951]
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_33_axi_protocol_converter' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/27ae/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/synth/design_1_axi_mem_intercon_imp_auto_pc_0.v:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1172]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1130]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1456]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/synth/design_1_axi_mem_intercon_imp_auto_us_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_33_top' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/d794/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14527]
 INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_33_axi_upsizer' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/d794/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7025]
@@ -449,10 +454,10 @@ WARNING: [Synth 8-7023] instance 'si_register_slice_inst' of module 'axi_registe
 INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_33_axi_upsizer' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/d794/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7025]
 INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_33_top' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/d794/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14527]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/synth/design_1_axi_mem_intercon_imp_auto_us_0.v:53]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_axi_mem_intercon_imp_auto_us_0' is unconnected for instance 'auto_us' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1595]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_axi_mem_intercon_imp_auto_us_0' has 34 connections declared, but only 33 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1595]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1498]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1631]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_axi_mem_intercon_imp_auto_us_0' is unconnected for instance 'auto_us' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1553]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_axi_mem_intercon_imp_auto_us_0' has 34 connections declared, but only 33 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1553]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1456]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1589]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_1' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/synth/design_1_axi_mem_intercon_imp_auto_us_1.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_33_top__parameterized0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/d794/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14527]
 INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_33_axi_upsizer__parameterized0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/d794/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7025]
@@ -467,9 +472,9 @@ WARNING: [Synth 8-7023] instance 'si_register_slice_inst' of module 'axi_registe
 INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_33_axi_upsizer__parameterized0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/d794/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7025]
 INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_33_top__parameterized0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/d794/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14527]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_us_1' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/synth/design_1_axi_mem_intercon_imp_auto_us_1.v:53]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_axi_mem_intercon_imp_auto_us_1' is unconnected for instance 'auto_us' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1746]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_axi_mem_intercon_imp_auto_us_1' has 40 connections declared, but only 39 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1746]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1631]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_axi_mem_intercon_imp_auto_us_1' is unconnected for instance 'auto_us' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1704]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_axi_mem_intercon_imp_auto_us_1' has 40 connections declared, but only 39 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1704]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1589]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/synth/design_1_axi_mem_intercon_imp_xbar_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_axi_crossbar' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_crossbar' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2232]
@@ -553,15 +558,15 @@ INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_addr_arbiter
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_crossbar' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2232]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_axi_crossbar' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/synth/design_1_axi_mem_intercon_imp_xbar_0.v:53]
-WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1143]
-WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1160]
-WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1161]
-WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1163]
-WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_axi_mem_intercon_imp_xbar_0' is unconnected for instance 'xbar' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1093]
-WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_axi_mem_intercon_imp_xbar_0' is unconnected for instance 'xbar' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1093]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_axi_mem_intercon_imp_xbar_0' has 78 connections declared, but only 76 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1093]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:641]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1101]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1118]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1119]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1121]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1122]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_axi_mem_intercon_imp_xbar_0' is unconnected for instance 'xbar' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1051]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_axi_mem_intercon_imp_xbar_0' is unconnected for instance 'xbar' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1051]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_axi_mem_intercon_imp_xbar_0' has 78 connections declared, but only 76 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:1051]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:599]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-638] synthesizing module 'bd_afc3_psr_aclk_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/synth/bd_afc3_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -608,52 +613,48 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [d:/ecen529/finalPr
 INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
 INFO: [Synth 8-256] done synthesizing module 'bd_afc3_psr_aclk_0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/synth/bd_afc3_psr_aclk_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1420]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1420]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1420]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1420]
-WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_afc3_psr_aclk_0' has 10 connections declared, but only 6 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1420]
-WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_afc3_s01tr_0' is unconnected for instance 's01_transaction_regulator' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:3691]
-WARNING: [Synth 8-7023] instance 's01_transaction_regulator' of module 'bd_afc3_s01tr_0' has 40 connections declared, but only 39 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:3691]
-WARNING: [Synth 8-7071] port 'M01_SC_B_info' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1275]
-WARNING: [Synth 8-7071] port 'M01_SC_B_payld' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1275]
-WARNING: [Synth 8-7071] port 'M01_SC_B_req' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1275]
-WARNING: [Synth 8-7071] port 'M01_SC_B_send' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1275]
-WARNING: [Synth 8-7071] port 'S01_SC_AW_recv' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1275]
-WARNING: [Synth 8-7071] port 'S01_SC_W_recv' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1275]
-WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_4N4PBE' has 104 connections declared, but only 98 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1275]
-WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:384]
-WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:384]
-WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:384]
-WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:384]
-WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:384]
-WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 95 connections declared, but only 90 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:384]
-INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v:55]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_control_s_axi.v:276]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_gmem_m_axi.v:1539]
-INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_sparsemux_513_8_32_1_1.v:1567]
-INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_sparsemux_257_7_32_1_1.v:799]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_ARREGION' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWADDR' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWBURST' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWCACHE' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWID' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWLEN' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWLOCK' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWPROT' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWQOS' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWREGION' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWSIZE' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWVALID' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_BREADY' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_WDATA' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_WID' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_WLAST' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_WSTRB' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_WVALID' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7071] port 'output_stream_TSTRB' of module 'design_1_feedforward_0_0' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
-WARNING: [Synth 8-7023] instance 'feedforward_0' of module 'design_1_feedforward_0_0' has 72 connections declared, but only 52 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:475]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1266]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1266]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1266]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_afc3_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1266]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_afc3_psr_aclk_0' has 10 connections declared, but only 6 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1266]
+WARNING: [Synth 8-7071] port 'S01_ACLK' of module 'clk_map_imp_5Y9LOC' is unconnected for instance 'clk_map' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:555]
+WARNING: [Synth 8-7071] port 'S01_ARESETN' of module 'clk_map_imp_5Y9LOC' is unconnected for instance 'clk_map' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:555]
+WARNING: [Synth 8-7023] instance 'clk_map' of module 'clk_map_imp_5Y9LOC' has 13 connections declared, but only 11 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:555]
+WARNING: [Synth 8-7071] port 'M01_SC_B_info' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'M01_SC_B_payld' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'M01_SC_B_req' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'M01_SC_B_send' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'M01_SC_R_info' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'M01_SC_R_payld' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'M01_SC_R_req' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'M01_SC_R_send' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'S01_SC_AR_recv' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'S01_SC_AW_recv' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'S01_SC_W_recv' of module 'switchboards_imp_4N4PBE' is unconnected for instance 'switchboards' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_4N4PBE' has 104 connections declared, but only 93 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1126]
+WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 95 connections declared, but only 84 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:367]
+INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_32_1_1.v:799]
+INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_257_7_9_1_1.v:799]
+INFO: [Synth 8-226] default block is never used [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/f3cb/hdl/verilog/feedforward_sparsemux_9_2_32_1_1.v:55]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/f3cb/hdl/verilog/feedforward_control_s_axi.v:197]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_feedforward_0_1' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:452]
+WARNING: [Synth 8-7071] port 'output_stream_TDEST' of module 'design_1_feedforward_0_1' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:452]
+WARNING: [Synth 8-7071] port 'output_stream_TID' of module 'design_1_feedforward_0_1' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:452]
+WARNING: [Synth 8-7071] port 'output_stream_TSTRB' of module 'design_1_feedforward_0_1' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:452]
+WARNING: [Synth 8-7071] port 'output_stream_TUSER' of module 'design_1_feedforward_0_1' is unconnected for instance 'feedforward_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:452]
+WARNING: [Synth 8-7023] instance 'feedforward_0' of module 'design_1_feedforward_0_1' has 38 connections declared, but only 33 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:452]
 WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:461]
 WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:461]
 WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:461]
@@ -668,11 +669,11 @@ WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_proc
 WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:461]
 WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:461]
 WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:461]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:528]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:528]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:528]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:528]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 107 connections declared, but only 103 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:528]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:486]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:486]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:486]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:486]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 107 connections declared, but only 103 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:486]
 INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -700,11 +701,11 @@ INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2024.2/scripts
 INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized1' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
 INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_50M_0' (0#1) [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:632]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:632]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:632]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:632]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:632]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:590]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:590]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:590]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:590]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/synth/design_1.v:590]
 WARNING: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/70ff/hdl/axi_dma_v7_1_vh_rfs.vhd:2151]
 WARNING: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/70ff/hdl/axi_dma_v7_1_vh_rfs.vhd:2153]
 WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.axi2ip_wrdata_i_reg was removed.  [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/70ff/hdl/axi_dma_v7_1_vh_rfs.vhd:2306]
@@ -780,14 +781,20 @@ WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [d
 WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:1034]
 WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2991]
 WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2991]
-WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_5Y9LOC does not have driver. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1400]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_5Y9LOC does not have driver. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1246]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
-WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_control_s_axi.v:382]
+WARNING: [Synth 8-3848] Net S01_AXI_arready in module/entity bd_afc3 does not have driver. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:191]
+WARNING: [Synth 8-3848] Net S01_AXI_rdata in module/entity bd_afc3 does not have driver. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:194]
+WARNING: [Synth 8-3848] Net S01_AXI_rid in module/entity bd_afc3 does not have driver. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:195]
+WARNING: [Synth 8-3848] Net S01_AXI_rlast in module/entity bd_afc3 does not have driver. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:196]
+WARNING: [Synth 8-3848] Net S01_AXI_rresp in module/entity bd_afc3 does not have driver. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:198]
+WARNING: [Synth 8-3848] Net S01_AXI_rvalid in module/entity bd_afc3 does not have driver. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:199]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/f3cb/hdl/verilog/feedforward_control_s_axi.v:254]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync__parameterized0 is either unconnected or has no load
@@ -873,36 +880,36 @@ WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[3] in module processing_system7_v
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module feedforward_gmem_m_axi_read is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module feedforward_gmem_m_axi_read is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module feedforward_gmem_m_axi_read is either unconnected or has no load
-WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module feedforward_gmem_m_axi_read is either unconnected or has no load
-WARNING: [Synth 8-7129] Port AWREADY in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WREADY in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BID[0] in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BRESP[1] in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BRESP[0] in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BUSER[0] in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BVALID in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port I_CH0_AWADDR[63] in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port I_CH0_AWADDR[62] in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port I_CH0_AWADDR[61] in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port I_CH0_AWADDR[60] in module feedforward_gmem_m_axi is either unconnected or has no load
-WARNING: [Synth 8-7129] Port I_CH0_AWADDR[59] in module feedforward_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[1] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[0] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[31] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[30] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[29] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[28] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[27] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[26] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[25] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[24] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[23] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[22] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[21] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[20] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[19] in module feedforward_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[18] in module feedforward_control_s_axi is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 2073.242 ; gain = 1159.574
+Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 2148.113 ; gain = 1239.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2073.242 ; gain = 1159.574
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2148.113 ; gain = 1239.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2073.242 ; gain = 1159.574
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2148.113 ; gain = 1239.180
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2179.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2268.848 ; gain = 7.773
 INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -941,38 +948,39 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-1714] 60 XPM XDC files have been applied to the design.
+INFO: [Project 1-1714] 53 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2731.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 3341.043 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 38 instances were transformed.
   FDR => FDRE: 36 instances
   SRL16 => SRL16E: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.444 . Memory (MB): peak = 2731.734 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.386 . Memory (MB): peak = 3341.043 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Constraint Validation : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0/inst. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 179).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0/U0. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 184).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 270).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_50M/U0. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 273).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 279).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s01_couplers/auto_us/inst. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 284).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0/inst. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 161).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0/U0. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 164).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 244).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_50M/U0. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 247).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 255).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s01_couplers/auto_us/inst. (constraint file  D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/dont_touch.xdc, line 260).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/feedforward_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_50M. (constraint file  auto generated constraint).
@@ -981,6 +989,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s00_c
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s01_couplers/auto_us. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/feedforward_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/\gen_axi4_axi3.axi3_conv_inst /\USE_WRITE.write_addr_inst /\USE_BURSTS.cmd_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/\gen_axi4_axi3.axi3_conv_inst /\USE_WRITE.write_addr_inst /\USE_B_CHANNEL.cmd_b_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/\gen_axi4_axi3.axi3_conv_inst /\USE_READ.USE_SPLIT_R.read_addr_inst /\USE_R_CHANNEL.cmd_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
@@ -999,8 +1008,6 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/switchboards/i_nodes/i_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/switchboards/i_nodes/i_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/switchboards/i_nodes/i_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
@@ -1021,8 +1028,6 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/switchboards/i_nodes/i_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/switchboards/i_nodes/i_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/switchboards/i_nodes/i_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
@@ -1033,16 +1038,13 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/m01_exit_
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s01_entry_pipeline/s01_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s01_entry_pipeline/s01_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/\GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER /\GEN_INCLUDE_MM2S_SF.I_RD_SF /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_XD_FIFO/\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/switchboards/i_nodes/i_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/switchboards/i_nodes/i_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
 INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
@@ -1072,16 +1074,14 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_r
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
-INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_14_decerr_slave__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.w_state_reg' in module 'sc_mmu_v1_0_14_top__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.r_state_reg' in module 'sc_mmu_v1_0_14_top__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'feedforward_control_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'feedforward_control_s_axi'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'feedforward_gmem_m_axi_reg_slice'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'feedforward_gmem_m_axi_reg_slice__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'feedforward_regslice_both'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'feedforward_regslice_both__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'feedforward_regslice_both__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'feedforward_regslice_both__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'feedforward_regslice_both__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'feedforward_regslice_both__parameterized4'
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
@@ -1241,34 +1241,6 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.r_state_reg' 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-            P_WRITE_IDLE |                              001 |                               00
-            P_WRITE_DATA |                              010 |                               01
-            P_WRITE_RESP |                              100 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_14_decerr_slave__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                               00 | 00000000000000000000000000000000
-*
-                 W_STALL |                               01 | 00000000000000000000000000000001
-               W_PENDING |                               10 | 00000000000000000000000000000010
-                W_DECERR |                               11 | 00000000000000000000000000000011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_14_top__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                               00 | 00000000000000000000000000000000
-*
-                 R_STALL |                               01 | 00000000000000000000000000000001
-               R_PENDING |                               10 | 00000000000000000000000000000010
-                R_DECERR |                               11 | 00000000000000000000000000000011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.r_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_14_top__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
                   iSTATE |                             0001 |                               11
 *
                   WRIDLE |                             0010 |                               00
@@ -1285,22 +1257,6 @@ INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding
                   RDDATA |                              100 |                               01
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'feedforward_control_s_axi'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    ZERO |                               00 |                               10
-                     ONE |                               10 |                               11
-                     TWO |                               01 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'feedforward_gmem_m_axi_reg_slice'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    ZERO |                               00 |                               10
-                     ONE |                               10 |                               11
-                     TWO |                               01 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'feedforward_gmem_m_axi_reg_slice__parameterized0'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1331,8 +1287,38 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
                      TWO |                               10 |                               01
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'feedforward_regslice_both__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'feedforward_regslice_both__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'feedforward_regslice_both__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'feedforward_regslice_both__parameterized4'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1341,162 +1327,147 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   64 Bit       Adders := 5     
-	   2 Input   62 Bit       Adders := 4     
-	   2 Input   52 Bit       Adders := 1     
-	   2 Input   39 Bit       Adders := 2     
-	   2 Input   32 Bit       Adders := 9     
-	   3 Input   32 Bit       Adders := 7     
-	   2 Input   31 Bit       Adders := 5     
+	   2 Input   32 Bit       Adders := 12    
 	   3 Input   26 Bit       Adders := 1     
-	   2 Input   16 Bit       Adders := 3     
-	   2 Input   12 Bit       Adders := 2     
-	   2 Input    9 Bit       Adders := 5     
-	   2 Input    8 Bit       Adders := 35    
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 4     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   4 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 30    
 	   4 Input    8 Bit       Adders := 8     
-	   2 Input    7 Bit       Adders := 11    
+	   2 Input    7 Bit       Adders := 13    
+	  16 Input    7 Bit       Adders := 1     
 	   4 Input    7 Bit       Adders := 10    
 	   3 Input    7 Bit       Adders := 2     
 	   3 Input    6 Bit       Adders := 2     
-	   2 Input    6 Bit       Adders := 8     
-	   2 Input    5 Bit       Adders := 26    
+	   2 Input    6 Bit       Adders := 7     
+	   2 Input    5 Bit       Adders := 19    
 	   3 Input    5 Bit       Adders := 3     
 	   4 Input    5 Bit       Adders := 6     
-	   2 Input    4 Bit       Adders := 58    
+	   2 Input    4 Bit       Adders := 50    
 	   3 Input    4 Bit       Adders := 5     
 	   4 Input    4 Bit       Adders := 5     
-	   2 Input    3 Bit       Adders := 28    
+	   2 Input    3 Bit       Adders := 26    
+	   4 Input    3 Bit       Adders := 16    
 	   3 Input    3 Bit       Adders := 9     
 	   2 Input    2 Bit       Adders := 18    
 	   4 Input    2 Bit       Adders := 3     
-	   3 Input    1 Bit       Adders := 9     
+	   3 Input    1 Bit       Adders := 8     
 	   2 Input    1 Bit       Adders := 7     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 178   
+	   2 Input      1 Bit         XORs := 169   
 +---Registers : 
-	             2178 Bit    Registers := 20    
-	              512 Bit    Registers := 4     
-	              194 Bit    Registers := 2     
+	             2178 Bit    Registers := 12    
+	              512 Bit    Registers := 2     
+	              162 Bit    Registers := 2     
 	              153 Bit    Registers := 2     
 	              104 Bit    Registers := 1     
-	               96 Bit    Registers := 3     
 	               74 Bit    Registers := 2     
 	               73 Bit    Registers := 2     
 	               71 Bit    Registers := 2     
 	               68 Bit    Registers := 6     
-	               64 Bit    Registers := 18    
-	               63 Bit    Registers := 3     
-	               62 Bit    Registers := 8     
-	               54 Bit    Registers := 1     
-	               52 Bit    Registers := 2     
+	               64 Bit    Registers := 8     
+	               62 Bit    Registers := 4     
 	               47 Bit    Registers := 2     
 	               40 Bit    Registers := 4     
-	               39 Bit    Registers := 4     
+	               39 Bit    Registers := 2     
 	               38 Bit    Registers := 2     
 	               37 Bit    Registers := 4     
 	               36 Bit    Registers := 4     
 	               35 Bit    Registers := 1     
-	               34 Bit    Registers := 1     
-	               33 Bit    Registers := 4     
-	               32 Bit    Registers := 339   
-	               31 Bit    Registers := 15    
-	               30 Bit    Registers := 3     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 49    
+	               30 Bit    Registers := 2     
 	               28 Bit    Registers := 1     
 	               26 Bit    Registers := 12    
-	               23 Bit    Registers := 2     
+	               23 Bit    Registers := 3     
+	               22 Bit    Registers := 1     
 	               21 Bit    Registers := 1     
-	               20 Bit    Registers := 1     
-	               16 Bit    Registers := 14    
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 12    
+	               14 Bit    Registers := 1     
 	               12 Bit    Registers := 8     
-	               11 Bit    Registers := 1     
-	               10 Bit    Registers := 7     
-	                9 Bit    Registers := 10    
-	                8 Bit    Registers := 74    
-	                7 Bit    Registers := 27    
-	                6 Bit    Registers := 11    
-	                5 Bit    Registers := 50    
-	                4 Bit    Registers := 139   
-	                3 Bit    Registers := 114   
-	                2 Bit    Registers := 110   
-	                1 Bit    Registers := 1837  
+	               10 Bit    Registers := 8     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 65    
+	                7 Bit    Registers := 24    
+	                6 Bit    Registers := 12    
+	                5 Bit    Registers := 45    
+	                4 Bit    Registers := 132   
+	                3 Bit    Registers := 115   
+	                2 Bit    Registers := 112   
+	                1 Bit    Registers := 2175  
 +---RAMs : 
-	               8K Bit	(255 X 34 bit)          RAMs := 1     
-	               4K Bit	(128 X 32 bit)          RAMs := 1     
 	               4K Bit	(128 X 39 bit)          RAMs := 1     
 	               4K Bit	(128 X 38 bit)          RAMs := 1     
 	               2K Bit	(64 X 32 bit)          RAMs := 2     
-	             1024 Bit	(32 X 32 bit)          RAMs := 4     
+	              512 Bit	(16 X 32 bit)          RAMs := 4     
+	              320 Bit	(10 X 32 bit)          RAMs := 1     
 	              144 Bit	(16 X 9 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
 +---Muxes : 
-	   2 Input 2178 Bit        Muxes := 10    
-	   2 Input  512 Bit        Muxes := 4     
-	   2 Input  179 Bit        Muxes := 6     
+	   2 Input 2178 Bit        Muxes := 6     
+	   2 Input  512 Bit        Muxes := 2     
 	   2 Input  153 Bit        Muxes := 2     
-	   2 Input   96 Bit        Muxes := 1     
+	   2 Input  147 Bit        Muxes := 6     
 	   2 Input   73 Bit        Muxes := 2     
 	   2 Input   68 Bit        Muxes := 6     
-	   2 Input   64 Bit        Muxes := 15    
+	   2 Input   64 Bit        Muxes := 4     
 	   2 Input   57 Bit        Muxes := 3     
 	   2 Input   55 Bit        Muxes := 3     
-	   2 Input   52 Bit        Muxes := 3     
-	   2 Input   50 Bit        Muxes := 1     
-	   2 Input   49 Bit        Muxes := 2     
-	   2 Input   48 Bit        Muxes := 1     
-	   2 Input   40 Bit        Muxes := 3     
-	   2 Input   39 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 2     
 	   2 Input   37 Bit        Muxes := 4     
-	   2 Input   36 Bit        Muxes := 6     
-	   2 Input   34 Bit        Muxes := 1     
-	   2 Input   33 Bit        Muxes := 2     
-	   2 Input   32 Bit        Muxes := 58    
+	   2 Input   36 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 52    
 	   4 Input   32 Bit        Muxes := 1     
 	   8 Input   32 Bit        Muxes := 2     
 	   2 Input   26 Bit        Muxes := 5     
 	   4 Input   26 Bit        Muxes := 2     
 	   3 Input   26 Bit        Muxes := 1     
-	   2 Input   24 Bit        Muxes := 1     
-	   2 Input   23 Bit        Muxes := 4     
+	   2 Input   23 Bit        Muxes := 3     
+	   2 Input   22 Bit        Muxes := 2     
 	   2 Input   21 Bit        Muxes := 1     
-	   2 Input   20 Bit        Muxes := 3     
-	   2 Input   18 Bit        Muxes := 1     
-	   2 Input   17 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 13    
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 14    
 	   3 Input   16 Bit        Muxes := 2     
-	   2 Input   12 Bit        Muxes := 4     
-	   4 Input   12 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 5     
 	   8 Input   12 Bit        Muxes := 2     
 	   2 Input   11 Bit        Muxes := 5     
-	   4 Input   11 Bit        Muxes := 1     
-	   2 Input   10 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 1     
 	   2 Input    9 Bit        Muxes := 4     
-	   2 Input    8 Bit        Muxes := 115   
-	   7 Input    8 Bit        Muxes := 8     
-	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 97    
+	   7 Input    8 Bit        Muxes := 4     
 	   8 Input    8 Bit        Muxes := 5     
 	   3 Input    8 Bit        Muxes := 1     
-	   2 Input    7 Bit        Muxes := 56    
+	   2 Input    7 Bit        Muxes := 37    
 	   7 Input    7 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 7     
-	   2 Input    5 Bit        Muxes := 22    
-	   2 Input    4 Bit        Muxes := 78    
+	   2 Input    5 Bit        Muxes := 14    
+	   2 Input    4 Bit        Muxes := 81    
 	   3 Input    4 Bit        Muxes := 2     
 	   4 Input    4 Bit        Muxes := 9     
-	   4 Input    3 Bit        Muxes := 15    
-	   2 Input    3 Bit        Muxes := 57    
+	   4 Input    3 Bit        Muxes := 10    
+	   2 Input    3 Bit        Muxes := 50    
 	   3 Input    3 Bit        Muxes := 6     
 	   6 Input    3 Bit        Muxes := 2     
 	   5 Input    3 Bit        Muxes := 3     
 	   8 Input    3 Bit        Muxes := 6     
-	   2 Input    2 Bit        Muxes := 362   
-	   4 Input    2 Bit        Muxes := 65    
+	   2 Input    2 Bit        Muxes := 391   
+	   4 Input    2 Bit        Muxes := 84    
 	   5 Input    2 Bit        Muxes := 4     
-	   3 Input    2 Bit        Muxes := 10    
-	   6 Input    1 Bit        Muxes := 122   
-	   4 Input    1 Bit        Muxes := 41    
-	   7 Input    1 Bit        Muxes := 23    
-	   2 Input    1 Bit        Muxes := 754   
-	   3 Input    1 Bit        Muxes := 48    
-	  12 Input    1 Bit        Muxes := 15    
+	   3 Input    2 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 81    
+	   4 Input    1 Bit        Muxes := 29    
+	   7 Input    1 Bit        Muxes := 15    
+	   2 Input    1 Bit        Muxes := 689   
+	   3 Input    1 Bit        Muxes := 40    
+	  12 Input    1 Bit        Muxes := 10    
 	   8 Input    1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -1514,14 +1485,9 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_load_reg_166_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_120_2.v:192]
+WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_1_load_reg_171_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/f3cb/hdl/verilog/feedforward_feedforward_Pipeline_VITIS_LOOP_120_2.v:191]
 INFO: [Synth 8-3936] Found unconnected internal register 'gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/r.r_pipe/m_payload_i_reg' and it is trimmed from '68' to '67' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_6_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_5_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_4_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer2_activations_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_layer2_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_2_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer1_activations_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_layer1_activations_RAM_AUTO_1R1W.v:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'layer3_activations_U/q1_reg' and it is trimmed from '32' to '31' bits. [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3c3b/hdl/verilog/feedforward_layer3_activations_RAM_AUTO_1R1W.v:64]
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1540,12 +1506,8 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized0__1.
-WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized0__1.
-WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized0__2.
-WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized0__2.
-WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized1__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module feedforward_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module feedforward_control_s_axi.
 INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_dma.
 INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_dma.
 INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_dma.
@@ -1563,8 +1525,28 @@ WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be rem
 WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset__parameterized1.
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized1.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized4__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized4__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized1__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized1__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized4.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized4.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized3.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized3.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized2.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized0__3.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized0__3.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module feedforward_regslice_both__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module feedforward_regslice_both__parameterized0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:23 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:37 ; elapsed = 00:02:47 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1575,33 +1557,40 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
+ROM: Preliminary Mapping Report
++--------------------------+------------------------+---------------+----------------+
+|Module Name               | RTL Object             | Depth x Width | Implemented As | 
++--------------------------+------------------------+---------------+----------------+
+|feedforward_matmul_xnor_1 | add_ln64_reg_17621_reg | 1024x9        | Block RAM      | 
++--------------------------+------------------------+---------------+----------------+
+
+
 Block RAM: Preliminary Mapping Report (see note below)
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name                                                                                                                                                                                                                                               | RTL Object                                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | gmem_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer2_activations_6_U/ram_reg                         | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer2_activations_5_U/ram_reg                         | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer2_activations_4_U/ram_reg                         | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer2_activations_U/ram_reg                           | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer1_activations_2_U/ram_reg                         | 64 x 32(READ_FIRST)    | W | R | 64 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer1_activations_U/ram_reg                           | 64 x 32(READ_FIRST)    | W | R | 64 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer3_activations_U/ram_reg                           | 128 x 32(READ_FIRST)   | W | R | 128 x 31(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/i_4_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg                       | 128 x 39(NO_CHANGE)    | W |   | 128 x 39(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/i_4_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                       | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                                                                                                                                                                               | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer1_activations_1_U/ram_reg   | 64 x 32(READ_FIRST)    | W | R | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer1_activations_U/ram_reg     | 64 x 32(READ_FIRST)    | W | R | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|design_1_i/i_5_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg | 128 x 39(NO_CHANGE)    | W |   | 128 x 39(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
+|design_1_i/i_5_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 
 Distributed RAM: Preliminary Mapping Report (see note below)
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
-|Module Name                                                                                                                                                                                                                                                 | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives    | 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
-|design_1_i/axi_smc/inst/i_4_0/\switchboards/i_nodes/i_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                       | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 4 x 1                | RAM16X1D x 1  | 
-|design_1_i/i_4_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M x 2    | 
-|design_1_i/i_4_0/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                               | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1    | 
-|design_1_i/i_4_0/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                          | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1    | 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                                                                                                                 | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives     | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|design_1_i/axi_smc/inst/i_5_0/\switchboards/i_nodes/i_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                       | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 4 x 1                | RAM16X1D x 1   | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer3_activations_U/ram_reg                                                  | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer2_activations_3_U/ram_reg                                                | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer2_activations_2_U/ram_reg                                                | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer2_activations_1_U/ram_reg                                                | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer2_activations_U/ram_reg                                                  | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/i_5_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M x 2     | 
+|design_1_i/i_5_0/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                               | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1     | 
+|design_1_i/i_5_0/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                          | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1     | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -1611,7 +1600,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:17 ; elapsed = 00:02:30 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:44 ; elapsed = 00:02:53 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1622,38 +1611,37 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:28 ; elapsed = 00:02:41 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Timing Optimization : Time (s): cpu = 00:02:47 ; elapsed = 00:02:57 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Block RAM: Final Mapping Report
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name                                                                                                                                                                                                                                               | RTL Object                                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer2_activations_6_U/ram_reg                         | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer2_activations_5_U/ram_reg                         | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer2_activations_4_U/ram_reg                         | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer2_activations_U/ram_reg                           | 32 x 32(READ_FIRST)    | W | R | 32 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer1_activations_2_U/ram_reg                         | 64 x 32(READ_FIRST)    | W | R | 64 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer1_activations_U/ram_reg                           | 64 x 32(READ_FIRST)    | W | R | 64 x 31(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer3_activations_U/ram_reg                           | 128 x 32(READ_FIRST)   | W | R | 128 x 31(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/feedforward_0                                                                                                                                                                                                                                  | gmem_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|design_1_i/i_4_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg                       | 128 x 39(NO_CHANGE)    | W |   | 128 x 39(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
-|design_1_i/i_4_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                       | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                                                                                                                                                                               | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer1_activations_1_U/ram_reg   | 64 x 32(READ_FIRST)    | W | R | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                  | layer1_activations_U/ram_reg     | 64 x 32(READ_FIRST)    | W | R | 64 x 32(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|design_1_i/i_5_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg | 128 x 39(NO_CHANGE)    | W |   | 128 x 39(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
+|design_1_i/i_5_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 
 Distributed RAM: Final Mapping Report
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
-|Module Name                                                                                                                                                                                                                                                 | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives    | 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
-|design_1_i/axi_smc/inst/i_4_0/\switchboards/i_nodes/i_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                       | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 4 x 1                | RAM16X1D x 1  | 
-|design_1_i/i_4_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M x 2    | 
-|design_1_i/i_4_0/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                               | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1    | 
-|design_1_i/i_4_0/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                          | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1    | 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+---------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                                                                                                                 | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives     | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|design_1_i/axi_smc/inst/i_5_0/\switchboards/i_nodes/i_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                       | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 4 x 1                | RAM16X1D x 1   | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer3_activations_U/ram_reg                                                  | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer2_activations_3_U/ram_reg                                                | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer2_activations_2_U/ram_reg                                                | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer2_activations_1_U/ram_reg                                                | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/feedforward_0                                                                                                                                                                                                                                    | layer2_activations_U/ram_reg                                                  | Implied        | 16 x 32              | RAM16X1D x 32  | 
+|design_1_i/i_5_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M x 2     | 
+|design_1_i/i_5_0/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst                                                                                               | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1     | 
+|design_1_i/i_5_0/axi_mem_intercon/\m00_couplers/auto_pc /\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                                          | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1     | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1661,28 +1649,11 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[2]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized0.
-INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[1]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized0.
-INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized0.
-INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[1]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized0.
-INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[0]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized0.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer2_activations_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer2_activations_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer2_activations_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer2_activations_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer2_activations_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer2_activations_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer2_activations_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer2_activations_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer1_activations_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer1_activations_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/grp_matmul_xnor_1_fu_4814/add_ln64_reg_17621_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer1_activations_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer1_activations_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer1_activations_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer3_activations_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/layer3_activations_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance design_1_i/feedforward_0/inst/gmem_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:34 ; elapsed = 00:02:48 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Technology Mapping : Time (s): cpu = 00:02:54 ; elapsed = 00:03:04 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1803,41 +1774,53 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.gen/sources_1/bd/design_1/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1725]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:38 ; elapsed = 00:02:53 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished IO Insertion : Time (s): cpu = 00:02:59 ; elapsed = 00:03:09 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:38 ; elapsed = 00:02:53 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:59 ; elapsed = 00:03:09 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:39 ; elapsed = 00:02:54 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:00 ; elapsed = 00:03:10 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:40 ; elapsed = 00:02:54 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:00 ; elapsed = 00:03:10 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:40 ; elapsed = 00:02:55 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:02 ; elapsed = 00:03:12 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:40 ; elapsed = 00:02:55 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:02 ; elapsed = 00:03:12 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name              | RTL Name                                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_feedforward_0_1 | inst/grp_matmul_xnor_1_fu_4814/icmp_ln63_2_reg_17608_pp0_iter3_reg_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_feedforward_0_1 | inst/grp_matmul_xnor_1_fu_4814/ap_loop_exit_ready_pp0_iter3_reg_reg       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_feedforward_0_1 | inst/grp_matmul_xnor_2_fu_5744/icmp_ln63_reg_3170_pp0_iter3_reg_reg[0]    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_feedforward_0_1 | inst/grp_matmul_xnor_2_fu_5744/icmp_ln63_1_reg_3182_pp0_iter3_reg_reg[0]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_feedforward_0_1 | inst/grp_matmul_xnor_2_fu_5744/ap_loop_exit_ready_pp0_iter3_reg_reg       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
 
 Dynamic Shift Register Report:
 +------------+-------------------------------+--------+------------+--------+---------+--------+--------+--------+
@@ -1854,8 +1837,6 @@ Dynamic Shift Register Report:
 |dsrl__8     | USE_RTL_FIFO.data_srl_reg[31] | 30     | 30         | 0      | 30      | 0      | 0      | 0      | 
 |dsrl__9     | shift_reg_reg                 | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
 |dsrl__10    | shift_reg_reg                 | 32     | 1          | 0      | 1       | 0      | 0      | 0      | 
-|dsrl__11    | mem_reg[5]                    | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
-|dsrl__12    | mem_reg[14]                   | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
 +------------+-------------------------------+--------+------------+--------+---------+--------+--------+--------+
 
 ---------------------------------------------------------------------------------
@@ -1877,55 +1858,55 @@ Report Cell Usage:
 +------+---------+------+
 |1     |BIBUF    |   130|
 |2     |BUFG     |     1|
-|3     |CARRY4   |   355|
-|4     |LUT1     |   382|
-|5     |LUT2     |  1273|
-|6     |LUT3     |  1937|
-|7     |LUT4     |  1507|
-|8     |LUT5     |   908|
-|9     |LUT6     |  1684|
-|10    |MUXF7    |    66|
-|11    |MUXF8    |    32|
+|3     |CARRY4   |   151|
+|4     |LUT1     |   446|
+|5     |LUT2     |   845|
+|6     |LUT3     |  1134|
+|7     |LUT4     |  1752|
+|8     |LUT5     |   887|
+|9     |LUT6     |  1349|
+|10    |MUXF7    |   122|
+|11    |MUXF8    |    60|
 |12    |PS7      |     1|
-|13    |RAM16X1D |     1|
+|13    |RAM16X1D |   121|
 |14    |RAM32M   |     4|
 |15    |RAMB18E1 |     1|
-|16    |RAMB36E1 |     9|
+|16    |RAMB36E1 |     4|
 |18    |SRL16    |     2|
-|19    |SRL16E   |   233|
-|20    |SRLC32E  |   114|
-|21    |FDCE     |   225|
+|19    |SRL16E   |   225|
+|20    |SRLC32E  |   111|
+|21    |FDCE     |   204|
 |22    |FDPE     |    33|
 |23    |FDR      |    16|
-|24    |FDRE     |  7141|
-|25    |FDSE     |   204|
+|24    |FDRE     |  5563|
+|25    |FDSE     |   196|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:40 ; elapsed = 00:02:55 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:02 ; elapsed = 00:03:12 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 9343 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:39 ; elapsed = 00:02:26 . Memory (MB): peak = 2731.734 ; gain = 1159.574
-Synthesis Optimization Complete : Time (s): cpu = 00:02:40 ; elapsed = 00:02:55 . Memory (MB): peak = 2731.734 ; gain = 1818.066
+Synthesis finished with 0 errors, 0 critical warnings and 5306 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:51 ; elapsed = 00:02:39 . Memory (MB): peak = 3341.043 ; gain = 1239.180
+Synthesis Optimization Complete : Time (s): cpu = 00:03:02 ; elapsed = 00:03:12 . Memory (MB): peak = 3341.043 ; gain = 2432.109
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.417 . Memory (MB): peak = 2731.734 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 486 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.328 . Memory (MB): peak = 3341.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 481 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2731.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3341.043 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 23 instances were transformed.
+  A total of 143 instances were transformed.
   FDR => FDRE: 16 instances
-  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 121 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
   SRL16 => SRL16E: 2 instances
 
-Synth Design complete | Checksum: 44f642f9
+Synth Design complete | Checksum: de83b383
 INFO: [Common 17-83] Releasing license: Synthesis
-610 Infos, 416 Warnings, 0 Critical Warnings and 0 Errors encountered.
+595 Infos, 429 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:48 ; elapsed = 00:03:06 . Memory (MB): peak = 2731.734 ; gain = 2064.977
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2731.734 ; gain = 0.000
+synth_design: Time (s): cpu = 00:03:09 ; elapsed = 00:03:23 . Memory (MB): peak = 3341.043 ; gain = 2662.523
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 3341.043 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/ecen529/finalProject/vivado/bnn_hls/bnn_hls.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 21:25:18 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 13 23:38:01 2025...

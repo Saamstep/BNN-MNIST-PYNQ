@@ -1,0 +1,137 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/ecen529/finalProject/vitis/bnn_hls/bnn_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=bnn.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.h' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/ecen529/finalProject/vitis/bnn_hls/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\ecen529\finalProject\vitis\bnn_hls\bnn_tb.cpp' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'D:/ecen529/finalProject/vitis/bnn_hls/bnn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=feedforward' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/ecen529/finalProject/vitis/bnn_hls/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../bnn_tb.cpp in debug mode
+   Compiling ../../../../weights.cpp in debug mode
+   Compiling ../../../../bnn.cpp in debug mode
+csim.mk:100: recipe for target 'obj/bnn.o' failed
+In file included from ../../../../bnn_tb.cpp:7:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../weights.cpp:1:
+In file included from ../../../../weights.h:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../bnn.cpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+../../../../bnn.cpp:18:1: error: unknown type name 'data_t'
+data_t XNOR(data_t a, data_t b)
+^
+../../../../bnn.cpp:18:13: error: unknown type name 'data_t'
+data_t XNOR(data_t a, data_t b)
+            ^
+../../../../bnn.cpp:18:23: error: unknown type name 'data_t'
+data_t XNOR(data_t a, data_t b)
+                      ^
+../../../../bnn.cpp:28:1: error: unknown type name 'data_t'
+data_t quantize(data_t x)
+^
+../../../../bnn.cpp:28:17: error: unknown type name 'data_t'
+data_t quantize(data_t x)
+                ^
+../../../../bnn.cpp:38:1: error: unknown type name 'data_t'
+data_t sign(data_t x)
+^
+../../../../bnn.cpp:38:13: error: unknown type name 'data_t'
+data_t sign(data_t x)
+            ^
+../../../../bnn.cpp:46:24: error: unknown type name 'data_t'
+void matmul_xnor(const data_t* A, const data_t* B, data_t* res, int rowsA, int colsB)
+                       ^
+../../../../bnn.cpp:46:41: error: unknown type name 'data_t'
+void matmul_xnor(const data_t* A, const data_t* B, data_t* res, int rowsA, int colsB)
+                                        ^
+../../../../bnn.cpp:46:52: error: unknown type name 'data_t'
+void matmul_xnor(const data_t* A, const data_t* B, data_t* res, int rowsA, int colsB)
+                                                   ^
+../../../../bnn.cpp:51:6: error: unknown type name 'data_t'
+        data_t cnt = 0;
+        ^
+../../../../bnn.cpp:78:5: error: unknown type name 'data_t'
+    data_t X0_input[MAX_INPUT_SIZE];
+    ^
+../../../../bnn.cpp:83:5: error: unknown type name 'data_t'
+    data_t layer1_activations[colsW1];
+    ^
+../../../../bnn.cpp:84:5: error: unknown type name 'data_t'
+    data_t layer2_activations[colsW2];
+    ^
+../../../../bnn.cpp:85:5: error: unknown type name 'data_t'
+    data_t layer3_activations[colsW3];
+    ^
+../../../../bnn.cpp:86:5: error: unknown type name 'data_t'
+    data_t layer1_quant[colsW1];
+    ^
+../../../../bnn.cpp:87:5: error: unknown type name 'data_t'
+    data_t layer2_quant[colsW2];
+    ^
+../../../../bnn.cpp:100:34: error: unknown type name 'data_t'
+    matmul_xnor(X0_input, (const data_t*)W1, layer1_activations, IMG_SIZE, colsW1);
+                                 ^
+../../../../bnn.cpp:119:38: error: unknown type name 'data_t'
+    matmul_xnor(layer1_quant, (const data_t*)W2, layer2_activations, rowsW1,colsW2);
+                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.
+make: *** [obj/bnn.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 3 seconds. Total elapsed time: 14.307 seconds; peak allocated memory: 620.648 MB.
